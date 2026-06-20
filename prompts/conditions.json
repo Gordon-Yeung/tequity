@@ -1,0 +1,26 @@
+{
+  "01": {
+    "name": "Static Codes",
+    "description": "Human-coded turn-by-turn orientations fed to Claude with a generic thematic analysis prompt. No temporal framing.",
+    "input_type": "coded",
+    "prompt_file": "prompts/condition_01_static_codes.txt"
+  },
+  "02": {
+    "name": "Temporal Codes",
+    "description": "Human-coded turn-by-turn orientations fed to Claude with a prompt that explicitly asks how orientations shift over time.",
+    "input_type": "coded",
+    "prompt_file": "prompts/condition_02_temporal_codes.txt"
+  },
+  "03": {
+    "name": "Static Transcript",
+    "description": "Raw classroom transcript fed to Claude with a generic thematic analysis prompt. No temporal framing.",
+    "input_type": "transcript",
+    "prompt_file": "prompts/condition_03_static_transcript.txt"
+  },
+  "04": {
+    "name": "Temporal Transcript",
+    "description": "Raw classroom transcript fed to Claude with a prompt that explicitly asks how orientations shift over time.",
+    "input_type": "transcript",
+    "prompt_file": "prompts/condition_04_temporal_transcript.txt"
+  }
+}
