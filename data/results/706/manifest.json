@@ -1,0 +1,51 @@
+{
+  "video_id": "706",
+  "run_timestamp": "2026-06-25T10:27:22.727256",
+  "output_directory": "C:\\Users\\Gordon Yeung\\Documents\\GitHub\\temporal-prompting\\data\\results\\706",
+  "conditions": [
+    {
+      "condition_id": "01",
+      "video_id": "706",
+      "timestamp": "2026-06-25T10:27:22.728409",
+      "status": "failed",
+      "output_file": null,
+      "error": "Command '['C:\\\\Users\\\\Gordon Yeung\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python314\\\\python.exe', 'scripts/run_condition.py', '--video_id', '706', '--condition', '01', '--save', '--output_dir', 'C:\\\\Users\\\\Gordon Yeung\\\\Documents\\\\GitHub\\\\temporal-prompting\\\\data\\\\results\\\\706']' returned non-zero exit status 3221225477.",
+      "condition_name": "Static Codes",
+      "input_type": "coded",
+      "prompt_file": "prompts/condition_01_static_codes.txt"
+    },
+    {
+      "condition_id": "02",
+      "video_id": "706",
+      "timestamp": "2026-06-25T10:27:25.075973",
+      "status": "failed",
+      "output_file": null,
+      "error": "Command '['C:\\\\Users\\\\Gordon Yeung\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python314\\\\python.exe', 'scripts/run_condition.py', '--video_id', '706', '--condition', '02', '--save', '--output_dir', 'C:\\\\Users\\\\Gordon Yeung\\\\Documents\\\\GitHub\\\\temporal-prompting\\\\data\\\\results\\\\706']' returned non-zero exit status 3221225477.",
+      "condition_name": "Temporal Codes",
+      "input_type": "coded",
+      "prompt_file": "prompts/condition_02_temporal_codes.txt"
+    },
+    {
+      "condition_id": "03",
+      "video_id": "706",
+      "timestamp": "2026-06-25T10:27:26.829638",
+      "status": "failed",
+      "output_file": null,
+      "error": "Command '['C:\\\\Users\\\\Gordon Yeung\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python314\\\\python.exe', 'scripts/run_condition.py', '--video_id', '706', '--condition', '03', '--save', '--output_dir', 'C:\\\\Users\\\\Gordon Yeung\\\\Documents\\\\GitHub\\\\temporal-prompting\\\\data\\\\results\\\\706']' returned non-zero exit status 3221225477.",
+      "condition_name": "Static Transcript",
+      "input_type": "transcript",
+      "prompt_file": "prompts/condition_03_static_transcript.txt"
+    },
+    {
+      "condition_id": "04",
+      "video_id": "706",
+      "timestamp": "2026-06-25T10:27:28.609871",
+      "status": "failed",
+      "output_file": null,
+      "error": "Command '['C:\\\\Users\\\\Gordon Yeung\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python314\\\\python.exe', 'scripts/run_condition.py', '--video_id', '706', '--condition', '04', '--save', '--output_dir', 'C:\\\\Users\\\\Gordon Yeung\\\\Documents\\\\GitHub\\\\temporal-prompting\\\\data\\\\results\\\\706']' returned non-zero exit status 3221225477.",
+      "condition_name": "Temporal Transcript",
+      "input_type": "transcript",
+      "prompt_file": "prompts/condition_04_temporal_transcript.txt"
+    }
+  ]
+}

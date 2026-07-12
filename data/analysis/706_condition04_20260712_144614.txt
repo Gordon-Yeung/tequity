@@ -1,0 +1,89 @@
+## Framing note
+
+"Teacher orientation toward students' mathematical ability" here means the implicit and explicit beliefs the teacher reveals about what her students *can* do mathematically—how much reasoning she credits them with, when she assumes competence versus deficiency, and how demanding she is willing to be. Because this is a single lesson (with references forward and backward to other days), "shift over time" can be read at two scales: (a) within the lesson, as the activity moves from checking finished work → problem-posing → conferencing; and (b) as a trajectory the teacher seems to be enacting across days. Below are several themes with evidence, and for each I trace how the orientation appears to move.
+
+---
+
+## Theme 1: Capability-through-extension ("you can always go further")
+
+A striking pattern is that whenever a student produces a correct-but-minimal answer, the teacher treats that as a *starting point*, not an endpoint. She repeatedly assumes students are capable of more than the immediate task requires.
+
+- After 7/8 hour: "See, but let's extend it… Tell me actually how much time he actually spent."
+- She introduces "Gallon Man" and asks students to convert 5/8 of a gallon into quarts/pints/cups: "See if you can tell me how much that is."
+- With the buildings problem: "you've gotta take it further, that's your job. Take it further."
+
+**Shift over time:** Early in the lesson the teacher's orientation is largely *evaluative*—confirming whether finished work is "done" and "correct." As the period progresses she reframes ability as elastic and expandable: correctness becomes the floor, and she consistently escalates the cognitive demand (single-step → multi-step, abstract fraction → real-world unit conversion). Her orientation moves from "can you get it right?" to "how far can you push this idea?"
+
+---
+
+## Theme 2: Oscillation between procedural and conceptual competence
+
+The teacher holds two somewhat competing views of what counts as mathematical ability.
+
+- **Procedural/rule-based:** She leans on keyword strategies ("*In all* tells me… addition"), the LCM routine ("your LCM is ten, so it is tenths"), and a prime-number test for "doneness" ("7's prime and 7 cannot divide into 8, so you know you're finished"). This positions competence as executing the right procedure.
+- **Conceptual/representational:** She simultaneously insists on drawing and labeling pictures, meaning-making ("a whole gallon cut into fourths with three of it filled"), and interpreting results ("how much… out of an entire hour did he spend?").
+
+**Shift over time:** The lesson opens heavily procedural (checking algorithms, keywords, reduction rules). But the design of the second activity—problem *posing* from photographs—implicitly re-orients ability toward sense-making and modeling. By the conferencing phase, she is validating students' *reasoning about a situation* (why the teacher cares about ties/hats, what data is relevant) more than their computation. The orientation drifts from "can execute a procedure" toward "can model a situation with mathematics."
+
+---
+
+## Theme 3: From doing-for to prompting-for (locus of thinking)
+
+There is a tension in *who does the mathematical thinking*.
+
+- At times the teacher essentially completes the reasoning aloud and the student affirms ("Mm-hmm"): e.g., the walk-distance problem, where she supplies the total, the LCM, and "your answer is three tenths," or the final hats problem where she counts out all 18 and does the subtraction while students chime single numbers.
+- At other times she deliberately withholds and hands ownership back: "You come up with your own problem." "That's your job. Take it further." "Why does Teacher care about kids wearing hats?"
+
+**Shift over time:** This is the clearest developmental arc. In the review/checking phase her orientation is fairly *directive*—she scaffolds so tightly that students mostly ratify her thinking, implying an assumption that they need the reasoning modeled. In the problem-posing phase she progressively *releases responsibility*, using questioning rather than telling ("Give me a character that would always be at school"; "Why would she possibly care?"). Her orientation shifts from viewing students as recipients of reasoning to viewing them as generators of it—though she never fully lets go (she often narrates the "story" for them, e.g., the photographer paid $100 split three ways).
+
+---
+
+## Theme 4: Ability as bound up with narrative/contextual competence
+
+The teacher treats mathematical ability as inseparable from the ability to construct and interpret a *situation*—"word problems are mini stories" with characters and settings.
+
+- Repeated insistence: "Make sure you have a character and make sure you have a story."
+- She judges the buildings and elephant problems as underdeveloped not because the math is wrong but because "I know nothing about these people or elephants."
+- She helps a student turn "kids eating" into "a teacher figuring out how many detention slips to print."
+
+**Shift over time:** This orientation *emerges* over the lesson. It is absent from the opening (which is about drawing/computing), becomes the organizing principle of the second activity, and by the end she is coaching precision within the narrative frame ("your last sentence needs to be what you're actually trying to do"; "doing approximates is probably not a good idea… your answer has to be exact"). So the orientation grows from "math is computation" to "math ability includes authoring and disciplining a real-world model."
+
+---
+
+## Theme 5: Differentiated / conditional confidence and the entanglement with behavior
+
+The teacher's confidence in students is not uniform; it is sometimes conditioned on compliance and effort, and ability talk gets braided with management.
+
+- Reward framing: "if you come up with the right answer, I'll move you all to blue" (correctness as behavioral currency).
+- Selective monitoring: repeated warnings to Student M ("second reminder… you will just leave if you don't get involved"), and preemptive attention ("I'm talking to you just in case").
+- Backhanded assumptions embedded in encouragement: "Student L, you think you're gonna live a pretty cushy life"; "Student F, you can keep your hands down."
+
+**Shift over time:** Within the lesson, as students demonstrate reasoning in conferences, her language warms toward genuine intellectual respect ("Wow, you were really developing a story there," "I'm very impressed"). The orientation shifts—at least for engaged students—from a compliance-gated confidence toward an authentic recognition of thinking. But the entanglement never fully disappears, suggesting a stable underlying assumption that ability and behavior/effort are linked.
+
+---
+
+## Theme 6: Precision and "doneness" as markers of competence
+
+The teacher repeatedly signals that being mathematically able means knowing when—and how—you are *finished and exact*.
+
+- "How do you know that you're done?" (pressing for justification of fully-reduced form).
+- Distaste for approximation; insistence on exact answers.
+- Requiring both picture *and* computation, and labeling.
+
+**Shift over time:** Early this appears as a checklist orientation (is it reduced? is it labeled?). Later it deepens into metacognitive demand—she wants students to *justify* completeness and to recognize when a problem is actually multi-step (the hats problem, where she names their work as "a multi-step problem which is good"). Competence-as-doneness matures into competence-as-self-monitoring.
+
+---
+
+## Synthesizing the trajectory
+
+If you read the lesson as a single arc, the teacher's orientation toward student ability travels roughly like this:
+
+1. **Evaluative & procedural** (checking finished work): ability = correct execution and reduction.
+2. **Directive scaffolding**: ability treated as fragile/emergent, so the teacher supplies much of the reasoning.
+3. **Release into authorship** (problem posing): ability reframed as modeling, contextual reasoning, and creativity—students positioned as producers.
+4. **Escalation of demand** (extensions, unit conversions, multi-step recognition): ability treated as expandable, with correctness as a launching pad.
+5. **Metacognitive/precision expectations**: ability includes knowing when you're done and defending it.
+
+The most important interpretive point—and a good one to develop analytically—is the **coexistence of asset and deficit orientations**. The teacher clearly believes her students can reason richly (she keeps raising demand and hands them problem-authoring), yet her habitual moves (narrating solutions, keyword shortcuts, doing-for during conferences, compliance-linked rewards) can undercut that belief in practice. A productive line for further analysis would be to examine *when* the demand rises versus falls, and whether the teacher lowers demand more readily for certain students—which would reveal whether the "capability-through-extension" orientation is applied equitably or selectively across the class.
+
+Would you like me to map specific transcript excerpts to a coding scheme (e.g., high-press vs. low-press moves, funneling vs. focusing questions), which would let you operationalize these themes for a more formal qualitative analysis?
