@@ -100,3 +100,33 @@ The `ANTHROPIC_API_KEY` environment variable must be set. The script does not ha
 - Column names in coded CSVs (downstream analysis depends on exact headers)
 - The `input_type` values in `conditions.json` (must stay `"coded"` or `"transcript"`)
 - The episode/commentary row structure in coded CSVs
+
+## How to Work with Claude Code
+
+### Collaboration Style
+
+- **Be direct.** Tell me what you need; I'll figure out the best path.
+- **Ask for cleanup explicitly.** Don't assume I'll remove test files or failed runs—ask and I will.
+- **Prefer outputs in multiple formats.** If a report is useful, offer it as `.md`, `.txt`, `.csv`, or `.json` depending on the use case.
+- **Verify rigorously.** For data processing tasks, I should always verify outputs (e.g., quote matching against source), not just trust the analysis.
+- **Use Python for data processing.** I write deterministic scripts when handling files, transcripts, or structured data—not ad-hoc one-off commands.
+
+### Technical Preferences
+
+- **Handle CSV parsing robustly.** Expect UTF-8 BOM, quoted column names, multiple schema variants—normalize them.
+- **Use Claude Opus for heavy lifting.** Complex language analysis (deficit framing, semantic understanding) uses Opus; I (Haiku) orchestrate.
+- **Python 3.13+.** Use the stable Python 3.13 release; avoid alpha versions (3.14-alpha has SDK incompatibilities).
+- **Environment variables via `.env`.** Store secrets in `.env` (already in .gitignore); I'll read them at runtime.
+- **Timestamp output directories.** When a process can be re-run, use timestamped folders to avoid overwriting prior runs.
+
+### Reporting & Cleanup
+
+- **Generate reader-friendly reports.** Complex JSON outputs should have a human-readable summary (Markdown preferred).
+- **Remove temporary files.** Test scripts, failed runs, and cache directories should be cleaned up after debugging.
+- **Preserve the audit trail in code.** Comments in scripts should explain *why*, not *what*; good variable names handle the latter.
+
+### Scope & Boundaries
+
+- **Research-grade work.** This project is academic research—prioritize correctness and transparency over speed.
+- **No destructive shortcuts.** Don't use `--no-verify` or similar flags to bypass safety checks; fix the underlying issue instead.
+- **Check with you on big decisions.** Before deleting large datasets, changing schemas, or refactoring pipelines, ask first.

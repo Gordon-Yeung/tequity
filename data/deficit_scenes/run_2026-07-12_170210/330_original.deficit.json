@@ -1,0 +1,45 @@
+{
+  "source_document_id": "330_original.csv",
+  "scenes": [
+    {
+      "turn_range": "483-487",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "485",
+        "verbatim_quote": "i ll repeat my question for a third time for those children who aren t doing a good job listening right now"
+      },
+      "context_excerpt": [
+        {
+          "turn": 483,
+          "speaker": "teacher",
+          "text": "no sit down and listen please student b just said that it came from nowhere he s estimating"
+        },
+        {
+          "turn": 484,
+          "speaker": "student",
+          "text": "that s what i said the first time"
+        },
+        {
+          "turn": 485,
+          "speaker": "teacher",
+          "text": "so it came from nowhere so if brandon is going to use this as his first step what does he then have to do to make this work or if any of you were to use this as your first step short pause so if this is your first step what do we then have to do student f nice job paying attention student b nice job paying attention student k you too student j do you know what my question was short pause i ll repeat my question for a third time for those children who aren t doing a good job listening right now if this is going to be the first step and this three just came out of nowhere what does student b or anybody else who used this have to do with their final answer"
+        },
+        {
+          "turn": 486,
+          "speaker": "student",
+          "text": "inaudible"
+        },
+        {
+          "turn": 487,
+          "speaker": "teacher",
+          "text": "student v"
+        }
+      ],
+      "categories": [
+        "D"
+      ],
+      "rationale": "The teacher characterizes a subset of students as 'children who aren't doing a good job listening,' framing the behavior as a deficit in the students rather than describing a neutral, correctable situation. Borderline because it is embedded in in-the-moment behavior management.",
+      "confidence": "low"
+    }
+  ]
+}

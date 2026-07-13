@@ -1,0 +1,56 @@
+{
+  "source_document_id": "345_original.csv",
+  "scenes": [
+    {
+      "turn_range": "2642-2646",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "2644",
+        "verbatim_quote": "okay if somebody from those dreaded 3rd grade people that don t know anything they know something don t they"
+      },
+      "context_excerpt": [
+        {
+          "turn": 2642,
+          "speaker": "teacher",
+          "text": "keep that thought going because we will talk about that later anybody know a name for fractions that are the same like four eighths and one half eight eighths and one three thirds and one there s a name for those types of fractions student s"
+        },
+        {
+          "turn": 2643,
+          "speaker": "student",
+          "text": "equivalent fractions"
+        },
+        {
+          "turn": 2644,
+          "speaker": "teacher",
+          "text": "okay write it down here okay if somebody from those dreaded 3rd grade people that don t know anything they know something don t they"
+        },
+        {
+          "turn": 2645,
+          "speaker": "multiple students",
+          "text": "yes"
+        },
+        {
+          "turn": 2646,
+          "speaker": "teacher",
+          "text": "i hope so because you guys were third graders not that long ago if you were going to explain what equivalent fractions mean to a 3rd grader how would you explain it to them i want you to talk about it in your group for just a couple of minutes how you would explain to a 3rd grader what it means to be an equivalent fraction you don t need those yet box is up here the reason you can t come and get your work is you didn t bring in your permission slip so you can t go in front of the camera we re going to be filming again and next time you guys can sit in your normal places as long as you bring in your permission slips yeah you can still raise your hand we just can t see you on the camera"
+        },
+        {
+          "turn": 2647,
+          "speaker": "student",
+          "text": "if we were supposed to explain would it be equivalent fractions or fractions"
+        },
+        {
+          "turn": 2648,
+          "speaker": "teacher",
+          "text": "what an equivalent fraction is to a 3rd grader student c what s your favorite number"
+        }
+      ],
+      "categories": [
+        "G",
+        "B"
+      ],
+      "rationale": "The teacher characterizes an entire group (3rd graders) with a sweeping negation, 'that don't know anything,' defining them by a total lack of knowledge, even though the remark is rhetorically softened afterward.",
+      "confidence": "low"
+    }
+  ]
+}

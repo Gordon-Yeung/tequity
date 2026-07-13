@@ -1,0 +1,55 @@
+{
+  "source_document_id": "314_original.csv",
+  "scenes": [
+    {
+      "turn_range": "1063-1069",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "1069",
+        "verbatim_quote": "student a you have to start retaining what you"
+      },
+      "context_excerpt": [
+        {
+          "turn": 1063,
+          "speaker": "teacher",
+          "text": "student a you have to try to remember what you re learning as you go along this is the numerator this is the denominator what fraction are we talking about here"
+        },
+        {
+          "turn": 1064,
+          "speaker": "student",
+          "text": "six"
+        },
+        {
+          "turn": 1065,
+          "speaker": "teacher",
+          "text": "what does the whole represent"
+        },
+        {
+          "turn": 1066,
+          "speaker": "student",
+          "text": "six"
+        },
+        {
+          "turn": 1067,
+          "speaker": "teacher",
+          "text": "how many sixths is equal to a whole how many sixths do i need t make a whole"
+        },
+        {
+          "turn": 1068,
+          "speaker": "student",
+          "text": "three inaudible"
+        },
+        {
+          "turn": 1069,
+          "speaker": "teacher",
+          "text": "student a you have to start retaining what you okay again student a six sixths is equal to one whole how many pieces are equal to a whole here"
+        }
+      ],
+      "categories": [
+        "D"
+      ],
+      "rationale": "The teacher repeatedly locates the learning difficulty in the student's failure to 'retain' or 'remember' (also 1063: 'you have to try to remember what you're learning as you go along'), framing the struggle as a deficit in the student rather than in the task or instruction. Ambiguous because it functions as coaching during 1:1 help.",
+      "confidence": "low"
+    }
+  ]
+}

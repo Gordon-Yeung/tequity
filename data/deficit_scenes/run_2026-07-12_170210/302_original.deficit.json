@@ -1,0 +1,40 @@
+{
+  "source_document_id": "302_original.csv",
+  "scenes": [
+    {
+      "turn_range": "133-136",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "135",
+        "verbatim_quote": "you ll see it in a moment but what you need to do is i think it s easier for you at this point to do it as an array okay"
+      },
+      "context_excerpt": [
+        {
+          "turn": 133,
+          "speaker": "teacher",
+          "text": "don t forget your addition sign okay she s doing it slightly different"
+        },
+        {
+          "turn": 134,
+          "speaker": "student",
+          "text": "i can t see her"
+        },
+        {
+          "turn": 135,
+          "speaker": "teacher",
+          "text": "you ll see it in a moment but what you need to do is i think it s easier for you at this point to do it as an array okay"
+        },
+        {
+          "turn": 136,
+          "speaker": "student",
+          "text": "i don t know how to do it inaudible"
+        }
+      ],
+      "categories": [
+        "E"
+      ],
+      "rationale": "The teacher redirects this specific student to a simpler method ('easier for you at this point') rather than the alternative method another student used, which could indicate demand reduction based on perceived readiness; however 'at this point' frames it developmentally, making it ambiguous.",
+      "confidence": "low"
+    }
+  ]
+}

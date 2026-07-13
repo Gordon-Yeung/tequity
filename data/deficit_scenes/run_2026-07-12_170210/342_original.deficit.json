@@ -1,0 +1,55 @@
+{
+  "source_document_id": "342_original.csv",
+  "scenes": [
+    {
+      "turn_range": "924-927",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "925",
+        "verbatim_quote": "you could of gotten up to get it wow you re getting lazy"
+      },
+      "context_excerpt": [
+        {
+          "turn": 922,
+          "speaker": "student",
+          "text": "triangles"
+        },
+        {
+          "turn": 923,
+          "speaker": "teacher",
+          "text": "triangles"
+        },
+        {
+          "turn": 924,
+          "speaker": "student",
+          "text": "are we trying to rearrange them"
+        },
+        {
+          "turn": 925,
+          "speaker": "teacher",
+          "text": "you re supposed to not rearrange group them by their characteristics you could of gotten up to get it wow you re getting lazy"
+        },
+        {
+          "turn": 926,
+          "speaker": "student",
+          "text": "teacher how do you want us to like organize them"
+        },
+        {
+          "turn": 927,
+          "speaker": "teacher",
+          "text": "what did we what did we define quadrilaterals as"
+        },
+        {
+          "turn": 928,
+          "speaker": "student",
+          "text": "um four sided figures that have 90 degree angles"
+        }
+      ],
+      "categories": [
+        "D"
+      ],
+      "rationale": "The teacher attributes the student's behavior to being 'lazy,' a deficit-based characterization of motivation rather than describing the task or offering a scaffold.",
+      "confidence": "high"
+    }
+  ]
+}

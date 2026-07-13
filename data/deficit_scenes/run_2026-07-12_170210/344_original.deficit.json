@@ -1,0 +1,105 @@
+{
+  "source_document_id": "344_original.csv",
+  "scenes": [
+    {
+      "turn_range": "119-125",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "122",
+        "verbatim_quote": "if you cannot handle it if you cannot handle just letting the fly be we ll find another seat so student a go back to your desk where you belong because there s a fly over here and you can t handle it go back to your desk where you belong"
+      },
+      "context_excerpt": [
+        {
+          "turn": 119,
+          "speaker": "student",
+          "text": "what if you don t know how much money you need right"
+        },
+        {
+          "turn": 120,
+          "speaker": "teacher",
+          "text": "that s why you think ahead sometimes you really don t know and you try to overestimate and imagine"
+        },
+        {
+          "turn": 121,
+          "speaker": "student",
+          "text": "what if you just take say the thing costs like 200 00 or 100 00 and you only take 50 00 you ll have to drive all the way back home and back and get the rest of the money"
+        },
+        {
+          "turn": 122,
+          "speaker": "teacher",
+          "text": "so some of that is also not just estimating but common sense about how much money you need right okay we re going to get started so i m going to need your help with this excuse me if you cannot handle it if you cannot handle just letting the fly be we ll find another seat so student a go back to your desk where you belong because there s a fly over here and you can t handle it go back to your desk where you belong so that we re all ready to move on you can sit your desk the back desk or that desk you have several choices that are far away from the fly you either sit quietly or you move"
+        },
+        {
+          "turn": 123,
+          "speaker": "student",
+          "text": "inaudible"
+        },
+        {
+          "turn": 124,
+          "speaker": "teacher",
+          "text": "there s 19 other kids aren t having a problem they re ready to learn math the rest of you over there are you ready"
+        },
+        {
+          "turn": 125,
+          "speaker": "student",
+          "text": "yeah"
+        }
+      ],
+      "categories": [
+        "D"
+      ],
+      "rationale": "The repeated framing of the student as one who 'can't handle it' attributes the behavior to a personal inability rather than describing the situation neutrally; borderline because it is tied to an in-the-moment distraction.",
+      "confidence": "low"
+    },
+    {
+      "turn_range": "2766-2769",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "2769",
+        "verbatim_quote": "but some people aren t even trying we are going to have to call home about that"
+      },
+      "context_excerpt": [
+        {
+          "turn": 2766,
+          "speaker": "student",
+          "text": "we can take turns we can take turns"
+        },
+        {
+          "turn": 2767,
+          "speaker": "teacher",
+          "text": "excuse me we have an even number of people everyone needs a partner"
+        },
+        {
+          "turn": 2768,
+          "speaker": "student",
+          "text": "oh"
+        },
+        {
+          "turn": 2769,
+          "speaker": "teacher",
+          "text": "do i need to call home about the attitude complaining now c and s you have been raising your hand even though you are sitting back here and participating but some people aren t even trying we are going to have to call home about that b sit down okay sit okay there is a spinner here is a spinner excuse me f these people need three come on hustle"
+        },
+        {
+          "turn": 2770,
+          "speaker": "student",
+          "text": "what it does spin"
+        },
+        {
+          "turn": 2771,
+          "speaker": "teacher",
+          "text": "yep so put your finger on one corner flick it around"
+        },
+        {
+          "turn": 2772,
+          "speaker": "student",
+          "text": "that s what i m doing"
+        }
+      ],
+      "categories": [
+        "D"
+      ],
+      "rationale": "Characterizing students as 'not even trying' attributes motivation/effort as a deficit rather than describing specific observable behavior or task barriers.",
+      "confidence": "medium"
+    }
+  ]
+}

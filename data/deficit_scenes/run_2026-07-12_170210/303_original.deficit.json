@@ -1,0 +1,76 @@
+{
+  "source_document_id": "303_original.csv",
+  "scenes": [
+    {
+      "turn_range": "152-155",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "155",
+        "verbatim_quote": "you re just getting lazy and not pushing yourself i gave you four pages to do and you re not even half way through the first one on one and half so when you have time to work you gotta use that time to work it s not socialize time you gotta use it smart you gotta practice then maybe when you get smarter you can do this stuff on your own"
+      },
+      "context_excerpt": [
+        {
+          "turn": 152,
+          "speaker": "teacher",
+          "text": "how many are here okay how many are here not at all how many are here just a little shaky on it oh good that s important for us to know so when we move on how we can help you best"
+        },
+        {
+          "turn": 153,
+          "speaker": "teacher",
+          "text": "some of you need to make better use of the time working at your seats it s not as good as it should be it s not cause you don t know what you re doing its cause you re wasting some time and hanging out and whatever"
+        },
+        {
+          "turn": 154,
+          "speaker": "teacher",
+          "text": "talk too much"
+        },
+        {
+          "turn": 155,
+          "speaker": "teacher",
+          "text": "you re just getting lazy and not pushing yourself i gave you four pages to do and you re not even half way through the first one on one and half so when you have time to work you gotta use that time to work it s not socialize time you gotta use it smart you gotta practice then maybe when you get smarter you can do this stuff on your own yes will we help you yes but you re more independent then you can do larger numbers all by yourself"
+        },
+        {
+          "turn": 156,
+          "speaker": "teacher",
+          "text": "now go back to your seats please please take your math books where you know where they are tomorrow put away your math books and clean your desks quietly you ll be asked to line up"
+        }
+      ],
+      "categories": [
+        "D",
+        "A"
+      ],
+      "rationale": "Attributes students' incomplete work to laziness ('getting lazy') rather than instruction/task, and 'when you get smarter' frames intelligence as something they currently lack, blending motivation deficit with fixed-ability framing.",
+      "confidence": "high"
+    },
+    {
+      "turn_range": "166-166",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "166",
+        "verbatim_quote": "you re not paying attention when you re here you re not paying attention during the mini lesson we did some problems together and then when you went back you weren t able to figure it out or you didn t push yourself hard enough"
+      },
+      "context_excerpt": [
+        {
+          "turn": 166,
+          "speaker": "teacher",
+          "text": "can i have it please stop stop you have to stop you have to stop don t worry about a clipboard you don t need a clipboard you just need a pencil and a chair you don t need a clipboard right now you just gotta follow directions i asked you to bring a pencil that was it i m gonna ask that you immediately stop playing with the pencil you need to stick it in a pocket inaudible student d you gotta move student d you gotta move student g finish inaudible last time i m gonna ask you student m your breakfast is gone it s in the trash good spot for a pencil right now would be a pocket or a clipboard you don t need a clipboard right now student j so just leave it be you re gonna have to zone in today you re gonna have to focus i m gonna be very tough on my clip chart it s gonna be colorful again you talk you play around you re not following directions your clip is going to move and i hate to say this i don t want you in my room if you re gonna play around we don t have time for it don t deserve to be in my classroom if that s the way you re gonna behave straight out you don t deserve to be in my classroom if that s the way you re gonna behave and i said it to student w yesterday you don t deserve to be part of this community yesterday was sick it was disgusting and now it s on camera your behavior was unacceptable 150 percent you embarrassed yourself you embarrassed your teacher you embarrassed the hans school several too many not one not two not three not four you best turn it around student h turn around the second that i do goodbye thank you take it seriously cause i am we have to move on we took a day on monday to review fractions we took a day yesterday to practice adding and subtracting mixed numbers you had a hard time when you went back on your own it tells me a couple of things you re not paying attention when you re here you re not paying attention during the mini lesson we did some problems together and then when you went back you weren t able to figure it out or you didn t push yourself hard enough i m also finding that you re going back to your seats and you re not doing your work you re just hanging out well you can hang out during swim you can hang out during lunch and do your work with me if i send you back to your desk to do independent work you better do your work don t sit there don t play around don t have conversations practice what you just been taught yesterday you were taught how to add and subtract mixed numbers we had some disruptions it was maybe a little tough to follow but you gotta work harder to follow and if something doesn t make sense you need to ask a question because fractions are really really really hard things to understand i understand that i know that but i have been teaching them to you you learned them in third grade i think you can do a better job focusing and a better job practicing when you go back to your seat take that seriously cause that s the time you re gonna find out teacher i can t do this and that s okay but instead of sitting there and playing around we need to fix the problem today is going to be challenging as well somewhat challenge it looks thanks called counting around the room usually we do with whole numbers usually we do it with maybe 5 maybe 10 maybe 20 some easy landmark numbers i ve created a number line here on the elmo for you we re gonna count around the room we re working with fractions student j so we re gonna count around the room by a fraction student j can you back off just a little bit so we can all focus thank you so much student j i need you to go sit at the gray table please i m sorry that i forgot to say so earlier on the back side please and student a and student g as well can you sit at the gray table on the back side with your back towards the front board student j go around the back side"
+        },
+        {
+          "turn": 167,
+          "speaker": "student",
+          "text": "me too"
+        },
+        {
+          "turn": 168,
+          "speaker": "teacher",
+          "text": "and student t can you scoot away from the table please i ve created a number line we re gonna count around the room by one fourth i don t want you to use the mixed numbers i don t want you to use mixed numbers so you re still with us you just can t be in view that s all i don t want you to use mixed numbers i want you to when it comes time we ll have a conversation about what s gonna happen but think about fractions and think about what s gonna happen when we hit a certain amount of people or a certain number of people student t we re gonna count by one fourth as we count teacher is gonna make a number line and i m gonna keep track of what s happening student t we re gonna start with you i m gonna say 0 you re gonna start we re counting around the room by what"
+        }
+      ],
+      "categories": [
+        "D"
+      ],
+      "rationale": "Explains students' difficulty as a failure to pay attention or 'didn't push yourself hard enough,' locating the problem in student effort/motivation rather than the task or instruction.",
+      "confidence": "medium"
+    }
+  ]
+}

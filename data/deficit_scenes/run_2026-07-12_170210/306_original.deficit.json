@@ -1,0 +1,95 @@
+{
+  "source_document_id": "306_original.csv",
+  "scenes": [
+    {
+      "turn_range": "347-352",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "350",
+        "verbatim_quote": "student d you don t even have it in front of you it s on the floor in front of you and you re not paying attention so for you to throw out that number five means you re just throwing out numbers buddy"
+      },
+      "context_excerpt": [
+        {
+          "turn": 347,
+          "speaker": "multiple students",
+          "text": "inaudible"
+        },
+        {
+          "turn": 348,
+          "speaker": "teacher",
+          "text": "no"
+        },
+        {
+          "turn": 349,
+          "speaker": "multiple students",
+          "text": "eight cubic centimeters"
+        },
+        {
+          "turn": 350,
+          "speaker": "teacher",
+          "text": "i m not talking about that i m strictly asking how many edges these have student d you don t even have it in front of you it s on the floor in front of you and you re not paying attention so for you to throw out that number five means you re just throwing out numbers buddy"
+        },
+        {
+          "turn": 351,
+          "speaker": "student",
+          "text": "12"
+        },
+        {
+          "turn": 352,
+          "speaker": "teacher",
+          "text": "who says 12 well let s count em out okay we ll say that that s your rectangular prism i m gonna go over the edges with this pink piece of chalk and count them off as i go okay and this is what happens when i ask this question most kids do say eight and the eight that they were talking about is they looked at one two three and four and that would be here one two three and four and then they say i got these ones on the bottom so they would say five six seven and eight and they say eight but they forget something has to connect the top and the bottom right one two three four so there are four more so an eight nine ten 11 12 this question is also fair game on your assessment guys so they ve thrown this question out there i don t suspect that they ll ask you how many faces there are you all know that from your surface area or rectangular prisms but that s a fair fair game question to ask how many edges there are in assessment so we need to be good with that everybody set"
+        }
+      ],
+      "categories": [
+        "D"
+      ],
+      "rationale": "The teacher attributes the student's incorrect answer to inattention and characterizes him as 'just throwing out numbers,' framing the error as a motivational/behavioral deficit rather than describing the specific error.",
+      "confidence": "medium"
+    },
+    {
+      "turn_range": "1252-1256",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "1254",
+        "verbatim_quote": "student p you re not really following along with this and consequently every once in awhile you say i don t understand this but when i look up at you you re really not doing the work you re kind of getting distracted here"
+      },
+      "context_excerpt": [
+        {
+          "turn": 1251,
+          "speaker": "multiple students",
+          "text": "12 and a half"
+        },
+        {
+          "turn": 1252,
+          "speaker": "teacher",
+          "text": "and two eighths is what percent"
+        },
+        {
+          "turn": 1253,
+          "speaker": "multiple students",
+          "text": "25 percent"
+        },
+        {
+          "turn": 1254,
+          "speaker": "teacher",
+          "text": "well i d be willing to bet then that i could just go ahead and write 0 25 there couldn t i and i know that three eighths is three groups of 12 and a half percent 37 and a half percent so that s 0 375 37 and a half percent this is where we see the equivalency of our fraction work from earlier in the year start to really pay off student p you re not really following along with this and consequently every once in awhile you say i don t understand this but when i look up at you you re really not doing the work you re kind of getting distracted here so we know that four divided by eight we already showed that as an equivalent of 0 5 how five eighths that s got to be 50 percent plus another 12 and a half percent right did anybody get 0 625 okay again we re seeing the connection between the fractions how we can use the fraction work that we already did this year to help us with the decimal work you have to use the calculators somewhat but after awhile you can convert and say hey we re working eighths right here so this has to be 0 625 now let s think of another one how about fourths we did a lot of work with fourths when we divide we take one divided by four what did you guys get"
+        },
+        {
+          "turn": 1255,
+          "speaker": "student",
+          "text": "0 25"
+        },
+        {
+          "turn": 1256,
+          "speaker": "teacher",
+          "text": "zero point what 25 cause that is a fourth right and then we have a half gosh if i i ve only done two here but i d be willing to bet i could start a pattern what would i put here"
+        }
+      ],
+      "categories": [
+        "D"
+      ],
+      "rationale": "The teacher attributes the student's stated lack of understanding to not doing the work and being distracted, framing the difficulty as a behavioral/motivational deficit in the student.",
+      "confidence": "medium"
+    }
+  ]
+}

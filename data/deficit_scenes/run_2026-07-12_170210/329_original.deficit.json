@@ -1,0 +1,60 @@
+{
+  "source_document_id": "329_original.csv",
+  "scenes": [
+    {
+      "turn_range": "1104-1111",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "1109",
+        "verbatim_quote": "nope you re just wasting time there you know that"
+      },
+      "context_excerpt": [
+        {
+          "turn": 1104,
+          "speaker": "teacher",
+          "text": "so what should you do get to work get to work please what are the two problems you re trying to solve here could you write those down"
+        },
+        {
+          "turn": 1105,
+          "speaker": "teacher",
+          "text": "on the cluster problems show how you re solving the final problem question"
+        },
+        {
+          "turn": 1106,
+          "speaker": "student",
+          "text": "inaudible"
+        },
+        {
+          "turn": 1107,
+          "speaker": "teacher",
+          "text": "i don t see your work nope"
+        },
+        {
+          "turn": 1108,
+          "speaker": "student",
+          "text": "inaudible"
+        },
+        {
+          "turn": 1109,
+          "speaker": "teacher",
+          "text": "nope you re just wasting time there you know that"
+        },
+        {
+          "turn": 1110,
+          "speaker": "student",
+          "text": "yes i know that"
+        },
+        {
+          "turn": 1111,
+          "speaker": "teacher",
+          "text": "get to work"
+        }
+      ],
+      "categories": [
+        "D"
+      ],
+      "rationale": "The teacher attributes the student's lack of progress to willful time-wasting rather than to the task or needed support, which frames motivation as a deficit. Ambiguous because it describes an observed in-the-moment behavior rather than a permanent trait.",
+      "confidence": "low"
+    }
+  ]
+}

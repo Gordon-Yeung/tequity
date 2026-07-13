@@ -1,0 +1,55 @@
+{
+  "source_document_id": "310_original.csv",
+  "scenes": [
+    {
+      "turn_range": "261-265",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "263",
+        "verbatim_quote": "maybe i m asking the question too difficult for you"
+      },
+      "context_excerpt": [
+        {
+          "turn": 260,
+          "speaker": "student",
+          "text": "well sometimes inaudible"
+        },
+        {
+          "turn": 261,
+          "speaker": "teacher",
+          "text": "i want to make sure you guys understand remember these are parallel lines cut by a transversal we re saying the corresponding angles will be equal are you copying this okay student j"
+        },
+        {
+          "turn": 262,
+          "speaker": "student",
+          "text": "well sometimes when they re non parallel"
+        },
+        {
+          "turn": 263,
+          "speaker": "teacher",
+          "text": "okay we re not looking at non parallel i want to know with parallel lines which angles here are equal maybe i m asking the question too difficult for you which angles are equal can you give me two angles that are equal"
+        },
+        {
+          "turn": 264,
+          "speaker": "student",
+          "text": "a and c"
+        },
+        {
+          "turn": 265,
+          "speaker": "teacher",
+          "text": "a and c are equal we know that because they re opposite but i m saying which angles here equal angles down here okay student j"
+        },
+        {
+          "turn": 266,
+          "speaker": "student",
+          "text": "a and e"
+        }
+      ],
+      "categories": [
+        "E"
+      ],
+      "rationale": "The teacher locates the difficulty in the student's perceived inability to grasp the question rather than in the task or phrasing, subtly framing the student as unable to handle the demand.",
+      "confidence": "low"
+    }
+  ]
+}

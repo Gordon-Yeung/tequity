@@ -1,0 +1,219 @@
+{
+  "source_document_id": "309_original.csv",
+  "scenes": [
+    {
+      "turn_range": "225-229",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "227",
+        "verbatim_quote": "those people that are not paying attention are the ones that won t be able to do it we know that if you cannot see i could tell ones that will be able to do it"
+      },
+      "context_excerpt": [
+        {
+          "turn": 224,
+          "speaker": "student",
+          "text": "yeah eight"
+        },
+        {
+          "turn": 225,
+          "speaker": "teacher",
+          "text": "is the thing into eight vans"
+        },
+        {
+          "turn": 226,
+          "speaker": "student",
+          "text": "eight vans that would be"
+        },
+        {
+          "turn": 227,
+          "speaker": "teacher",
+          "text": "now hold on another way 44 people some people are not see 44 into that s another word into another way of writing into into 8 yeah 44 people into see this into she s not paying attention to me into two ways of writing it for 44 people into a group you could yeah 44 people into a group into a group into a group sometime you find it written that way but most of the time it s this way that means into now we learn yesterday after they write it this way you ll write it that way yourself those people that are not paying attention are the ones that won t be able to do it we know that if you cannot see i could tell ones that will be able to do it yep like student m and c doesn t go like this she goes like yeah remember we said that seating is really this way all right so we said hey"
+        },
+        {
+          "turn": 228,
+          "speaker": "student",
+          "text": "inaudible"
+        },
+        {
+          "turn": 229,
+          "speaker": "teacher",
+          "text": "you can t see all right go this way we could say we already know if i have 44 and i see my 40 and i know my time table and i know i m gonna time hm to get hm yeah did i do it that way now how many eight into"
+        }
+      ],
+      "categories": [
+        "D",
+        "E"
+      ],
+      "rationale": "The teacher predicts that certain students 'won't be able to do it' and claims to already know who can and cannot succeed, attributing inability to behavior and lowering expectations before the work is attempted.",
+      "confidence": "high"
+    },
+    {
+      "turn_range": "634-638",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "636",
+        "verbatim_quote": "those people that are talking they won t be able to do what we re going to have them do"
+      },
+      "context_excerpt": [
+        {
+          "turn": 633,
+          "speaker": "student",
+          "text": "60"
+        },
+        {
+          "turn": 634,
+          "speaker": "teacher",
+          "text": "so it s 60 we did that we did that the day before or yesterday so one third must be"
+        },
+        {
+          "turn": 635,
+          "speaker": "teacher",
+          "text": "so it s one third is mm mm mm so i have inaudible three"
+        },
+        {
+          "turn": 636,
+          "speaker": "teacher",
+          "text": "now i see some people are looking some people are talking and some people are see those people that are talking they won t be able to do what we re going to have them do inaudible all right hold on hold on let s wait for the talking so i can do a little bit of it and inaudible explain my favorite student n good job so one third see this is a third another third which is right there"
+        },
+        {
+          "turn": 637,
+          "speaker": "teacher",
+          "text": "so that s three but one third of this"
+        },
+        {
+          "turn": 638,
+          "speaker": "student",
+          "text": "one third"
+        }
+      ],
+      "categories": [
+        "D",
+        "E"
+      ],
+      "rationale": "The teacher forecasts that talking students will be unable to complete the task, attributing anticipated failure to behavior rather than instruction, a lowered-expectation prediction.",
+      "confidence": "high"
+    },
+    {
+      "turn_range": "2449-2453",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "2451",
+        "verbatim_quote": "see student r is not really paying attention i don t think he ll be able to do a good job"
+      },
+      "context_excerpt": [
+        {
+          "turn": 2449,
+          "speaker": "teacher",
+          "text": "we did the product i m sorry product for our division and then we look for how many look up here how many how many this is how many"
+        },
+        {
+          "turn": 2450,
+          "speaker": "student",
+          "text": "groups"
+        },
+        {
+          "turn": 2451,
+          "speaker": "teacher",
+          "text": "how many groups of 16 thank you very much how many groups now we re going to build it into how many groups of 32 this is our prediction we did for 16 now the next one would be 32 we don t need to tell yes because people have different numbers and i want people to kind of work it up build the tower up to not to 16 now but to 32 but you can predict how could you predict that see student r is not really paying attention i don t think he ll be able to do a good job student r could you help us how could you predict if i know for 16"
+        },
+        {
+          "turn": 2452,
+          "speaker": "student",
+          "text": "yes"
+        },
+        {
+          "turn": 2453,
+          "speaker": "teacher",
+          "text": "he s good now listen to student r if i know for 16 multiple this is my product"
+        }
+      ],
+      "categories": [
+        "D",
+        "E"
+      ],
+      "rationale": "The teacher names a specific student and predicts he won't be able to do a good job, attributing anticipated poor performance to attention—a lowered expectation stated aloud.",
+      "confidence": "high"
+    },
+    {
+      "turn_range": "1299-1301",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "1300",
+        "verbatim_quote": "she can t she can t work on her own"
+      },
+      "context_excerpt": [
+        {
+          "turn": 1297,
+          "speaker": "teacher",
+          "text": "she helped you too i like the number line you re doing i like your number line and she s showing okay now you may sit over here and now how about them"
+        },
+        {
+          "turn": 1298,
+          "speaker": "student",
+          "text": "i could stay i could stay here because"
+        },
+        {
+          "turn": 1299,
+          "speaker": "teacher",
+          "text": "yeah okay that s good that s good now let s see those that are working now if you ve finished the first page i want you to go in the second one second"
+        },
+        {
+          "turn": 1300,
+          "speaker": "teacher",
+          "text": "she can t she can t work on her own"
+        },
+        {
+          "turn": 1301,
+          "speaker": "student",
+          "text": "i tell her that i need help and she don t want to"
+        }
+      ],
+      "categories": [
+        "B",
+        "E"
+      ],
+      "rationale": "The teacher characterizes a student by what she lacks—the inability to work independently—rather than describing a specific momentary difficulty.",
+      "confidence": "medium"
+    },
+    {
+      "turn_range": "1322-1324",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "1323",
+        "verbatim_quote": "he is trying but i don t think he gets the big idea"
+      },
+      "context_excerpt": [
+        {
+          "turn": 1320,
+          "speaker": "teacher",
+          "text": "okay that s fine let me see i know i need someone that can explain clearly"
+        },
+        {
+          "turn": 1321,
+          "speaker": "student",
+          "text": "that s me"
+        },
+        {
+          "turn": 1322,
+          "speaker": "teacher",
+          "text": "you inaudible"
+        },
+        {
+          "turn": 1323,
+          "speaker": "teacher",
+          "text": "okay you need to sit you need a chair this one you may use and then you ll put it back so look at this he is trying but i don t think he gets the big idea ask him to explain to you what do you want"
+        },
+        {
+          "turn": 1324,
+          "speaker": "student",
+          "text": "inaudible"
+        }
+      ],
+      "categories": [
+        "G"
+      ],
+      "rationale": "Spoken to a peer helper, the teacher characterizes the student as not grasping 'the big idea,' a sweeping comprehension judgment rather than a targeted error description.",
+      "confidence": "low"
+    }
+  ]
+}

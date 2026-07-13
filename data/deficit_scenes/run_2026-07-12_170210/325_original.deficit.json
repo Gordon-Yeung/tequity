@@ -1,0 +1,55 @@
+{
+  "source_document_id": "325_original.csv",
+  "scenes": [
+    {
+      "turn_range": "165-171",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "168",
+        "verbatim_quote": "if splitting up the fraction you re finding might be a little too difficult you don t have to do it if you re finding that it s too difficult you need to let me know so i can come over and explain it to you"
+      },
+      "context_excerpt": [
+        {
+          "turn": 165,
+          "speaker": "student",
+          "text": "it s 7 10 i can use 6 10 to get inaudible and then i can use 1 10 to get inaudible"
+        },
+        {
+          "turn": 166,
+          "speaker": "teacher",
+          "text": "i see what you did so you used 6 10 which is equal to what"
+        },
+        {
+          "turn": 167,
+          "speaker": "student",
+          "text": "to 3 5"
+        },
+        {
+          "turn": 168,
+          "speaker": "teacher",
+          "text": "3 5 so you were 3 5 away from a whole and then you used that 1 10 excellent student m and student c how are we doing over there boys and girls if splitting up the fraction you re finding might be a little too difficult you don t have to do it if you re finding that it s too difficult you need to let me know so i can come over and explain it to you i love the way you re thinking over there i like the way you were splitting up the tenths and thinking about the fifths and then tomorrow we re going to expand our game board and play close to two so the chip that lands on two wholes and we ll be using our other fraction cards look at the sixths student r student m i don t want you to tell him okay student r one third is equal to two sixths how far are you from one whole on the sixths track what do you mean"
+        },
+        {
+          "turn": 169,
+          "speaker": "student",
+          "text": "5 6 4 6 so then i m going to hear and then i m going to have 3 6 left over"
+        },
+        {
+          "turn": 170,
+          "speaker": "teacher",
+          "text": "no although i wonder if we can just make that up as our own rule that would make the game a lot easier to win wouldn t it"
+        },
+        {
+          "turn": 171,
+          "speaker": "student",
+          "text": "all the cards are old"
+        }
+      ],
+      "categories": [
+        "E"
+      ],
+      "rationale": "Offering students the option to opt out of the higher-demand task (splitting fractions) on the basis of it being 'too difficult' may lower cognitive demand; however it is framed as optional scaffolding with an offer to explain, so it is borderline.",
+      "confidence": "low"
+    }
+  ]
+}

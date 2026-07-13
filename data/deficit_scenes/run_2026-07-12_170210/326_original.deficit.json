@@ -1,0 +1,101 @@
+{
+  "source_document_id": "326_original.csv",
+  "scenes": [
+    {
+      "turn_range": "1325-1330",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "1327",
+        "verbatim_quote": "student d oh i know he didn t even get a chance to play cause you re slowpokes"
+      },
+      "context_excerpt": [
+        {
+          "turn": 1324,
+          "speaker": "student",
+          "text": "inaudible"
+        },
+        {
+          "turn": 1325,
+          "speaker": "teacher",
+          "text": "so oh we re still on the last round okay what"
+        },
+        {
+          "turn": 1326,
+          "speaker": "student",
+          "text": "inaudible"
+        },
+        {
+          "turn": 1327,
+          "speaker": "teacher",
+          "text": "all right okay student d oh i know he didn t even get a chance to play cause you re slowpokes"
+        },
+        {
+          "turn": 1328,
+          "speaker": "student",
+          "text": "inaudible"
+        },
+        {
+          "turn": 1329,
+          "speaker": "teacher",
+          "text": "all right do you have yours out want to play around with that do you student a do you know how to play now"
+        },
+        {
+          "turn": 1330,
+          "speaker": "student",
+          "text": "inaudible"
+        }
+      ],
+      "categories": [
+        "D",
+        "B"
+      ],
+      "rationale": "The teacher labels the students collectively as 'slowpokes,' attributing the pacing problem to the students as a personal deficit rather than to the task or instruction.",
+      "confidence": "medium"
+    },
+    {
+      "turn_range": "1525-1530",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "1528",
+        "verbatim_quote": "some people are not listening i don t think or even trying"
+      },
+      "context_excerpt": [
+        {
+          "turn": 1525,
+          "speaker": "student",
+          "text": "inaudible"
+        },
+        {
+          "turn": 1526,
+          "speaker": "teacher",
+          "text": "the first one yeah"
+        },
+        {
+          "turn": 1527,
+          "speaker": "student",
+          "text": "this"
+        },
+        {
+          "turn": 1528,
+          "speaker": "teacher",
+          "text": "yeah so let s see what he did some people are not listening i don t think or even trying some of you are trying though that s good how many if you had a big basket with 701 cookies in it and you need to put them in groups of 27 how many would go in each group"
+        },
+        {
+          "turn": 1529,
+          "speaker": "multiple students",
+          "text": "twenty six"
+        },
+        {
+          "turn": 1530,
+          "speaker": "teacher",
+          "text": "twenty six in each group and one left over"
+        }
+      ],
+      "categories": [
+        "D"
+      ],
+      "rationale": "The phrase 'or even trying' attributes lack of engagement to student unwillingness/effort rather than to instructional factors, a deficit attribution for motivation.",
+      "confidence": "medium"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "source_document_id": "338_original.csv",
+  "scenes": [
+    {
+      "turn_range": "826-831",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "829",
+        "verbatim_quote": "student j you re being a mess you re standing up you re sitting down i want you to stand up stand up sit down on your chair push it in you know what to do student j"
+      },
+      "context_excerpt": [
+        {
+          "turn": 826,
+          "speaker": "teacher",
+          "text": "alright let s do it from the beginning come back using this thing you know now i want you to do it by yourself the denominator tells you how many parts the whole is divided what is the whole here"
+        },
+        {
+          "turn": 827,
+          "speaker": "student",
+          "text": "30"
+        },
+        {
+          "turn": 828,
+          "speaker": "student",
+          "text": "come on i know how to do it better than that"
+        },
+        {
+          "turn": 829,
+          "speaker": "teacher",
+          "text": "what is that try to understand how to use what is the whole student j you re being a mess you re standing up you re sitting down i want you to stand up stand up sit down on your chair push it in you know what to do student j"
+        },
+        {
+          "turn": 830,
+          "speaker": "student",
+          "text": "call on me"
+        },
+        {
+          "turn": 831,
+          "speaker": "teacher",
+          "text": "inaudible"
+        }
+      ],
+      "categories": [
+        "D"
+      ],
+      "rationale": "\"You're being a mess\" is a negative personal characterization of the student rather than a neutral description of the specific behavior; however, it is tied to observable in-the-moment actions (standing/sitting), making it borderline behavior-management rather than a stable deficit attribution.",
+      "confidence": "low"
+    }
+  ]
+}

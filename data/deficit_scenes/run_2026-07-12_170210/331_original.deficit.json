@@ -1,0 +1,50 @@
+{
+  "source_document_id": "331_original.csv",
+  "scenes": [
+    {
+      "turn_range": "470-472",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "471",
+        "verbatim_quote": "i have no idea why she s reading and you re already writing things down that makes me very nervous and says you don t know how to work in a group"
+      },
+      "context_excerpt": [
+        {
+          "turn": 469,
+          "speaker": "student",
+          "text": "so inaudible"
+        },
+        {
+          "turn": 470,
+          "speaker": "teacher",
+          "text": "this is not the u s standard algorithm this is the u s standard algorithm this is something else that both the authors of the curriculum and i wanted you to see this is another way to do an up and down way but it s not the standard algorithm number two start talking about the answer to number two and then take some time and jot down your ideas then somebody in your group read problem number three and take some time and talk about that and then start jotting down your ideas while you re doing that i ll hand out the worksheet that i m giving you so that you have extra time to practice how to use the u s standard algorithm are we clear on that good you may begin"
+        },
+        {
+          "turn": 471,
+          "speaker": "teacher",
+          "text": "i have no idea why she s reading and you re already writing things down that makes me very nervous and says you don t know how to work in a group"
+        },
+        {
+          "turn": 472,
+          "speaker": "teacher",
+          "text": "how would you explain to someone else how solution one"
+        },
+        {
+          "turn": 473,
+          "speaker": "student",
+          "text": "inaudible eleven"
+        },
+        {
+          "turn": 474,
+          "speaker": "teacher",
+          "text": "okay so when you re looking at solution number one how do you explain what s happening in that problem where did we get the 300 where did we get the 60 where did we get the 11"
+        }
+      ],
+      "categories": [
+        "D"
+      ],
+      "rationale": "The teacher attributes an observed behavior (writing while a partner reads) to a characterization of the student's inability ('you don't know how to work in a group') rather than framing it as a correctable task/process expectation.",
+      "confidence": "medium"
+    }
+  ]
+}

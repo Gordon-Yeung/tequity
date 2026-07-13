@@ -1,0 +1,187 @@
+{
+  "source_document_id": "348_original.csv",
+  "scenes": [
+    {
+      "turn_range": "400-406",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "403",
+        "verbatim_quote": "now you re acting like kindergarteners instead of fifth graders not acceptable"
+      },
+      "context_excerpt": [
+        {
+          "turn": 400,
+          "speaker": "multiple students",
+          "text": "we re done"
+        },
+        {
+          "turn": 401,
+          "speaker": "teacher",
+          "text": "oh wait"
+        },
+        {
+          "turn": 402,
+          "speaker": "multiple students",
+          "text": "crosstalk"
+        },
+        {
+          "turn": 403,
+          "speaker": "teacher",
+          "text": "now you re acting like kindergarteners instead of fifth graders not acceptable okay so tell me about your box"
+        },
+        {
+          "turn": 404,
+          "speaker": "student",
+          "text": "okay so inaudible"
+        },
+        {
+          "turn": 405,
+          "speaker": "teacher",
+          "text": "okay so did you"
+        },
+        {
+          "turn": 406,
+          "speaker": "student",
+          "text": "inaudible"
+        }
+      ],
+      "categories": [
+        "D",
+        "F"
+      ],
+      "rationale": "Frames students' behavior through a demeaning comparison to younger children rather than describing the specific off-task behavior, characterizing them by falling short of a grade-level standard.",
+      "confidence": "medium"
+    },
+    {
+      "turn_range": "613-618",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "616",
+        "verbatim_quote": "i don t understand why i have some students who really can follow directions and others are not able to follow directions"
+      },
+      "context_excerpt": [
+        {
+          "turn": 613,
+          "speaker": "student",
+          "text": "oh i know"
+        },
+        {
+          "turn": 614,
+          "speaker": "teacher",
+          "text": "oh student j said oh i know i have another person who said oh i know and you young man you re not learning right now because you re listening to someone else talking while we are having a mathematical discussion"
+        },
+        {
+          "turn": 615,
+          "speaker": "student",
+          "text": "i have a name"
+        },
+        {
+          "turn": 616,
+          "speaker": "teacher",
+          "text": "all right so some thought student m you re not paying attention student e turn around student m turn your body around whatever you re playing with give that to me you know i don t understand why i have some students who really can follow directions and others are not able to follow directions so what s your thought what s your thought"
+        },
+        {
+          "turn": 617,
+          "speaker": "student",
+          "text": "because all the"
+        },
+        {
+          "turn": 618,
+          "speaker": "teacher",
+          "text": "but just think about these"
+        }
+      ],
+      "categories": [
+        "B",
+        "F"
+      ],
+      "rationale": "Sorts students into a group defined by a lack ('not able to follow directions') and frames them comparatively against those who can, rather than addressing the task or instructions.",
+      "confidence": "medium"
+    },
+    {
+      "turn_range": "2603-2607",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "2605",
+        "verbatim_quote": "i don t know if you really don t know or you re being stubborn and not doing the work"
+      },
+      "context_excerpt": [
+        {
+          "turn": 2603,
+          "speaker": "teacher",
+          "text": "oh good so let s write that fraction here so that point is 5 5 that s awesome okay so now we have 1 5 here and 5 5 over here so what s going on in the middle so let s put those other points the points between 1 5 and 5 5 right here so let me see is that what do you think what point is this one okay you know what i m not very happy over here you re supposed to be working together and student k i m very disappointed here you should be working with her"
+        },
+        {
+          "turn": 2604,
+          "speaker": "student",
+          "text": "we are i m just inaudible problem"
+        },
+        {
+          "turn": 2605,
+          "speaker": "teacher",
+          "text": "okay right now you re on 2 let s move to 3 and 4 and stop talking to student k move your desk back please both of you let s go over here ooh where is 1 5 let s continue student k i think i m going to spend recess with a group of you those who are not getting it okay i don t know if you really don t know or you re being stubborn and not doing the work i will spend recess with you as a group so that we can work with this together because all of you should be able to access 2 the only question you should have a problem with is 4 2 should be easy 3 maybe 4 okay so i want to see the work otherwise i ll see you during recess okay so let s move on all right you sure"
+        },
+        {
+          "turn": 2606,
+          "speaker": "student",
+          "text": "no"
+        },
+        {
+          "turn": 2607,
+          "speaker": "teacher",
+          "text": "if this is 1 5 does it makes sense that 2 5 is over here"
+        }
+      ],
+      "categories": [
+        "D"
+      ],
+      "rationale": "Attributes students' difficulty to a character/motivational flaw ('being stubborn') rather than to the demand of the task or gaps in instruction.",
+      "confidence": "medium"
+    },
+    {
+      "turn_range": "1004-1008",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "1006",
+        "verbatim_quote": "why is it so difficult for you guys to work in groups"
+      },
+      "context_excerpt": [
+        {
+          "turn": 1003,
+          "speaker": "student",
+          "text": "i already did"
+        },
+        {
+          "turn": 1004,
+          "speaker": "teacher",
+          "text": "wait a minute did you decide inaudible or did you consult with the group"
+        },
+        {
+          "turn": 1005,
+          "speaker": "student",
+          "text": "while you was talking"
+        },
+        {
+          "turn": 1006,
+          "speaker": "teacher",
+          "text": "then did you check with your no so group work so that means you have to communicate with these three people so now once you he s already figured out the number of students why don t you do that so that you can check your answers announcement so i don t see a lot of communications going on here you re working as a group so how are we going to do that student d what are you doing you re working so do they know what you re doing i mean we ve done this before why is it so difficult for you guys to work in groups"
+        },
+        {
+          "turn": 1007,
+          "speaker": "student",
+          "text": "you re adding all the students together"
+        },
+        {
+          "turn": 1008,
+          "speaker": "teacher",
+          "text": "so we are adding all the students so are you doing that student m"
+        }
+      ],
+      "categories": [
+        "D"
+      ],
+      "rationale": "Rhetorical framing that positions the students as inherently deficient at collaboration rather than examining the group structure or supports; borderline management comment.",
+      "confidence": "low"
+    }
+  ]
+}

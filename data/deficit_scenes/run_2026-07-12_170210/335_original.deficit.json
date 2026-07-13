@@ -1,0 +1,50 @@
+{
+  "source_document_id": "335_original.csv",
+  "scenes": [
+    {
+      "turn_range": "823-828",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "826",
+        "verbatim_quote": "i know student e i want to show people that don t get it"
+      },
+      "context_excerpt": [
+        {
+          "turn": 823,
+          "speaker": "student",
+          "text": "4 equal pieces"
+        },
+        {
+          "turn": 824,
+          "speaker": "teacher",
+          "text": "4 equal pieces"
+        },
+        {
+          "turn": 825,
+          "speaker": "student",
+          "text": "3"
+        },
+        {
+          "turn": 826,
+          "speaker": "teacher",
+          "text": "i know student e i want to show people that don t get it"
+        },
+        {
+          "turn": 827,
+          "speaker": "student",
+          "text": "i get it"
+        },
+        {
+          "turn": 828,
+          "speaker": "teacher",
+          "text": "4 equal pieces 3 3 3 3 25 percent so 3 pieces right 1 2 3 and then how many does it say that charles ate out of 12"
+        }
+      ],
+      "categories": [
+        "B"
+      ],
+      "rationale": "The teacher groups/labels certain students by their lack of understanding ('people that don't get it'), framing them by deficit rather than describing the specific concept not yet mastered.",
+      "confidence": "medium"
+    }
+  ]
+}

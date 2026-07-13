@@ -1,0 +1,188 @@
+{
+  "source_document_id": "349_original.csv",
+  "scenes": [
+    {
+      "turn_range": "107-113",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "110",
+        "verbatim_quote": "i m getting really bothered that i m saying the same thing over and over again and it s fascinating to me that my english speakers are not understanding me"
+      },
+      "context_excerpt": [
+        {
+          "turn": 107,
+          "speaker": "student",
+          "text": "inaudible"
+        },
+        {
+          "turn": 108,
+          "speaker": "teacher",
+          "text": "can you show it over here can you draw it on yours and i ll copy up here student s the only reason i can t have you up here is your grandma didn t give me permission to have you on the video camera sorry they ll just have to imagine how adorable you are"
+        },
+        {
+          "turn": 109,
+          "speaker": "student",
+          "text": "it s messed up"
+        },
+        {
+          "turn": 110,
+          "speaker": "teacher",
+          "text": "that s why there s a ton honey that s what learning is all about we love making mistakes in here because it means we re trying to learn so do it correctly over there student j has a question what s up speaking spanish i love that you re getting her to think good job use a ruler and then check that out i want you to prove that go one second do it again good now let s count we know that s not one full one is it it s chopped off let s color in i m going to do this one this is not full though so let s count how many full ones what if we moved is it half okay interesting what about this one you keep on going with that i ll be back go to your seat and raise your hand interesting that s one way to do it color in the other pieces other colors student a they need to be touching not just the corners and i asked you to do that not really impressed with your listening right now student c you may go to the bathroom yes let s see student b what s up can you color the rest in in four different colors nice job i thought you had a way to show me can you color the one i have on the board right now four different colors you re going to have to go over orange in a different color because i asked for four different colors color the way i have it on the board that s not it erase this please use four different colors interesting then we ll be you re saying that these are bigger than that is what you think interesting okay do you agree with this let s try this is that side the same as this side is this half right here that s the half that way interesting okay so then if we cut it this way you re saying that s now you re saying is this half the same as this half but those are not the same right there it s got to be let s talk about why let me come back to you okay i love this you should have four different colors right now and you should have it colored in the way i have it on the board and continue splitting it so there s four different pieces student a you still haven t done what i ve done on the board i don t think they re the same there s four here and there s two here that s not the same don t erase it try again there s two colored in here and four colored in there and that s not the same they need to be touching i m getting really bothered that i m saying the same thing over and over again and it s fascinating to me that my english speakers are not understanding me let s take a look up here again let s do this together please great start continue now we ve got going on up here one piece eyes up here please we know that this is one fourth because it s 1 2 3 4 5 6 anytime i m coloring in six squares that are touching that are together we know that that is the same as one fourth now what i m going to do i m going to use different colors so you can see i asked you to use four different colors to show me student j put it down that s not what i asked you to do student j we ve colored this in this is six six equals one fourth i m going to do it again i think i ll do it on this side over here 1 2 3 4 5 6 is that the same amount as this"
+        },
+        {
+          "turn": 111,
+          "speaker": "multiple students",
+          "text": "yes"
+        },
+        {
+          "turn": 112,
+          "speaker": "teacher",
+          "text": "why student p"
+        },
+        {
+          "turn": 113,
+          "speaker": "student",
+          "text": "it s the same amount"
+        }
+      ],
+      "categories": [
+        "G",
+        "C"
+      ],
+      "rationale": "The teacher characterizes students as a group ('my english speakers') by their failure to understand, locating the problem in the students rather than the instruction, and frames it as surprising/deficient that they aren't grasping it.",
+      "confidence": "medium"
+    },
+    {
+      "turn_range": "443-447",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "445",
+        "verbatim_quote": "why is student b the only one here that knows what to do"
+      },
+      "context_excerpt": [
+        {
+          "turn": 442,
+          "speaker": "student",
+          "text": "draw pictures"
+        },
+        {
+          "turn": 443,
+          "speaker": "teacher",
+          "text": "draw a picture to show how we solved it the same way we did two times over here student b what do you want to add if you re confused go see student b s any questions right now wonderful get to work"
+        },
+        {
+          "turn": 444,
+          "speaker": "student",
+          "text": "speaking spanish"
+        },
+        {
+          "turn": 445,
+          "speaker": "teacher",
+          "text": "which one are you missing tell me in english nice job where is the black marker i was using it wasn t i i will look for your black marker and when i find it i will give it to you beautiful write all that here then draw me a picture maybe an array side conversation why is student b the only one here that knows what to do"
+        },
+        {
+          "turn": 446,
+          "speaker": "student",
+          "text": "student i student e they did this"
+        },
+        {
+          "turn": 447,
+          "speaker": "teacher",
+          "text": "are you serious"
+        }
+      ],
+      "categories": [
+        "F",
+        "G"
+      ],
+      "rationale": "Defines the whole class by what they lack—implying that everyone except one student does not know what to do—a comparative/sweeping deficit characterization.",
+      "confidence": "medium"
+    },
+    {
+      "turn_range": "478-483",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "481",
+        "verbatim_quote": "he was the only one who knew what to do and you were a goofball on camera"
+      },
+      "context_excerpt": [
+        {
+          "turn": 478,
+          "speaker": "student",
+          "text": "he bought"
+        },
+        {
+          "turn": 479,
+          "speaker": "teacher",
+          "text": "how many"
+        },
+        {
+          "turn": 480,
+          "speaker": "student",
+          "text": "24"
+        },
+        {
+          "turn": 481,
+          "speaker": "teacher",
+          "text": "oranges can you write that whole sentence i bet that only help him when he needs help don t show him the answer can you write that whole sentence beautiful i m sorry he was the only one who knew what to do and you were a goofball on camera i m not going to give you candy for that side conversation boys and girls unfortunately our time is up our kindergarten buddies are coming in a minute if you have one or two quick things to add to your poster please do that i d like you to gather back on the rug if you haven t had time to finish your poster we can finish them tomorrow thank you very much"
+        },
+        {
+          "turn": 482,
+          "speaker": "student",
+          "text": "is the answer 8 or 7"
+        },
+        {
+          "turn": 483,
+          "speaker": "teacher",
+          "text": "interesting you guys did division here let s take a look when ms s orders oranges from the fruit company they come in boxes each box has 40 oranges inside last week ms s ordered 6 boxes"
+        }
+      ],
+      "categories": [
+        "D",
+        "F"
+      ],
+      "rationale": "Labels a student ('goofball') and frames the rest comparatively as not knowing what to do, attributing failure to the student rather than the task.",
+      "confidence": "medium"
+    },
+    {
+      "turn_range": "814-818",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "817",
+        "verbatim_quote": "well since you haven t done much today i don t think you really have a right to be tired"
+      },
+      "context_excerpt": [
+        {
+          "turn": 814,
+          "speaker": "student",
+          "text": "can we have snack time right now"
+        },
+        {
+          "turn": 815,
+          "speaker": "teacher",
+          "text": "can you stop touching that again please thank you we re going to go back to our seats we re going to do a little bit of independent work in our books i m going to show you the page page 55 okay"
+        },
+        {
+          "turn": 816,
+          "speaker": "student",
+          "text": "i m tired of doing work"
+        },
+        {
+          "turn": 817,
+          "speaker": "teacher",
+          "text": "well since you haven t done much today i don t think you really have a right to be tired she s telling you not to touch she doesn t want you to get in trouble she s a good friend thank you stop it"
+        },
+        {
+          "turn": 818,
+          "speaker": "student",
+          "text": "i m not touching that"
+        }
+      ],
+      "categories": [
+        "D"
+      ],
+      "rationale": "Attributes the student's stated fatigue to a lack of effort/productivity, a deficit framing of the student's motivation rather than addressing the work.",
+      "confidence": "low"
+    }
+  ]
+}

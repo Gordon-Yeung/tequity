@@ -1,0 +1,100 @@
+{
+  "source_document_id": "312_original.csv",
+  "scenes": [
+    {
+      "turn_range": "254-257",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "257",
+        "verbatim_quote": "student a i think you re gonna have some problem doing this because you re not listening"
+      },
+      "context_excerpt": [
+        {
+          "turn": 254,
+          "speaker": "student",
+          "text": "inaudible"
+        },
+        {
+          "turn": 255,
+          "speaker": "teacher",
+          "text": "13 to 14 boys and girls look up here please so from here to here we have one and there fourths is that clear so from here to here we have another three fourths right"
+        },
+        {
+          "turn": 256,
+          "speaker": "student",
+          "text": "no"
+        },
+        {
+          "turn": 257,
+          "speaker": "teacher",
+          "text": "no one two three then we have this part then we have this part are you following now how do we make another three fourths student a i think you re gonna have some problem doing this because you re not listening put down your pencil student f put down the pencil please eyes up here so if you were to continue this number line would that be another three fourths student i yes but do we have that much we don t have that much right so how much do we have out of that"
+        },
+        {
+          "turn": 258,
+          "speaker": "student",
+          "text": "we have two out of"
+        },
+        {
+          "turn": 259,
+          "speaker": "teacher",
+          "text": "don t we have two parts out of"
+        },
+        {
+          "turn": 260,
+          "speaker": "multiple students",
+          "text": "three pieces"
+        }
+      ],
+      "categories": [
+        "D"
+      ],
+      "rationale": "The teacher attributes the student's anticipated difficulty to a behavior/motivation deficit ('not listening') rather than to task or instruction; borderline with classroom management.",
+      "confidence": "low"
+    },
+    {
+      "turn_range": "1336-1338",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "1337",
+        "verbatim_quote": "maybe there are a couple of problems with other things being careless for example the pattern that you miscalculated then something else just being careless"
+      },
+      "context_excerpt": [
+        {
+          "turn": 1335,
+          "speaker": "teacher",
+          "text": "the bottom of the surface here you said okay so surface for example this one has 5 across and 4 this way so what does that mean the surface has 20 squares and if you were to put cubes you can put 20 cubes right the bottom layer and why do you multiply by 3 student d"
+        },
+        {
+          "turn": 1336,
+          "speaker": "student",
+          "text": "because that s the height"
+        },
+        {
+          "turn": 1337,
+          "speaker": "teacher",
+          "text": "because that s the height that s the 3 layers right so if you were to take apart the 3 layers then you have 3 layers of cube any other ways that we tried or you tried no okay so last time you made this box and this is box 1 and we did volume and i would say everyone did very well on the test on friday in terms of finding volume i don t think anyone had a problem finding volume maybe there are a couple of problems with other things being careless for example the pattern that you miscalculated then something else just being careless but in terms of volume i think you had no problem doing that so today we are going to shift into something not volume but similar i shouldn t say similar to volume but something that we can use this box to find to help us to start and that is called a surface area so today we re going to explore finding the surface area of an object of a rectangular prism i m just going to write this word and please write this down in your notebook okay so write down surface area and what does that look like to you the words surface area what does that sound like what do you think it means student a"
+        },
+        {
+          "turn": 1338,
+          "speaker": "student",
+          "text": "the surface of the area"
+        },
+        {
+          "turn": 1339,
+          "speaker": "teacher",
+          "text": "so the surface like this board has a surface the floor has a surface but what about area what s area student s"
+        },
+        {
+          "turn": 1340,
+          "speaker": "student",
+          "text": "inaudible"
+        }
+      ],
+      "categories": [
+        "D"
+      ],
+      "rationale": "Student errors are characterized as due to carelessness (a behavior/motivation attribution) rather than described neutrally, though embedded in largely positive, asset-based framing.",
+      "confidence": "low"
+    }
+  ]
+}

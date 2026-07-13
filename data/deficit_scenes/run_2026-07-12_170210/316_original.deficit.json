@@ -1,0 +1,45 @@
+{
+  "source_document_id": "316_original.csv",
+  "scenes": [
+    {
+      "turn_range": "2193-2195",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "2194",
+        "verbatim_quote": "student n i need you to sit up like a fifth grader it seems like you didn t come in after a long weekend ready to work are you ready to work"
+      },
+      "context_excerpt": [
+        {
+          "turn": 2191,
+          "speaker": "student",
+          "text": "inaudible but then i tried to get some bottled water but it didn t work so inaudible"
+        },
+        {
+          "turn": 2192,
+          "speaker": "teacher",
+          "text": "okay if you don t have enough money for bottled water that s fine you can just say that that s how much they spent okay yes student a"
+        },
+        {
+          "turn": 2193,
+          "speaker": "student",
+          "text": "can i go to the bathroom"
+        },
+        {
+          "turn": 2194,
+          "speaker": "teacher",
+          "text": "oh can you wait a few minutes student a we re having a lot of people need i know this isn t normally when we do math but we need to try to stay on schedule here okay wait just a few minutes ladies and gentlemen i want you to figure out where it is that you are currently i d like you to raise your hand if you think you have one solution of a combination of a beverage and a bar that the pta can order if you have at least solved one combination of these two items that they could order student p are you almost there so your hand should be up if you re did you solve it already you did so hand up okay what i d like you to do right now is i d like you to turn and share with your neighbor your solution step by step walk them through what you did first second third and i want them to see if they can follow your work is their work clear concise and accurate please clear concise and accurate student n i need you to sit up like a fifth grader it seems like you didn t come in after a long weekend ready to work are you ready to work okay so you need to show me that you re ready to work right i know it s early in the morning and we don t normally do math this early but it doesn t mean that your brain can t be thinking right student d put the voice o meter at a level 2 please because you re only buzzing with the person next to you"
+        },
+        {
+          "turn": 2195,
+          "speaker": "teacher",
+          "text": "student r and student j i d like you to put your two solutions up on the board two different solutions so you ve already had a chance to share think about two different combinations so i want you to do one combination and student r you re gonna show the other combination"
+        }
+      ],
+      "categories": [
+        "D"
+      ],
+      "rationale": "The teacher attributes the student's difficulty/disengagement to the student not coming in 'ready to work,' locating the problem in the student's motivation rather than the task or instruction. Borderline because it is situational and framed partly as a question/behavior redirect.",
+      "confidence": "low"
+    }
+  ]
+}

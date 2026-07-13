@@ -1,0 +1,85 @@
+{
+  "source_document_id": "336_original.csv",
+  "scenes": [
+    {
+      "turn_range": "1162-1168",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "1165",
+        "verbatim_quote": "that s because you were fooling around when i was teaching"
+      },
+      "context_excerpt": [
+        {
+          "turn": 1162,
+          "speaker": "student",
+          "text": "oh you have to put all of them on there"
+        },
+        {
+          "turn": 1163,
+          "speaker": "teacher",
+          "text": "did you not listen to any of the lesson i m a little confused so do you want me to give you guys a chance to look over the directions and try it on your own cause you re not i don t seem to be able to communicate with you"
+        },
+        {
+          "turn": 1164,
+          "speaker": "student",
+          "text": "i don t get this inaudible"
+        },
+        {
+          "turn": 1165,
+          "speaker": "teacher",
+          "text": "that s because you were fooling around when i was teaching"
+        },
+        {
+          "turn": 1166,
+          "speaker": "student",
+          "text": "i wasn t fooling around"
+        },
+        {
+          "turn": 1167,
+          "speaker": "teacher",
+          "text": "i wasn t watching you"
+        },
+        {
+          "turn": 1168,
+          "speaker": "student",
+          "text": "uh uh i was confused about what you were saying so i didn t do it"
+        }
+      ],
+      "categories": [
+        "D"
+      ],
+      "rationale": "The teacher attributes the student's lack of understanding to the student's behavior ('fooling around') rather than to the instruction or task, locating the problem in the student's motivation/conduct.",
+      "confidence": "medium"
+    },
+    {
+      "turn_range": "33-35",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "33",
+        "verbatim_quote": "we re not putting on a show today to show how bad we can be this is not how we behave during math"
+      },
+      "context_excerpt": [
+        {
+          "turn": 33,
+          "speaker": "teacher",
+          "text": "all right i m going to stop for a minute because this is getting ridiculous student p this is not a class for you to be talking every two minutes raise your hand if you want to participate i shouldn t be hearing your voice every second student r same with you we re not putting on a show today to show how bad we can be this is not how we behave during math student t did you hear me"
+        },
+        {
+          "turn": 34,
+          "speaker": "student",
+          "text": "what was i doing"
+        },
+        {
+          "turn": 35,
+          "speaker": "teacher",
+          "text": "i called on student s and you answered the question we all know how to behave in this class i ve seen it day after day i don t know what has come over you this morning but please get it together so my question was we have 3 different numbers a 9 an 8 and a 5 that we have to multiply together what are the first two numbers that would make an easy sum or an easy product sorry that you can then multiply the third number did you have something student s or not"
+        }
+      ],
+      "categories": [
+        "D"
+      ],
+      "rationale": "Evaluative characterization of student behavior ('how bad we can be'), though largely situational classroom management; borderline as a deficit framing of behavior.",
+      "confidence": "low"
+    }
+  ]
+}

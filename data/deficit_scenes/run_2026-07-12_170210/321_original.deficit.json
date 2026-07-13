@@ -1,0 +1,95 @@
+{
+  "source_document_id": "321_original.csv",
+  "scenes": [
+    {
+      "turn_range": "233-237",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "235",
+        "verbatim_quote": "thank you evidently some of you don t want that help"
+      },
+      "context_excerpt": [
+        {
+          "turn": 232,
+          "speaker": "student",
+          "text": "at the board"
+        },
+        {
+          "turn": 233,
+          "speaker": "teacher",
+          "text": "mm hmm and why do you think your attention should be focused here"
+        },
+        {
+          "turn": 234,
+          "speaker": "student",
+          "text": "because you re trying to help us"
+        },
+        {
+          "turn": 235,
+          "speaker": "teacher",
+          "text": "thank you evidently some of you don t want that help as i was saying i noticed that something was similar here the denominators i notice that something is similar here the numerators in c do i have anything that s similar"
+        },
+        {
+          "turn": 236,
+          "speaker": "multiple students",
+          "text": "no"
+        },
+        {
+          "turn": 237,
+          "speaker": "teacher",
+          "text": "there is something that s similar but it s not something that s stated"
+        },
+        {
+          "turn": 238,
+          "speaker": "student",
+          "text": "they re one away from the whole"
+        }
+      ],
+      "categories": [
+        "D"
+      ],
+      "rationale": "The teacher attributes off-task behavior to students not wanting help, framing it as a motivational deficit ('don't want that help') rather than an instructional or engagement issue.",
+      "confidence": "medium"
+    },
+    {
+      "turn_range": "268-271",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "270",
+        "verbatim_quote": "you guys act like you re so tired like you re old yeah you re acting like you re older than i am i m the oldest person in the world and i have more energy than you guys what s going on what d you guys do take sleeping pills at lunch or something"
+      },
+      "context_excerpt": [
+        {
+          "turn": 268,
+          "speaker": "teacher",
+          "text": "you can t tell him to shush when you were just making noise it doesn t work like that don t disappoint me so ladies and gentlemen i m drawing my number line here you know what i think i m going to make you guys do i don t know what is going on are we falling asleep are we in food coma mode"
+        },
+        {
+          "turn": 269,
+          "speaker": "multiple students",
+          "text": "no"
+        },
+        {
+          "turn": 270,
+          "speaker": "teacher",
+          "text": "you guys act like you re so tired like you re old yeah you re acting like you re older than i am i m the oldest person in the world and i have more energy than you guys what s going on what d you guys do take sleeping pills at lunch or something i got up at four today i m up at four every morning i m here by six every morning and then i m here late in the afternoon here so how many hours is that that i m here at work at your disposal from six o clock in the morning until at least six o clock at night how many hours is that"
+        },
+        {
+          "turn": 271,
+          "speaker": "student",
+          "text": "12 hours"
+        },
+        {
+          "turn": 272,
+          "speaker": "teacher",
+          "text": "12 hours that s half the day yes so i m going to ask you guys please please i don t know what s going on shake it up we need to wake up our brains and we need to figure out c because ladies and gentlemen we only have 15 more minutes and i would like to wrap this lesson up in the last 5 minutes we ve got 10 minutes to look at this 5 minutes to have a discussion abut what we ve learned so here ladies and gentlemen is my number line for c here s my number line for c halfway point is about what here"
+        }
+      ],
+      "categories": [
+        "D"
+      ],
+      "rationale": "Frames students' low engagement as a personal shortcoming (implying laziness/low energy) rather than as a task-pacing or instructional issue; borderline because it is delivered partly as banter.",
+      "confidence": "low"
+    }
+  ]
+}

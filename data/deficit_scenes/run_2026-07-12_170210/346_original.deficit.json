@@ -1,0 +1,145 @@
+{
+  "source_document_id": "346_original.csv",
+  "scenes": [
+    {
+      "turn_range": "89-95",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "91",
+        "verbatim_quote": "mr s i need you to take student b away from me he is embarrassing and interrupting my video and i need him out of this room"
+      },
+      "context_excerpt": [
+        {
+          "turn": 88,
+          "speaker": "student",
+          "text": "a whole"
+        },
+        {
+          "turn": 89,
+          "speaker": "teacher",
+          "text": "equals one whole very good okay then stand up stand up and inaudible"
+        },
+        {
+          "turn": 90,
+          "speaker": "multiple students",
+          "text": "inaudible"
+        },
+        {
+          "turn": 91,
+          "speaker": "teacher",
+          "text": "mr s i need you to take student b away from me he is embarrassing and interrupting my video and i need him out of this room"
+        },
+        {
+          "turn": 92,
+          "speaker": "teacher",
+          "text": "thanks student b right here sitting right there"
+        },
+        {
+          "turn": 93,
+          "speaker": "multiple students",
+          "text": "inaudible"
+        },
+        {
+          "turn": 94,
+          "speaker": "teacher",
+          "text": "oh yes he needs to go"
+        }
+      ],
+      "categories": [
+        "D"
+      ],
+      "rationale": "The teacher characterizes the student himself as 'embarrassing' rather than describing the specific behavior neutrally, framing the person as the problem.",
+      "confidence": "medium"
+    },
+    {
+      "turn_range": "532-536",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "534",
+        "verbatim_quote": "ladies you re not gonna know what to do"
+      },
+      "context_excerpt": [
+        {
+          "turn": 531,
+          "speaker": "student",
+          "text": "oh i get it now"
+        },
+        {
+          "turn": 532,
+          "speaker": "teacher",
+          "text": "what will help me reach one whole student l"
+        },
+        {
+          "turn": 533,
+          "speaker": "student",
+          "text": "one half"
+        },
+        {
+          "turn": 534,
+          "speaker": "teacher",
+          "text": "move to one half because this is already on ladies you re not gonna know what to do student s can i have your eyes up here thank you you re not gonna move on any track that doesn t get you a whole if you have one that will give you a whole because that s the point of the game so student l is right i m gonna move my one half that gets me to one whole which means i keep this little pink square cause i get a point now inaudible picks a card i then can pick another one and put it on the zero in this number line"
+        },
+        {
+          "turn": 535,
+          "speaker": "student",
+          "text": "a whole"
+        },
+        {
+          "turn": 536,
+          "speaker": "teacher",
+          "text": "she got one whole so she doesn t win unless she can move a whole she can move any combination that adds up to a whole there you go easy as one"
+        }
+      ],
+      "categories": [
+        "G"
+      ],
+      "rationale": "A blanket prediction that the students will not know what to do, a negation of their capability rather than a neutral instructional prompt.",
+      "confidence": "low"
+    },
+    {
+      "turn_range": "1585-1589",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "1587",
+        "verbatim_quote": "so did you hear what my advice was you don t listen when i give advice"
+      },
+      "context_excerpt": [
+        {
+          "turn": 1584,
+          "speaker": "student",
+          "text": "why is it so dark"
+        },
+        {
+          "turn": 1585,
+          "speaker": "teacher",
+          "text": "that s fine don t worry about that it s not part of what you did"
+        },
+        {
+          "turn": 1586,
+          "speaker": "student",
+          "text": "inaudible"
+        },
+        {
+          "turn": 1587,
+          "speaker": "teacher",
+          "text": "yes ma am this one okay so did you hear what my advice was you don t listen when i give advice"
+        },
+        {
+          "turn": 1588,
+          "speaker": "student",
+          "text": "inaudible"
+        },
+        {
+          "turn": 1589,
+          "speaker": "teacher",
+          "text": "i did i said if you re stuck on the second one you should do it by by place value so just start with the tenths"
+        }
+      ],
+      "categories": [
+        "D"
+      ],
+      "rationale": "A sweeping attribution about the student's disposition ('you don't listen') rather than describing the specific moment, framing behavior as a fixed trait.",
+      "confidence": "low"
+    }
+  ]
+}

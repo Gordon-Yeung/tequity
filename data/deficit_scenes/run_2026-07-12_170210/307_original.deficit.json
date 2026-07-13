@@ -1,0 +1,55 @@
+{
+  "source_document_id": "307_original.csv",
+  "scenes": [
+    {
+      "turn_range": "1877-1880",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "1879",
+        "verbatim_quote": "student a sitting there like that is not your best effort student a student a student a it s not about wanting it s about trying your best and you can do it"
+      },
+      "context_excerpt": [
+        {
+          "turn": 1876,
+          "speaker": "student",
+          "text": "ones tens hundreds thousands"
+        },
+        {
+          "turn": 1877,
+          "speaker": "teacher",
+          "text": "all right let s look at the rules okay so i would like you to try the next one by yourself try it all by yourself and when you re all done with it i will come look at it i m gonna come sit here with student s and m"
+        },
+        {
+          "turn": 1878,
+          "speaker": "student",
+          "text": "can i sit with student s"
+        },
+        {
+          "turn": 1879,
+          "speaker": "teacher",
+          "text": "no i want i would like to see now that you and i have sat together for two problems try and see what you can do by yourself i m not gonna judge you i just want to see what you can do by yourself i m not gonna be mad student a if you don t get it right just please put in the best effort you can student a sitting there like that is not your best effort student a student a student a it s not about wanting it s about trying your best and you can do it you just did one all by yourself almost i was just sittign next to you the only difference is now instead of sitting right next to you i m one person away from you so sit up and do your best and i ll be right back"
+        },
+        {
+          "turn": 1880,
+          "speaker": "student",
+          "text": "i think i got it oh i was thinking about that"
+        },
+        {
+          "turn": 1881,
+          "speaker": "teacher",
+          "text": "but how do you go from 1 000 to 10 000 count by thousands two thousand three thousand four thousand five thousand six thousand seven thousand eight thousand nine thousand ten thousand how many thousands was that"
+        },
+        {
+          "turn": 1882,
+          "speaker": "student",
+          "text": "eight"
+        }
+      ],
+      "categories": [
+        "D"
+      ],
+      "rationale": "The teacher attributes the student's difficulty to insufficient effort/motivation ('not your best effort,' 'it's not about wanting'), implying the student is choosing not to try. This is borderline because it is paired with genuine encouragement ('you can do it') and is a behavior redirect in a specific moment rather than a totalizing characterization.",
+      "confidence": "low"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "source_document_id": "334_original.csv",
+  "scenes": [
+    {
+      "turn_range": "87-91",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "89",
+        "verbatim_quote": "too much work you re not ready for middle school yet interesting"
+      },
+      "context_excerpt": [
+        {
+          "turn": 86,
+          "speaker": "teacher",
+          "text": "right i can give you more white paper cause it looks like you re doing your work on here which is fine you did it for each one so why did i give you this paper to continue the game"
+        },
+        {
+          "turn": 87,
+          "speaker": "student",
+          "text": "do we have to do 5"
+        },
+        {
+          "turn": 88,
+          "speaker": "teacher",
+          "text": "i wanted you what directions did i give i said next to each one put an explanation of how you know which one s larger so it looks like you don t have any room i gave another direction what were you supposed to do can everybody freeze and put their hands on their head pencils down what direction did i give on top of the directions that were already there"
+        },
+        {
+          "turn": 89,
+          "speaker": "teacher",
+          "text": "too much work you re not ready for middle school yet interesting let s look at 3 how do we say this decimal"
+        },
+        {
+          "turn": 90,
+          "speaker": "student",
+          "text": "inaudible"
+        },
+        {
+          "turn": 91,
+          "speaker": "teacher",
+          "text": "75 1000 how do we say this one"
+        }
+      ],
+      "categories": [
+        "D"
+      ],
+      "rationale": "In response to a student asking whether they have to complete more work, the teacher characterizes the student's reluctance as evidence that the student is 'not ready for middle school,' attributing a deficit to the student's disposition/readiness rather than addressing the task or instruction.",
+      "confidence": "medium"
+    }
+  ]
+}

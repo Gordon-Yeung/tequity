@@ -1,0 +1,283 @@
+DEFICIT-LANGUAGE ANALYSIS SPECIFICATION
+========================================
+
+PROJECT: Batch deficit-language analysis over classroom transcripts
+DATE: July 12, 2026
+
+================================================================================
+OVERVIEW
+================================================================================
+
+This document specifies the procedure and criteria for identifying deficit-based
+language in classroom transcripts. The analysis uses deterministic file handling
+with Claude Opus for language analysis and includes mandatory quote verification
+against source documents.
+
+================================================================================
+INPUT SPECIFICATION
+================================================================================
+
+Input directory: C:\Users\Gordon Yeung\Documents\GitHub\temporal-prompting\data\transcripts
+
+Process EVERY transcript file in that directory (recurse into subfolders).
+Accept common transcript formats: .txt, .csv, .json, .docx, .md
+Skip anything that is clearly not a transcript.
+
+================================================================================
+OUTPUT SPECIFICATION
+================================================================================
+
+Create timestamped sibling folder: data/deficit_scenes/run_YYYY-MM-DD_HHMMSS/
+
+If directory already exists, do NOT overwrite prior runs—create timestamped subfolder.
+
+Output files:
+  1. For each input document: <source_filename>.deficit.json
+  2. Combined file: all_scenes.json (flat array of every scene across all documents)
+  3. Summary: run_summary.csv with columns:
+     - source_document_id
+     - scenes_found
+     - high_conf
+     - medium_conf
+     - low_conf
+  4. Verification log: skipped_quotes.log (quotes that failed verification)
+  5. Error log: errors.log (processing errors)
+
+Preserve mapping between output files and source:
+  - source_document_id in JSON must equal original filename (with relative path)
+
+================================================================================
+PROCEDURE
+================================================================================
+
+1. Enumerate all transcript files
+   - Print the list and count before processing
+
+2. For each file:
+   - Load its text
+   - Apply the ANALYSIS SPEC below
+   - Write its .deficit.json
+
+3. Verification (MANDATORY):
+   - For every scene, string-match each verbatim_quote back into loaded source text
+   - If any quote is NOT found exactly, DROP that scene
+   - Log it to skipped_quotes.log with filename and offending quote
+   - Re-save the file without the dropped scene
+
+4. Continue until all files are processed
+   - Never stop early
+   - If one file errors, log to errors.log and move on
+
+5. Print final tally:
+   - Files processed
+   - Total scenes
+   - Scenes dropped in verification
+
+================================================================================
+GROUNDING RULES (These override everything else)
+================================================================================
+
+1. USE ONLY THE CURRENT TRANSCRIPT FILE
+   - Never invent, complete, or embellish dialogue
+   - Never add context from other documents
+
+2. EVERY UTTERANCE QUOTED MUST APPEAR VERBATIM IN SOURCE
+   - Same wording
+   - Same speaker label
+   - If you cannot locate an exact match, do not include it
+
+3. REPORT EXACT SOURCE ATTRIBUTION
+   - Source document ID (filename)
+   - Turn/line numbers of the excerpt
+   - Attribution is mandatory; a scene without a verifiable source is invalid
+
+4. IF A DOCUMENT CONTAINS NO CLEAR DEFICIT-BASED INSTANCE
+   - Return an empty scenes list
+   - Do NOT manufacture examples to hit a count
+   - A false positive is worse than a miss
+
+5. DO NOT FLAG ON A SINGLE AMBIGUOUS WORD
+   - The deficit framing must be evident in what was actually said, in context
+   - Require clear, contextual evidence
+
+================================================================================
+DEFICIT-BASED LANGUAGE DEFINITIONS
+================================================================================
+
+Deficit framing locates the problem INSIDE THE STUDENT, treating difficulty
+as a stable property of the learner or their background rather than a feature
+of the task, the moment, or the instruction.
+
+FLAG AN UTTERANCE WHEN IT FITS ONE OR MORE CATEGORIES:
+
+  A. FIXED-ABILITY FRAMING
+     - Ability treated as innate/permanent
+     - Examples: "she's just not a math person", "he's not a reader"
+     - Implies unchangeable traits
+
+  B. DEFICIT LABELING / GROUPING
+     - Students named by what they lack
+     - Examples: "my low kids", "the ones who can't read", "struggling group"
+     - Group identity defined by deficit
+
+  C. PROBLEM LOCATED IN STUDENT/HOME/BACKGROUND
+     - Rather than in instruction or task design
+     - Examples: "they come from homes where...", "these students don't have..."
+     - Frames external factors as student limitations
+
+  D. DEFICIT ATTRIBUTION FOR BEHAVIOR/MOTIVATION
+     - Examples: "they just don't care", "he's lazy", "she's not trying"
+     - Assigns negative motives rather than examining instructional conditions
+
+  E. LOWERED EXPECTATIONS
+     - Cognitive demand reduced and justified by perceived inability
+     - Examples: "they can't handle complex problems, so I just give them facts"
+     - Opportunity gap justified by assumed deficiency
+
+  F. COMPARATIVE DEFICIT
+     - A student or class defined by falling short of another
+     - Examples: "not as good as last year's class", "behind the advanced kids"
+     - Worth measured by comparison to others
+
+  G. TOTALIZING NEGATION
+     - Sweeping "can't/doesn't understand anything" characterizations
+     - Examples: "this group can't do anything right", "she doesn't get any of it"
+     - All-or-nothing framing
+
+================================================================================
+WHAT IS NOT DEFICIT-BASED (do not flag these)
+================================================================================
+
+- NEUTRAL, SPECIFIC ERROR DESCRIPTION
+  Example: "that answer isn't right, let's check line 3"
+  Why: Names the error, not the child
+
+- FACTUAL FORMATIVE ASSESSMENT
+  Example: "about half haven't got the inequality sign yet"
+  Why: Descriptive, not evaluative of the student
+
+- HIGH-DEMAND QUESTIONING OR PRODUCTIVE STRUGGLE
+  Example: "try it before I help", "what do you notice?"
+  Why: Positioning students as capable problem-solvers
+
+- ENCOURAGEMENT OR ASSET-BASED MOVES
+  Example: "I know this is hard, and I see you working through it"
+  Why: Acknowledges challenge while affirming student capacity
+
+- AMBIGUOUS CASES
+  When an utterance is ambiguous between neutral and deficit reading:
+  - Prefer NOT flagging
+  - If you do flag it, mark confidence "low" and explain the tension
+
+================================================================================
+SCENE CONTEXT
+================================================================================
+
+For each flagged scene, include CONTEXT_TURNS turns before and after the
+deficit utterance (default 3 each).
+
+Preserve:
+  - Original speaker labels
+  - Turn numbers
+  - Full verbatim text
+
+Mark the precise span(s) carrying the deficit framing.
+
+================================================================================
+PER-DOCUMENT OUTPUT SHAPE
+================================================================================
+
+{
+  "source_document_id": "<relative filename>",
+  "scenes": [
+    {
+      "turn_range": "<e.g. 42-48>",
+      "deficit_span": {
+        "speaker": "<label as in source>",
+        "turns": "<turn number(s)>",
+        "verbatim_quote": "<exact text from source>"
+      },
+      "context_excerpt": [
+        {"turn": <n>, "speaker": "<label>", "text": "<verbatim>"},
+        {"turn": <n+1>, "speaker": "<label>", "text": "<verbatim>"}
+      ],
+      "categories": ["A", "B", ...],
+      "rationale": "<1-2 sentences tied to the category>",
+      "confidence": "high" | "medium" | "low"
+    }
+  ]
+}
+
+Documents with no qualifying scenes still get a file with "scenes": [].
+
+================================================================================
+CONFIDENCE LEVELS
+================================================================================
+
+HIGH CONFIDENCE:
+  - Clear, unambiguous deficit framing
+  - Strong match to one or more categories
+  - Obvious deviation from neutral description
+  - Explicit ability or motivation attribution
+  - Examples: "she's just not good at math", "these kids can't handle it"
+
+MEDIUM CONFIDENCE:
+  - Deficit framing present but with some ambiguity
+  - Context clearly supports deficit reading
+  - One clear category match
+  - Could be interpreted neutrally but more likely deficit-based
+  - Examples: "they struggle with comprehension", "this group needs simpler tasks"
+
+LOW CONFIDENCE:
+  - Ambiguous between deficit and neutral framing
+  - Minimal category match
+  - Requires charitable interpretation as deficit-based
+  - Could reasonably be read as formative assessment or neutral description
+  - Explain the tension in rationale when flagging as low
+  - Examples: "about half the class hasn't mastered this yet"
+
+================================================================================
+IMPLEMENTATION NOTES
+================================================================================
+
+CSV PARSING:
+  - Handle UTF-8 BOM (Byte Order Mark) in file headers
+  - Strip quoted column names
+  - Support multiple column name formats:
+    * "speaker", "text", "video_id"
+    * "speaker", "cleaned_text"
+
+QUOTE VERIFICATION:
+  - Use normalized text matching (collapse whitespace, handle case variation)
+  - Match quotes against all turns in loaded transcript
+  - Drop scenes with unmatched quotes
+  - Log dropped quotes with filename and offending quote text
+
+API INTEGRATION:
+  - Use Claude Opus 4.8 with adaptive thinking
+  - Enable streaming for large transcripts
+  - Set appropriate token limits and timeouts
+
+ERROR HANDLING:
+  - Log all errors to errors.log
+  - Continue processing remaining files
+  - Do not stop on first error
+
+================================================================================
+QUALITY ASSURANCE
+================================================================================
+
+Before flagging a scene, ask:
+
+1. Is the exact quote in the source document?
+2. Does the context clearly support the deficit interpretation?
+3. Would a neutral reader see this as deficit-based?
+4. Is there a clear fit to one of the seven categories (A-G)?
+5. Have I avoided manufacturing examples or false positives?
+
+Conservative approach: When in doubt, do not flag. False positives are worse
+than misses. A scene without clear, contextual evidence should not be included.
+
+================================================================================
+END OF SPECIFICATION
+================================================================================

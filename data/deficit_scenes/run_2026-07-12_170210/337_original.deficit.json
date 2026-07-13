@@ -1,0 +1,100 @@
+{
+  "source_document_id": "337_original.csv",
+  "scenes": [
+    {
+      "turn_range": "886-888",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "887",
+        "verbatim_quote": "so take a look at this quick chart i know a lot of you have a hard time understanding it"
+      },
+      "context_excerpt": [
+        {
+          "turn": 885,
+          "speaker": "teacher",
+          "text": "during the third week what did they collect during the third week student a"
+        },
+        {
+          "turn": 886,
+          "speaker": "student",
+          "text": "the third week they collected 147 more seashells"
+        },
+        {
+          "turn": 887,
+          "speaker": "teacher",
+          "text": "so take a look at this quick chart i know a lot of you have a hard time understanding it student a how did you know that you were well i ll ask you in a minute here s week one we don t know exactly how many they collected student h but week two they had 219 week three we don t know yet but what do we know i know more people than just student s d c a know the answer to this what do we know here about week three all right please talk at your tables right now so you can answer this question"
+        },
+        {
+          "turn": 888,
+          "speaker": "teacher",
+          "text": "you guys know right"
+        },
+        {
+          "turn": 889,
+          "speaker": "teacher",
+          "text": "all right student s what were you going to say say again hold on all right give me one awesome job at one two even better at two now this is a test give me three now we got it that s an extra minute recess one person s eyes at three seconds and he had them up here four ready to listen all right student s in your loudest voice how did you know what you have to ask questions how did you know or what do you think so when i left it was we know week two 219 we know week three they added something we don t know this total yet"
+        },
+        {
+          "turn": 890,
+          "speaker": "student",
+          "text": "they added 147 to 219"
+        },
+        {
+          "turn": 891,
+          "speaker": "teacher",
+          "text": "so week three they get 147 more and once we figure out 147 more then we ll know how much they have on week three okay so i want to hear from people who have added these two numbers thinking about place value 219 plus 147 cause we haven t done any work around student t adding by place value that s our lesson for tomorrow so to get us ready for tomorrow is there anybody who saw 219 and 147 and did some addition work by place value student h can you come show us how you on the board show us how you did it i love what i see again from student a c a n d s k s n and everybody from this table except student g i need to have your eyes up there give me a thumbs up if what he s doing reminds you of third grade addition awesome student s"
+        }
+      ],
+      "categories": [
+        "E"
+      ],
+      "rationale": "The teacher preemptively locates the difficulty in the students ('you have a hard time understanding it') rather than in the representation or instruction, framing the class by an anticipated inability. Mild and ambiguous, so low confidence.",
+      "confidence": "low"
+    },
+    {
+      "turn_range": "1550-1552",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "1551",
+        "verbatim_quote": "now if we tried that for 47 s we don t have to do it because we wouldn t be that good okay"
+      },
+      "context_excerpt": [
+        {
+          "turn": 1548,
+          "speaker": "teacher",
+          "text": "150 let me ask you this if we can find the tenth multiple does it matter what the second multiple is"
+        },
+        {
+          "turn": 1549,
+          "speaker": "multiple students",
+          "text": "no"
+        },
+        {
+          "turn": 1550,
+          "speaker": "teacher",
+          "text": "no and that s why we do the tenth multiple because when we have these larger numbers it gets really tricky to skip count it s easier when the multiples are multiples of 8 can i hear you say your multiples of 8 to elevate and multiple by 8"
+        },
+        {
+          "turn": 1551,
+          "speaker": "teacher",
+          "text": "now if we tried that for 47 s we don t have to do it because we wouldn t be that good okay so we find the tenth multiple of 47 then that works for us now here are we finding the tenth multiple of 47"
+        },
+        {
+          "turn": 1552,
+          "speaker": "student",
+          "text": "no"
+        },
+        {
+          "turn": 1553,
+          "speaker": "teacher",
+          "text": "mm mm what are we trying to do here cause this was the confusion yesterday when you see 10 what are we finding over here what are we really skip counting by here student a"
+        }
+      ],
+      "categories": [
+        "A"
+      ],
+      "rationale": "The teacher characterizes the class as collectively 'not that good' at skip counting by larger numbers, a mild fixed-ability framing. Practical in intent and ambiguous, so low confidence.",
+      "confidence": "low"
+    }
+  ]
+}

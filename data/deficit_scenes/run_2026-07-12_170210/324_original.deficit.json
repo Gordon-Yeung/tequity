@@ -1,0 +1,45 @@
+{
+  "source_document_id": "324_original.csv",
+  "scenes": [
+    {
+      "turn_range": "52-56",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "54",
+        "verbatim_quote": "student m no you need to control i don t want to hear oohs and ahs you re not a monkey here"
+      },
+      "context_excerpt": [
+        {
+          "turn": 52,
+          "speaker": "teacher",
+          "text": "what region"
+        },
+        {
+          "turn": 53,
+          "speaker": "student",
+          "text": "it s in the"
+        },
+        {
+          "turn": 54,
+          "speaker": "teacher",
+          "text": "student m no you need to control i don t want to hear oohs and ahs you re not a monkey here"
+        },
+        {
+          "turn": 55,
+          "speaker": "student",
+          "text": "it s a place where there s inaudible"
+        },
+        {
+          "turn": 56,
+          "speaker": "teacher",
+          "text": "so what part what region in the united states is this we studied regions those of you who did pennsylvania new jersey what region is it student m"
+        }
+      ],
+      "categories": [
+        "D"
+      ],
+      "rationale": "The teacher characterizes the student's behavior through a dehumanizing comparison ('you're not a monkey here'), a demeaning attribution rather than a neutral redirection of behavior.",
+      "confidence": "medium"
+    }
+  ]
+}

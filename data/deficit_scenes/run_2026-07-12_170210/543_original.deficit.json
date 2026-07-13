@@ -1,0 +1,85 @@
+{
+  "source_document_id": "543_original.csv",
+  "scenes": [
+    {
+      "turn_range": "217-221",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "219",
+        "verbatim_quote": "you don t think you just act you don t think about what you re actually doing"
+      },
+      "context_excerpt": [
+        {
+          "turn": 216,
+          "speaker": "student",
+          "text": "we finished"
+        },
+        {
+          "turn": 217,
+          "speaker": "teacher",
+          "text": "it s unbelievable that you re saying those things right now unbelievable you were supposed to be working with your group on a script and instead i hear those kinds of jokes from out in the hallway while i m working with another group go back to your seat for right now you cannot work with your group right"
+        },
+        {
+          "turn": 218,
+          "speaker": "student",
+          "text": "what are you supposed to do"
+        },
+        {
+          "turn": 219,
+          "speaker": "teacher",
+          "text": "student t stop asking me that question when i m talking to student e sit down i heard you would you like me adding that to your planner to what i said to your dad already you don t think you just act you don t think about what you re actually doing okay so you finished that paragraph from yesterday right put a one on that page all right you run a number inaudible like this starting with the 5 in the tens place there is a 3 to the right of 5 and 3 is 4 or less so you round the 5 down there is a 5 to the right of the 0 and 5 or higher you round that so you round the 0 to 1 there s a 0 to the right of the 2 so since the 0 is 4 or less the 2 stays the same okay and this part you did on your own the 7 is to the left of the okay how come you started saying to the left when every other time you said to the right you can t switch the order look there a 3 to the right of the 5 there s a 5 to the right of the 0 there s a 0 to the right of the 2 now you re saying to the left you re confusing this you need to go in the exact same order for all of them"
+        },
+        {
+          "turn": 220,
+          "speaker": "student",
+          "text": "7 to the right of the 9"
+        },
+        {
+          "turn": 221,
+          "speaker": "teacher",
+          "text": "student j no you re on you ve done the 5 and the 0 and the 2 i think we did the 2 now you re looking at the 7 and instead of saying there s a 2 to the right of the 7 and the 2 s what you look at to round the 7 you said there was a 7 to the left of the 2 which is totally confusing i m not going to read the rest until you fix those things so you make sure it s all consistent and if you forget what i m talking about or you don t quite get it reread what i wrote you always say what s to the right of the number being rounded guys can you all sit on the floor so you re actually together as a group student r push in my chair and sit on the floor please"
+        }
+      ],
+      "categories": [
+        "D"
+      ],
+      "rationale": "The teacher characterizes the student's behavior/motivation as a fixed personal deficiency ('you don't think, you just act') rather than describing the specific action, which is deficit attribution for behavior.",
+      "confidence": "high"
+    },
+    {
+      "turn_range": "243-246",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "245",
+        "verbatim_quote": "then how do you not understand what i m talking about"
+      },
+      "context_excerpt": [
+        {
+          "turn": 243,
+          "speaker": "teacher",
+          "text": "were you here yesterday"
+        },
+        {
+          "turn": 244,
+          "speaker": "student",
+          "text": "yeah he was"
+        },
+        {
+          "turn": 245,
+          "speaker": "teacher",
+          "text": "then how do you not understand what i m talking about"
+        },
+        {
+          "turn": 246,
+          "speaker": "student",
+          "text": "student l can you explain it to him please"
+        }
+      ],
+      "categories": [
+        "D"
+      ],
+      "rationale": "The rhetorical framing implies the student is deficient for not understanding, though it is tied to attendance context, making it ambiguous.",
+      "confidence": "low"
+    }
+  ]
+}

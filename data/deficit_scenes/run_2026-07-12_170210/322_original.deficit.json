@@ -1,0 +1,132 @@
+{
+  "source_document_id": "322_original.csv",
+  "scenes": [
+    {
+      "turn_range": "59-62",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "61",
+        "verbatim_quote": "let s see if as a class we can control ourselves enough so that we can actually do this let s see if as a class we can control ourselves i can actually go through all of this and do this without you having a breakdown cause that s what happens sometimes"
+      },
+      "context_excerpt": [
+        {
+          "turn": 59,
+          "speaker": "teacher",
+          "text": "before we start before we start i want to go back to our goal our goals of today are not just to play a game our goals of today are to begin to understand what the attributes or properties of of these different shapes so obviously if we think about what student l just described the cylinder the cylinder has different properties it is rounded it is not flat that s a different property than the rectangular prism so your brain is starting to classify these in different ways some of you may remember that on the test yesterday that you took the predictive test there was a question on there that said what is true about a cube and it said it had like six faces or sides"
+        },
+        {
+          "turn": 60,
+          "speaker": "student",
+          "text": "oh yeah yeah yeah"
+        },
+        {
+          "turn": 61,
+          "speaker": "teacher",
+          "text": "those are the things that you need to start putting up here in your head all right so i m gonna tell you what group you re in most of you are gonna be staying in your seats and then one group may be going back to the table okay now i will say your name the first name i say in the group is gonna be the one who starts with the shapes the second name i say in the group is gonna be the person who is the notetaker and the third and fourth name are gonna be the guessers and then it will rotate so let s see if as a class we can control ourselves enough so that we can actually do this let s see if as a class we can control ourselves i can actually go through all of this and do this without you having a breakdown cause that s what happens sometimes"
+        },
+        {
+          "turn": 62,
+          "speaker": "teacher",
+          "text": "calling students names in groups sorry all right in the middle table calling students names in groups so you only have one guesser to start at the other table calling students names in groups you can move yourself over a little more you re moving right staying right here"
+        },
+        {
+          "turn": 63,
+          "speaker": "multiple students",
+          "text": "inaudible"
+        },
+        {
+          "turn": 64,
+          "speaker": "teacher",
+          "text": "we re gonna come back to that table calling students names in groups you re together it doesn t matter see if you know what to do right now all right the people that are talking still are getting checks you know the rule you re three and you look at me thank you student c now i m giving you a time limit remember you should be describing these shapes writing them down thinking about what you know okay go ahead and start"
+        }
+      ],
+      "categories": [
+        "D",
+        "G"
+      ],
+      "rationale": "Frames the class as generally unable to control themselves and characterizes 'breakdown' as an inherent recurring behavior ('that's what happens sometimes'), attributing anticipated failure to students' disposition rather than the task.",
+      "confidence": "high"
+    },
+    {
+      "turn_range": "1-5",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "3",
+        "verbatim_quote": "the people that can t control themselves will get checks for their behavior"
+      },
+      "context_excerpt": [
+        {
+          "turn": 1,
+          "speaker": "teacher",
+          "text": "okay now today s focus on our lesson boys and girls is going to be on if you look at our goal it s written on the board and please do that right now and you should be turning to page 1 in your workbook is we re going to describe three dimensional solids using their attributes or properties now that s a big word student s attributes or properties but i ll break it down for you sit down okay you re not doing that right now please so basically what we re going to be doing is you re going to be describing these shapes to other people so what you re going to do and you re gonna be in a group and you re gonna get a bag and in this bag are all these"
+        },
+        {
+          "turn": 2,
+          "speaker": "student",
+          "text": "little cubes"
+        },
+        {
+          "turn": 3,
+          "speaker": "teacher",
+          "text": "the people that can t control themselves will get checks for their behavior look at the solids that are on your paper everyone take a look at them right now how many of you remember working with these solids from third grade okay so some of you had these solids in third grade now in this bag are all the solids that are on your paper and this is our activity today so we want to be able to describe these solids but for right now we re not gonna use these names so if i say this is called if you see this on your paper can someone tell me what it s called on your paper oh good hands up student t"
+        },
+        {
+          "turn": 4,
+          "speaker": "student",
+          "text": "inaudible"
+        },
+        {
+          "turn": 5,
+          "speaker": "teacher",
+          "text": "okay you have to a rectangular prism now"
+        }
+      ],
+      "categories": [
+        "B",
+        "D"
+      ],
+      "rationale": "Labels a subset of students by a perceived lack ('the people that can't control themselves'), framing behavior as a fixed inability rather than describing a specific action.",
+      "confidence": "medium"
+    },
+    {
+      "turn_range": "141-145",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "143",
+        "verbatim_quote": "some of you get lost in the activity sometimes and you forget that you re supposed to be learning things"
+      },
+      "context_excerpt": [
+        {
+          "turn": 141,
+          "speaker": "teacher",
+          "text": "quietly six right here in the center five four three two one and let s see who has done it the bag should be on the desk why don t you put on that desk right there no student s no one should be touching the bag no one should have any solids"
+        },
+        {
+          "turn": 142,
+          "speaker": "student",
+          "text": "what we re not fighting"
+        },
+        {
+          "turn": 143,
+          "speaker": "teacher",
+          "text": "now student t i gave you directions no one should be touching the bags and no one should have any solids now let s shhhh some of you get lost in the activity sometimes and you forget that you re supposed to be learning things i had a lot of good put these away and you re supposed to have your eyes up here your books should be open to this page your book should be open to this page with the solids on it"
+        },
+        {
+          "turn": 144,
+          "speaker": "student",
+          "text": "why inaudible"
+        },
+        {
+          "turn": 145,
+          "speaker": "student",
+          "text": "cause it inaudible"
+        }
+      ],
+      "categories": [
+        "D"
+      ],
+      "rationale": "Attributes off-task behavior to students forgetting the learning purpose, a mild deficit framing of motivation/attention rather than task design.",
+      "confidence": "low"
+    }
+  ]
+}

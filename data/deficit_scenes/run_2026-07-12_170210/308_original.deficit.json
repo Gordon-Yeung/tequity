@@ -1,0 +1,51 @@
+{
+  "source_document_id": "308_original.csv",
+  "scenes": [
+    {
+      "turn_range": "534-538",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "536",
+        "verbatim_quote": "great job student r let s give her a hand please she s so afraid of math nice job student r"
+      },
+      "context_excerpt": [
+        {
+          "turn": 533,
+          "speaker": "student",
+          "text": "equals 1 200 and then i did another one"
+        },
+        {
+          "turn": 534,
+          "speaker": "teacher",
+          "text": "she s working in groups of hundred"
+        },
+        {
+          "turn": 535,
+          "speaker": "student",
+          "text": "and then i went to tens and it equals times 12 120 and then i did 6 times 12 equals 76 and then i added them together and this equals 2 seven plus two is nine two plus two is four plus one is five and then i added two onto this too"
+        },
+        {
+          "turn": 536,
+          "speaker": "teacher",
+          "text": "great job great job student r let s give her a hand please she s so afraid of math nice job student r so where is the so it s 216 times 12 so what she did she broke down 216 into smaller chunks that was easier to work with so she had 100 times 12 and then another 100 then 10 times 12 then 6 times 12 so 100 plus 200 100 plus another 100 that is 200 plus 10 210 plus 6 216 now i think this is a very efficient strategy and many of you many of you used this strategy student s what did you do did you get this answer too huh"
+        },
+        {
+          "turn": 537,
+          "speaker": "student",
+          "text": "yes"
+        },
+        {
+          "turn": 538,
+          "speaker": "teacher",
+          "text": "come and see did you get it with this okay you want to come and show us when you re done let me see who has a different strategy you have and what did you get sweetie you get 5 552 you re something short there student d let me see yours almost the same thing sit down please all right let me see student s that s almost similar to what she had let me see yours student c great job great let me see yours student n this is a you need to check this again sweetie this answer is not correct double check to see where you made the mistake student f where s yours do you know a more efficient strategy that you could use"
+        }
+      ],
+      "categories": [
+        "A",
+        "D"
+      ],
+      "rationale": "The teacher publicly characterizes the student as 'so afraid of math,' a totalizing personal attribution that frames her by an emotional deficit toward the subject, even though it is embedded in praise.",
+      "confidence": "low"
+    }
+  ]
+}

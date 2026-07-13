@@ -1,0 +1,55 @@
+{
+  "source_document_id": "304_original.csv",
+  "scenes": [
+    {
+      "turn_range": "522-525",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "525",
+        "verbatim_quote": "student i as soon as you find a little mistake you often give up and think you can t do it but if you look at it for 10 seconds you would have found that mistake right"
+      },
+      "context_excerpt": [
+        {
+          "turn": 522,
+          "speaker": "student",
+          "text": "i didn t get the answer"
+        },
+        {
+          "turn": 523,
+          "speaker": "teacher",
+          "text": "for what"
+        },
+        {
+          "turn": 524,
+          "speaker": "student",
+          "text": "inaudible"
+        },
+        {
+          "turn": 525,
+          "speaker": "teacher",
+          "text": "8 minus 1 doesn t equal 8 does it student i as soon as you find a little mistake you often give up and think you can t do it but if you look at it for 10 seconds you would have found that mistake right turn around right so if you find a discrepancy again a difference i want you to take some time and figure it out on your own okay it was the other way you didn t even solve it the other way yet if you re doing the standard algorithm i need to see you doing it correctly you didn t show any work on it please use a different strategy if you re not sure of it we ll do it later on in the week okay do you guys agree no"
+        },
+        {
+          "turn": 526,
+          "speaker": "student",
+          "text": "we didn t check 64 yet"
+        },
+        {
+          "turn": 527,
+          "speaker": "teacher",
+          "text": "did you check the other three and did you guys all get the same answers or did you disagree on something"
+        },
+        {
+          "turn": 528,
+          "speaker": "student",
+          "text": "we got the same answers"
+        }
+      ],
+      "categories": [
+        "D"
+      ],
+      "rationale": "The teacher attributes a habitual motivational failing to the student ('you often give up and think you can't do it'), characterizing the student's disposition rather than describing the specific error or task, which is a deficit attribution for behavior/motivation.",
+      "confidence": "medium"
+    }
+  ]
+}

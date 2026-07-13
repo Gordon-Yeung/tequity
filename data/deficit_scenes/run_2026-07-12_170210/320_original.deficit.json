@@ -1,0 +1,131 @@
+{
+  "source_document_id": "320_original.csv",
+  "scenes": [
+    {
+      "turn_range": "1151-1157",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "1154",
+        "verbatim_quote": "student t doesn t have any idea what s going on because you re worried about the markers"
+      },
+      "context_excerpt": [
+        {
+          "turn": 1151,
+          "speaker": "student",
+          "text": "9 900"
+        },
+        {
+          "turn": 1152,
+          "speaker": "teacher",
+          "text": "9 900 thank you go get one who s next student k"
+        },
+        {
+          "turn": 1153,
+          "speaker": "student",
+          "text": "9 800"
+        },
+        {
+          "turn": 1154,
+          "speaker": "teacher",
+          "text": "thank you student t doesn t have any idea what s going on because you re worried about the markers student l go get one student k what"
+        },
+        {
+          "turn": 1155,
+          "speaker": "student",
+          "text": "inaudible"
+        },
+        {
+          "turn": 1156,
+          "speaker": "teacher",
+          "text": "everyone get it i m trying to get here who can get me there finish it all in one"
+        },
+        {
+          "turn": 1157,
+          "speaker": "student",
+          "text": "9 600 9 500 9 400 9 300 9 200 9 100 9 000"
+        }
+      ],
+      "categories": [
+        "D",
+        "G"
+      ],
+      "rationale": "Teacher totalizes the student as having 'no idea what's going on' and attributes it to a behavioral/motivational cause (worried about markers) rather than instructional factors.",
+      "confidence": "medium"
+    },
+    {
+      "turn_range": "948-951",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "950",
+        "verbatim_quote": "so if i m going to give an assignment to the class that doesn t actually do their assignments there better be some serious thinking going on"
+      },
+      "context_excerpt": [
+        {
+          "turn": 948,
+          "speaker": "teacher",
+          "text": "so you need to come up with in between them five tenths and six tenths you re only going to get a few from that nine pump it up there s people over there that have more than that they do not have to be in order no one doesn t count i gave you that fifty five counts as one this is the same thing as that so that doesn t count that s two you have two those need to look like fives and not threes student p good keep going help student b out he looks like he s not working with you it looks like you re doing all the work that s what student d he doesn t know what he s doing what s he supposed to be doing"
+        },
+        {
+          "turn": 949,
+          "speaker": "student",
+          "text": "inaudible"
+        },
+        {
+          "turn": 950,
+          "speaker": "teacher",
+          "text": "okay so if i m going to give an assignment to the class that doesn t actually do their assignments there better be some serious thinking going on here s our wrap up question how many i don t care how many you found how many numbers decimal numbers come in between five tenths and six tenths let s see who s thinking student a"
+        },
+        {
+          "turn": 951,
+          "speaker": "student",
+          "text": "19"
+        }
+      ],
+      "categories": [
+        "D"
+      ],
+      "rationale": "Characterizes the class as one that 'doesn't actually do their assignments,' a sweeping deficit attribution about motivation/effort.",
+      "confidence": "medium"
+    },
+    {
+      "turn_range": "179-183",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "181",
+        "verbatim_quote": "you guys are quitting on me you guys are quitting on me"
+      },
+      "context_excerpt": [
+        {
+          "turn": 179,
+          "speaker": "teacher",
+          "text": "thank you"
+        },
+        {
+          "turn": 180,
+          "speaker": "student",
+          "text": "you re welcome"
+        },
+        {
+          "turn": 181,
+          "speaker": "teacher",
+          "text": "thank you you guys are quitting on me you guys are quitting on me"
+        },
+        {
+          "turn": 182,
+          "speaker": "student",
+          "text": "inaudible"
+        },
+        {
+          "turn": 183,
+          "speaker": "teacher",
+          "text": "oh yeah you re good student r you don t have to fill out the chart i told you to focus on the last column total plus seven"
+        }
+      ],
+      "categories": [
+        "D"
+      ],
+      "rationale": "Frames students' engagement as 'quitting,' a deficit attribution for motivation/effort rather than describing task difficulty.",
+      "confidence": "low"
+    }
+  ]
+}

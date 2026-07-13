@@ -1,0 +1,126 @@
+{
+  "source_document_id": "341_original.csv",
+  "scenes": [
+    {
+      "turn_range": "3-7",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "5",
+        "verbatim_quote": "now i know some of you guys don t speak english that much but just stay with me all right"
+      },
+      "context_excerpt": [
+        {
+          "turn": 3,
+          "speaker": "teacher",
+          "text": "okay very good all right you need to turn around so we can start our math lesson today okay our math lesson today listen carefully okay to what we re going to doing we re going to be working on the number line these this is a number line so just pay attention here nothing else this is the number line that we re going to be working on okay this we re going to be using fractions here the other day we used decimals okay so today we re going to be using we re going to be using fractions am i correct does everybody understand"
+        },
+        {
+          "turn": 4,
+          "speaker": "student",
+          "text": "yes"
+        },
+        {
+          "turn": 5,
+          "speaker": "teacher",
+          "text": "now i know some of you guys don t speak english that much but just stay with me all right very good okay the first thing if we re going to be working with fractions the first thing that you need to understand you need to have an idea of what are fractions okay okay good so i m going to put okay you two are going to talk to each other you are going to talk to each other okay i m going to put a fraction two fractions on the board and then you are going to tell me what can you tell me about those fractions okay"
+        },
+        {
+          "turn": 6,
+          "speaker": "teacher",
+          "text": "okay i want you to talk with each other talk with each other what can inaudible put a and b a and b talk with what can talk with each other about the fraction loud inaudible"
+        },
+        {
+          "turn": 7,
+          "speaker": "student",
+          "text": "that the a is inaudible because this is the basically because you only need one more to make one"
+        }
+      ],
+      "categories": [
+        "C"
+      ],
+      "rationale": "Frames some students by a language lack ('don't speak english that much') as a background characteristic rather than framing the task/instruction; borderline but names students by deficit.",
+      "confidence": "low"
+    },
+    {
+      "turn_range": "649-653",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "651",
+        "verbatim_quote": "i know some of you guys can t speak that much english but you can speak a little bit more than they can but you gotta speak louder"
+      },
+      "context_excerpt": [
+        {
+          "turn": 649,
+          "speaker": "teacher",
+          "text": "the length huh so okay so and we time this here time this is gonna equal to what say it again i can t hear you"
+        },
+        {
+          "turn": 650,
+          "speaker": "student",
+          "text": "volume"
+        },
+        {
+          "turn": 651,
+          "speaker": "teacher",
+          "text": "volume very good very good in a few minutes we re gonna give number to these okay alright everybody good understand okay very good alright today lesson okay when we finish the lesson excuse me when we finish the lesson i know some of you guys can t speak that much english but you can speak a little bit more than they can but you gotta speak louder okay when we finish the lesson okay you re gonna have to tell me what happened okay we re gonna use you re gonna use dimensions we could something to the dimensions and then you re gonna tell me what happened okay alright everybody understand now"
+        },
+        {
+          "turn": 652,
+          "speaker": "student",
+          "text": "yes"
+        },
+        {
+          "turn": 653,
+          "speaker": "teacher",
+          "text": "everybody understand now what we re gonna do"
+        }
+      ],
+      "categories": [
+        "C",
+        "F"
+      ],
+      "rationale": "Defines students by a language lack and adds a comparative deficit framing ('you can speak a little bit more than they can'), ranking students by perceived deficiency.",
+      "confidence": "medium"
+    },
+    {
+      "turn_range": "2277-2281",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "2279",
+        "verbatim_quote": "now most of the problem that a lot of you kids have is that when you see problems like this on paper you panic"
+      },
+      "context_excerpt": [
+        {
+          "turn": 2277,
+          "speaker": "teacher",
+          "text": "so parallel so you see what i mean so is this parallel"
+        },
+        {
+          "turn": 2278,
+          "speaker": "multiple students",
+          "text": "yeah"
+        },
+        {
+          "turn": 2279,
+          "speaker": "teacher",
+          "text": "okay all right so inaudible surface okay you can touch the surface all right good all right yes inaudible now most of the problem that a lot of you kids have is that when you see problems like this on paper you panic all right now so what we re gonna do right now you re gonna see it on paper now and we re gonna get student g to what s inaudible i forgot surface surface surface am i missing something"
+        },
+        {
+          "turn": 2280,
+          "speaker": "student",
+          "text": "you didn t inaudible"
+        },
+        {
+          "turn": 2281,
+          "speaker": "teacher",
+          "text": "okay what is that unit of measurement what is that yes"
+        }
+      ],
+      "categories": [
+        "D"
+      ],
+      "rationale": "Attributes difficulty to a student trait/behavior ('you panic') as a sweeping characterization of 'a lot of you kids' rather than locating the challenge in the task or instruction.",
+      "confidence": "medium"
+    }
+  ]
+}

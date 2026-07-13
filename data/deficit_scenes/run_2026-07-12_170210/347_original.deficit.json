@@ -1,0 +1,135 @@
+{
+  "source_document_id": "347_original.csv",
+  "scenes": [
+    {
+      "turn_range": "718-723",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "721",
+        "verbatim_quote": "i mean i don t know what the attitude is for don t know why you re having a rough time lately but this is school and we re doing work right now do you understand do you understand student i or i can just send you and you can do the work somewhere else i don t wanna have this battle with you every time we switch to a new activity"
+      },
+      "context_excerpt": [
+        {
+          "turn": 718,
+          "speaker": "student",
+          "text": "that you have to write a conclusion about the pie chart because"
+        },
+        {
+          "turn": 719,
+          "speaker": "teacher",
+          "text": "no we don t need a because because it s going on the bulletin board but that s what you have to do just like what we were doing on the board make your own"
+        },
+        {
+          "turn": 720,
+          "speaker": "student",
+          "text": "inaudible"
+        },
+        {
+          "turn": 721,
+          "speaker": "teacher",
+          "text": "so you re not drawing on a folder right now we re doing math work right now okay i mean i don t know what the attitude is for don t know why you re having a rough time lately but this is school and we re doing work right now do you understand do you understand student i or i can just send you and you can do the work somewhere else i don t wanna have this battle with you every time we switch to a new activity"
+        },
+        {
+          "turn": 722,
+          "speaker": "student",
+          "text": "inaudible"
+        },
+        {
+          "turn": 723,
+          "speaker": "teacher",
+          "text": "would you like to go to a different classroom oh my goodness student p are you okay"
+        }
+      ],
+      "categories": [
+        "D"
+      ],
+      "rationale": "The teacher attributes the student's non-participation to an internal 'attitude' and characterizes a recurring 'battle,' framing the behavior as a disposition of the student rather than a response to the task.",
+      "confidence": "medium"
+    },
+    {
+      "turn_range": "782-786",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "786",
+        "verbatim_quote": "hopefully you learned your lesson next time you ll pay attention let s go cause i m asking you do to work you hate the school come on"
+      },
+      "context_excerpt": [
+        {
+          "turn": 783,
+          "speaker": "student",
+          "text": "inaudible"
+        },
+        {
+          "turn": 784,
+          "speaker": "teacher",
+          "text": "no it s too late student i i don t wanna sit here and baby you all day not gonna keep coming over and holding your hand you can do the work if you don t understand you ask"
+        },
+        {
+          "turn": 785,
+          "speaker": "student",
+          "text": "inaudible"
+        },
+        {
+          "turn": 786,
+          "speaker": "teacher",
+          "text": "okay too bad push in your chair now hopefully you learned your lesson next time you ll pay attention let s go cause i m asking you do to work you hate the school come on you know what mr d is doing a recording too you can sit right here and do it actually we can go to mr m s room come on in here so it looks like he maybe has space at his back table here you go i m sorry that i asked you to actually do work"
+        },
+        {
+          "turn": 787,
+          "speaker": "student",
+          "text": "inaudible"
+        }
+      ],
+      "categories": [
+        "D"
+      ],
+      "rationale": "The teacher attributes a sweeping motivational deficit to the student ('you hate the school') and frames the behavior as willful, a deficit attribution for motivation.",
+      "confidence": "medium"
+    },
+    {
+      "turn_range": "95-97",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "97",
+        "verbatim_quote": "thank you everybody else was sleeping on that answer"
+      },
+      "context_excerpt": [
+        {
+          "turn": 95,
+          "speaker": "teacher",
+          "text": "exactly i m going to label that actually that s 28 students and i m dividing them into two what"
+        },
+        {
+          "turn": 96,
+          "speaker": "student",
+          "text": "groups"
+        },
+        {
+          "turn": 97,
+          "speaker": "teacher",
+          "text": "thank you everybody else was sleeping on that answer i m taking 28 students and breaking them into two equal groups 28 divided by 2 what would be the answer to 28 divided by 2 cutting it in half student g"
+        },
+        {
+          "turn": 98,
+          "speaker": "student",
+          "text": "14"
+        },
+        {
+          "turn": 99,
+          "speaker": "teacher",
+          "text": "very good student g 14 student g how did you get that 14"
+        },
+        {
+          "turn": 100,
+          "speaker": "student",
+          "text": "inaudible"
+        }
+      ],
+      "categories": [
+        "D"
+      ],
+      "rationale": "Characterizes the rest of the class as disengaged ('sleeping on that answer'), a mild deficit attribution for the group's participation/motivation.",
+      "confidence": "low"
+    }
+  ]
+}

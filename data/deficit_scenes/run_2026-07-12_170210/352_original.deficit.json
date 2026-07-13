@@ -1,0 +1,85 @@
+{
+  "source_document_id": "352_original.csv",
+  "scenes": [
+    {
+      "turn_range": "45-48",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "46",
+        "verbatim_quote": "i don t want to have fresh children in my class but apparently i still do"
+      },
+      "context_excerpt": [
+        {
+          "turn": 44,
+          "speaker": "teacher",
+          "text": "but what am i asking you to do hold on"
+        },
+        {
+          "turn": 45,
+          "speaker": "student",
+          "text": "how much have they walked during the week"
+        },
+        {
+          "turn": 46,
+          "speaker": "teacher",
+          "text": "i want you to show me how much they have walked during the week you have seven minutes to show me how much so don t dilly dally with your partners go back to your seats that means goof off your partner sitting right next to you student b come sit with student x student b i didn t ask you what you wanted to do i don t want to have fresh children in my class but apparently i still do everybody sitting next to their partner good student j you re wasting time where is my timer try to work it out student s you have two people right there how far have they walked so far they walked on monday they walked on tuesday that s what that means how far have they walked so far you re supposed to be working with student l you re supposed to be talking good boy student l you need to look at me you need to work with student d it s not negotiable you play around with your buddies you need to work with student d that s one warning this is not martha stewart do your work please i don t want you cleaning sit you re wasting time good job now what is this honey"
+        },
+        {
+          "turn": 47,
+          "speaker": "student",
+          "text": "5"
+        },
+        {
+          "turn": 48,
+          "speaker": "teacher",
+          "text": "5 what is that five tenths okay you have to color in 50 what happened please some of you are trying the grid and others of you are trying the number line see if you can prove the same thing in the number line all right student s talk with student t student t look at what student s has done tell him why you did it this way you don t know what day is this monday maybe you should put all right what do you think is happening in the story if i want to know how much they walked am i adding or subtracting okay you know what you can do for me can you pull out their spiral books they re going to take forever to go get them you know what the spiral books look like right yeah think about what that means 1 1 or 1 01 write it down that might help you see which answer it really is keep going student s when i do my mini lesson raise your hand and ask a question don t just sit there that s not being self determined am i helping too much oh i m not done what day is it on the problem what representation is this where did you get the monday from what decimal is that write it down let me see what you said okay so that s how do we say this 0 5 or how do we say it as a decimal we worked on that yesterday 5 what what place value is it in that s five tenths okay so which one is six tenths that one okay so my question to you is what day is this one and what day is that one can you see the board from here nobody walked on friday excellent can you show that using the grid representation too you don t know that where is that book i need that book in a minute i can t remember the page student s sit down all right my timer has gone off student t speaking spanish okay so i have up here i need everybody s attention i have up here essentially what you have on your paper and i m going to invite some of you to come up to the board and share with the class some of your representations when you get to the board i m going to move this up this is our infinite corner boys and girls you can move it if you decided to move that as a representation if you decided to use the number line this is also you can use these as well to help keep track of things on your number line and venetta she also duplicates so if you need to move venetta a couple of times she s already there for you okay so there s some people that would like to share some of their representations about venetta and her mother just let me do one more thing i m going to move it down here so we can see it better student j want to come share go ahead we need to move when we share boys and girls two minutes at the board nice and loud"
+        }
+      ],
+      "categories": [
+        "D"
+      ],
+      "rationale": "Characterizes students as 'fresh children,' a negative behavioral labeling that frames the students themselves as the problem rather than addressing specific behavior neutrally.",
+      "confidence": "medium"
+    },
+    {
+      "turn_range": "966-970",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "968",
+        "verbatim_quote": "will staring into space hoping i will give you some individual attention it s not you need to put forth some effort"
+      },
+      "context_excerpt": [
+        {
+          "turn": 966,
+          "speaker": "teacher",
+          "text": "and what s our part"
+        },
+        {
+          "turn": 967,
+          "speaker": "student",
+          "text": "it has to be 9"
+        },
+        {
+          "turn": 968,
+          "speaker": "teacher",
+          "text": "very good what is greater your answer to question one or your answer to question two c what fraction of the brownies is left it s not one fourth that s left what fraction is shaded in yeah fractions aren t going to go away my friend they re not will staring into space hoping i will give you some individual attention it s not you need to put forth some effort"
+        },
+        {
+          "turn": 969,
+          "speaker": "student",
+          "text": "i don t get inaudible adding 9 to 12"
+        },
+        {
+          "turn": 970,
+          "speaker": "teacher",
+          "text": "remember when we talked about fractions it s got to be whole over a part or a part over a whole so now you ve got to figure out what fraction of the pan is your 9 brownies do we ignore the brownies they ve eaten counting it as my whole"
+        }
+      ],
+      "categories": [
+        "D"
+      ],
+      "rationale": "Attributes the student's difficulty to lack of effort/motivation ('staring into space,' 'need to put forth some effort') rather than to the task or instruction.",
+      "confidence": "medium"
+    }
+  ]
+}

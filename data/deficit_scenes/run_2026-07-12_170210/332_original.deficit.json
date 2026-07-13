@@ -1,0 +1,45 @@
+{
+  "source_document_id": "332_original.csv",
+  "scenes": [
+    {
+      "turn_range": "673-676",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "675",
+        "verbatim_quote": "oh okay i guess i m going to have to skip student t because he s not sure how to interact with people"
+      },
+      "context_excerpt": [
+        {
+          "turn": 672,
+          "speaker": "student",
+          "text": "kind of"
+        },
+        {
+          "turn": 673,
+          "speaker": "teacher",
+          "text": "i m sorry it is student m s turn people are being very rude i hope people are keeping in mind how they would like to be treated when it s their turn"
+        },
+        {
+          "turn": 674,
+          "speaker": "student",
+          "text": "i know that right right guys"
+        },
+        {
+          "turn": 675,
+          "speaker": "teacher",
+          "text": "oh okay i guess i m going to have to skip student t because he s not sure how to interact with people yes"
+        },
+        {
+          "turn": 676,
+          "speaker": "student",
+          "text": "today i learned that if you inaudible"
+        }
+      ],
+      "categories": [
+        "D"
+      ],
+      "rationale": "The teacher characterizes the student by a personal deficiency ('not sure how to interact with people'), attributing an ongoing social inability to the child rather than addressing the specific behavior in the moment.",
+      "confidence": "medium"
+    }
+  ]
+}
