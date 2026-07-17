@@ -1,0 +1,157 @@
+{
+  "video_id": "309",
+  "coder_id": "2",
+  "created_at": "2026-07-17T12:41:42",
+  "updated_at": "2026-07-17T13:03:00",
+  "progress": {
+    "last_turn_viewed": 227,
+    "completed": false
+  },
+  "scenes": [
+    {
+      "scene_id": "t9",
+      "turn": 9,
+      "speaker": "teacher",
+      "verbatim_quote": "and using prior knowledge i like that strategy is using your prior knowledge and kind of put it together yes what about you come on don t get mad tell me using prior knowledge all right what else okay that s fine anybody else context closed so these are the things we re going to focus on prior knowledge thinking i m thinking i use my prior knowledge and i use the context now let me show you something quick very quick what strategy do i use we are going to work on several kind of problem today and we re gonna use these our blocks to help us i m gonna use them first but i m gonna let you use them but another thing we re going to use we re going to use let me show you these are all to help you and i m going to show you how to use them to get a strategy going that s been our thinking i m going to use this one and i m gonna let you use one when it s time when it s time so i m gonna use this one to figure out what how many how many see he s not willing how many",
+      "quote_verified": true,
+      "categories": [
+        "D"
+      ],
+      "other_label": "",
+      "note": "“see he s not willing how many”. This is incomplete; maybe the teacher thinks the student doesn't want to try to explore or answer (flag to discuss)",
+      "confidence": "low",
+      "flagged_at": "2026-07-17T13:03:00"
+    },
+    {
+      "scene_id": "t54",
+      "turn": 54,
+      "speaker": "teacher",
+      "verbatim_quote": "yes student m student m good job now it s time i like the way you talk to each other ah you don t need this one don t we you need help all morning you don t know your timetable that s when you do",
+      "quote_verified": true,
+      "categories": [
+        "A"
+      ],
+      "other_label": "",
+      "note": "",
+      "confidence": "low",
+      "flagged_at": "2026-07-17T13:03:00"
+    },
+    {
+      "scene_id": "t62",
+      "turn": 62,
+      "speaker": "teacher",
+      "verbatim_quote": "now excuse me he s not paying attention yep eight times four right because i have one two three four and i put my four here and sometime they give me this one and they say hey name the hm and the see eight times four so all right student f all right now eight times four and what",
+      "quote_verified": true,
+      "categories": [
+        "D"
+      ],
+      "other_label": "",
+      "note": "",
+      "confidence": "medium",
+      "flagged_at": "2026-07-17T13:03:00"
+    },
+    {
+      "scene_id": "t67",
+      "turn": 67,
+      "speaker": "teacher",
+      "verbatim_quote": "does it i really will pay attention to that now my good learners that are thinking see student f is thinking but he s turning back now student f i need your attention up here so listen sometime they just give me this and they give me this i want you to think use your strategy of thinking see some people are turning back looking at other people i need your attention to the front now sometime they just give me this and that hmm and now this way this way this way look at that some people are thinking but they re not thinking they re playing with i know you re a good thinker student f i know you re a good thinker but",
+      "quote_verified": true,
+      "categories": [
+        "F"
+      ],
+      "other_label": "",
+      "note": "",
+      "confidence": "high",
+      "flagged_at": "2026-07-17T13:03:00"
+    },
+    {
+      "scene_id": "t144",
+      "turn": 144,
+      "speaker": "teacher",
+      "verbatim_quote": "remainder that s the word i was getting to see student o did you get a look at that that s the thing after we divided equally there is three more with if i have the situation there a lot of time they give you division like that on purpose and they would say what can i do now the situation is we re going on a field trip what do i do with the three remainder people three left over what can i do with these three people now i want you to think of a situation student a i m going on a field trip i have 35 people and we only have four cars yes i see people thinking now you re all thinking you don t need to talk to anyone see we re going on a field trip and i know some people they are smart like student d he is thinking of a situation now student f let s see people that are thinking we re going on a field trip we will have four cars or four buses for the 32 or 35 people it s not 32 anymore it s 35 the situation see you need to think of if it s a situation when it s 35 it s not apples that we have to share now we will think of it s apple 35 apple but let s think of the time this time student m it s 35 people going on the field trip 35 students or 35 of us any could be teachers could be people could be anybody and we re going on a field trip see i see he s figuring it out then what do we do with this 3 people out of 35 all right so lot of people already think so student s what do you think we could do with these three people",
+      "quote_verified": true,
+      "categories": [
+        "A",
+        "F"
+      ],
+      "other_label": "",
+      "note": "\"i know some people they are smart like student d\". It implies that others do not fall into this category.",
+      "confidence": "medium",
+      "flagged_at": "2026-07-17T13:03:00"
+    },
+    {
+      "scene_id": "t148",
+      "turn": 148,
+      "speaker": "teacher",
+      "verbatim_quote": "come back and get the rest wouldn t it just be one of the bus say oh i ll have to make a trip back and get the three of them by themselves probably now no you talk already let me think of student o think oh good job student o let me see somebody else who was thinking i know the smart one always thinking yes you could",
+      "quote_verified": true,
+      "categories": [
+        "A",
+        "F"
+      ],
+      "other_label": "",
+      "note": "\"i know the smart one always thinking\", labeling some students with a fixed ability tag of smart",
+      "confidence": "low",
+      "flagged_at": "2026-07-17T13:03:00"
+    },
+    {
+      "scene_id": "t156",
+      "turn": 156,
+      "speaker": "teacher",
+      "verbatim_quote": "donuts anything that could share now we got no we re thinking of anything that we could share maybe it s candy maybe it s donuts maybe it s cake maybe it s cupcakes i just need your thinking now if it s a sharing thing what could we do with the three cupcakes that are left what can we do it s a sharing thing what can we do with the three cupcakes good job some people are thinking see i don t see student c thinking i know she s not and my let s see student w",
+      "quote_verified": true,
+      "categories": [
+        "D"
+      ],
+      "other_label": "",
+      "note": "\"i don t see student c thinking i know she s not\"",
+      "confidence": "medium",
+      "flagged_at": "2026-07-17T13:03:00"
+    },
+    {
+      "scene_id": "t158",
+      "turn": 158,
+      "speaker": "teacher",
+      "verbatim_quote": "i don t see you thinking it s a different situation it s food it s candy it s cupcakes all right what can we do with the three extra we know we know yeah student m",
+      "quote_verified": true,
+      "categories": [
+        "D"
+      ],
+      "other_label": "",
+      "note": "\"i don t see you thinking.\" Terrible statement to be heard by a student from a math teacher",
+      "confidence": "medium",
+      "flagged_at": "2026-07-17T13:03:00"
+    },
+    {
+      "scene_id": "t164",
+      "turn": 164,
+      "speaker": "teacher",
+      "verbatim_quote": "you save it you save it for them to share because we remember we have a it goes into four groups that s 35 and we have this four groups each of them has eight think about it the problem is i have 35 cupcakes student c i have 35 cupcakes and i have to divided them into four people each of them will get eight but there will be three student r there will be three left over you know i hate to see student w is working on it but she s not telling me what s she s thinking student w",
+      "quote_verified": true,
+      "categories": [
+        "D",
+        "G"
+      ],
+      "other_label": "",
+      "note": "\"you know i hate to see student w is working on it but she s not telling me what s she s thinking student w\"",
+      "confidence": "medium",
+      "flagged_at": "2026-07-17T13:03:00"
+    },
+    {
+      "scene_id": "t227",
+      "turn": 227,
+      "speaker": "teacher",
+      "verbatim_quote": "now hold on another way 44 people some people are not see 44 into that s another word into another way of writing into into 8 yeah 44 people into see this into she s not paying attention to me into two ways of writing it for 44 people into a group you could yeah 44 people into a group into a group into a group sometime you find it written that way but most of the time it s this way that means into now we learn yesterday after they write it this way you ll write it that way yourself those people that are not paying attention are the ones that won t be able to do it we know that if you cannot see i could tell ones that will be able to do it yep like student m and c doesn t go like this she goes like yeah remember we said that seating is really this way all right so we said hey",
+      "quote_verified": true,
+      "categories": [
+        "A",
+        "E",
+        "F"
+      ],
+      "other_label": "",
+      "note": "\"those people that are not paying attention are the ones that won t be able to do it we know that if you cannot see i could tell ones that will be able to do it yep like student m and c doesn t go like this \"",
+      "confidence": "high",
+      "flagged_at": "2026-07-17T13:03:00"
+    }
+  ]
+}
