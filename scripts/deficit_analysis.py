@@ -25,15 +25,43 @@ except ImportError:
     print("Error: anthropic package not found. Install with: pip install anthropic")
     sys.exit(1)
 
+
+def _load_dotenv() -> None:
+    """Populate os.environ from a repo-root .env (secrets stay out of git).
+
+    Minimal parser (no python-dotenv dependency): KEY=VALUE lines, ignoring
+    blanks/comments and optional surrounding quotes. Existing env vars win.
+    """
+    env_path = Path(__file__).resolve().parents[1] / ".env"
+    if not env_path.exists():
+        return
+    for line in env_path.read_text(encoding="utf-8").splitlines():
+        line = line.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        key, _, value = line.partition("=")
+        key = key.strip()
+        value = value.strip().strip('"').strip("'")
+        if key and key not in os.environ:
+            os.environ[key] = value
+
+
+_load_dotenv()
+
 # ============================================================================
 # CONFIG
 # ============================================================================
 
-INPUT_DIR = Path(r"C:\Users\Gordon Yeung\Documents\GitHub\temporal-prompting\data\transcripts")
-OUTPUT_BASE = Path(r"C:\Users\Gordon Yeung\Documents\GitHub\temporal-prompting\data\deficit_scenes")
+# Repo-relative paths (scripts/ -> repo root).
+REPO_ROOT = Path(__file__).resolve().parents[1]
+INPUT_DIR = REPO_ROOT / "data" / "transcripts"
+OUTPUT_BASE = REPO_ROOT / "data" / "deficit_scenes"
 CONTEXT_TURNS = 3
 
-TRANSCRIPT_EXTENSIONS = {".csv", ".txt", ".json", ".docx", ".md"}
+# Only the canonical single-lesson transcripts are analyzed. This deliberately
+# EXCLUDES data/transcripts/by_obsid/ (the per-OBSID audit archive) so a run
+# stays scoped to the same 52 files as before the OBSID split.
+TRANSCRIPT_GLOB = "*_original.csv"
 
 # ============================================================================
 # LOGGING
@@ -380,13 +408,10 @@ def main():
     print(f"\nInput directory:  {INPUT_DIR}")
     print(f"Output directory: {output_dir}\n")
 
-    # Enumerate files
+    # Enumerate files (top-level canonical transcripts only; NOT recursive, so
+    # the by_obsid/ archive is never swept in).
     print("Scanning for transcript files...")
-    files = []
-    for ext in TRANSCRIPT_EXTENSIONS:
-        files.extend(INPUT_DIR.glob(f"**/*{ext}"))
-
-    files = sorted(files)
+    files = sorted(INPUT_DIR.glob(TRANSCRIPT_GLOB))
     print(f"Found {len(files)} transcript files:\n")
     for f in files:
         try:
