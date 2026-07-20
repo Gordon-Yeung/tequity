@@ -2,10 +2,71 @@
   "video_id": "309",
   "coder_id": "1",
   "created_at": "2026-07-15T14:44:31",
-  "updated_at": "2026-07-15T14:48:27",
+  "updated_at": "2026-07-20T11:26:20",
   "progress": {
-    "last_turn_viewed": 1,
+    "last_turn_viewed": 67,
     "completed": false
   },
-  "scenes": []
+  "scenes": [
+    {
+      "scene_id": "t67",
+      "turn": 67,
+      "speaker": "teacher",
+      "verbatim_quote": "does it i really will pay attention to that now my good learners that are thinking see student f is thinking but he s turning back now student f i need your attention up here so listen sometime they just give me this and they give me this i want you to think use your strategy of thinking see some people are turning back looking at other people i need your attention to the front now sometime they just give me this and that hmm and now this way this way this way look at that some people are thinking but they re not thinking they re playing with i know you re a good thinker student f i know you re a good thinker but",
+      "quote_verified": true,
+      "categories": [
+        "D",
+        "F"
+      ],
+      "other_label": "",
+      "note": "\"now my good learners that are thinking see student f is thinking but he s turning back now student f i need your attention up here\"",
+      "confidence": "medium",
+      "flagged_at": "2026-07-20T11:26:20"
+    },
+    {
+      "scene_id": "t156",
+      "turn": 156,
+      "speaker": "teacher",
+      "verbatim_quote": "donuts anything that could share now we got no we re thinking of anything that we could share maybe it s candy maybe it s donuts maybe it s cake maybe it s cupcakes i just need your thinking now if it s a sharing thing what could we do with the three cupcakes that are left what can we do it s a sharing thing what can we do with the three cupcakes good job some people are thinking see i don t see student c thinking i know she s not and my let s see student w",
+      "quote_verified": true,
+      "categories": [
+        "D"
+      ],
+      "other_label": "",
+      "note": "\"she isn't trying / thinking\"",
+      "confidence": "low",
+      "flagged_at": "2026-07-20T11:26:20"
+    },
+    {
+      "scene_id": "t158",
+      "turn": 158,
+      "speaker": "teacher",
+      "verbatim_quote": "i don t see you thinking it s a different situation it s food it s candy it s cupcakes all right what can we do with the three extra we know we know yeah student m",
+      "quote_verified": true,
+      "categories": [
+        "D"
+      ],
+      "other_label": "",
+      "note": "\"i don t see you thinking it s a different situation\"",
+      "confidence": "medium",
+      "flagged_at": "2026-07-20T11:26:20"
+    },
+    {
+      "scene_id": "t227",
+      "turn": 227,
+      "speaker": "teacher",
+      "verbatim_quote": "now hold on another way 44 people some people are not see 44 into that s another word into another way of writing into into 8 yeah 44 people into see this into she s not paying attention to me into two ways of writing it for 44 people into a group you could yeah 44 people into a group into a group into a group sometime you find it written that way but most of the time it s this way that means into now we learn yesterday after they write it this way you ll write it that way yourself those people that are not paying attention are the ones that won t be able to do it we know that if you cannot see i could tell ones that will be able to do it yep like student m and c doesn t go like this she goes like yeah remember we said that seating is really this way all right so we said hey",
+      "quote_verified": true,
+      "categories": [
+        "B",
+        "D",
+        "E",
+        "F"
+      ],
+      "other_label": "",
+      "note": "those people that are not paying attention are the ones that won t be able to do it we know that if you cannot see i could tell ones that will be able to do it - dividing the class into will-succeed / won't succeed",
+      "confidence": "medium",
+      "flagged_at": "2026-07-20T11:26:20"
+    }
+  ]
 }
