@@ -7,13 +7,17 @@
 
   let current = null;   // last compare response
   const adj = {};       // turn -> {categories:[], other_label, note, confidence, include, resolution, source}
+  let availableCoders = [];  // last fetched coder-id list for the selected transcript
 
   async function populateCoders() {
     const vid = el("#cmp-transcript").value;
     if (!vid) return;
     let coders = [];
     try { coders = await api(`/api/coders/${vid}`); } catch (e) {}
-    const human = coders.filter((c) => c !== "adjudicated");
+    availableCoders = coders;
+    // "llm" and "adjudicated" are derived/system codings, not human coders — keep
+    // them out of the A/B selectors (LLM is included via the checkbox instead).
+    const human = coders.filter((c) => c !== "adjudicated" && c !== "llm");
     const opts = human.map((c) => `<option value="${esc(c)}">${esc(c)}</option>`).join("");
     el("#cmp-a").innerHTML = opts;
     el("#cmp-b").innerHTML = opts;
@@ -21,30 +25,65 @@
     el("#cmp-llm").checked = coders.includes("llm");
   }
 
-  function renderStats(stats) {
-    const b = stats.binary, c = stats.category;
-    const cards = [
+  // Build the 8 stat cards for one pairwise comparison. `labels` overrides the
+  // "Only A"/"Only B" wording (e.g. LLM-only / coder-only) and the per-category tags.
+  function statCards(b, c, labels) {
+    const L = labels || { aOnly: "Only A", bOnly: "Only B", aTag: "A", bTag: "B" };
+    return [
       ["Both flagged", b.both],
-      ["Only A", b.a_only],
-      ["Only B", b.b_only],
+      [L.aOnly, b.a_only],
+      [L.bOnly, b.b_only],
       ["Raw agreement", pct(b.raw_agreement)],
       ["Cohen's κ", num2(b.cohen_kappa)],
       ["PABAK", num2(b.pabak)],
       ["Positive agreement", pct(b.positive_agreement)],
       ["Category Jaccard", c.mean_jaccard == null ? "—" : num2(c.mean_jaccard)],
     ].map(([k, v]) => `<div class="stat"><div class="k">${k}</div><div class="v">${v}</div></div>`).join("");
+  }
 
-    const perCat = Object.entries(c.per_category || {}).map(([cat, v]) =>
-      `${cat}: ${v.both}✓ / ${v.a_only}A / ${v.b_only}B`).join(" &nbsp;·&nbsp; ") || "—";
+  function perCatLine(c, aTag, bTag) {
+    return Object.entries(c.per_category || {}).map(([cat, v]) =>
+      `${cat}: ${v.both}✓ / ${v.a_only}${aTag} / ${v.b_only}${bTag}`).join(" &nbsp;·&nbsp; ") || "—";
+  }
 
-    el("#cmp-stats").innerHTML = cards + `
+  // One LLM-vs-human panel. `sub` = {coder, binary, category}; LLM is rater "a".
+  function llmPanel(sub) {
+    const b = sub.binary, c = sub.category;
+    const name = esc(sub.coder);
+    const cards = statCards(b, c, { aOnly: "LLM only", bOnly: `${name} only`, aTag: "L", bTag: name });
+    return `<div class="llm-panel">
+      <h3>LLM vs Coder ${name}</h3>
+      <div class="stats">${cards}
+        <div class="caveat">
+          Of ${b.n} teacher turns, LLM and ${name} both flagged ${b.both}
+          (LLM-only ${b.a_only}, ${name}-only ${b.b_only}).
+          Expect this κ to trail human–human agreement — the LLM flags a different set.
+          Read <b>positive agreement</b> (${pct(b.positive_agreement)}) and
+          <b>PABAK</b> (${num2(b.pabak)}) alongside κ.
+          <br/>Per-category (both✓ / LLM-only / ${name}-only): ${perCatLine(c, "L", name)}
+        </div>
+      </div></div>`;
+  }
+
+  function renderStats(stats) {
+    const b = stats.binary, c = stats.category;
+    const cards = statCards(b, c);
+
+    let html = `<div class="hh-panel"><h3>Coder A vs Coder B (human–human)</h3>
+      <div class="stats">${cards}
       <div class="caveat">
         Over ${b.n} teacher turns, coders both flagged ${b.both}.
         Cohen's κ is deflated when flags are rare — read <b>positive agreement</b>
         (${pct(b.positive_agreement)}) and <b>PABAK</b> (${num2(b.pabak)}) alongside it,
         not in isolation.
-        <br/>Per-category (both✓ / A-only / B-only): ${perCat}
-      </div>`;
+        <br/>Per-category (both✓ / A-only / B-only): ${perCatLine(c, "A", "B")}
+      </div></div></div>`;
+
+    if (stats.llm) {
+      html += llmPanel(stats.llm.vs_a) + llmPanel(stats.llm.vs_b);
+    }
+
+    el("#cmp-stats").innerHTML = html;
   }
 
   function codeCol(title, s) {
@@ -141,6 +180,13 @@
     const a = el("#cmp-a").value, b = el("#cmp-b").value;
     if (!a || !b) { alert("Need two coders. Code a transcript first (or import LLM)."); return; }
     if (a === b) { alert("Pick two different coders."); return; }
+    const wantLlm = el("#cmp-llm").checked;
+    // "include LLM" is self-sufficient: if the LLM coding hasn't been imported yet,
+    // pull it from the latest deficit run now instead of silently showing "not loaded".
+    if (wantLlm && !availableCoders.includes("llm")) {
+      const ok = await ensureLlmImported(vid);
+      if (!ok) { el("#cmp-llm").checked = false; return; }
+    }
     const llm = el("#cmp-llm").checked ? "1" : "0";
     try {
       const resp = await api(`/api/compare/${vid}?a=${encodeURIComponent(a)}&b=${encodeURIComponent(b)}&llm=${llm}`);
@@ -151,14 +197,24 @@
     } catch (e) { alert(e.message); }
   }
 
-  async function importLlm() {
-    const vid = el("#cmp-transcript").value;
+  // Import LLM scenes for `vid` from the latest deficit run. Returns true on success.
+  // `silent` suppresses the confirmation alert (used by the auto-import path).
+  async function ensureLlmImported(vid, silent) {
     try {
       const r = await api(`/api/import-llm/${vid}`, { method: "POST" });
-      alert(`Imported ${r.scenes} LLM scenes from ${r.source_run}.`);
+      if (!silent) alert(`Imported ${r.scenes} LLM scenes from ${r.source_run}.`);
       await populateCoders();
       el("#cmp-llm").checked = true;
-    } catch (e) { alert(e.message); }
+      return true;
+    } catch (e) {
+      alert("Could not import LLM scenes: " + e.message +
+            "\n\nRun scripts/deficit_analysis.py for this transcript first.");
+      return false;
+    }
+  }
+
+  async function importLlm() {
+    await ensureLlmImported(el("#cmp-transcript").value, false);
   }
 
   async function saveAdjudicated() {

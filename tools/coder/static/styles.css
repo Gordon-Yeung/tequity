@@ -129,6 +129,11 @@ th { background: #f0f3f7; }
 .caveat { font-size: 12px; color: #8a5a00; background: #fff7e8; border: 1px solid #ecd6a8;
   border-radius: 6px; padding: 8px 10px; width: 100%; }
 
+/* stat panels: stack human-human above the LLM-vs-human panels */
+#cmp-stats { display: block; }
+.hh-panel h3, .llm-panel h3 { font-size: 14px; margin: 6px 0 8px; }
+.llm-panel { margin-top: 14px; padding-top: 12px; border-top: 1px dashed var(--line); }
+
 .cmp-rows { display: flex; flex-direction: column; gap: 10px; max-width: 1100px; }
 .cmp-row { background: var(--panel); border: 1px solid var(--line); border-left-width: 5px; border-radius: 8px; padding: 10px 12px; }
 .cmp-row.agree { border-left-color: var(--agree-border); }

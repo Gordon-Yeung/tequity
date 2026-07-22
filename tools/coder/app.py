@@ -381,6 +381,23 @@ def api_compare(video_id):
         "category": irr.category_agreement(cats_map(a), cats_map(b)),
     }
 
+    # LLM-vs-human agreement: same pairwise IRR functions, LLM as the first rater
+    # so "a_only" reads as LLM-only. The human-human numbers above are untouched.
+    if llm:
+        llm_turns = set(scenes_by_turn(llm))
+        stats["llm"] = {
+            "vs_a": {
+                "coder": a_id,
+                "binary": irr.binary_agreement(llm_turns, a_turns, universe_n),
+                "category": irr.category_agreement(cats_map(llm), cats_map(a)),
+            },
+            "vs_b": {
+                "coder": b_id,
+                "binary": irr.binary_agreement(llm_turns, b_turns, universe_n),
+                "category": irr.category_agreement(cats_map(llm), cats_map(b)),
+            },
+        }
+
     a_sc, b_sc = scenes_by_turn(a), scenes_by_turn(b)
     llm_sc = scenes_by_turn(llm) if llm else {}
     speaker_by_turn = {t["turn_num"]: t["speaker"] for t in turns}

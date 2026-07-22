@@ -1,0 +1,56 @@
+{
+  "video_id": "309",
+  "coder_id": "llm",
+  "created_at": "2026-07-21T16:50:03",
+  "updated_at": "2026-07-21T16:50:03",
+  "source_run": "run_2026-07-19_153121",
+  "progress": {
+    "last_turn_viewed": 0,
+    "completed": true
+  },
+  "scenes": [
+    {
+      "scene_id": "t227",
+      "turn": 227,
+      "speaker": "teacher",
+      "verbatim_quote": "those people that are not paying attention are the ones that won t be able to do it we know that if you cannot see i could tell ones that will be able to do it",
+      "quote_verified": true,
+      "categories": [
+        "D",
+        "E"
+      ],
+      "other_label": "",
+      "note": "The teacher attributes anticipated failure to students based on behavior and predicts who 'will' and 'won't be able to do it,' sorting students by perceived inability rather than describing the task or effort.",
+      "confidence": "high",
+      "flagged_at": null
+    },
+    {
+      "scene_id": "t156",
+      "turn": 156,
+      "speaker": "teacher",
+      "verbatim_quote": "see i don t see student c thinking i know she s not",
+      "quote_verified": true,
+      "categories": [
+        "D"
+      ],
+      "other_label": "",
+      "note": "The teacher characterizes a named student as simply 'not thinking' rather than describing a specific behavior or offering support, attributing a lack of engagement to the student.",
+      "confidence": "medium",
+      "flagged_at": null
+    },
+    {
+      "scene_id": "t54",
+      "turn": 54,
+      "speaker": "teacher",
+      "verbatim_quote": "you need help all morning you don t know your timetable",
+      "quote_verified": true,
+      "categories": [
+        "B"
+      ],
+      "other_label": "",
+      "note": "The teacher frames a named student by a lack ('you don't know your timetable' / needing help 'all morning'), though phrasing is somewhat ambiguous and jocular.",
+      "confidence": "low",
+      "flagged_at": null
+    }
+  ]
+}
