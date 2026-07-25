@@ -1,0 +1,321 @@
+speaker,cleaned_text
+teacher,okay boys and girls let s start our math lesson our
+student,know to say our inaudible to 100
+teacher,okay and our objective we ll have two objectives today first objective
+student,students will complete
+teacher,aristophanes
+student,aristophanes sieve with 80 percent accuracy by the end of the classroom
+teacher,all right and student m can you read the second objective
+student,students will be able to identify prime numbers with an accuracy of 80 percent by the end of the week
+teacher,okay and inaudible nearly left out the two but you did a good job so now let s find out who is aristophanes pull out your paper that looks like this okay i m going to read to you who he is put your hands down all right aristophanes was a greek mathematician he was a poet an athlete a geographer an astronomer and a music theorist he was a whole lot of things wasn t he
+multiple students,yes
+teacher,okay he was the first person to use the word geography and invented the discipline of geography as we understand it today who can tell me what is geography the study of what student m
+student,geography
+teacher,just talk
+student,geography is the study of science
+teacher,okay let s see if we can get a better a more clear definition
+student,geography is the study of a person s life
+teacher,no that sounds like a biography
+student,geography is the study of history
+teacher,no close
+student,geography is something about
+teacher,the study of
+student,the study of music or math
+teacher,when we study geography we re studying the land right
+multiple students,yes
+teacher,so like if we need to know the 50 states in the united states that would be included in the science of geography so you re studying land where it is what the land is like okay so aristophanes created a sieve and if you look up here on the board i have a sample of a sieve and you also have another sample on your desk now let s talk about prime numbers i need you to get out your vocabulary books we re going to write the definition of a prime number
+teacher,and a prime number is a number that can only be divided by can anybody finish this sentence for me a prime number can only be divided by
+student,one
+teacher,and or
+student,or itself
+teacher,exactly it s one or itself good okay now the other number we need to know about is a composite number
+teacher,and it can be divided evenly by numbers other than one and itself now is that clear about the composite number can somebody give me an example of a composite number so that i ll know you understand what i mean when i say a composite number can be divided by evenly by numbers other than one and itself
+teacher,let me stick other than writing on board who can give me an example of a composite number student j
+student,five
+teacher,can five be divided by something besides five and one what else can go into five besides five and one
+student,like five times seven
+teacher,but five times seven that can t go into five let me see if i can t get somebody to help you out student d
+student,four
+teacher,okay four four is a composite number because it can be divided by one it can be divided by four but what else can it be divided by student l
+student,two
+teacher,two two times two is four right okay so now how many people have ever watched their mother making a cake and she put the flour in the sieve and she shakes it up and she turns the little handle and all the little tiny pieces of flour fall out and then some little hard pieces may stay at the top that s what this is we re going to say this is our sieve this is our sifter and what we re going to do is we re going to shake it up and all of the composite numbers are going to fall out only the prime numbers will remain in the sieve okay does everybody understand
+multiple students,yes
+teacher,okay so who can give me well let s start with what student l said student l said four was a composite number right i mean student d
+teacher,so we re going to take four and put four down at the bottom it s fallen through who can give me another composite number student c
+student,two
+teacher,all right he said two will two fall through
+student,no
+teacher,what else can we divide into two besides one and two student c
+student,nothing
+teacher,right so two can t fall through student d can you give me one
+student,three
+teacher,can something else to into three besides one and three you got to think about our factors student t
+student,six
+teacher,okay can six fall through
+multiple students,yes
+teacher,because two times three is six right
+multiple students,yes
+teacher,give me another one student k
+student,nine
+teacher,she said nine do we agree
+multiple students,yes
+teacher,okay nine will fall through student m give me another one
+student,seventeen
+teacher,what else can go into 17 besides one and 17 i don t think so student r pick a number that you see in the sieve that will go through that will fall through
+student,sixteen
+teacher,he said 16 is 16 good
+multiple students,yes
+teacher,okay because who can give me two factors for 16 other than one and 16 who can give me two factors for 16 other than 1 and 16
+student,eight
+teacher,eight times
+student,two
+teacher,good okay now give me a composite number that will fall through student j
+student,twenty four
+teacher,she said 24 will 24 fall through
+multiple students,yes
+teacher,okay now teacher n is looking for 24 oh here it is okay let me come around this back student j give me another number that will fall through
+student,thirty
+teacher,he said 30 is that right
+multiple students,yes
+teacher,okay all the way in the back student a
+student,thirty two
+teacher,she said 32 who can give me two factors for 32 student t
+student,eight times four
+teacher,very good okay student j
+student,eight
+teacher,she said eight will fall through is she right student m
+student,no yes
+teacher,is she right student m
+student,yes
+teacher,okay where is 8 okay here is 8 all right let me get student m give me a composite number that will fall through
+student,i would say 15
+teacher,fifteen is 15 a composite number
+multiple students,yes
+teacher,student d
+student,twelve
+teacher,he said 12 is 12 a composite number
+multiple students,yes
+teacher,okay where is 12
+multiple students,multiple answers
+teacher,under 44 that s 21
+multiple students,multiple answers
+teacher,laughter i don t see it i see it all right student r give me a composite number
+student,eleven
+teacher,can we divide another number into 11 besides one and 11
+student,yes
+teacher,what what can you say something times something and it will equal 11 you can t that s not a composite number student j give me a composite number thinking of multiplication facts and something you know that will multiply and equal a number that s still in the sieve
+student,eighteen
+teacher,eighteen is 18 a composite number
+multiple students,yes
+teacher,okay who hasn t had a chance yet student m
+student,he did
+student,twenty nine
+teacher,twenty nine can we multiply something times something and get 29 besides one and 29
+multiple students,no
+teacher,no student k
+student,thirty eight
+teacher,she said 38 now you know what i m noticing right off the bat i don t know that i know necessarily in my mind what i can multiply to get 38 but 38 is what kind of number
+student,an even one
+teacher,an even number good are all even numbers composite numbers
+multiple students,no
+teacher,well let s put it this way are all even numbers except for two composite numbers
+multiple students,yes
+teacher,yes they are because guess what if they re even what number do we know can go in them if they re even we can always use this number as a factor what is that number yes student k what number can we use as a factor that will go into every even number
+student,two
+teacher,exactly all right so does that help people now as we look at our numbers still left in the sieve we now know excluding two we can t pick two but all the other even numbers we can pick them can t we
+multiple students,yes
+teacher,okay inaudible
+student,fifty
+teacher,he said 50 is that an even number so that makes it a what
+multiple students,composite
+teacher,student d
+student,ten
+teacher,he said 10 what about ten
+multiple students,yes
+teacher,well i know 10 is an even number but what else do i know can go into 10 student t hand this back to student t please what else do i know can go into 10 besides 2
+student,inaudible
+teacher,exactly so all of our numbers up here that are multiples of five we can t use five we can t use two because those are prime numbers but anything else that has a zero or a five in the ones place will also fall through won t it
+multiple students,yes
+teacher,okay student d give me a composite number
+student,another composite number is 22
+teacher,twenty two good student j give me one i m going to do two at a time now
+student,twenty
+teacher,okay they said 20 and 22 so we got 20 and 22 taking off 20 and 22 all right student a
+student,twenty eight
+teacher,student l
+student,forty nine
+teacher,forty nine what about 49 does that sound like a composite number
+multiple students,no
+teacher,what can go into 29 besides one and 29 student l
+student,twenty nine
+teacher,is that what you said
+student,forty
+teacher,you said 49 what else can go into 49 besides 1 and 49
+student,multiplying or adding
+teacher,multiplying because that s all we re talking about
+student,seven
+teacher,seven good all right student t and student j
+student,twenty five
+teacher,twenty five give me another one student j
+student,thirty six
+teacher,so they said 25 and 36 do you see we re getting smaller and smaller
+multiple students,yes
+teacher,with our prime numbers twenty five thirty six okay let me see let me do a student g and student c
+student,forty six
+teacher,forty six and
+student,eighteen
+teacher,okay any objections to 46 and 18
+student,yes
+teacher,who s got an objection to it
+student,inaudible
+teacher,oh forty six and where s 18 it s eluding me i don t see it up there
+multiple students,multiple answers
+teacher,i don t see 18
+student,you already did it
+teacher,oh it s down at the bottom that s already been chosen give me a number
+student,fourteen
+teacher,fourteen and
+student,forty two
+teacher,fourteen and forty two fourteen and forty two let me get this table student g and student m
+student,forty eight
+teacher,forth eight and
+student,and 39
+teacher,whoa forty eight and he said thirty nine what can go into 39 besides 1 and 39 who knows what number can go into 39 evenly besides 1 and 39 yes
+student,eight
+teacher,nope student t
+student,inaudible
+teacher,i said besides 1 and 39 pass it to student l
+student,inaudible
+student,three
+teacher,exactly three will go into three and three will go into nine all right let s do student c and student l give me two more we re running out of numbers
+student,thirty five
+teacher,thirty five and
+student,thirty four
+teacher,thirty five and thirty four okay thirty five and thirty four thirty four thirty five okay it s getting slim pickings here slim pickings okay let s do student a and student r
+student,eleven
+teacher,what else can go what else can go into 11 besides what are we looking for we re looking for even numbers numbers that end in five or zero does 11 fit any of those qualifications
+student,no
+teacher,no so eleven is a prime number i m giving you one more shot give me another one please don t do that
+student,seventeen
+teacher,mmm student r we re looking for numbers that are even end in zero or end in five
+student,forty
+teacher,forty
+student,no forty three
+teacher,okay does that end in zero
+multiple students,no
+teacher,does that end in five
+student,no
+teacher,is it even
+student,forty
+teacher,oh okay forty and give me another one student d forty and
+student,five
+teacher,no forty and
+student,thirteen
+multiple students,ooh
+teacher,forty and
+student,forty five
+teacher,all right forty and forty five forty
+student,and forty five inaudible
+teacher,all right slim pickings but i still see a few more let s try student d and student t
+student,forty four
+teacher,forty four and
+student,twenty six
+teacher,good forty four and twenty six forty four twenty six all right there are a few more all right student k and student m
+student,thirty three
+teacher,thirty three oh that s a good one what can go into 33 besides 1 and 33
+student,eleven and three
+teacher,eleven and three good give me another number
+student,forty seven
+teacher,forty seven what can we multiply that will go into 47 besides 1 and 47
+student,we can multiply
+teacher,try another number she said 33 pick another number up there
+student,twenty nine
+teacher,okay what can go into 29 try another one
+student,twenty one
+teacher,all right we got 33 and 21 now i see one more one more okay student a what is it
+student,twenty seven
+teacher,twenty seven what do we multiply to get twenty seven what times what is twenty seven besides one and twenty seven we still need to work on our multiplication facts hand it back to student l
+student,three
+teacher,three times
+student,nine
+teacher,three times nine all right now on your desk you have basically the same thing only with this one you have little letters okay
+teacher,so what they want you to do is cross out one which only has one factor itself cross out all even numbers higher than two isn t that what we were doing
+student,yes
+teacher,okay cross out multiples of 3 such as 27 21 okay so you re going to go through here and cross out it says if you have sifted this sieve correctly only the prime numbers will remain the following words are unique because they are the only ones in english with triple letter combinations indicated so the prime numbers you will then take the letter associated with that prime number and write it down in the spots below and you will make a word you may begin if you re having difficulty raise your hand if you don t understand what you re supposed to do
+teacher,you are crossing out all the even numbers you are crossing out all the numbers that are multiples of six and three what s your question
+student,i don t get what we re supposed to cross out
+teacher,you are crossing out all the even numbers even numbers are divisible by what number who can tell me
+student,one
+teacher,who can tell me
+student,two
+teacher,right so if two can go into that number well let me at least get the all right so now are you clear on that student d do you understand now
+teacher,so after you ve crossed out all of your even numbers then you want to look and say which one s a lot inaudible divisible by three like the ones we chose twenty seven twenty one
+student,inaudible
+teacher,nine yes
+student,the letters that are down here
+teacher,are going to be the prime numbers the ones you don t cross out
+student,so we have to cross out the
+teacher,so are you going to cross out four
+student,no
+teacher,why not can t two go into four isn t four an even number other than two
+student,yes
+teacher,so cross it out what about this number cross it out what about this number our even numbers come every other number right
+student,yeah
+teacher,so we re not going to cross out the two but that means we re going to go four six eight ten we re crossing all them out all the way down to 100
+student,so when you say cross out one which only has one factor inaudible cross out one and then
+teacher,yes it s cross out one now i got into a big debate with my sister who used to teach math one is not considered a prime number it is a special number because it is only divisible by one nothing else one times one is one okay remember a prime number is divisible by one and itself so one is special so we re going to take one down and put them down at the bottom too okay
+teacher,is there anybody confused why one is not a prime number it is a special number right
+multiple students,yes
+teacher,okay what s the matter student r so you cross out one you don t cross out two four six eight ten come on let s go now after you get all the even numbers crossed out look at numbers that you haven t crossed out that are divisible by three such as three nine fifteen
+student,twenty one
+teacher,twenty one you got to cross all them out what s your question
+student,inaudible
+teacher,you don t have four crossed out you don t have one crossed out it tells you right here in the directions cross out one why don t you have ten crossed out all the ones that end in zero we going to cross them all out
+multiple students,multiple answers
+teacher,yes they re all divisible by ten and five are we going to go down the row with all the fives and cross all them out
+multiple students,yes
+teacher,yes yes
+student,i got a question
+teacher,let me see
+student,inaudible
+teacher,inaudible no we re going all the way then we just say we re going to cross out all the fives you did all the zeros we cross out all the fives there you go
+student,inaudible finish with the threes like for instance 3 36 thirty six is the last number
+teacher,yeah that s crossed out
+student,okay
+student,teacher are we supposed to inaudible the ones that are crossed out up here
+teacher,what do you mean
+student,for instance if we re crossing out one we have to go down
+teacher,no you re not crossing out all the ones
+student,teacher
+teacher,but we can cross out 81 why can we cross out 81
+student,because you said why can we
+teacher,yes why should we cross out 81
+student,because it s a factor of one
+teacher,nope give it to student l why should we cross out 81
+student,because you can multiply nine times nine and get 81
+teacher,exactly all right after you think you ve gotten them all crossed out start with like your two and put your z down in the box
+student,z i don t get it
+teacher,see the letter z put it down in the box you re trying to make a word
+student,teacher do i supposed to cross out the whole row of fours
+teacher,aren t they all even numbers
+student,yes
+teacher,if they end in four aren t they all even numbers
+student,yes
+teacher,are we going to cross out all the ones that end in two
+multiple students,yes
+teacher,are we going to cross out all the ones that end in six
+multiple students,yes
+teacher,okay so who can tell me what they ve learned today about prime numbers who can explain to me what they learned about prime numbers today
+student,that prime numbers are they can be multiplied or some prime numbers or sometimes you can add up and get the number no sometimes
+teacher,what do we know about prime numbers they cannot what look at the definition
+student,they can only be divided by itself and one
+teacher,exactly and then if it s not a prime number what kind of number is it pass it to student d if it s not a prime number it s a
+student,composite
+teacher,composite number and composite numbers
+student,is a number that can be divided evenly by numbers other than one and itself
+teacher,okay so how many types of numbers are there how many types of numbers are there think hard before you answer
+student,there are six
+teacher,six types did we define six numbers how many types of numbers are there
+student,four
+teacher,how many types of numbers are there student m
+student,two

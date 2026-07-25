@@ -1,0 +1,392 @@
+speaker,cleaned_text
+teacher,just to make sure that the camera s working all right today as i said to you before you went off to specialist we were gonna be focusing on probability chance we worked a little bit with probability put it away please thanks we worked a little bit with probability student a put the money away we worked a little bit with probability and chance before you had to take your amcast math test so we re gonna go back to it now today those are the things that we re gonna hopefully try to accomplish today and for those of you who may have difficulties reading in the back of the room i ll read it aloud objective students will be able to name degrees of likelihood and place events on the likelihood line this is a likelihood line students will be able to carry out probability experiments with a partner or small group so hopefully we will be able to get to our experimenting in a little while before we get to our experimenting we re gonna work with this likelihood line on this likelihood line i have a word can anyone read for me what that word says what does that word say student a
+student,impossible
+teacher,impossible when we talked about probability before the amcast test impossible was one of those words we spoke of so i m gonna come back to impossible in a little bit i m gonna read something to you that has to do with probability when people collect data when people who collect data try to understand what their data tells them they also use something called probability for example suppose that someone in our state wanted to find out whom people are likely to vote for in the next election they don t have the time or money to ask every voter so they take a poll a survey they ask some voters and use that sample to try to predict what all the voters will do let s say they ask 500 voters three hundred say that they ll vote for candidate a and 200 say they will vote for candidate b this result doesn t tell them for sure that candidate a will win because there are really thousands of voters however sometimes a sample such as this does give a pretty good indication of what s going to happen there s a special part of mathematics that helps people decide how likely raise your hand if you remember that word how likely or unlikely raise your hand if you remember that word how likely or unlikely it is that the results of their data investigation are actually true for a larger population we re going to start studying this special part of mathematics and it s called probability how likely or unlikely something s going to happen it has to do with using mathematics to predict future events or to describe situations in which we can t actually see count or measure all the cases of something so it s kind of like forming predictions predictions predictions based on some math now this is our likelihood line and we have a word up here which student a read for us which was impossible it s at the far end of the line so i want you to start out by thinking about what we know about future events that are likely possible and impossible i ve drawn a line that we will call the likelihood line at one end i ve written impossible can anyone think of an event a future event so it hasn t happened yet a future event that would be impossible what s a future event that would be impossible raise your hands student b
+student,flying cars
+teacher,flying cars
+student,that could happen
+teacher,impossible we have student c saying that can happen raise your hand if you think that flying cars
+student,in the future
+teacher,is impossible you said in the future impossible raise your hand if you think it s impossible okay now student c what are you thinking
+student,somebody will invent flying cars
+teacher,so someone will invent flying cars what if we were to what if we were to change or tweak student b s idea and we put in the word tomorrow there will be a flying car at our school do we think that that would work for impossible
+multiple students,yes
+teacher,how many of you think that s a better impossible i like that one tomorrow there will be a flying car at school be thinking of another one
+student,flying dog
+teacher,raise your hand another one student b why don t you call on someone who has their hand up
+student,student d
+student,zombies will rule the world
+teacher,zombies will rule the world raise your hand if you think that is an impossible event
+student,that s impossible
+teacher,now student t you think that is certain what does certain mean student t
+student,that it really happened
+teacher,certain means it s going to really happen so student t what does impossible mean
+student,it s never going to
+teacher,it s never going to happen so let me write that down cause that s important we need to remember that that s what impossible means never going to happen so student t do you think zombies ruling the world is an impossible event
+student,no
+teacher,no what do you think do you still think it s a certain event
+student,no
+teacher,so what do you think
+student,it s like impossible to
+student,then why did you just say no
+teacher,i think i just asked that let me ask that again do you think zombies ruling the world is an event that is never going to happen
+multiple students,yes
+student,it could happen
+teacher,so do you think that s an impossible event yes okay
+student,but it could happen if you had some scientist stuff and then inaudible
+student,they ain t gonna make zombies
+student,just put some science stuff in there and then you just pour it on inaudible
+teacher,zombies will rule the world and student e we ll take one more for impossible student e can you call on someone who has nice self control that has their hand up that has an idea for an impossible event
+student,student f
+student,everything for free every single stuff is for free
+teacher,every single thing is for free how many of you think that is an impossible event that every single thing will be free can you give some examples of what would be free silent count second third let s be respectful to student f can you give some examples of what would be free
+student,old stuff
+teacher,what
+student,old stuff
+teacher,old stuff can you give some specific examples
+student,video games
+teacher,video games would be free what else would be free student f
+student,cd s
+teacher,cd s would be free
+student,tv s
+teacher,tv s would be free
+student,markers
+teacher,what
+student,markers
+teacher,markers would be free
+student,houses would be free
+student,computer
+teacher,houses computers
+multiple students,inaudible
+teacher,silent count second and third student g so now let s vote again do you think it is impossible that every single thing will be free
+student,it would
+teacher,as i look around the room i see a few hands that aren t up i see student e student e s oh hers is up now student h s okay it s up student j okay so student j you don t think that s impossible
+student,and student k
+teacher,student a you don t think it s impossible silent count second third student a why don t you think that s impossible
+student,because there is stuff that is free out there like used video games inaudible like used dvd s
+teacher,but what about new dvd s and new cd s
+student,those inaudible 1 00
+teacher,but is 1 00 free
+student,no
+teacher,and student f said every single thing so do you think that s an impossible event
+student,yeah
+teacher,i would agree with you student f and i would agree with the rest of the class that raised their hands
+student,what is it impossible
+student,no it could happen though
+teacher,now let s see at one end of our likelihood line student h at one end of the line we have impossible now we have another end of the line which is here
+multiple students,certain
+teacher,if you have an idea of what word would work for that end of the line raise your hands student i
+student,certain
+teacher,we have certain any other ideas student r
+student,likely
+teacher,likely so these are all ideas we have certain
+student,most likely
+teacher,what other ideas do we have student a
+student,most certain
+teacher,most certain
+student,that s what i just said
+teacher,it s hard for me to tell when different people are yelling out student h we re trying to show our best behavior student m
+student,unlikely
+teacher,so you think unlikely would belong down here opposite of impossible
+student,oh
+teacher,i m talking about this part of the line right here right here student n
+student,possible
+teacher,possible
+student,most possible
+teacher,most possible
+student,most certainly
+student,most possible
+teacher,most possible student d
+student,very most likely
+teacher,very most likely student l
+student,very certain
+teacher,very certain i think
+student,very possible
+teacher,i think we have some good ideas up there yes
+student,very certain possible most possible certain likely
+teacher,popular when i look at that list there are some words that i would say mean pretty much the same thing if you know which ones you think mean pretty much the same thing student i please don t touch that if you know which ones mean pretty much the same thing raise your hand what would you say student c
+student,very certain and most certain
+teacher,very certain most certain i think i would probably there might be something else i could add in there maybe what else could we maybe add in there
+student,popular
+student,most popular
+student,very most likely
+student,very most popular
+student,possible
+teacher,actually i think i m gonna keep those so for the rest of the unit it s definitely going to happen would that work here
+multiple students,yes
+teacher,if we re saying very certain most certain certain definite it s going to happen definite so i am going to write when i find my black marker i m going to put certain definitely going to happen certain because the rest of the unit we will be using the word certain certain going to happen for sure
+student,certainly
+teacher,can anyone think of an event that is certain a future event that is certain that is going to happen you know it for sure
+student,the gas prices are gonna go up
+teacher,so student f it s your turn to call on someone whose hand is up maybe someone that has their eyes on you and showing self control can you sit up please
+student,i m trying to put his eyes on him but i can t because student e s inaudible
+teacher,student m please get the sweatshirt off your head sweater okay student f
+student,i don t know
+teacher,look at all of these hands that are up
+student,inaudible
+student,stop trying to bribe him student y that s a bribe
+teacher,student g shh all right we had two girls so let s do one boy cause you are a boy student k what do you think student k would be a certain event that s definitely going to happen in the future
+student,gas prices gonna go up
+teacher,gas prices are going to go up so that means no matter what for sure in the future gas prices will go up if you think that is certain 100 percent going to happen raise your hand
+student,nope i don t
+teacher,if you think that there is a chance that they won t go up they maybe stay steady or even go down if there s a chance of that raise your hand
+student,they go up
+teacher,silent count second third oh student g because we have some hands up we re not certain on this but student t what did you just say
+student,they usually go up
+teacher,they usually go up so you would kind of be saying student i that they re usually going up i m thinking of another likelihood line word
+student,most likely to go up
+teacher,another chance word another probability word what would that word be student z
+student,likely
+teacher,likely
+student,i told you it was likely
+teacher,student z likely is that closer to certain or closer to impossible
+student,in the middle
+student,certain
+teacher,certain how many of you would think that this would be like a good spot for likely
+student,me
+teacher,it s close to certain not close to impossible if you like this spot for likely raise your hand now i don t have every hand up so for right now i m going to put it up here and i m gonna draw an arrow there now student t says he likes it in the middle
+student,i do too
+teacher,and student o does too we re gonna think about that in a little bit so that gas the gas price one how many of you think that that would be a likely event that the gas prices will go up
+multiple students,inaudible
+teacher,i like that one i m going to put gas prices will increase here if that ends up staying our likely student g student g can you call on someone who has their hand up for back to certain 100 percent sure it s going to happen it could be either a boy or a girl now
+student,inaudible
+teacher,shh student v shh
+student,we will become old
+student,i ve got a good one
+teacher,we will become old
+student,inaudible
+teacher,certain certain we will become old our age will increase
+student,yeah
+teacher,our age is going to increase if you think that it is certain that your age is going to increase you will get older age increasing raise your hand so student a student d and student n you disagree okay student a why do you disagree
+student,if you die young or something
+teacher,but age increasing could you be older tomorrow
+student,yes
+teacher,you re a day older aren t you you re having your age increased by a day
+student,yeah
+teacher,student n do you agree that your age will increase is a certain event you agree okay then your hand should have been up student d
+student,yes i agree
+teacher,okay then your hand should of been up all right one more certain event student j will you call on a girl who has their hand up oh i love the student s hands whose are up that are silent showing good self control if there are girls which there are that have their hands up please call on a girl student r he called on you
+student,that the world s going to end
+teacher,you think that s a certain event that the world is going to end
+student,no impossible
+teacher,raise your hand if you think that the world is going to end is a certain event that is definitely going to happen raise your hand
+student,inaudible
+teacher,so student r as you look around the room you have one two three four five six people that agreeing with you seven so if you disagree with that being a certain event raise your hand
+student,inaudible
+teacher,so we have a lot of hands now so student r what makes you have no question at all about the earth going to end or the world
+student,inaudible
+teacher,because everybody is going to die one day
+student,everybody s that s in our class
+teacher,what
+student,everybody that s in our class
+teacher,how do you know that
+student,yeah people are born every day
+student,a movie
+student,are you serious a movie s not real
+teacher,raise your hand if you think the world is going to end would belong somewhere else student r and student t would belong somewhere else on that likelihood line the world is going to end if you think it would belong somewhere else on the likelihood line raise your hand okay a lot of people how many of you would put that at impossible it s never going to happen how many of you would think silent count second how many of you would think that it s somewhere in the middle between impossible and certain how many of you think it s closer to the middle to certain so it s in this area that we thought could be likely how many of you think it s between the middle to impossible in this area all right
+student,certain
+student,impossible
+teacher,i m going to put world is going to end inaudible we need more discussion about this with our number line before we place it student t
+student,the celtics are going to win
+teacher,the celtics are going to win in what you re saying that s a certain
+student,yeah
+student,celtics already lost to miami
+student,so
+student,so it s possible
+teacher,silent count student g go sit by the windows second third student t you said that the celtics are going to win is certain now when are we thinking that they will certainly win a game in the future or are we going to try to narrow this down
+student,they re gonna win inaudible
+teacher,so the celtics will win a game in the future raise your hand if you think that is certain that the celtics will win a game in the future that is i would say that is certain
+multiple students,inaudible
+teacher,all right before i give your group events to discuss and place on our likelihood line we have a few more spots to fill in i m looking for a word that would describe this middle area because not all events student m and student s not all events student z can be categorized as impossible or certain some of these especially this one up here the world is going to end that s hard to place so we have this area to think of and this spot here is half way this spot here is half way between impossible and certain anybody have an idea what we call that spot on the number line the likelihood line what could we call that spot student m what would you call it
+student,fifty fifty
+teacher,thank you student h but i called on student m
+student,inaudible
+teacher,likely is 50 50 so it s half so you re saying that this spot right here i ve heard 50 50 half and you think likely is 50 50 so we have a likely here and a likely here student o
+student,that could be maybe
+teacher,maybe maybe probably between impossible and certain maybe likely 50 50 half any other ideas student b
+student,possible
+teacher,possible possible student t
+student,uncertain
+teacher,uncertain uncertain so you think half way between impossible and certain is uncertain
+student,most certain
+teacher,i thought we had most certain over here most certain and certain would be
+student,half and half
+teacher,yep see
+student,we should it never gonna happen probably gonna happen most likely gonna happen likely gonna happen and certain it s gonna happen
+student,yeah but most likely and likely are the same thing
+teacher,student a your hand s up
+student,yeah i was gonna say that the one next to impossible could be
+teacher,wait hold on we re on this one
+student,oh yeah that should be likely and then the one next to impossible should be not likely inaudible
+teacher,so not likely or unlikely that s what you re thinking this one is
+student,i think it s unlikely
+teacher,impossible never going to happen unlikely not going to happen possible maybe likely 50 50 half likely certain we can t have likely and likely in two different spots
+student,look that one s probably possible
+teacher,no because we have different spots on this line so we can t have this likely and this likely so it s gotta be one or the other
+multiple students,inaudible
+teacher,so when i look at possible maybe likely 50 50 half there s one word there that i m really i m really liking that seems to work in the middle ground so middle as in it could happen it might not happen in the middle student o
+student,maybe
+teacher,maybe raise your hand if you think maybe works that it yes it could happen no it may not happen it s in the middle okay so i don t see a lot of hands up let s try that again maybe in the middle yes it could happen it might happen no it may not it s a 50 50 chance how many of you think maybe putting your feet up too maybe is a 50 50 i would agree with you maybe 50 50 half chance student w student d student v could you sit down please so i think we have our two other spots are you serious this is how you wanna be remembered
+student,i didn t do it when it hit student y s head it came to my desk and then i flicked it off
+teacher,and that s how you guys wanna be remembered
+student,i don t know it just landed on my desk
+student,it feels like some bad stuff on the recording and inaudible
+teacher,it s all being recorded everything student i every single thing that you are doing
+student,right now
+teacher,right now has been recorded so i may not see the piece of paper flying across the room that hit someone in the head i see a quarter of it out of my eye but you are being videotaped
+student,so if they see something bad are they gonna tell you
+teacher,i m going to see the tape i see the tapes i see what happens so it s not only that i m going to see it but you have people that are going to be studying this tape and this is how you wanna show yourselves student g have a seat in your chair please looking at the number line we have impossible unlikely maybe likely our likelihood line thank you and certain unlikely not likely to happen does that mean it s not going to happen
+multiple students,no
+teacher,no there s a chance it s not going to happen 50 50 chance it s likely to happen does that mean it s definitely going to happen
+multiple students,no
+teacher,no and then certain it s going to happen these areas a little bit more challenging to place events very easy to place an event easy to place an event so i am going to give your group student m s group go please sit at that back table i m going to give you an event you will quietly talk it over with the people in your group then i will ask your group to come up to our chart our likelihood line student a
+student,the whole group
+teacher,the whole group you will place the sticky note and you will explain where you are placing it on the line and why
+student,could we have some crackers first
+teacher,no need
+multiple students,inaudible due to crosstalk
+multiple students,inaudible due to crosstalk
+teacher,all right you have 30 seconds left to quietly discuss
+student,inaudible
+teacher,this is a future event will there be leaks in the building this afternoon
+student,so we have to inaudible
+teacher,do you think that there will be leaks in the building this afternoon would that be a maybe or an impossible chance likely event a maybe event 50 50 a likely event or a certain event
+student,maybe
+teacher,talk it over with your group raise your hand if your group is finished discussing
+multiple students,inaudible
+teacher,all right i ll give you a few more seconds we have two groups still discussing
+multiple students,inaudible due to crosstalk
+teacher,all right silent count second and third this group looks ready they re nice and quiet student a s group looks ready they re nice and quiet student y put the pencil box away please all right do i have a group that would like to volunteer to be the first let s have this group come on up all eyes on student g s group please let s be a respectful audience okay could you please read aloud in a nice loud voice your event
+student,i will turn 20 years old tomorrow
+teacher,okay and on the count of three one two three all of you read it
+multiple students,i will turn 20 years old tomorrow
+teacher,okay and where do you think you will place that event on the line
+student,impossible
+teacher,impossible did you all agree with that
+multiple students,yes
+teacher,okay if you agree class that i will turn 20 years old tomorrow is an impossible event raise your hands i would agree with you nice job you may place it at impossible i think i would put it right underneath the other impossible one and then you may go put your pen up and have a seat nice job group all right the next group to come on up student y s group come on up
+student,are you serious
+teacher,yes i am serious why wouldn t i be
+student,inaudible
+teacher,student d have a seat please let s show respect for our presenters
+student,i will see mrs g before summer s vacation starts
+teacher,okay on the count of three one two three read it
+multiple students,i will see mrs g before summer s vacation starts
+teacher,so i will see mrs g before summer vacation starts where do you think that belongs on the likelihood line
+student,likely
+teacher,likely and did you all agree on that
+student,student m thinks it s certain
+teacher,student m thinks it s certain so let s see let s see what the class thinks if you think that you would see mrs g before summer vacation starts raise your hand if you think that s certain raise your hand okay if you think that s likely raise your hand and student m what is making you think certain
+student,inaudible
+teacher,okay have a nice summer and could someone speak for likely student y
+student,we thought it s likely because sometimes mrs g doesn t get to go in all classes
+teacher,sometimes mrs g doesn t get to go in all classes
+student,sometimes she goes on vacation
+teacher,okay
+student,i have another reason for certainty
+teacher,what s your reason for certainty
+student,it s before summer vacation we could see her today that s before summer vacation
+student,we see her at lunch
+teacher,if you were to see her tomorrow is that before summer vacation
+multiple students,yes
+teacher,if we see her the next day is that before summer vacation
+multiple students,yes
+teacher,so
+student,inaudible
+teacher,what do you three think do you think it could be certain if tomorrow is before summer vacation
+student,it s certain
+teacher,so would you wanna change it to certain all right if you think that you will see mrs g before summer vacation starts is a certain event raise your hand i would agree with you place that at certain nice thinking put your pen up
+student,oh do we get to inaudible
+teacher,all right next group to place their events let s go with let s go with our first row here nice and quiet hold on all right could you please read to the class one person read to the class your event
+student,i flip a coin and it lands on heads
+teacher,i flip a coin and it lands on heads on the count of three one two three
+multiple students,i flip a coin and it lands on heads
+teacher,and where do you think that event belongs
+student,maybe
+teacher,maybe and why do you think it is a maybe event
+student,because it doesn t always land on heads
+teacher,what else could it land on
+multiple students,tails
+teacher,are there any other options student m student n and student s are there any other options other than heads or tails when flipping a coin
+student,no
+teacher,so you agree with this group to place it at maybe
+student,yes
+teacher,it s a 50 50 chance nice job place it at maybe great job push up your pen okay now let s go to let s go to student h s group student l put both of those on one great all right let s see student r sit down please student h could you join your group please student t and student o could you sit down so the people behind you can see thank you
+student,we have two
+teacher,you got two oh i knew that i made enough i couldn t understand why i had to make another you were only supposed to have one all right so read the first one out loud please
+student,the superintendent head of all schools will visit our classroom tomorrow
+teacher,the superintendent head of all brockton schools will visit our classroom tomorrow on the count of three read that please one two three
+multiple students,the superintendent head of all schools will visit our classroom tomorrow
+teacher,okay and where do you think that that will go
+student,maybe
+teacher,you think that s maybe
+student,yes
+teacher,a 50 50 chance okay
+student,i think it s unlikely
+teacher,you think it s unlikely
+student,me too
+teacher,you think it s unlikely as well
+student,yes because it can be a chance that he ll be able inaudible
+teacher,so you re saying that there are a lot of classes and that it would be hard for him or he might miss our class
+student,yeah
+teacher,like last time he didn t visit our class so we have here a few people thinking unlikely and we have student a s thinking maybe and student g s group is saying unlikely because there are so many classes in our building what did you say
+student,so many schools that he has to see
+teacher,and there are so many schools in our city to visit
+student,yeah it s 50
+teacher,so how many of you think it s a 50 50 chance which is a maybe
+student,inaudible
+teacher,angelo baker inaudible south east west north the high school
+student,the college
+teacher,and we have at least about 50 classes in our building between 40 to 50 so how many of you think it s more unlikely that he will visit our class tomorrow let me ask that again cause the first row was in the middle of a discussion how many of you think that it s an unlikely event out of all of the classes in our school and all the schools in the city that he will visit our classroom tomorrow unlikely event how many of you think it s a maybe event how many of you would put it between maybe and unlikely so in this area here how many of you would be happy with this area cause there are different degrees okay let s place that one there i m gonna need you guys to sit down cause they need the camera so we re gonna have our group that hasn t gone yet
+student,inaudible maybe because you never know he might get sick and he may not come to any school
+teacher,okay maybe remember is a 50 50 chance half way it s either one option or the other option that s it one out of two options student m s group come on up quickly because we have to end the lesson you re next it s the end of the lesson i gotta go i know read out loud please
+student,it will snow friday
+teacher,it will snow friday one two three all of you
+multiple students,it will snow friday
+teacher,all right and where do you think
+student,impossible
+teacher,impossible and why do you think impossible
+student,because it can t snow in spring
+teacher,raise your hand if you think that it is impossible that it will snow on friday raise your hand if you think it s something else other than an impossible what do you think student r
+student,unlikely
+teacher,unlikely so you think there is a slight possibility that we could get snow
+student,yeah
+teacher,how many of you would say unlikely how many of you would put it between unlikely and impossible in that area all right i think we can go put it in this area right here
+student,it probably can t stick anymore
+teacher,all right have a seat and our last group student p s group oh we have another group too
+student,yes
+student,there s two groups student l s group and student p s group
+teacher,student s i don t think it s appropriate to be dancing in front of the camera
+student,there s seven groups
+teacher,and let s give our attention to student p s group please read yours out loud
+student,there will be leaks in the building this afternoon
+teacher,there will be leaks in the building this afternoon
+student,was it raining today
+teacher,it has been raining for days there will be leaks in the building this afternoon and on the count of three one two three read it
+multiple students,there will be leaks in the building this afternoon
+teacher,and where do you think it belongs
+student,certainly
+student,maybe
+teacher,maybe okay raise your hand if you agree maybe raise your hand if you think it s a different spot okay student h where would you put it
+student,likely
+teacher,likely and why would you think likely
+student,it s raining a lot
+teacher,it s raining a lot what else would make you think likely do we have leaks in our school
+multiple students,yes
+teacher,do we have buckets all over the place in the school
+multiple students,yes
+teacher,yes so if it s raining and there are buckets everywhere and it s been raining for a few days does it seem like we are a little bit more than maybe that it could be a likely
+multiple students,yes
+teacher,i would agree with the likely and the last group student l s group come on up we ll do it at the end and last group at the end all right all attention to our last group student i sit down silent count second student h student o let s show the respect that people showed you and read your event
+student,it will rain cats tomorrow
+teacher,it will rain cats tomorrow student r and student i the event was it will rain cats tomorrow on the count of three read it again one two three
+multiple students,it will rain cats tomorrow
+teacher,and where do you think that belongs
+multiple students,impossible
+teacher,raise your hand if you agree place it not yet not yet student l all right silent count second student n and third
+student,i just fell
+student,student i put those things back
+teacher,let s look back at the objective students will be able to name degrees of likelihood were we able to name them
+multiple students,yes
+teacher,were we able to place events on the likelihood line
+multiple students,yes

@@ -1,0 +1,436 @@
+speaker,cleaned_text
+teacher,you should have 10 tiles on your desk student j you ve got 10 tiles okay everybody s got 10 tiles on their desk now right
+multiple students,yes
+teacher,okay what shape are your tiles
+multiple students,square
+teacher,all squares today we re going to start talking about area and we re going to start to talk about parameter we re going to start with simple shapes squares and rectangles if i ask you to clean up this area what does that refer to what do i mean by an area
+student,parameter of the classroom
+teacher,if i say clean up this area do i mean you re going to walk around the edges
+student,no
+student,the whole thing
+teacher,the whole thing when we talk about an area we talk about the whole thing now student h brings up a good point what if i said guys put everything at your desk on the parameter of the classroom what does that mean student t
+student,around
+teacher,around the edge of the classroom right there s a difference between area and parameter okay i want you to take the tiles and make me a square using 4 of your tiles push the others to the outside don t raise your hand just make me a square using 4 tiles okay honey i need you to make me a square using 4 tiles lay them down honey make me a square what do we know about a square
+multiple students,inaudible
+teacher,okay student m says it has 4 right angles but that s true about other shapes too right that s true about another shape what s different about a square that s not true about an
+student,it has 4 equal sides
+teacher,all the sides are equal okay now how many tiles did it take to make your square
+multiple students,4
+teacher,so if it took 4 tiles to make your square what s the area of your square how many do you have there
+multiple students,4
+teacher,you re counting the whole thing right okay now i want you to look at it and tell me what the parameter of your square is hang on student j how did you get that
+student,i counted all the sides
+teacher,just the sides though right nothing in the middle right or no right
+student,not right
+teacher,not right why
+student,because there s no sides in the middle
+teacher,right but how did you count it count them for me then
+student,one 2 3 4
+teacher,but you ve got to count every tile right
+student,oh
+teacher,try again are you counting just the outsides on the parameter do we count the insides
+student,no
+teacher,okay what do we count
+multiple students,the outside
+teacher,so what is the outside
+student,8
+teacher,does it make sense
+multiple students,yes
+teacher,okay so we see now that area and parameter are 2 different numbers guys this is the way that i ve explained it do you guys remember when you first talked about area and parameter in school
+student,yeah
+teacher,about 3rd grade right okay so this is what i explained just easy peasy without a formula area all a and a okay parameter i call this prance around you re just going to prance around the edge we re not going in the middle there s a deep lava pit there parameter and prance p and p if it helps you to remember than then do now can we come up with an easier way to do this
+multiple students,yes
+teacher,okay first let s think about it if we were to come up with a formula for area and you told me that you have 4 blocks and they re all equal never mind like this right and you told me that the area is 4 and you told me the parameter is
+multiple students,8
+teacher,okay how long is each side 2 2 units so is this side 2
+multiple students,yes
+teacher,is this side 2
+multiple students,yes
+teacher,is this side 2
+multiple students,yes
+teacher,you told me the area is 4 how can we come up with that how can we come up with a formula for the area of a square don t play with the guys they re tools don t play with the extra ones they re tools how can we come up with that let s do it another way let s test it make a square using nine of your tiles okay i ll draw one with you i m going to wait and see how you do student t s got it where s your square using nine of your tiles student h oh ding dong avon s calling stay with me got it a square using nine you ve got to use nine you have a square have you used nine count them student e push them together you ve got to make a square it s not a square if they re not pushed together student z s got it student j s drumming his fingers he s got that down student j when you made your square using nine how many are in each row 3 like that everybody s got one that looks like this how many are on each side student j tell me how many student j 3 if there s 3 on this side and it s a square there s 3 on this side 3 on this side and 3 on this side right
+multiple students,yes
+teacher,count your blocks and tell me what the area of that is student m says it s nine we re counting the whole thing right area equals all what s the parameter what is it student j
+student,12
+teacher,all right so they re different right can we assume can we probe by using both of these that area and parameter are going to be different for a square
+multiple students,yes
+teacher,okay so if we know excuse me that each side on a square has to have an equal number then can we come up with a formula for area look at the area with a very badly written a for this one look at the area for this one look at the numbers who can come up with a formula that would go for any square
+student,i don t understand
+teacher,area what is it okay what is it
+student,4
+teacher,4 what you ve got to come up with a formula area equals is it going to be 36 every time no matter how big my square gets your area here is nine your area here is 4 okay can we assume think about it this way can we say an area equals a side this is just of a square area of a square area equals a side what how did you know what to do how do you get to 4
+student,you count how many squares are in there
+teacher,okay but what if you don t want to count how many squares what if you don t have that option every time student j can you give it a go
+student,you would count the sides
+teacher,okay student j said it can be side plus side and that s how we would do it in 1st grade so what would be a short form of side plus side plus side plus side student j
+student,side times 4
+teacher,does that work in both of these examples
+multiple students,yes
+teacher,so on a square to find the area how many sides do we need to know to find the area if i said you have a square and one side is five inches long could you tell me what the area of that square would be if i tell you that one side of a square student j you need to look up here if one side of a square is five inches long could you tell me the area using our formula
+multiple students,yes
+teacher,what would it be red ticket student j good job plug it in
+student,inaudible
+teacher,how can that be different on a square dude you just told me you just told me every side was the same on a square he said it s 20 because if i told you that the side is five five times 4 what if the side is 10 what would the area be
+multiple students,40
+teacher,what if the side was 6
+multiple students,24
+teacher,student d what if the side was 4 i said student d
+student,16
+teacher,so now we magically know what we can do any square okay let s look at the same square and say okay we know what our formula is for our square our area what about the parameter how did you come up with the parameter student m
+student,first i counted all the sides which are all equal there are 4 sides so i did 3 times 4 which equals 12
+teacher,she said i added all the sides but she knows the sides are all equal right she said i know there s 3 on each side and how many sides are there
+multiple students,4
+teacher,okay on this one how did you come up with the parameter student t how did you come up with the parameter over here
+student,because each side has 2
+teacher,okay
+student,and i counted 2 for each side
+teacher,and how many sides were there
+student,8
+teacher,how many sides on a square
+student,4
+teacher,okay is that what we got for the parameter so student j already knows student j if i look at this and i look at this can i come up with a formula for parameter of a square you know what it would be what is the 3 in this one and the 2 in this one what does that represent
+student,inaudible
+teacher,think about it what does the 2 represent in this equation and what does the 3 represent in that equation
+student,the side
+teacher,okay so student j says this represents the side i m doing this strategically so you can think student j says so i ve got a side and what does that 4 represent student j
+student,number of sides
+teacher,the number of sides in every square right
+multiple students,yes
+teacher,so a side hang on just a minute the side times 4 would equal what
+student,12
+teacher,well it s going to be different for every one but if i said the side times 4 is going to equal what student e you don t have a number we re coming up with a formula okay here the area is equal to inaudible what is our side here i did this wrong didn t i side times 4 is our area this is side times side guys i did this wrong we didn t add the 4 together we did side times side okay back up you see how we did this side times side is 4 side times side is 9 so it s side times side equals the area and that s why you guys are staring at me now because we just did that side times 4 equals the parameter okay over here we do side times side and we get the area side times 4 is the parameter that gives you what s inside versus what s around the area is that what you have
+multiple students,yes
+teacher,look at your side how many is on a side
+student,3
+teacher,how many sides on a square
+multiple students,4
+teacher,so side times 4 equals
+multiple students,12
+teacher,that s your parameter how many is on a side
+student,3
+teacher,how many is on the other side
+multiple students,3
+teacher,what s 3 times 3
+multiple students,9
+teacher,that gives you the area let s try another one
+student,inaudible
+teacher,yes
+student,i inaudible
+teacher,let s try another one
+student,i m breathing under water a little bit
+teacher,you re breathing under water a little bit
+student,me too
+teacher,that s fine let s take 1 take 1 tile pull it out how many tiles do you have look at the one you pulled out okay you have 1 all right we have 1 tile each side is equal to
+multiple students,1
+teacher,okay how many tiles do you have there
+multiple students,1
+teacher,that s your area right there s 1 there so your area is 1 1 times 1 look at your formula side times side gives you the whole thing that s side times side equals the area now parameter how many edges do you have student t how many edges do you have
+student,4
+teacher,pull out the single tile there you go you have 4 edges now you re only counting around the edges right
+multiple students,yes
+teacher,so the side 1 times how many sides
+multiple students,1
+teacher,how many sides
+multiple students,4
+teacher,equals your parameter so your parameter is 4 count them 1 2 3 4 okay yes
+student,on the first one inaudible
+teacher,that s an s side count them student m how many do you have there count them how many sides do you have how many sides on a square
+student,4
+teacher,so what s your parameter you re counting the sides on the parameter right
+student,yes
+teacher,okay
+student,inaudible
+teacher,how is there one left out we re not dealing with that pile we re only dealing with this only dealing with a single tile we re dealing with a single tile with an area of 1 and a parameter of what student j how many sides
+student,4
+teacher,go back and make your square again out of the 4 tiles back up make your square out of the 4 tiles all right ready how many tiles do you have you have 4 tiles to make your square all right so your area which is the whole thing all is 4 right
+multiple students,yes
+teacher,let s prove it with numbers how many on this side 2 how many on this side
+student,2
+teacher,how many on this side
+student,2
+teacher,okay so to get to that if i take the side times a side what number do i get
+student,4
+teacher,how many did you tell me you had does that prove it
+student,yes
+teacher,make it out of 9 make your square out of 9 3 3 3 how many tiles do you have
+student,4
+teacher,how many tiles do you have
+student,4
+teacher,how many tiles do you have
+multiple students,9
+teacher,9 how many on each side
+student,3
+teacher,what s 3 times 3
+multiple students,9
+teacher,is that what you told me you had
+multiple students,yes
+teacher,does that prove it
+multiple students,yes
+teacher,pretend this is even how many tiles on each side
+multiple students,4
+teacher,what is 4 times 4
+multiple students,16
+teacher,side times side let s count them let s prove it student s eyes up here 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 does that formula work
+multiple students,yes
+teacher,so the formula is the area of a square is side times side this is wrong okay side times side just for a square does that make sense to everybody now
+multiple students,yes
+teacher,we re all on the same page great probably my mistake at the beginning that threw you off all right
+student,i don t get the sides like are you talking about the sides around the square
+teacher,yeah 1 2 3 1 2 3 how many is on each side
+student,how is it only 2 sides
+teacher,where is there only 2 sides sweetie
+student,you said side times side
+teacher,side times side they re all the same side times side is going to give you how many is in the middle okay
+student,oh
+teacher,it s like you know how to do this if you re counting problems i ve seen you guys do it you count your problems you count five problems and five down and you know that means you have 25 on the page it s the same thing this formula gives you how many is in the middle okay
+student,yes
+student,inaudible
+teacher,the parameter s going to be 12 because to get the parameter you ve got to count 4 times around right you re only counting the outside we re only counting outside pieces right we re counting every one of the edges the area we re counting like this parameter we re only counting edges so the parameter of this look at the same thing count them everybody look up here we re counting the parameter remember the parameters prance around the edge right
+multiple students,yes
+teacher,1 2 3 4 5 6 7 8 9 is that right no that s not right oh i did it wrong didn t i here i counted area count the edges 1 2 3 4 4 5 6 7 8 9 10 11 12 i did exactly what i just told you not to do i counted area and not the inside the difference is on this one instead of counting 1 you ve got to count both edges right
+multiple students,yes
+teacher,that s how you get your difference in number does that make sense
+multiple students,yes
+teacher,so in other words on a square that s on the corner in area that square counts as 1 parameter you count both sides of it the exposed sides the outer so if i do that i counted and i got 12 right
+multiple students,yes
+teacher,what is my formula i can plug in for that 3 times 4 is
+multiple students,12
+teacher,how many sides are there
+multiple students,4
+teacher,how many on each side
+multiple students,3
+teacher,3 times 4
+multiple students,12
+teacher,only on a square do it this way the same thing how many sides
+multiple students,4
+teacher,okay how many on each side did we do that wrong again it s the same as this one 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 okay look at yours count physically it has 9 count the edges on your own use the edge of your finger or the edge of your pencil what did you get
+multiple students,12
+teacher,see the difference guys you re basically only counting insides for area and you re counting on the outsides for parameter yes
+student,i don t understand how you re able to count the other part because it s square when i count i just get 4
+teacher,because you re counting each tiles as a square honey you re counting each one of these as 1 unit pretend that s an inch and i said each side was 3 inches 1 2 3 4 5 6 7 8 9 10 11 12
+student,oh
+teacher,you made one big square let s say that s inches it s 3 tiles long but if you said it was inches then it would make sense right okay
+student,inaudible
+teacher,that s what i m saying all right so let s do a practice one get your hands off your tiles if i told you this is our area student j tell me again what my formula is for my area of a square student t
+student,side times side
+teacher,if i told you that the side of are you listening student j if i told you that the side of a square was five units five inches let s say five inches if the side of the square was five inches what would my area be he said the side is five inches i ve got to multiply it by the side right so the area of the square would be 25 let s do the same thing for parameter student t if i told you that the side one side of a square was five inches that means we d know that every side is five inches right because the square is the same all the way around if one side is five inches what would my parameter be student t
+student,20
+teacher,20 i know we re just changing over from geometry to algebra from yesterday it s kind of a mind shift just kind of go with me open your mind it s really a lot easier i think you guys are trying to make it into an algebraic type solution you think i m going to do a multiplicative inverse on you any second now i m not it is what it is the thing is the reason we have these formulas is so we don t have to count them all what if it s huge do we want to go around and count every single square
+multiple students,no
+teacher,if i put you in a room that had tiles on the floor that were in squares and it was a square room and i said count these you ve got five minutes what s faster to count one edge and multiply it times 4
+multiple students,yes
+teacher,for parameter or count one edge and multiply it by itself side times side to get the area faster just to have the number right
+multiple students,yes
+teacher,so let s try one more student z if i told you that the side of a square was 7 inches long what would the area be you can cheat by looking at the board if the side is 7 inches long what would the area be i m asking for the area what would the area be if the one side is 7 inches long
+student,3
+teacher,student m
+student,14
+teacher,i m asking you for the area student t if one side is 7 inches long what would the area of that square be if i m asking you for the area if one side is 7 inches long what would the area be student m
+student,49
+teacher,guys the formula s at the board you re staring at the sky like it s written on the ceiling tiles on that same square student y what would the parameter be same square 7 inches long on one side what would the parameter be student j
+student,the parameter
+teacher,the parameter
+student,5
+teacher,i don t know where you got the 5 i said it s 7 inches long
+student,7 times 4 is 28
+student,inaudible
+teacher,yes
+student,i still don t get the side why don t you just put the number
+teacher,what number
+student,instead of side and side
+teacher,because we are putting the numbers in but this is your formula so any number i give you you can do it any number i give you you should be able to find the formula if you know the area is side times side get used to formulas you re going to see them all the time now you have to use the formula like the formula for division of fractions is the first fraction is the multiplicative inverse of the second fraction this is the formula for area and parameter please don t play with those anymore let s try again if you touch the tiles again i m slapping them off the desk okay they re a tool not a toy and i shouldn t have to say that to 5th graders okay if one side of a square is 12 inches long student s what s the area why are you all nothing is written up here i promise you i m not ever going to write anything up there what is the area of a square if one side is 12 inches long baby look at the formula it s on the board student t
+student,inaudible
+teacher,student e what s the parameter what s the formula for parameter student e of a square it s written on the board student e what s the formula for parameter of a square
+student,side times inaudible
+teacher,side times what is that what s written for parameter of a square please speak up side times 4 what is side times 4 then i just told you what did i tell you the length was 12 what s the parameter of a square that has one side that s 12 inches long student k student m
+student,48
+teacher,guys i don t know where you re going today you re not on it at all what are you all not getting about this if you have one side all you need on a square is one side they re all the same on each side if you have one side then you have all the information you need for parameter and for area and we proved it you counted them for me then we said okay that makes sense if we have 12 then we know we re going to have 12 times 12 is 144 we don t have to count 144 squares what if it s 20 what if one side is 20 what is my computation for area student m you don t have to give me the number just tell me how to get there
+student,20 times 20
+teacher,20 times 20 what is the parameter for that same thing student b if one side is 20
+student,20 times 4 is 80
+teacher,thank you 20 times 4 is 80
+teacher,there s absolutely nothing mysterious guys this is edges this is the whole thing in the middle okay you get it now great let s do student z tell me if one side is 15 you don t have to do the math if one side is 15 what is the area
+student,15 times 15
+teacher,thank you what s the parameter student j you don t have to do the math just give me the number
+student,15 times 4
+teacher,you get it student e okay student e what if one side s 4 what s the area
+student,4 times 4
+teacher,which is
+student,16
+teacher,okay what s the parameter student e if one side s 4 it s the same thing that s the one that s the same thing okay what if it s 7 student e what s the area speak up
+student,7 times 7
+teacher,is
+student,40
+teacher,49 what is the parameter 7 times
+student,4
+teacher,okay who does not get this yet okay tell me where you re getting lost
+student,that right there
+teacher,all right look at your squares everybody put the 9 back up the square made of 9 student t you ve got your square of 9 count the number of tiles how many do you have
+student,9
+teacher,how many do you have on each side
+student,3
+teacher,okay so you ve got 3 on each side right and what was the number you told me that it counted up to that s going to happen every time put the 2s out there make it out of 2 guys make your square out of 2s in other words 4 squares 2 and 2 how many squares do you have
+student,4
+teacher,how much is on each side
+student,2
+teacher,is that what you got it applies that way all the way down look at 1 how many do you have
+student,3
+teacher,no how many are right here
+student,oh 1
+teacher,how many is on each side
+student,1
+teacher,you see how that works it s going to be the same every time how many sides do you have
+student,4
+teacher,how many is on each side
+student,1
+teacher,there s your parameter okay do the same thing put in 4 if you put it in 4 how many is on each side
+student,2
+teacher,how many sides on a square always
+student,4
+teacher,this number s always going to be 4 babe okay
+student,so if it s 20 times 4 it s 80
+teacher,mm hmm but if one side s 20 what is it
+student,20 times 20
+teacher,yes absolutely good job yes
+student,inaudible
+teacher,there s not parameter times area parameter and area are two different things
+student,i mean how is there parameter
+teacher,on a one tile how many sides does it have
+student,4
+teacher,that would be the parameter does that make sense yes okay do you feel real good about squares
+multiple students,yes
+teacher,real good you can do it in your sleep i wake you up and i say the side s 2 you re going to say the parameter is
+multiple students,4
+multiple students,8
+teacher,side s 2 side s 2 the parameter would be
+multiple students,4
+multiple students,8
+teacher,8 side is 2 the area is
+multiple students,4
+teacher,got it yes
+student,what do we do with triangles
+teacher,we re not doing it with triangles right now we ll get to that she said what if we did it with triangles we ll get to triangles square is the most basic everybody feels good with this right
+multiple students,yes
+teacher,i m trying to decide whether
+student,when do we get to circles
+teacher,yes we ll get to circles we re going to get to circles but let s hold ourselves to our squares right now now you can do squares we ve got our squares let s leave our formula up there okay don t make me regret going on i want you to make a rectangle out of 2 going this way and 5 going this way okay 2 and 5
+student,i ve got 2 and i ve got 5
+teacher,there you go you ve got it
+student,like this
+teacher,like that okay what is the area student j you missed one you need another tile i asked for area first student j what is the area count them remember the area is what is it student m
+student,10
+teacher,okay so the area of this is 10 we did that by counting right look everybody right up here we re moving 1 2 3 4 5 6 7 8 9 10 that s the area right you told me it was 10 how many go this way
+multiple students,2
+teacher,how many go the other way
+multiple students,5
+teacher,okay just leave that there we ll get you another one it s all right we ll grab one student j put inaudible in the back okay now listen so we know area equals 10 count the parameter what is it student j double check guys what s the parameter of 14 student t are you counting inches you ve got to count the edges so the parameter s 14 all right hold that thought
+student,i don t get it
+teacher,you don t get what buddy look it s just like on a square count the edges 1 2 3 4 5 6 7 8 9 10 11 12 13 14 you ve got to count all the edges okay everybody get the 14 you have to count the outside edges you got what babe student j what did you get
+student,i got 13
+teacher,then you miscounted how can you have an even edge
+student,inaudible
+teacher,count the edges buddy look 1 2 3 4 5 6 7 8 9 10 11 12 13 14
+student,oh
+teacher,guys on the corners you have to count both edges of that square that s what some of you are skipping over that s called the area if you just count the square we re counting edges make the same thing 2 times 4 take off 2 take off one of your layers of 2 okay what s the area student s baby you re counting tiles how many do you have
+student,8
+teacher,okay somebody count the parameter
+student,12
+teacher,you can t have an inaudible let s do one more take off 2 you re going to do 2 times 3
+student,i know what it is
+teacher,okay what is the area 2 times 3 which one s the area
+multiple students,6
+teacher,okay what s the parameter
+multiple students,10
+teacher,all right look at those 3 numbers and look at the figures that go with them can we come up with a formula for the area of a rectangle what is it
+student,inaudible
+teacher,no a formula buddy that s going to work with every one a formula that will work with every single one when you say side times side the problem with that is with square all the sides are the same length you re on the right track but on a square all the sides are the same length on this one we have 2 sides that are 2 and 2 sides that are 5 and 2 sides that are 4 and 2 sides that are 3 yes
+student,side times 2
+teacher,okay which side
+student,the side that s going that way
+teacher,will that work with any rectangle i draw what if i draw one that s 3 going this way and 5 going that way would i still go side times 2
+student,no
+teacher,okay i need a formula that s going to work for any rectangle what s true every single time guys look at the numbers on the board stop playing look on the numbers that are on every single one of those and look at the area number when the area was 10 and when the area was 8 and when the area was 6 student z
+student,they re all even
+teacher,no i want you to look i know they re all even i want you to look yes what is this called
+student,area
+teacher,no the area for a square and the area for a rectangle can t be the same thing because the area for a square has four equal sides what does a rectangle have what is the difference between a square and a rectangle
+student,it has uneven sides
+teacher,what do you mean uneven
+student,inaudible
+teacher,be more specific student b you were on it what did you say about a rectangle
+student,that two sides of a rectangle are the same
+teacher,what are the other two they can be anything
+multiple students,inaudible
+teacher,wait a minute don t go further you re telling me that i can have a rectangle with two sides the same like these two can be the same and these two can be different
+multiple students,no
+teacher,okay so what
+student,all of them are the same
+student,no they re not all the same
+teacher,did i draw one all the same
+student,inaudible as on the bottom and on the sides
+teacher,okay student b listen what student m said was the top and the bottom are the same and both sides are the same what this is called this is called the long way it s called length and the short way is called width can we come up with a formula for how to get the area that s a ticket length times width area of a rectangle look at it every single time look at our examples every single time is length times width the answer area is 10 length is 5 width is 2 area is 8 length is 4 width is 2 area is 15 length is 5 width is 3 area is 6 width is 2 length is 3 does it work every single time
+multiple students,yes
+teacher,that s it okay now
+student,inaudible
+teacher,i m sorry
+student,inaudible
+teacher,yes we are going to go parameter now a little bit different because again we re adding the edges and the edges here remember the side was all the same so you can do side times 4 over here we don t have 4 sides that are the same how many sides do we have that are the same
+student,2
+teacher,we have 2 that are the same here and 2 that are the same here right can we make a formula from that think what if i said how many sides do i have that are the same over on a square that was 4 how many sides are the same on a rectangle student m
+student,2
+teacher,okay what if i said so my width is the same right
+student,yes
+teacher,so my width times 2 do i have something else that s the same
+student,yes
+teacher,what else is the same on all of them
+multiple students,the length
+teacher,the length is the same so could i add my length to my width i have to multiply my length times 2 also right
+multiple students,yes
+teacher,okay does this work let s try it on this one we said my parameter was 14 right let s start with width width is 5 times 2 plus what was my length i mean sorry my width was 2 my length was what
+student,5
+teacher,5 times 2 because i have 2 sides that are 5 right
+student,yes
+teacher,i have 4 plus 10 what does that add up to
+multiple students,14
+teacher,is that what we got when we just counted the edges
+multiple students,yes
+teacher,let s try again let s do this one we said it was 12 what s the length
+multiple students,4
+teacher,okay how many sides do i have that are 4
+multiple students,2
+teacher,let s times those then okay then i have to add to that how many sides do i have that are 2
+multiple students,2
+teacher,okay that s my width what s 4 times 2
+multiple students,8
+teacher,that takes care of my length what s 2 times 2
+multiple students,4
+teacher,is that my width
+multiple students,yes
+teacher,what is that is that what we got when we counted all the edges
+multiple students,yes
+teacher,it s magic let s do another one how many sides do i have that are 3
+multiple students,2
+teacher,so we can say 3 times 2 and on this one it s the width okay how many sides do i have that are 5
+multiple students,2
+teacher,5 times 2 let s add those up what s 3 times 2
+multiple students,6
+teacher,what s 5 times 2
+multiple students,10
+teacher,16 let s just count the edges 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 magic does it work every time
+multiple students,yes
+teacher,let s try it one more time just to see okay how many sides do i have that are 3
+multiple students,2
+teacher,it s always going to be 2 what s my width
+multiple students,2
+teacher,and i have 2 sides that are 2 right
+multiple students,yes
+teacher,let s see 6 plus 4 equals 10 what did we get 10 it s magic make sense guys are you breathing under water or is everybody breathing good now
+multiple students,yeah
+multiple students,breathing good
+teacher,so you got it right
+multiple students,yes
+teacher,yes excuse me
+student,inaudible
+teacher,which one the parameter or the area
+student,the area
+teacher,the area on this one remember we did side times 4 i m sorry we did side times side because on a square all the sides were the same okay on a rectangle all the sides are not the same we can t do side times side because it s not the same but what we can do is we can do length times width because we know there s only two measurements one s the length measurement and one s the width measurement if we do that that will give us everything in the middle that s the only reason we can t do sides you re still doing sides but you just have to identify which side it is because on the square they re all the same one side two side three side four on a rectangle you only have two sides that are the same and the other two sides are the same you have to go length times width when we started talking about side times side or side times this you can t do side you have to identify which side

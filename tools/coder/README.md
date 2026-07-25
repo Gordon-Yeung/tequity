@@ -42,9 +42,9 @@ if it isn't, it falls back to identical built-in copies, so it still runs.
 
 ## Reading the agreement stats (important)
 
-Flagging is rare relative to the ~1,400 teacher turns in a transcript, so **raw
-agreement is misleadingly high and Cohen's κ is misleadingly low** (the "kappa
-paradox"). Read them together:
+Flagging is rare relative to the teacher turns in an observation (median 161,
+max 607), so **raw agreement is misleadingly high and Cohen's κ is misleadingly
+low** (the "kappa paradox"). Read them together:
 
 | Stat | What it tells you |
 |------|-------------------|
@@ -56,10 +56,32 @@ paradox"). Read them together:
 
 Do not report κ alone.
 
+## The unit of analysis: OBSID, not video_id
+
+Everything here is keyed on **OBSID** — one observed class. The NCTE source's
+`video_id` column is *not* a video: 192 of its 319 values span more than one
+year, so it identifies a **teacher** observed repeatedly (~5.2 observations
+each, up to 11). Teacher and year are display metadata, joined in from
+`data/observation_index.csv`; they are never keys.
+
+Two ids are never encoded in one filename. Besides being ambiguous to parse,
+OBSID 508 belongs to two `video_id`s, so a single filename could not express it.
+
+| What | Where |
+|---|---|
+| Transcript | `data/transcripts/by_obsid/<OBSID>.csv` (`speaker,cleaned_text`, bytes frozen) |
+| Identity + counts | `data/observation_index.csv` (`obsid, video_id, year, …, sha256`) |
+| Coding assignment | `data/samples/one_per_teacher.csv` |
+| Portable copy | `python scripts/export_observation.py <OBSID>` → `data/exports/` |
+
+The tool lists whatever is in the sample manifest, falling back to the legacy
+`*_original.csv` set if no manifest exists. Study 1's hand-prepared `706` and
+`543` files keep their own column schemas and still resolve by name.
+
 ## File layout
 
 ```
-data/human_coding/<video_id>/
+data/human_coding/<OBSID>/
   <coder_id>.json      # one per coder (autosave target; the handoff artifact)
   llm.json             # LLM scenes imported as a third "coder"
   adjudicated.json     # reconciled gold standard
@@ -69,7 +91,7 @@ data/human_coding/<video_id>/
 
 ```json
 {
-  "video_id": "309",
+  "obsid": "2204",
   "coder_id": "gordon",
   "created_at": "2026-07-15T12:00:00",
   "updated_at": "2026-07-15T12:34:00",

@@ -69,6 +69,12 @@ button:disabled { opacity: .5; cursor: default; }
   padding: 8px 12px; border-radius: 6px; margin-bottom: 10px; font-size: 13px;
 }
 
+/* Which observation is open. Deliberately quiet -- orientation, not a warning. */
+.obs-header {
+  background: #f2f5f8; border: 1px solid #d8e0e8; color: #33475b;
+  padding: 8px 12px; border-radius: 6px; margin-bottom: 10px; font-size: 13px;
+}
+
 /* transcript */
 .transcript { max-width: 980px; }
 .turn {

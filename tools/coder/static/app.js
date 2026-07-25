@@ -25,10 +25,21 @@ async function api(path, opts) {
   return r.json();
 }
 
+// Observations are keyed on OBSID; teacher and year come from observation_index.csv
+// and are shown for orientation only -- never used as a key. (The NCTE source's
+// "video_id" column identifies a teacher observed across years, not a video.)
+function obsLabel(t) {
+  const bits = [`Obs ${t.obsid}`];
+  if (t.teacher_id) bits.push(`teacher ${t.teacher_id}`);
+  if (t.year) bits.push(`yr ${t.year}`);
+  bits.push(`${t.teacher_turns} teacher / ${t.turn_count} turns`);
+  return bits.join(" · ") + (t.error ? "  [MISSING FILE]" : "");
+}
+
 async function loadTranscriptList() {
   const list = await api("/api/transcripts");
   const opts = list.map((t) =>
-    `<option value="${esc(t.video_id)}">${esc(t.video_id)} (${t.teacher_turns} teacher / ${t.turn_count} turns)</option>`
+    `<option value="${esc(t.obsid)}"${t.error ? " disabled" : ""}>${esc(obsLabel(t))}</option>`
   ).join("");
   ["#transcript-select", "#cmp-transcript"].forEach((sel) => {
     const node = el(sel);
@@ -56,22 +67,22 @@ window.addEventListener("hashchange", route);
 /* ------------------------------ Code screen ------------------------------ */
 const Code = {
   coderId: "",
-  videoId: "",
+  obsid: "",
   turns: [],
   scenes: {},          // turn -> {turn, categories:[], other_label, note, confidence, verbatim_quote}
   saveTimer: null,
   lastViewed: 0,
 
-  lsKey() { return `coding:${this.videoId}:${this.coderId}`; },
+  lsKey() { return `coding:${this.obsid}:${this.coderId}`; },
 
   async load() {
     this.coderId = el("#coder-id").value.trim();
-    this.videoId = el("#transcript-select").value;
+    this.obsid = el("#transcript-select").value;
     if (!this.coderId) { alert("Enter a coder id first."); return; }
 
     const [tr, coding] = await Promise.all([
-      api(`/api/transcript/${this.videoId}`),
-      api(`/api/coding/${this.videoId}/${encodeURIComponent(this.coderId)}`),
+      api(`/api/transcript/${this.obsid}`),
+      api(`/api/coding/${this.obsid}/${encodeURIComponent(this.coderId)}`),
     ]);
     this.turns = tr.turns;
 
@@ -90,12 +101,30 @@ const Code = {
     scenes.forEach((s) => { this.scenes[s.turn] = s; });
     this.lastViewed = (coding.progress && coding.progress.last_turn_viewed) || 0;
 
+    this.renderHeader(tr);
     this.render();
     if (this.lastViewed) {
       const node = el(`#turn-${this.lastViewed}`);
       if (node) node.scrollIntoView({ block: "center" });
     }
     this.updateProgressInfo();
+  },
+
+  // Identity banner: which observation, whose class, which year. Coders work one
+  // observation at a time and the OBSID alone is not memorable enough to catch a
+  // mis-click before an hour of coding lands in the wrong file.
+  renderHeader(tr) {
+    const node = el("#obs-header");
+    if (!node) return;
+    const bits = [`<strong>Observation ${esc(tr.obsid)}</strong>`];
+    if (tr.teacher_id) bits.push(`Teacher ${esc(tr.teacher_id)}`);
+    if (tr.year) bits.push(`Year ${esc(tr.year)}`);
+    bits.push(`${tr.teacher_turns} teacher turns of ${tr.turn_count}`);
+    const warn = tr.shared_video_id
+      ? ` <span class="badge conf" title="This OBSID is claimed by more than one video_id in the source; teacher attribution is ambiguous.">shared teacher id</span>`
+      : "";
+    node.innerHTML = bits.join(" &middot; ") + warn;
+    node.classList.remove("hidden");
   },
 
   render() {
@@ -245,7 +274,7 @@ const Code = {
 
   async save() {
     try {
-      const res = await api(`/api/coding/${this.videoId}/${encodeURIComponent(this.coderId)}`, {
+      const res = await api(`/api/coding/${this.obsid}/${encodeURIComponent(this.coderId)}`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(this.payload()),
@@ -272,14 +301,14 @@ const Code = {
 
 el("#load-btn").addEventListener("click", () => Code.load().catch((e) => alert(e.message)));
 el("#save-now-btn").addEventListener("click", () => {
-  if (!Code.videoId || !Code.coderId) { alert("Load a transcript first."); return; }
+  if (!Code.obsid || !Code.coderId) { alert("Load a transcript first."); return; }
   clearTimeout(Code.saveTimer);
   Code.save();
 });
 window.addEventListener("beforeunload", () => {
-  if (Code.videoId && Code.coderId) {
+  if (Code.obsid && Code.coderId) {
     navigator.sendBeacon(
-      `/api/coding/${Code.videoId}/${encodeURIComponent(Code.coderId)}`,
+      `/api/coding/${Code.obsid}/${encodeURIComponent(Code.coderId)}`,
       new Blob([JSON.stringify(Code.payload())], { type: "application/json" })
     );
   }
@@ -290,11 +319,11 @@ async function renderProgress() {
   const status = await api("/api/status");
   const rows = status.map((s) => {
     if (!s.coders.length) {
-      return `<tr><td>${esc(s.video_id)}</td><td colspan="3" class="muted">—</td></tr>`;
+      return `<tr><td>${esc(s.obsid)}</td><td colspan="3" class="muted">—</td></tr>`;
     }
     return s.coders.map((c, i) => `
       <tr>
-        ${i === 0 ? `<td rowspan="${s.coders.length}">${esc(s.video_id)}</td>` : ""}
+        ${i === 0 ? `<td rowspan="${s.coders.length}">${esc(s.obsid)}</td>` : ""}
         <td>${esc(c.coder_id)}</td>
         <td>${c.scenes} <span class="pill ${c.completed ? "done" : "wip"}">${c.completed ? "done" : "in progress"}</span></td>
         <td class="muted">${esc(c.updated_at || "")}</td>

@@ -1,0 +1,641 @@
+speaker,cleaned_text
+teacher,should you have your math notebook in front of you your behavior book should be on my desk okay let me have the red group come right to me yellow group you re going to go computation station and green group you should be heading to workstation about an hour if you want
+student,why do you have to wear that
+teacher,that s the microphone
+student,where d she go
+teacher,okay so we re altogether because one thing i ve noticed when you did your quick checks this morning those pages i had you do this morning is division is still giving you a little bit of trouble so what i want to do is i want to back up and i want to look at some smaller number division problems look at one digit quotients excuse me look at three digit by one digit problems and see if we can figure out where it is that you re having trouble and maybe looking at some other strategies that we can do to solve problems even if the standard algorithm isn t working for us so we re going to look at some other division strategies we can do what i want you to do is i want you to turn to the next to a blank page in your notebook next blank page in your notebook all right to write on the back of your page make sure it s turned sideways to help us with the lines turn your paper sideways please so let s take a problem such as 215 divided by 4 go ahead and write that down 215 divided by 4 student j and let s talk about what this means what other ways besides doing standard algorithm what other ways could we go about solving this problem does anybody know of any other strategies we could use that maybe you re familiar with
+student,if there s a nine somewhere on the multiplication thing my aunt taught me this secret
+teacher,so that s to help you with your facts okay we don t have a nine here so but we re looking for different ways we could solve this problem other than standard algorithm
+student,multiplication
+teacher,we could use multiplication you re absolutely right we could use multiplication how could we use multiplication to solve this problem
+student,you can do 4 times 5 equals 20 and then 21 minus 20 is 1
+teacher,okay so explain that to me again we have you could do four
+student,4 times 5 equals 20 21 minus 20 that equals 1
+teacher,i think you re trying to do standard you re thinking standard algorithm the steps in your head thank you sweetheart let s go back to what student j said about how we could use multiplication we ve talked about how we can use multiplication to solve the problem so one thing we could do is we know that we re going to have a number times four groups because we know when we re doing division that divisor means the groups we re breaking it into the size of the groups we need to break it into equals 215 right
+student,what
+student,huh
+teacher,does this mean the same thing as these do you remember we talked about how we it s kind of like a fact family we think about a triangle we have 215 here and we have 4 here and then we have our number here that we re trying to figure out how they all relate 215 here we read this as 215 divided by 4 equals what number here we read this as what number times 4 equals 215 and we could also do 215 divided by what number is 4 4 times what number is 215 they re all related like a fact family so we could use multiplication to solve this if we drew an array showing this what number would go in the middle
+student,215
+teacher,215 and what dimension would this be over here
+student,four
+teacher,four and this is the number we re trying to figure out right so they re all close multiplication and division they re very closely related and we can just use multiplication to solve this problem and we can do that with any division problem because multiplication and division are so closely connected student j
+student,what s that white stuff under your eyes
+teacher,i don t know i m not sure i m not too worried about it okay so we have what number times 4 equals 215 all right how close can we get to 215 with groups of 4 without going over what do you know about groups of 4 and facts that could get us close to 215 by using groups of 4 what do you think what could we do here
+student,multiply
+teacher,we could multiply some numbers together so what numbers could i multiply by 4 that will get us close to 215 i m just going to go back and make a little bit more space
+student,12 no not 12
+teacher,well think about some larger numbers because we need to get if we did 12 times 4 where is that going to get us
+student,12 times 4 is
+student,48
+teacher,48 right okay so we want to get closer to 215 think about some numbers that maybe have a multiple of 10 in it
+student,30
+teacher,okay all right student t so you re saying 30 what s 30 times 4
+student,oh i know
+student,120
+teacher,120 right is that getting us closer to 215
+multiple students,yes
+teacher,yeah how many more groups of 4 could we add onto 120 to get us up here
+student,70
+teacher,70 well what s 70 times 4
+student,280
+teacher,280 is that going to put us over 215
+student,yes
+student,55
+teacher,that s going to put us pretty far over right so we need to make some could we do another 30 groups of 4
+student,yes or we could do 40 i guess
+teacher,hold on think about this for a second could we do another 30 groups of 4
+student,no
+teacher,no we can t do another 30 groups of 4 why not student j
+student,it would be 240
+teacher,it would be 240 and that d put us over so we need a number smaller than 30 that we can add on to 120 that would get us there what did you say student k
+student,20
+teacher,20 if we do 20 times 4 why 20 times 4 student k
+student,inaudible
+teacher,what it is smaller and what is 20 times 4 what is 20 times 4
+student,80
+teacher,80 so if we add these groups of four together how many groups of four do we have so far
+student,200
+teacher,30 plus 20 is
+student,50
+teacher,we have 50 groups of 4 so remember that multiplication symbol also means of right and that gets us to
+student,200
+student,220
+teacher,to 200 right
+teacher,well are we talking about groups of three or are we talking about groups of
+student,four
+teacher,four we need to stay consistent with that because we re always talking about groups of four here how many groups could we do five more groups of four
+student,no
+teacher,no why couldn t we do five groups of four why couldn t we do five groups of four
+student,because it will be over
+teacher,it would put us over 215 right
+student,it would be 60
+teacher,it would be five times four
+student,no 20
+teacher,20 that would put us over so what would we have to go down to how many more groups of four can i have here
+student,three
+teacher,why
+student,because 3 times 4 equals 12
+teacher,3 times 4 is 12 and if we add that together we get 53 groups of 4 equals 200
+student,12
+teacher,12 and but we need to get to 215 what does that mean
+student,we need three more
+teacher,we would have to add on 3 more to get to 215
+student,there would be a remainder of three
+teacher,exactly so our answer here to our division problem if we go back here is going to be that we need 53 groups of 4 and it s going to be 3 remaining to get us to the 215
+student,you re not supposed to write it like that
+teacher,you re right we ve been working on writing it as a remainder so what would it be it would be 53
+student,53 over
+student,53
+teacher,53 and 3 what s our divisor
+student,four
+teacher,four because we need three out of four to get to our answer right we need three fourths more okay so let s go back and see does this relate to the standard algorithm which is something we ve been working on with division that we re still having a bit of trouble with nope i don t want you to write this yet because i m going to give you another division problem that i want you to solve using multiplication now how many people kind of like this just solving it with multiplication
+student,i do
+student,i do
+student,can i do that
+teacher,this is a strategy if this strategy works for you yes you can do this instead of dividing it absolutely it s what works best for you is what i want you to do
+student,so we could do that on a test if we wanted
+teacher,absolutely of course you can okay so let s go back and just see because some of you are on the cusp you re really close to getting standard algorithm so let s look at how this is related to standard algorithm we know when we re doing standard algorithm we have what are our steps we have to
+student,divide
+multiple students,divide
+teacher,divide then what
+student,multiply
+multiple students,multiply subtract
+student,bring down and do it all again
+teacher,then repeat right so we have the steps that we know to follow so we first say to ourselves could we do two divided by four
+student,yes
+teacher,it would just be zero right so we re going to go to our tens place right now we have 21 tens divided by 4
+student,yes
+teacher,which would be what
+student,six oh not six
+student,no
+teacher,21 divided by 4 would be
+student,five
+teacher,five why because five
+student,it s the closest
+teacher,times
+student,times 4 equals 20
+teacher,20 and remember we can t go over so we re going to subtract and we get
+student,one
+teacher,one right
+student,mm hmm and then bring down the five
+teacher,hold on before we bring down the five what do we have to do
+student,check
+teacher,check is one less than four
+student,yes
+teacher,yes so we re going to
+student,bring down the five
+teacher,bring down the
+student,15
+teacher,five right 15 divided by 4 is how close can we get to 15 without going over
+student,14 no
+student,inaudible
+student,oh three three
+teacher,three why because three
+student,times 4 equals
+teacher,12 and we subtract and we get
+multiple students,three
+teacher,three so did we get the same answer
+student,yes
+teacher,yes
+student,i like that way to do it i don t like the multiplication
+teacher,you don t like multiplication and everybody is different and we even have other strategies we could do do you know in the past have you learned partial quotient it might have been called the seventh way
+student,no
+teacher,okay that s yet another strategy we can try if the standard algorithm isn t working for us so let s just take a minute and i m just going to show you that quickly because some of you may say oh you know what i did learn that in the past and i do like that one
+student,oh i know this
+teacher,see and this way is very closely related to this way and you re going to see that because when you re doing partial quotient you re using what you know to solve the problem instead of adding up here you re going to subtract down okay so for instance again you re going to think how close can you how many groups of 4 can you get close to 215
+student,five
+teacher,not five
+student,50
+teacher,50 let s do 50 right student s says 50 why because 4 times 50 is
+student,200
+teacher,well four times five is 20
+student,oh 200
+teacher,200 right and we subtract and we get
+student,15
+teacher,15 how many groups of 4 can you take from 15
+student,three
+student,three
+teacher,three why because four times three is
+student,12
+teacher,12 we subtract and we get
+student,three
+teacher,three do i have can i take any more groups of four out of three
+student,no
+teacher,no so we know we re done with our problem so now we add these up and we get
+student,53
+teacher,53 with
+student,remainder of three
+teacher,three fourths remaining another way we can solve it right okay so these are all three different ways of solving one problem and are they similar yes are they different yes and it s a matter of deciding which do these strategies is best for you because i ve known you re having trouble with standard algorithm maybe you want to keep going with standard algorithm and you feel like you re really close to it and you want to keep doing that but if standard algorithm isn t working for you we need to look at other strategies that you can adopt and make your own so that way you re comfortable solving division problems so what i m going to do now is we re going to put another problem up here and i want you to decide how you want to solve it do you want to solve it using standard algorithm do you want to solve it using partial quotient or do you want to solve it multiplying okay and that s what i want for you to decide so let me put up here i m going to put 163 divided by 6 okay so we have 163 6 here and we re trying to figure out what this other number is here okay so what i want you to decide right now is which way do you want to try this problem and go ahead and i m going to come and check what you re doing you can multiply
+student,the problem
+teacher,163 divided by 6
+student,i need help
+teacher,which way first thing you need to do is decide how you want to solve it
+student,this way i could do that
+teacher,well this is just a model to show what the problem looks like so you ve drawn that it s fine it s fine that you did that but now you seem to really think the multiplication the multiplying that s pretty easy right
+student,it is
+teacher,okay so why don t you do that
+student,inaudible
+teacher,right absolutely i want you to choose which one you want to do check your answer with a second strategy try one of the other strategies to check your answer to see if that s right
+student,inaudible
+teacher,you worry about student j s doing okay okay how are you solving this student s
+student,inaudible
+teacher,okay so where did this 15 come from student j would you go over and try multiplying that okay well i want you to try multiplying that can i help you set it up so we re going to do this and then what we re trying to find out is the number times 6 equals 163 because you seemed to really participate and like this one right so we want to think about how many groups so this is kind of where we re going to end up how many groups of 6 could we multiply what number could we multiply by 6 to get us close to 163 can you check your answer with a second strategy
+student,inaudible
+teacher,how did you know that
+student,inaudible
+teacher,i m glad you noticed that right away that s an important thing to notice right away and look where you started you said one divided by six was
+student,no i did 6 in 16 oh 20
+teacher,yeah and i think that s one of your troubles is figuring exactly where to start right so now go back and erase it and be sure your numbers line up okay so how many groups of six do you multiply by equals
+teacher,well what s 70 times 6 that would be too much because 7 times 6 is 42 so that would 420 that s right
+teacher,okay what s 20 times 6 what s two times six 12 120 so go ahead and write 20 there and we said that 20 times 6 is so go ahead and write that down now what have you got here you got to get close to 43 so how many more groups of six can you 120 you can try three times six go ahead okay so go ahead and do four times six and add it up and see what you get
+teacher,okay so now add those together and see how close you are to 163
+teacher,we re going to add these two together and we have times equals 120 right now we want to get to 163 how many more groups of six can we multiply by student j if you have to you you can use your multiplication chart
+student,inaudible
+teacher,oh well i like how you do that 16 by 6 cross that out there but 16 divided by 6 is what if you need the multiplication chart you should have those out 16 by 6 6 times 3 is 18 see how that went over you have to go down one so student e did you finish so you re at 144 so what about you re wanting to under place that does that need to be there yes it does so how many groups of 24 so now you have 24 groups of 6 equals 144 right okay so now how far away from 63 our goal is to get as close to 63 as we can how many multiples of six can you do
+student,inaudible
+teacher,you can do a little bit less than 20 right
+student,so 19
+teacher,okay so how close can you get without going over okay right so how many groups of 60 did you add on
+student,inaudible
+teacher,no you can t do times 6 nothing times 6 is going to give you 19 right so how close can you get to that number
+student,18
+teacher,18 right what times 6 will give you 18 use your multiplication chart to help you out 24 plus 3 is 27 times 6 equals right so here you have 27 groups of 6 162 how far is that away from 163 so we know if we had one more could we get to 163 your answer is going to be what with a remainder of
+student,i m done
+teacher,okay when you did this here did you notice when you subtracted did you check is 13 less than 6
+student,no
+teacher,no 13 is
+student,more than six
+teacher,more than six right so you need to go back with your product up here ladies and gentlemen in the green group i hope that how far are you on that worksheet
+teacher,your quick check should be done and in the green folder right and now you re working on that worksheet lesson 5 5
+student,yes
+teacher,okay because it s very noisy over there and the yellow group everybody has finished that work in fast math
+student,yes
+teacher,so you re just finishing your session everybody i see with markers over there you ve already solved all the problems on the paper
+student,i have
+student,yes
+teacher,okay okay all right so one thing i notice when i look around i see everybody doing a different strategy so let s look at some of the different strategies you used to solve this one problem student t is that appropriate to be talking about right now and i saw people using all three strategies so let s talk about them some people multiplied up to get towards 163 what did you start with those of you who multiplied up what did you start with here student e you multiplied up what did you start with how many groups of six
+student,24
+teacher,well how many groups did you start with
+student,six
+teacher,how many groups of six did you start with
+student,20
+teacher,20 so you did 20 times 6 equals
+student,120
+teacher,yep and then what did you add how many groups of six did you add to that
+student,four
+teacher,you added 4 more groups of 6 cause you knew that was 24 and then when you looked at how many groups of six you used now you did 24 times 6 equals 144 and then you said right away you re 19 away from 163 so how many groups of six did you do next
+student,three
+teacher,three groups of six and you got
+student,18
+teacher,18 so you knew that you used 27 groups of 6 in all to get to 162 and then what did you know
+student,that i had to add one
+teacher,you need to add one more to get to
+student,163
+teacher,163 so you knew that
+student,27 with a remainder of 1
+teacher,great good job you did it a different way huh you started with six times you did six times seven and six times eight and then you added those two up and then you kept going right so you used numbers which worked for you which is fine that s what i want i want what works for you some of you did partial student s you did partial quotient right you checked yours with partial quotient so you had 163
+student,divided by six
+teacher,and you divided it by
+student,six
+teacher,and what did you start with
+student,i did 6 times 7 because i knew 6 times 7
+teacher,okay
+teacher,you did 6 times 16
+student,i knew that six can t go into one
+teacher,so did you do standard algorithm or did you do partial quotient i think that looks like standard algorithm
+student,ooh i know
+teacher,what did you do student s on partial quotient here
+student,i did 6 into 16 which equals 2
+teacher,what do you mean 6 into 16
+student,i mean 6 into 163 equals 20
+teacher,you did 20 groups of 6 which is 120
+student,then i did 163
+teacher,nope the other way around you did 163 minus
+student,minus 120 which equals 43 then i did 6 divided by 43 which equals 7
+teacher,did you do 6 divided by 43 or did you think how many times does 6 go into 43
+student,yeah which equals seven
+teacher,equals it seven times why
+student,because 6 times 7 equals 42
+teacher,and then you subtracted and you had
+student,one
+teacher,one leftover and then what did you do
+student,i added 20 plus 7
+teacher,yeah
+student,27 remainder one sixth
+teacher,with one sixth so your answer was 27 and one sixth good okay and then student j you did standard algorithm right you stuck with good ole standard algorithm
+student,yep
+teacher,student d you did too and student e you did too so for that one you had 163 and you divided by 6 and what did you say student e what did you know right away that you can t
+student,that 6 goes into 16 two times
+teacher,6 goes into 16 two times because 2 times 6 is
+student,12
+teacher,and you subtract you get
+student,four
+teacher,four then what did you do
+student,brought down the three
+teacher,before you brought down the three
+student,oh checked that was smaller than
+teacher,you have to check to make sure four is less than six right
+student,then i brought down the three then i noticed six goes into
+student,6 times 7 is 42
+student,6 goes into 43 five times
+teacher,no
+student,6 times 7 is 42
+student,seven
+teacher,seven times because seven times six is
+student,42
+teacher,42 and then you subtract you get
+student,one
+teacher,one is one less than six
+student,yes
+teacher,so you know that your remainder would be one so those are three different ways that you can solve problems what we re going to do is when you go to workstation okay i m going to give you a couple different problems that i want you to try and you can work on them together and you can use any of the three strategies that we just talked about see if you can apply them to what would work best for you okay so write down these three problems you re going to do your quick check and then you re going to solve these problems
+teacher,so in your notebook right now i want you to write down these three problems for me please and you can solve them any way you want with any strategy let s do 229 divided by 7 writing these down because you re going to solve these on your own
+student,i thought we were doing quick check
+teacher,you are but you re going to finish your quick check and then i want you to do this and then let s do 305 divided by let s do 4 and then 149 divided by are you writing these down student t 149 divided by 8 so i want you to solve these three problems any strategy you want and i want you to check it with a second strategy okay so you re going to do your quick check first and then you re going to solve these three problems in your notebook when we get together on monday i m going to check to see how you solved these and we ll talk about the different strategies
+student,wait it is monday
+teacher,you can work with a partner yeah that s fine as long as and you can use your multiplication charts okay all right any questions about what you re going to do so you re going to do quick check first and who s my teacher s assistant student d so student d student a is going to give you the green folder and when you finish quick checks go right in there okay and then you re going to work on these three problems and you re going to have them done for me for monday remember teacher b is not here today so she will not be taking you okay okay ladies and gentlemen it s time to rotate
+student,no
+student,wait we go to
+teacher,you go to workstation could i have my station rotator please rotate the centers please student j student j is that your job so please don t touch it please come here and get your things okay student l why don t you do it for now you need to take your things yellow group should be making their way towards me
+student,yellow
+teacher,green group is going to computation station and red group is going to workstation
+teacher,i m missing about four people from the yellow group
+teacher,student s student b it should not take you this long to get here you re going to need to pull over chairs okay so one thing i noticed when i looked at the quick checks that i gave you this morning those little papers are kind of like a quick check i know it s a little bit different one thing i noticed when i looked them over red group please spread out i don t want anybody at that circle table i don t want anybody at the circle table and i don t want you sitting next to each other please
+student,inaudible
+teacher,student j let me repeat myself i don t want anybody at the circle table you re not sitting next to anybody either thank you okay all right when i looked at those papers this morning i noticed that for the most part everybody in this group seems to get the idea of division and you might just be making some mistakes somewhere sometimes it might be when we have two digit divisors and other people it might be just you know if it s fact based or what it is there s just something that s just not connecting right so today we re going to look at two digit divisors okay yesterday we worked on two digit divisors that were multiples of 10 today we re going to look at actual numbers and we re going to see if we can iron out some of those problems that we seem to be having one thing i noticed is that everybody seemed comfortable with standard algorithm right and you know those steps you know divide multiply subtract check bring down repeat and you re comfortable with those so let s talk about a problem we ll start with turn in your notebooks to the next clean sheet in your notebook let s think about 428 divided by 64 i guess
+student,like this
+teacher,sideways so your notebook is sideways sideways student j when we re doing division or we re doing any problem what is one of the best strategies you can use before you start
+student,estimate
+teacher,you want to estimate you want to figure out what your answer is going to be close to because that ll let you know if your answer is reasonable right so when we re looking at 428 divided by 64 what are you going to estimate this to be let s think of a good estimate to start
+student,420
+teacher,well when you re estimating in division where did we talk about we want to start first in the
+student,divisor
+teacher,in the divisor so what s the 64 we re going to take
+student,60
+student,60
+teacher,60 right
+student,write this down in our books
+teacher,no you don t have to you should write down the problem so what number that s close to 428 is easily divisible by 60 that s compatible 420 right so 420 divided by 60 will be
+multiple students,seven
+teacher,seven so we know that our answer should be about seven that would make it reasonable right and that s something how many people can estimate this in their head right away so if we spent two minutes estimating a problem not even if we spend like 30 seconds estimating it will help us tell if our answer is reasonable i can t tell you how important this step is so today when we re working on problems that s the first thing i want you to do is come up with an estimate you could just write it down quickly and then go through and solve it okay and you ll see why and how much easier it s going to help you okay
+student,isn t the answer like a 7 8 8 over 64
+teacher,well let s look at it and figure it out so when you look at this here the first thing you know about 64 is the 64 we know that these are our hundreds tens and ones can we do does 64 go into 4
+student,no
+teacher,no well it does but it would be zero right does 64 go into 42
+multiple students,no
+teacher,it would but it would be zero so i m going to put those xs there to hold those places right does 64 go into 428
+multiple students,yes
+teacher,yes now this is where that estimate will really really help you okay because what you have to do is what we call frontend estimation and you re going to think to yourself about how many times does 6 go into 42
+student,i know
+student,seven
+student,about seven
+student,eight
+teacher,it does go in seven times but watch what happens here this is what happens when we use standard algorithm with division quite often don t write this down just watch up here seven times okay and this is where it gets a little bit confusing this is the new step for you all right we re going to look at this as ones and tens okay all right seven times four is
+student,28
+teacher,28 we re going to put down that eight and then we re going to carry the
+student,two
+teacher,the two we re going to regroup that two to the tens place okay
+student,huh
+teacher,i ll explain why in a minute seven times six is
+student,42
+teacher,42 plus 2 is
+student,44
+student,44
+teacher,44 anybody see a problem
+student,the answer is more than the
+teacher,this is greater than this right okay this is what happens a lot in standard algorithm division we have to go back and we re going to erase and we have to go down now right seven was too large we saw that 7 groups of 64 would give us a number greater than 428 which means we re going to go down to what
+student,six
+teacher,six so now what we re doing is we re doing 64 times 6 but we re just setting it up in a slightly different way okay we re doing six times four is
+student,24
+teacher,24 we re going to put down the four and we re going to
+student,carry the two
+teacher,regroup that two six times six
+student,36
+teacher,36 36 plus 2 is 38 okay so just like we just did that we re going to do that this way but it s just set up a little bit differently six times four is
+student,24
+teacher,24 we re going to put down the four just like we did here we re going to carry the four but we re going to carry the two over here above the tens just like we did before
+student,that s where you underline
+teacher,mm hmm six times six is
+student,36
+teacher,36 plus 2 is
+student,38
+teacher,38
+student,so it becomes
+teacher,do you see how similar that is it s the same thing it s just setting it up a little bit differently okay so now we re going to subtract
+student,subtract
+teacher,okay eight minus four is
+multiple students,four
+teacher,thank you it s four two minus eight we can t do so we need to regroup this becomes three 12 minus 8 is
+student,four
+teacher,four what do we do next when we divide
+student,add zero
+student,check
+teacher,check is 44 less than 64
+student,yes
+teacher,yes do we have anything to bring down here
+student,no
+teacher,no so our remainder would be what
+multiple students,44
+teacher,44 out of 64
+student,we don t have no more places
+teacher,we don t have anything left to bring down here do we
+student,inaudible
+student,inaudible
+teacher,do we have anything else to bring down here
+multiple students,no
+teacher,no so there is a way that we could do this and we re going to talk about this next we can go into decimals we can go into the tens place put down the zero and we can bring down the tens place okay we re going to talk about that next week but for today we re just going to keep our remainders as a fraction okay that s 44 sixty fourths okay
+student,i learned that in the second because my i have my cousin he s in the military and he comes and visits us and he teach me things early
+teacher,okay so let s go back and look at our answer compared to our estimate is our answer reasonable student e you re not talking to student e you re not talking is our answer reasonable
+multiple students,yes
+teacher,why
+student,because it s near seven
+teacher,it s just less than seven isn t it it s between six and seven yeah so that s a very reasonable answer so what do you think does that kind of make sense
+multiple students,yes
+teacher,all right so let s try one in our notebooks let s do i know i just had you write that down but that s okay let s try 115 divided by 12
+student,150
+teacher,115 divided by 12
+student,15
+teacher,115 divided by 12 okay estimate first you absolutely student j what s a good reasonable estimate here
+student,10
+student,10
+student,divided by
+teacher,why 10
+student,because 10 is
+student,you can t do that
+student,yes you can 10 and 110 no 120 yeah
+teacher,well what s our estimate going to be
+student,10 divided by 120
+teacher,okay so
+student,120 divided by 12
+teacher,120 divided by 12 is what
+student,10
+teacher,10 so we know our answer should be about 10 right
+student,yeah
+teacher,that would give us our reasonable answer okay so how are we going to solve this what do we have to do
+student,does 12 go into 1
+multiple students,no
+student,it can t
+student,it can t go into 12
+teacher,it would but it d be zero
+student,x x
+teacher,does 12 go into 115
+multiple students,yes
+teacher,yes how many times nine nine why student k you should be writing this down why what s 9 times 12
+student,108
+teacher,108 and we subtract and we get
+student,seven
+teacher,seven
+student,and seven is smaller
+student,17 17
+student,seven twelfths seven twelfths
+student,you got to cross that off
+student,seven twelfths seven twelfths
+teacher,nine and seven twelfths is that reasonable
+student,yeah
+teacher,yes it s just less than 10 isn t it
+student,yes
+student,yes it is
+student,yeah yeah yeah
+teacher,that one s easy because we know our 12 tables right so it s easy to do that one
+student,i m better when i do my 12 tables when i like when i go really fast i don t know why i m weird
+teacher,doesn t really matter don t worry about it okay so we re going to do 243 divided by and i m going to be quiet i want to see how you do this one 243 divided by 31 we ll discuss an estimate first though what do you think here
+student,30
+student,30
+student,300
+teacher,30 goes into
+student,24
+teacher,240 how many times
+multiple students,eight
+teacher,eight times so we know that we want our answer to be about eight go ahead and solve it on your own let me see how you do why are you doing it over here
+student,that was easy
+student,inaudible
+teacher,use what we think of remember front end estimation think about how many times 3 goes into 24
+student,oh yeah
+teacher,well you got a seven here right so go ahead 7 times 31 would be
+teacher,well seven times one is
+student,seven
+teacher,seven times three is
+student,21
+teacher,okay
+student,can i do eight times
+teacher,you can try it and see what happens eight times one is
+student,eight
+teacher,and eight times three is
+student,24
+teacher,can you subtract that
+student,no
+teacher,eight times one is you got to put that in the ones place then good can you bring you said it was 248 what did you notice
+student,teacher aren t you supposed to put fractions in the remainder
+teacher,no 243 compared to 228 it s bigger so you re going to have to go down one right try one group of 31 less
+student,is this right
+teacher,eight times one is
+student,eight
+teacher,eight you have to have eight in the ones place there right
+student,i got the answer
+teacher,good
+teacher,student s keeps asking if you can check it with multiplication can you check it
+teacher,44 divided by 31 is 44 greater than 31 so you need to
+teacher,okay excellent so one thing i noticed right away that i saw a lot of you doing as you solved this is you used that find an estimation strategy you thought about how many times does 3 go into 24 and you said 8 times but what did you notice when you did 8 times 31 it was going to be
+student,over
+student,it was more
+teacher,it was 248 it was more than 243 right
+student,i knew it wasn t eight because when i figured this i did multiplication
+teacher,you thought about multiplication first
+student,and i took 31 times 8 nope
+teacher,okay so you kind of estimated it first good that s a great strategy to do and what will happen is when you get in the habit of doing this you re going to kind of recognize that most of the time you re going to need to go down another group okay because you have now you have why is that do you know
+student,when you round it you put the zero the rest of the
+student,i didn t hear that question
+student,the numbers i turned most of the numbers behind the
+teacher,the tens place
+student,yes
+teacher,is zero right but now you have value in the there s value in that ones place so that s going to change it a little bit right so you recognize right away to go down to seven seven times one is
+student,seven
+teacher,seven seven times three is 21 and you subtracted
+student,26
+teacher,and you got 26 so you knew your answer was going to be 26 seven and 26 over 31
+student,so how do we get i didn t really do
+teacher,it s okay
+student,sometimes when i do that sometimes i get mixed up doing that sometimes when i get 26 and try to find a way to how many times will that go into
+teacher,okay but then you have to check is 26 less than 31 right yep and then is there anything here to bring down nope so we know that we re all set now let s compare it to our estimate is it reasonable
+student,yes
+teacher,it s just less than what our estimate was right it s very important to make sure we do that okay so what i want you to do is i m going to keep you just a couple more minutes and then i m going to send you to workstation and some of you have chorus so you re going to be leaving me in a few minutes anyways but i want you to hold onto this because we re going to continue with this on monday i want you to work on this paper here okay except i m not going to have you do all these problems i m going to have you start with number nine
+student,inaudible
+teacher,okay nope there s no homework it s friday
+student,yeah
+teacher,so put a star next to number nine
+teacher,no in your paper yeah they did
+teacher,january 31 what january 31st what day of the week is it
+student,thursday
+teacher,thursday you ll probably have homework maybe i ll give you a nice easy assignment that s it okay all right so what i want you to do right now is put a star next to number nine and i want you to start with are you listening
+student,where do we start
+teacher,i want you to start with number nine so you re going to go to workstation student t and student j i m not sure are you working together on that paper you gave the quick check to student t already
+student,yes
+teacher,student t you have their quick checks okay then i don t mind if you re working together after you give your quick checks to student t okay so what you re going to do is start at number nine i want you to estimate first okay the directions don t say that but write that down next to number nine estimate first
+student,estimate
+teacher,you re starting with number nine yep you can estimate right on this page what i would do is i would estimate put your estimate right on this paper unless you want to do it in your notebook that s fine
+teacher,right there s not enough space to solve it there yeah you re going to do this right in your notebook okay and this should be done in your notebook not on loose leaf paper okay all right so you re going to estimate first and you can estimate right on the paper so what are you going to think for an estimate for number nine
+student,60 and i ll do 550
+student,no i would not do 550
+teacher,55 is not a multiple of 6
+student,what about
+student,60 on top of 9
+student,56
+teacher,56 is not a multiple of 6
+student,54
+teacher,54 divided by 6 is nine so you know it s going to be 540 divided by 60 will be about that will be about nine right because 56 is close to 60 right or you could 50 50 goes into 550
+student,that would be 55
+teacher,on number nine oh i see people rounded this to 60 and they ve got what s a multiple of 60 that s close to 55 i m sorry that s a multiple of 6 that s close to 55 so they thought 54 is closer right 54 times 6 is
+student,oh nine
+teacher,54 i m sorry 54 divided by 6 is 9 right so that s why they thought that you could also just you can go down to 50 here and you can do 50 goes into 550 you d get 11 that would be a reasonable estimate as well remember your estimate is just to help you if your answer is approximate so if somebody did that for estimate if they thought for number nine they thought 550 divided by 50 is that a reasonable estimate
+student,yes
+teacher,copy is that a reasonable estimate five goes into 55 so 11 which is close to 9 right so those are reasonable estimates you know your answer is going to be between 9 and 11 okay all right you all set
+student,yeah i m trying this
+teacher,all right so you re going to start with number nine and if you want to estimate some first and then go through and solve it
+student,do we do the estimate on
+teacher,hold up you re going to do your quick check after you solve finish your quick check on your own then you re going to give it to
+student,student j
+teacher,student j and then student j is going to put them all in the green folder that he ll get from student t and then you can work on this you can work on it with a partner okay
+student,what
+teacher,this paper all right you won t get very far especially who s in chorus you ll be leaving for chorus in just a few minutes
+student,i m not in chorus
+teacher,all right so start your quick checks and i ll have you finish them in a second
+student,inaudible
+student,so now
+teacher,yep go ahead okay it s time to switch up you have pencils okay get it done before you get to this page student e student j student t it might be at the table okay why don t you take up the work you started at workstation
+student,inaudible
+teacher,no you re supposed to do it in your notebook you re right
+student,then i erased it and then i didn t have any
+teacher,it should be in your notebook oh so take out your notebooks
+student,it s supposed to be in our notebooks
+teacher,mm hmm if you did numbers one and two on the paper that s okay because there s room there
+teacher,that s fine
+student,i think i threw away the
+teacher,that s a problem
+student,threw away the what
+student,the paper that i did my work on
+teacher,okay so you did number one in your notebook or you did it on the paper let me ask this how many people were able to do numbers one two and three okay how many people were able to do number one and two that s fine i d rather you have taken your time to do quick check anyways and really taking your time student j where s your math notebook
+student,inaudible
+teacher,okay
+student,my folder that i put it back in when i was
+teacher,okay just go put it in your do done folder that we re not concerned with right now okay and then i m losing some of you to chorus i should ve switched you around and put you in the other group so i could ve had everybody here who am i losing to chorus in a minute the two of you all right what we ll do is on monday we re going to continue with this paper a little bit this
+student,inaudible
+teacher,yeah i m going to keep working with you
+student,inaudible
+teacher,then you re doing something wrong
+teacher,is it a word problem
+student,on the bottom yeah they have remainders
+teacher,how do you know you got the same answer because you re not talking about it on our quick check
+student,no i asked teacher g and they re all the same
+student,it says remainder we got mad because we couldn t find out the answer
+student,because it says remainder on it but it s supposed to be a fraction
+teacher,oh it says remainder okay yeah
+student,inaudible
+teacher,see if you can multiply it up and get the answer okay there is the the answer is there okay
+student,for one
+teacher,yes okay so let s talk about on number one of the reasons why i grouped you together is for the most part when i looked at the papers you did this morning everybody here seemed comfortably with division and even two digit divisors okay so but sometimes there is some problems with two digit divisors that i do want to make sure we re clarifying but everybody here that s sitting here right now got that last problem with two digit divisors correct so that shows me you have a good understanding so what i want to be able to do is i want to be able to today look at some of these problems and next week give you the harder problems to work with okay so number one what did you get for an answer
+student,9 and 7 over 12
+teacher,9 and 7 twelfths did everybody get that
+multiple students,yes
+student,number two i didn t get to write down here
+student,number two i got 7 and 25
+student,7 and 26
+student,25
+student,26
+student,26 27
+student,it s 26
+student,26
+teacher,26 do you want to do it out and check it
+multiple students,yes
+teacher,so 243 divided by
+student,43 divided by 31
+student,31
+teacher,31 how many people are kind of estimating these before you start it is it a good idea to estimate then that s exactly where you should do estimate what would a reasonable estimate here be
+student,250 no 240
+student,wait he got it right it s 26
+student,30 into 240
+student,yay i got it right
+teacher,so but hold on first remember a good habit to estimate before you start right 31 is pretty close to
+multiple students,30
+teacher,30 how many times does 30 go into 243
+student,eight
+teacher,how many times right that will make it 240 right so we know our answer should be about eight so 31 goes into 243 we already we established eight here but we have to go down to seven how do you know before you even start you have to go down to seven
+student,because it s an overestimate
+teacher,it s an overestimate okay and now from here we have value in our ones place right so we know that that s gonna change it it s going to make it greater that s why we couldn t do the eight you have to go down how many people tried eight and then you had to go back and erase and that usually happens with division eventually what will happen is you ll get into the habit of seeing that that doesn t work and you ll go down so seven times one is and do you know this step here to multiply to get it here seven times one is
+multiple students,seven
+teacher,seven seven times three is
+multiple students,21
+teacher,21 and it s the same and you know that it s the same as when we re doing this here right 7 times 1 is 7 7 times 3 is 21 we re just setting it up differently
+student,mm hmm
+teacher,okay because i sometimes see kids doing this off on the side in the margin you shouldn t have to do it off the side okay chorus people go ahead okay so we now we re going to subtract and we get the 26
+student,26 over 31 yes you were wrong
+teacher,it s okay do you know where you went wrong that s half the battle is knowing where you went wrong yeah that was more
+student,inaudible
+teacher,okay number three i really like this question can the remainder in either example be greater than the divisor
+student,no
+teacher,why or why not
+student,teacher can i do it
+teacher,go ahead student t
+student,no because you would be able to divide it or multiply it again
+teacher,what do you mean
+student,like all right say
+teacher,say for instance this problem here let s say that we had our remainder was greater than 31
+student,say that was 32 yeah you d be able to that you would change that to eight because you d be able to divide 31 by 32
+teacher,okay and so you would be able to take out one more group of
+student,group of 31
+teacher,of your divisor right out of there you would have to up your divisor up one more
+student,you could multiply it because these are multiplication
+teacher,you d have to go back and remultiply and check your work though right that s why it s so important when you subtract that before you bring down a number before you record your remainder that you always make sure you check to make sure that it is less than your divisor very important to make sure you re doing that right
+student,mm hmm
+teacher,okay that s a great question number four did anybody solve number four in the above example the theater had sold 612 tickets how many sections must it have student s
+student,no
+teacher,nobody got to it oh you know what the problem isn t there i didn t give you the other page don t worry about that one yeah you can x out number four
+student,oh i was stuck on that one
+teacher,i m sorry you know what it is it s that i didn t copy the second page here
+teacher,so what i want you to do is let s skip climb through eight on the paper because we re not going to do it on paper we re going to go right to our notebooks
+student,we re going to what
+teacher,we re going to go right to number nine and there s just one thing i want you to do before you multiply these i want you to estimate first okay
+student,we have to write down the estimate
+teacher,mm hmm it can just be a quick looking at it and estimating you don t have to write down what you re estimating out all right
+student,you want to estimate i get mixed up
+teacher,okay let s talk about why you re getting mixed up when you estimate we re good
+student,i got the first estimate
+teacher,okay let s look at it student c says when he estimates he usually messes them up a little bit

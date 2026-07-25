@@ -20,6 +20,7 @@ Design notes:
 - All paths are repo-relative (deliberately NOT hard-coded like the pipeline).
 """
 
+import csv
 import json
 import re
 import sys
@@ -34,8 +35,11 @@ import irr
 HERE = Path(__file__).resolve().parent            # tools/coder
 REPO_ROOT = HERE.parents[1]                        # repo root
 TRANSCRIPT_DIR = REPO_ROOT / "data" / "transcripts"
+ARCHIVE_DIR = TRANSCRIPT_DIR / "by_obsid"
 CODING_DIR = REPO_ROOT / "data" / "human_coding"
 DEFICIT_DIR = REPO_ROOT / "data" / "deficit_scenes"
+INDEX_PATH = REPO_ROOT / "data" / "observation_index.csv"
+SAMPLE_PATH = REPO_ROOT / "data" / "samples" / "one_per_teacher.csv"
 
 CONTEXT_TURNS = 3
 CATEGORIES = ["A", "B", "C", "D", "E", "F", "G", "Other"]
@@ -99,13 +103,83 @@ def safe_id(value: str) -> str:
     return _SAFE.sub("_", (value or "").strip())[:64]
 
 
-def transcript_path(video_id: str):
-    return TRANSCRIPT_DIR / f"{safe_id(video_id)}_original.csv"
+# --- observation identity ----------------------------------------------------
+# The unit of analysis is the OBSID (one observed class). `video_id` in the NCTE
+# source is NOT a video: 192 of 319 span more than one year, so it identifies a
+# teacher observed repeatedly. Files, coding folders, and URLs are therefore keyed
+# on OBSID alone -- one key, one file -- and teacher/year are joined in from
+# observation_index.csv for display. Encoding both ids in a filename would be
+# ambiguous anyway: OBSID 508 belongs to two teachers.
+
+_index_cache = {"mtime": None, "rows": {}}
 
 
-def load_turns(video_id: str):
+def observation_index():
+    """obsid -> {teacher_id, year, n_codeable_turns, n_teacher_turns}. Empty if absent."""
+    if not INDEX_PATH.exists():
+        return {}
+    mtime = INDEX_PATH.stat().st_mtime
+    if _index_cache["mtime"] != mtime:
+        rows = {}
+        with open(INDEX_PATH, "r", encoding="utf-8-sig", newline="") as f:
+            for r in csv.DictReader(f):
+                rows[r["obsid"]] = {
+                    # "732|733" for the one OBSID claimed by two teachers.
+                    "teacher_id": r.get("video_id", ""),
+                    "year": r.get("year", ""),
+                    "n_codeable_turns": int(r.get("n_codeable_turns") or 0),
+                    "n_teacher_turns": int(r.get("n_teacher_turns") or 0),
+                    "shared_video_id": bool(r.get("shared_video_id")),
+                }
+        _index_cache.update(mtime=mtime, rows=rows)
+    return _index_cache["rows"]
+
+
+def sampled_obsids():
+    """OBSIDs assigned for coding, in manifest order. Empty if no manifest."""
+    if not SAMPLE_PATH.exists():
+        return []
+    with open(SAMPLE_PATH, "r", encoding="utf-8-sig", newline="") as f:
+        return [r["obsid"] for r in csv.DictReader(f)]
+
+
+def coding_targets():
+    """The observations this tool works on: the sample manifest, else the legacy
+    `*_original.csv` set. Single source of truth so the coding screen and the
+    progress dashboard can never disagree about what's in scope."""
+    return sampled_obsids() or [
+        p.name[: -len("_original.csv")]
+        for p in sorted(TRANSCRIPT_DIR.glob("*_original.csv"))
+    ]
+
+
+def transcript_path(obs_id: str):
+    """Resolve an id to a transcript file.
+
+    Legacy `<id>_original.csv` wins so the hand-prepared Study 1 files (706, 543)
+    and their own column schemas keep working; everything else resolves to the
+    OBSID archive.
+    """
+    legacy = TRANSCRIPT_DIR / f"{safe_id(obs_id)}_original.csv"
+    if legacy.exists():
+        return legacy
+    return ARCHIVE_DIR / f"{safe_id(obs_id)}.csv"
+
+
+def observation_meta(obs_id: str):
+    """Display metadata for an observation; blanks if it predates the index."""
+    meta = observation_index().get(obs_id, {})
+    return {
+        "obsid": obs_id,
+        "teacher_id": meta.get("teacher_id", ""),
+        "year": meta.get("year", ""),
+        "shared_video_id": meta.get("shared_video_id", False),
+    }
+
+
+def load_turns(obs_id: str):
     """Return (turns, error). turns: [{turn_num, speaker, text}]."""
-    path = transcript_path(video_id)
+    path = transcript_path(obs_id)
     if not path.exists():
         return [], f"transcript not found: {path.name}"
     return load_transcript(path)
@@ -119,8 +193,8 @@ def now_iso() -> str:
     return datetime.now().isoformat(timespec="seconds")
 
 
-def coder_path(video_id: str, coder_id: str):
-    return CODING_DIR / safe_id(video_id) / f"{safe_id(coder_id)}.json"
+def coder_path(obsid: str, coder_id: str):
+    return CODING_DIR / safe_id(obsid) / f"{safe_id(coder_id)}.json"
 
 
 def read_json(path: Path):
@@ -159,28 +233,50 @@ def index():
 # --- transcripts -------------------------------------------------------------
 @app.route("/api/transcripts")
 def api_transcripts():
+    """The observations assigned for coding, with teacher/year joined from the index.
+
+    Driven by the sample manifest so coders see their assignment, not all 1,660
+    archived observations. Turn counts come from the index rather than parsing
+    every transcript -- at 319 observations that parse was ~8.5MB per page load.
+    Falls back to the legacy glob when no manifest exists yet.
+    """
+    index = observation_index()
     out = []
-    if TRANSCRIPT_DIR.exists():
-        for p in sorted(TRANSCRIPT_DIR.glob("*_original.csv")):
-            vid = p.name[: -len("_original.csv")]
-            turns, err = load_transcript(p)
-            teacher_turns = sum(1 for t in turns if is_teacher(t["speaker"]))
-            out.append({
-                "video_id": vid,
+    for obsid in coding_targets():
+        path = transcript_path(obsid)
+        meta = index.get(obsid)
+        if meta is None:
+            # Predates the index (or index not built yet): fall back to parsing.
+            turns, err = load_transcript(path) if path.exists() else ([], None)
+            counts = {
                 "turn_count": len(turns),
-                "teacher_turns": teacher_turns,
-                "error": err,
-            })
+                "teacher_turns": sum(1 for t in turns if is_teacher(t["speaker"])),
+            }
+        else:
+            err = None
+            counts = {
+                "turn_count": meta["n_codeable_turns"],
+                "teacher_turns": meta["n_teacher_turns"],
+            }
+        out.append({
+            **observation_meta(obsid),
+            **counts,
+            # Surfaced at list time so a missing file is visible before a coder
+            # picks it, not after they hit Load.
+            "error": err or (None if path.exists() else f"transcript not found: {path.name}"),
+        })
     return jsonify(out)
 
 
-@app.route("/api/transcript/<video_id>")
-def api_transcript(video_id):
-    turns, err = load_turns(video_id)
+@app.route("/api/transcript/<obsid>")
+def api_transcript(obsid):
+    turns, err = load_turns(obsid)
     if err:
         return jsonify({"error": err}), 404
     return jsonify({
-        "video_id": video_id,
+        **observation_meta(obsid),
+        "turn_count": len(turns),
+        "teacher_turns": sum(1 for t in turns if is_teacher(t["speaker"])),
         "turns": [
             {
                 "turn": t["turn_num"],
@@ -194,9 +290,9 @@ def api_transcript(video_id):
 
 
 # --- coding load/save --------------------------------------------------------
-def empty_coding(video_id, coder_id):
+def empty_coding(obsid, coder_id):
     return {
-        "video_id": video_id,
+        "obsid": obsid,
         "coder_id": coder_id,
         "created_at": None,
         "updated_at": None,
@@ -205,18 +301,18 @@ def empty_coding(video_id, coder_id):
     }
 
 
-@app.route("/api/coding/<video_id>/<coder_id>", methods=["GET"])
-def api_coding_get(video_id, coder_id):
-    data = read_json(coder_path(video_id, coder_id))
+@app.route("/api/coding/<obsid>/<coder_id>", methods=["GET"])
+def api_coding_get(obsid, coder_id):
+    data = read_json(coder_path(obsid, coder_id))
     if data is None:
-        return jsonify(empty_coding(video_id, coder_id))
+        return jsonify(empty_coding(obsid, coder_id))
     return jsonify(data)
 
 
-@app.route("/api/coding/<video_id>/<coder_id>", methods=["POST"])
-def api_coding_save(video_id, coder_id):
+@app.route("/api/coding/<obsid>/<coder_id>", methods=["POST"])
+def api_coding_save(obsid, coder_id):
     body = request.get_json(force=True, silent=True) or {}
-    turns, err = load_turns(video_id)
+    turns, err = load_turns(obsid)
     if err:
         return jsonify({"error": err}), 404
 
@@ -243,11 +339,11 @@ def api_coding_save(video_id, coder_id):
             "flagged_at": s.get("flagged_at") or now_iso(),
         })
 
-    path = coder_path(video_id, coder_id)
+    path = coder_path(obsid, coder_id)
     existing = read_json(path)
     created_at = existing.get("created_at") if existing else None
     data = {
-        "video_id": video_id,
+        "obsid": obsid,
         "coder_id": safe_id(coder_id),
         "created_at": created_at or now_iso(),
         "updated_at": now_iso(),
@@ -259,8 +355,8 @@ def api_coding_save(video_id, coder_id):
 
 
 # --- status / coders ---------------------------------------------------------
-def list_coder_files(video_id):
-    d = CODING_DIR / safe_id(video_id)
+def list_coder_files(obsid):
+    d = CODING_DIR / safe_id(obsid)
     if not d.exists():
         return []
     return sorted(p.stem for p in d.glob("*.json"))
@@ -268,44 +364,60 @@ def list_coder_files(video_id):
 
 @app.route("/api/status")
 def api_status():
-    """Matrix for the progress dashboard."""
+    """Matrix for the progress dashboard.
+
+    Rows are the in-scope observations, plus any observation that already has
+    coding on disk -- so work done before a sample was drawn stays visible
+    instead of silently vanishing from the dashboard.
+    """
+    targets = list(coding_targets())
+    coded = sorted(d.name for d in CODING_DIR.glob("*") if d.is_dir() and any(d.glob("*.json")))
+    for obsid in coded:
+        if obsid not in targets:
+            targets.append(obsid)
+
     out = []
-    if TRANSCRIPT_DIR.exists():
-        for p in sorted(TRANSCRIPT_DIR.glob("*_original.csv")):
-            vid = p.name[: -len("_original.csv")]
-            coders = []
-            for cid in list_coder_files(vid):
-                data = read_json(coder_path(vid, cid)) or {}
-                coders.append({
-                    "coder_id": cid,
-                    "scenes": len(data.get("scenes", [])),
-                    "updated_at": data.get("updated_at"),
-                    "completed": data.get("progress", {}).get("completed", False),
-                })
-            out.append({"video_id": vid, "coders": coders})
+    for obsid in targets:
+        coders = []
+        for cid in list_coder_files(obsid):
+            data = read_json(coder_path(obsid, cid)) or {}
+            coders.append({
+                "coder_id": cid,
+                "scenes": len(data.get("scenes", [])),
+                "updated_at": data.get("updated_at"),
+                "completed": data.get("progress", {}).get("completed", False),
+            })
+        out.append({**observation_meta(obsid), "coders": coders})
     return jsonify(out)
 
 
-@app.route("/api/coders/<video_id>")
-def api_coders(video_id):
-    return jsonify(list_coder_files(video_id))
+@app.route("/api/coders/<obsid>")
+def api_coders(obsid):
+    return jsonify(list_coder_files(obsid))
 
 
 # --- LLM import (third coder) ------------------------------------------------
-def latest_deficit_file(video_id):
+def latest_deficit_file(obsid):
+    """Newest run containing this observation.
+
+    Accepts both naming schemes: OBSID-keyed runs over the archive, and the
+    legacy `<video_id>_original.deficit.json` from runs that predate the switch.
+    """
     if not DEFICIT_DIR.exists():
         return None
+    names = (f"{safe_id(obsid)}.deficit.json", f"{safe_id(obsid)}_original.deficit.json")
     runs = sorted((d for d in DEFICIT_DIR.glob("run_*") if d.is_dir()), reverse=True)
     for run in runs:
-        f = run / f"{safe_id(video_id)}_original.deficit.json"
-        if f.exists():
-            return f
+        for name in names:
+            f = run / name
+            if f.exists():
+                return f
     return None
 
 
-@app.route("/api/import-llm/<video_id>", methods=["POST"])
-def api_import_llm(video_id):
-    src = latest_deficit_file(video_id)
+@app.route("/api/import-llm/<obsid>", methods=["POST"])
+def api_import_llm(obsid):
+    src = latest_deficit_file(obsid)
     if src is None:
         return jsonify({"error": "no deficit_scenes run found for this transcript"}), 404
     raw = read_json(src)
@@ -330,7 +442,7 @@ def api_import_llm(video_id):
             "flagged_at": None,
         })
     data = {
-        "video_id": video_id,
+        "obsid": obsid,
         "coder_id": "llm",
         "created_at": now_iso(),
         "updated_at": now_iso(),
@@ -338,7 +450,7 @@ def api_import_llm(video_id):
         "progress": {"last_turn_viewed": 0, "completed": True},
         "scenes": scenes,
     }
-    write_json(coder_path(video_id, "llm"), data)
+    write_json(coder_path(obsid, "llm"), data)
     return jsonify({"ok": True, "scenes": len(scenes), "source_run": src.parent.name})
 
 
@@ -355,21 +467,21 @@ def scenes_by_turn(coding):
     return {s["turn"]: s for s in coding.get("scenes", [])}
 
 
-@app.route("/api/compare/<video_id>")
-def api_compare(video_id):
+@app.route("/api/compare/<obsid>")
+def api_compare(obsid):
     a_id = request.args.get("a")
     b_id = request.args.get("b")
     include_llm = request.args.get("llm") in ("1", "true", "yes")
     if not a_id or not b_id:
         return jsonify({"error": "need ?a= and ?b= coder ids"}), 400
 
-    turns, err = load_turns(video_id)
+    turns, err = load_turns(obsid)
     if err:
         return jsonify({"error": err}), 404
 
-    a = read_json(coder_path(video_id, a_id)) or empty_coding(video_id, a_id)
-    b = read_json(coder_path(video_id, b_id)) or empty_coding(video_id, b_id)
-    llm = read_json(coder_path(video_id, "llm")) if include_llm else None
+    a = read_json(coder_path(obsid, a_id)) or empty_coding(obsid, a_id)
+    b = read_json(coder_path(obsid, b_id)) or empty_coding(obsid, b_id)
+    llm = read_json(coder_path(obsid, "llm")) if include_llm else None
 
     universe_n = sum(1 for t in turns if is_teacher(t["speaker"]))
     a_turns = set(scenes_by_turn(a))
@@ -425,7 +537,7 @@ def api_compare(video_id):
         })
 
     return jsonify({
-        "video_id": video_id,
+        "obsid": obsid,
         "a_id": a_id, "b_id": b_id,
         "has_llm": bool(llm),
         "stats": stats,
@@ -434,24 +546,24 @@ def api_compare(video_id):
 
 
 # --- adjudication ------------------------------------------------------------
-@app.route("/api/adjudicated/<video_id>", methods=["GET"])
-def api_adjudicated_get(video_id):
-    data = read_json(coder_path(video_id, "adjudicated"))
-    return jsonify(data or empty_coding(video_id, "adjudicated"))
+@app.route("/api/adjudicated/<obsid>", methods=["GET"])
+def api_adjudicated_get(obsid):
+    data = read_json(coder_path(obsid, "adjudicated"))
+    return jsonify(data or empty_coding(obsid, "adjudicated"))
 
 
-@app.route("/api/adjudicated/<video_id>", methods=["POST"])
-def api_adjudicated_save(video_id):
+@app.route("/api/adjudicated/<obsid>", methods=["POST"])
+def api_adjudicated_save(obsid):
     body = request.get_json(force=True, silent=True) or {}
     data = {
-        "video_id": video_id,
+        "obsid": obsid,
         "coder_id": "adjudicated",
         "created_at": now_iso(),
         "updated_at": now_iso(),
         "progress": {"completed": True},
         "scenes": body.get("scenes", []),
     }
-    write_json(coder_path(video_id, "adjudicated"), data)
+    write_json(coder_path(obsid, "adjudicated"), data)
     return jsonify({"ok": True, "scenes": len(data["scenes"])})
 
 

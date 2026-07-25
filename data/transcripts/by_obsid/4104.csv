@@ -1,0 +1,223 @@
+speaker,cleaned_text
+teacher,we re gonna review one more time our long division process we
+student,dad mom sister brother and rover
+teacher,dad mom sister brother and rover so we have dad mom sister brother and rover what is my dad going to be you can tell me what s dad going to be
+teacher,what s mom going to be
+teacher,sister
+teacher,brother
+teacher,rover
+teacher,repeat or remainder now we can go step by step the first step dad divide what am i looking to divide student d
+student,four into five
+teacher,does four go into 5 in this case
+student,yes
+teacher,how many times
+teacher,one dad divide out of the way next is mom multiply what am i multiplying
+student,four times one
+teacher,four times one what s four times one student d
+student,inaudible
+teacher,four put your line under who comes next in the process go ahead student s
+student,inaudible and subtract
+teacher,subtract
+student,five minus four equals one
+teacher,very good next in the process we re going to bring down student j
+student,bring down the two
+teacher,bring down my two very good who s next student m
+student,bring down rover
+teacher,and what does rover tell me to do repeat or remainder so which one are we gonna do repeat or remainder
+teacher,how do we know we re going to repeat
+student,because you still have two numbers left over
+teacher,i still have three numbers left in my quotient but what else tells me is the indicator for why i need to repeat student a
+student,because four goes into 12
+teacher,so we need to repeat it all right well let s repeat it now i don t think we need to go through the steps any more who feels comfortable going through the problem who remembers the steps in their head as they re doing it very good let s go we know we re gonna divide so four into 12 equals how much
+teacher,next we ll do three times four that equals
+teacher,twelve minus twelve equals
+teacher,what am i doing next
+teacher,bring down my one just like yesterday we ve got a little issue does four go into one
+teacher,what happens here student s what am i gonna do
+student,one is the remainder
+teacher,is one our remainder
+teacher,why is one not our remainder this is the perfect opportunity to review back yesterday yesterday was identifying zeros in our quotient so why would we not have a remainder at this point
+student,we still have a four to bring down
+teacher,we still have a four to bring down we still have spaces in our quotient this problem is not done yet so does four to into one
+teacher,what should be put into my quotient student r
+student,a zero
+teacher,a zero zero times four is zero one minus zero equals one and now we bring down our next friend 14 does four go into 14
+teacher,how many times
+teacher,three six nine 12 nobody caught onto what i just did counting by three s what should we be counting by
+teacher,make sure for those of you who have issues you put your multiples on the side good four eight 12 three times four equals
+teacher,all right we have a remainder of two very good now we ve gone through our little long division practice who wants to get into that more fun algorithm partial quotients algorithm division who remembers this from yesterday oh you do let s review so again when dealing with a partial quotient algorithm division we should feel about it as an easy step by step way to help us with long division who remembers algorithm what s an easy way to remember the word algorithm if you were to see it on a test or in your homework
+student,method
+teacher,yes method a good way to think about it how to go about it so let s think remember the long division family from yesterday and the day before and this morning we had dad mom sister brother and rover and all of these guys have a part in the process everybody in the long division family does something dad divides mom multiplies sister subtracts brother brings down rover repeat or remainder i said i m gonna keep repeating this until you have it burnt into your brain i do not want you to forget the process but something changes today who is no longer part of this process let s see student j who goes somewhere
+student,brother
+teacher,brother bring down he is no longer part of this process because you can kind of see how we work it in so we re going to start by setting up the problem like this it looks just like the traditional long division method except fro the long line that s drawn to the right so let s attack this problem we have 485 divided by three we have 485 divided by three and we need something this is what helps us to keep us focused while we re working through this problem using partial quotients so what s that thing that we need to have up there
+student,inaudible
+teacher,okay so student j just said three times one three times 10 three times 100 what is he talking about he s very correct but what is he talking about what s one thing that we learned about yesterday we might want to keep to the side to help us stay focused on our problem okay student j
+student,benchmark numbers
+teacher,benchmark numbers very good so we re gonna have our benchmark numbers in this case he s already identified them so again benchmark numbers why should we have our benchmark numbers why is it good to have those around student d
+student,so we would know that so you can know what it is like inaudible
+teacher,okay know what three times 100 is so you can know the answer okay but how does this work within us solving the problem finding the quotient
+student,so you can know how many times you can go into that number
+teacher,how many times the divisor can go into that number it sort of breaks it down and makes it a little bit easier for us so let s take a look at our problem everybody should be writing three times one three times 10 three times 100 just keep it on the side there keep it on the side so we can know how to go through this problem without any issues what is a good benchmark to start this problem with what would be a good benchmark to start off our problem with student b what s a good number to start with
+student,one hundred
+teacher,why do you think student b wants to start off with 100 student v why do you think he wants to start off with 100
+student,inaudible
+teacher,okay so we know that there are at least 100 threes that can go into 485 okay so he asked himself remember that talk not that you re crazy but you want to be able to talk to yourself purposefully talk you want to be able to work the answers out and reason with yourself is there a reasonable answer i believe so and yes there are at least 10 more like 100 that we could put in there so let s take a look at this look at 100 what part o the process of long division is this kind of like what part of the process is this kind of like
+student,inaudible
+teacher,hold on think about the process the process doesn t change except for one person what part was this kind of like that we just did student h
+student,inaudible
+teacher,did we do multiplication yet in this part we put our benchmarks to the side yeah we had that sitting there we re talking about the long division process if we had to find a connection to a long division process in what we just did and asking ourselves how many threes are in 485 what part of the long division process would that be what do you think
+student,the
+teacher,how many threes are in 485 student j
+student,division
+teacher,division that would be like dad divide because you re asking yourself how many times does three go into 485 we figured about 100 times according to student b s answer now we re about to do something here what s next student c
+student,you add 300 to 485
+teacher,so student c is saying multiply 100 times 3 and of course student c is correct and we get 300 all right now we need to subtract 485 minus 300 who knows 485 minus 300 really let s see
+student,one hundred eighty five
+teacher,okay if we do our simple subtraction we re left with 185 are we done with this process
+teacher,why are we not finished student m why are we not finished
+student,we re not finished because we don t have a number up top
+teacher,okay we re not done because we don t have a number up top why else are we not finished
+student,because inaudible
+teacher,in this case three in this case it s gonna be three because i forgot to update my numbers here but yes we know three can go into 185 but how many threes do you think we have in this case we know we have at least 10 because 10 times three equals 30 but we can take it further and we re taking it further by how
+student,by inaudible
+teacher,we know we have at least 20 and if you take a look at it what would 20 give us if we had 20 threes what would 20 threes give us student j
+student,sixty
+teacher,sixty could i have gone even further than that
+teacher,what else could i have put
+student,you could have put 50
+teacher,why could i have put 50
+student,inaudible
+teacher,remember compatible numbers and we were looking at the first two numbers to give a good estimate well let s use that same process if you look at the first two numbers for what s left here we have 18 three goes into 18 how many times
+teacher,so we could have used 20 we could have used 50 or we could have used 60 we could have took it even further but in this case let s just finish it up so we have three times 20 and that s gonna get us to 60 which one do you want to use 20 or 60 or 50 which one let s get it out the way so we have 60 and 60 times three gives us 180 and 185 minus 180 equals five so if we add this up what is our quotient going to be
+student,inaudible
+teacher,exactly so how may time s can three go into five
+teacher,so again we can fly through this now we re ready to add what s one plus zero
+teacher,six plus zero
+teacher,one plus zero
+teacher,and we have 161 remainder how much
+teacher,dos all right let s skip on through the next one 843 divided by five what are the benchmarks for this problem student g what s the benchmarks for this problem
+student,five times inaudible
+teacher,all right so we have five times one five times 10 five times 100 all right so let s start about how many fives can we say are in 843 student d who wants to use 100 who wants to use something else oh really okay what would you use student j you d use 10 all right anybody else want to use 10 who would use one who would use 100 hmm why not start with 100 make the problem easy for us let s start with 100 what s next student c what s next
+student,inaudible
+teacher,we have a partial quotient here what do we do
+student,multiply
+teacher,what do you multiply sir
+student,five times five times eight
+teacher,you said five times eight we have the partial quotient here of 100 we got our 100 from our benchmark estimate so student h help him out please
+student,five times 100
+teacher,how much is that student h
+student,five hundred
+teacher,it says subtract so let s subtract go ahead student j
+student,inaudible
+teacher,so you re saying three minus three four minus zero is four eight minus five equals three all right now we have to start it all over again and we re asking ourselves how many fives are in 300 and we know how many is in there
+student,about 80
+teacher,about 80 let s see what would eight times five be
+teacher,forty and you attach that zero that s 400 so a little bit too high but at least you re thinking high you re thinking up there what s another number you can use besides 80
+student,twenty
+teacher,if we do 20 times five what are we gonna get
+teacher,can we go higher than that
+teacher,what else can we say
+student,sixty
+teacher,why 60
+student,because six times five is 30 and put the zero there and it s 300
+teacher,why not so that s 60 he explained it very correctly so 60 times five will get us 300 if we did 343 minus 300 we get 43 good next we start over again how many fives are in 43 student g try again
+student,forty three about eight
+teacher,about eight why very good
+student,because five times eight is 40
+teacher,five times eight equals 40 very good what s 43 minus 40 going to get me student s
+student,three
+teacher,what do i do next student s what should you be asking yourself take a look at our new divisor and our dividend at the bottom can we do anything else okay so what s next
+student,inaudible
+teacher,add the 100 plus 60 plus eight who s done that it s place value pretty easy student m what have you got
+student,one sixty eight
+teacher,very good our answer yes is 168 remainder three nice nice we have a few problems here we have 123 divided by five 584 divided by three 974 divided by six 678 divided by 10 and that s on the ticket so let s work with b and c let s take a stab at it you can work with the person in front of you or who wants to work on their own who wants to work with the person in front of them so work with whoever you want to work with or you can work by yourself and i ll come around we re only going to take about three minutes because then we re going into the second part i ll get one volunteer to do 584 divided by three and another volunteer to do 974 divided by six
+teacher,yeah take some time to do it
+student,can i do c too
+teacher,of course i think student c s trying to indicate to me he s finished who else is finished go ahead take your time
+teacher,all right so who s done student c was done first so you grab 584 divided by three who has number two done all right so student c go up there and get it done
+teacher,all right let s take a quick look at the board let s take a quick look at it so student c has 584 divided by three he started with 100 in his partial quotient because 100 times three he goes 300 five eighty four minus 300 equals 284 then he saw how many threes go into 284 he went straight to 90 why d you go to 90
+student,because nine times three equals 27 and you put the zero
+teacher,he says nine times three equals 27 and he just added his zero back very good he has 90 and that creates 270 and 284 minus 270 equals 14 then he asked himself how many threes go into 14 he saw that about four go in there four times three equals 12 14 minus two equals two he recognizes that the divisor is now larger than his number and therefore it must be our remainder so 194 remainder two good this problem here let s take a look at it who did this problem student c so it s 974 divided by six he recognized that there are about 100 sixes in that number and once he multiplies it by that number and subtracts he has 374 then he comes back to the table and says how many sixes are in 374 and he recognizes at least 50 why did you say 50
+student,inaudible
+teacher,six times five equals 30 okay so he got 300 and then he had 374 minus 300 equals 74 quick question in the next step student c chose to use 10 and ten times six equals 60 and 74 minus 60 got him his 14 but based on 50 and 10 what could he have used student c based on 50 and 10 what could you have used it would have saved you a step you did 50 in one step and 10 in one step what could you have done to skip a step help him out student m what could he have done
+student,he could have used 60
+teacher,yeah he could have used 60 and you would have gotten 360 and you would have been down here already but that s okay it s part of the process you start recognizing all these things you could have saved yourself from when you go through it and of course he s still correct 162 remainder two i saw somebody doing a bunch of tens very good you can do tens all the way down if it s going to be easier for you yes
+student,inaudible
+teacher,there s another way what s another way he could have done 584 divided by three
+student,one hundred fifty times three is inaudible
+teacher,very good wow that s you took it even further do since you want to talk about taking things further she pointed out that instead of 100 she started with 150 she got 450 here and was able to subtract fine how about this about how many threes do we have in 58 you re gonna have to do some multiples but about how many threes do you think we have
+student,twenty no 19
+teacher,what do you get with 19 times three i mean you re right i know why you said that because 20 times three equals 60 and obviously this number is less than 60 so you scale back from that and then it s 57 so we could have used how much instead of 19 190 and you would have gotten 570 and you come all the way down to 14 right there in that first step then three goes into 14 four times if you re starting to recognize it then you can use that you can do the benchmark remember i just had the benchmark here to make it safe to give you a safe place to start but you can take it further you can take it as far as you want to take it it s up to you entirely up to you now before we wrap this up i ll let you attack inaudible but let s move on to the next part yes
+student,inaudible
+teacher,that s what i mean because you re using these estimates so yeah you don t have a choice really but when you re pulling together the answer towards the end and you see how it ends sometimes you might tend to use the ones you get before at the end of your quotient you have a three in the quotient it s all based on the number all right so we re gonna go into the second part which is identifying how do we divide by a multiple of 10 and it s pretty simple if you can remember a few things like divided by 10 go back one place value divided by 100 go back two place values divide by 1000 go back three place values this might not really matter to you but let s go through it you know how to estimate a quotient with a two digit divisor today you ll learn how to divide a two digit multiple of 10 now one of two ways we were working on it when we were trying to estimate the answer what are the two things we used we did two things which one did we do with estimate and answer student j what s one thing we used we used compatible numbers and what s the other thing we used so we used compatible numbers to do one what other number did we use what other method did we use we used compatible numbers what s another way we tried to estimate student c
+student,inaudible
+teacher,the poem who remembers the poem we don t believe you what s the poem sound like ready what do you start with
+teacher,so you do remember the poem that s fine so we can kind of use that today or we can use compatible numbers but you can see how we put it together what is always true about multiples of 10 what is always true about multiples of 10 rules of divisibility let s see student o what do you think
+student,inaudible always has a zero on it
+teacher,do we agree
+teacher,not only does it always have a zero in the ones place any time you do multiples of 10 that right there is part of the trick because we move forward we have inaudible flag football team has anybody ever talked about that with you guys
+teacher,well teacher l and i are going to have some fun hopefully in the springtime or maybe even before that but we re looking to start a flag football team so everybody can participate this team has 160 00 to buy uniforms and the uniforms cost about 20 00 each about how many uniforms can this team buy think about it we have 160 00 here in our bank we want to buy uniforms and we know the place we re getting our uniforms from costs about 20 00 for a uniform about how many uniforms can we get student s what do you think
+student,eight
+teacher,about eight why do you say eight
+student,inaudible
+teacher,okay all right you chose to take in this case you recognized 20 is going to be that divisor and you just added 20 keep on adding 20 until you got to 160 okay what else could she have done student s
+student,she could have multiplied 20 times eight
+teacher,so you were doing division through multiplication what else
+student,a hundred and sixty divided by 20
+teacher,what else is there another way
+student,inaudible
+teacher,she could have done that student j could have used compatible numbers i would have just said okay 16 divided by two equals eight and added my zero so ultimately everybody s correct there wasn t a wrong answer really each one costs about 8 00 but what if we had 168 00 what if we had 168 00 how many uniforms could we have bought let s think about it i have something called a real touchy question what operation in math can we use to find this answer what operation in math do you think we can do if you have 168 00 and each one costs 20 00 what operation in math
+student,division
+teacher,clearly all right we have to add a little smiley face so obviously we need to use some mental math so think about it when we use mental math to figure out 168 00 divided by 20 yeah we recognize that we need about eight uniforms can we use mental math to divide 168 00 by 20 can we use mental math to get a perfect answer in our head who says yes who says no who s not sure ask yourself that question can i just wait 168 divided by 20 can you just do that in your head
+student,no
+teacher,most people may not be able to grasp it so quickly but can you estimate the answer
+teacher,okay we can estimate the answer what would be a good estimate for 168 and let s say we use compatible numbers who will give me an estimate
+student,maybe 180
+teacher,so you re asking yourself 18 divided by two if you do that
+student,it s gonna be seven no nine uniforms
+teacher,there would be nine uniforms but how much money do we actually have
+student,168 00
+teacher,we have 168 00 is that a good estimate though we d be able to buy nine uniforms with 168 00 i don t think we would be able to
+student,a hundred and sixty
+teacher,why do you say 160
+student,because 60 times two is i mean two 16 divided by two is eight
+teacher,and eight is a good estimate a hundred sixty is a good estimate i think it works but is this more or less than the exact answer think about it we have 168 00 right we re trying to get eight uniforms all together because we ve got 20 00 per uniform but is this going to be more or less than the exact answer if we start off with 168 00
+student,less
+teacher,hmm very good why is it less
+student,because you took away 8 00
+teacher,because we rounded down very good student m that s what you did you rounded down to 160 00 and you took away eight of our dollars so you stole from us my friend could the team buy nine uniforms think about what student q said could the team buy nine uniforms student v
+student,yes
+teacher,why why do you think
+student,inaudible
+teacher,you have a hard time explaining that yourself you re having a hard time explaining that yourself is there any reason why she may have a hard time explaining that part we re trying to see can we buy nine uniforms with 168 00 with this estimate
+student,no
+teacher,why not
+student,inaudible nine times two equals 18 and ad a zero and it s 180 and you only have 168 00
+teacher,right we only have 168 00 so we can t get that nine uniforms will cost us 180 00 so we need a little bit more money a little bit more money so all together obviously if you this new team i don t know who s gonna be on the team in this class but this new team if we have 168 00 that we raised through some kind of funding or somehow maybe a bake sale maybe clean every teacher s classroom for a dollar i don t know we ll see that s a lot of classrooms to clean over a lot of weeks but obviously we can only get about eight uniforms and hopefully we can get a lot more people on the team than that so here s what i want you to do because we are going to move into a little bit of group activity i want you to use compatible numbers to estimate this problem 2 594 divided by six hmm go compatible numbers to solve this one we re using compatible numbers what s one of the first rules of compatible numbers or should we keep it to ourselves and not help anybody sharing is caring my friend what s the step that people should work with what s the first step student a in finding compatible numbers
+student,inaudible
+teacher,okay we could do that but what a very easy step a very easy step student r easy step what should she look at to find compatible numbers the two first numbers the two first numbers we like complete sentences sir the two first numbers the two first numbers are 25 work around that and make it easier ask yourself this question is this an easy problem to do in your head 26 divided by six where have you learned to do 26 divided by six in your head like you could say it in two seconds no yeah that looks a lot better very good
+teacher,all right who has compatible numbers we ll take a poll of the class we ll see who takes on estimate and there s another estimate out there what s one compatible number that you could have used for this problem what s one compatible number we ll see who chose what yeah
+student,it could be 24 000
+teacher,twenty four thousand or 24 make sure ones tens hundreds one thousands which one that s 2 400 and you said 24 000
+student,oh 2 400
+teacher,all right 2 400 is there another estimate we could use student s
+student,three thousand
+teacher,all right who used 2 400 show of hands ten who used 3 000 eight who didn t use an estimate okay fine those people who used 2 400 stand up for a second take your book with you you ve logged your answers and you can t change it now on that side who used 3 000 again those people over there so you guys chose to start with an easy compatible number of 2 400 these people chose to start with a compatible number of 3 000 so 2 400 divided by six and 3 000 divided by six okay fine fine fine fine fine fine we want to solve it for you guys over here 2 400 divided by six what are we gonna get four hundred for you guys over here that used 3 000 divided by six what are you gonna get five hundred so now let s see what the actual answer is going to be what if the question was we have 2 594 00 to split among six people what if the question was 2594 00 was available to split among six people and you wanted to find the answer to that question we have your estimate that you went with we have your estimate that you went with let s see which estimate is closer to how much money somebody s going to get or how much they should get let s go through it can six go into two
+teacher,no can six go into 25
+teacher,how many times
+teacher,four times six
+teacher,twenty five minus four
+teacher,bring down my nine six into 19
+teacher,three times six
+teacher,nineteen minus 8
+teacher,bring down my four six into four
+teacher,two times six
+teacher,all right there s a question though if we re talking about money if we re talking about money which estimate is closer to correct if we re talking about money student o what do you think
+student,four hundred
+teacher,what do you think student m
+student,four hundred
+teacher,how can we round to see which number this is closer to or which is the better estimate
+student,inaudible
+teacher,round to the nearest hundred okay if we round to the nearest hundred we look at four the guy next door is a three the four below just ignore five or more ad one more we go down to four hundred four hundred would be a good estimate would you want to get 400 00
+teacher,you d want to get your money 432 00 absolutely all right so here s what s gonna happen i have you all broken into two groups within each group we re gonna split that in half and probably steal some other people from there we have a little bit of time so let s see today since teacher w is absent i figure it would be a great opportunity for some jeopardy to review what we ve been doing so far in multiplication and division so starting with student a going back so get into one line you guys get into one line over here okay start to count after the eighth person we start over with one start to count no even better we ll do after every three every third person we start over
+teacher,all right all the ones at table one area all the twos at table two area we ll combine the tables in a second all the threes over here
