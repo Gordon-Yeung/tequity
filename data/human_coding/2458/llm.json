@@ -1,0 +1,27 @@
+{
+  "obsid": "2458",
+  "coder_id": "llm",
+  "created_at": "2026-08-06T14:53:42",
+  "updated_at": "2026-08-06T14:53:42",
+  "source_run": "run_2026-07-19_153121",
+  "progress": {
+    "last_turn_viewed": 0,
+    "completed": true
+  },
+  "scenes": [
+    {
+      "scene_id": "t141",
+      "turn": 141,
+      "speaker": "teacher",
+      "verbatim_quote": "since student d decided to do it this way part of his math he likes to play but he had to draw six twelfths",
+      "quote_verified": true,
+      "categories": [
+        "D"
+      ],
+      "other_label": "",
+      "note": "The teacher characterizes the student's engagement as 'he likes to play,' attributing off-task behavior to the student's disposition rather than the task; however this is brief and mild, so confidence is low.",
+      "confidence": "low",
+      "flagged_at": null
+    }
+  ]
+}

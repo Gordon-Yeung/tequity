@@ -1,0 +1,111 @@
+{
+  "source_document_id": "2592",
+  "obsid": "2592",
+  "scenes": [
+    {
+      "turn_range": "400-406",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "403",
+        "verbatim_quote": "now you re acting like kindergarteners instead of fifth graders not acceptable"
+      },
+      "context_excerpt": [
+        {
+          "turn": 400,
+          "speaker": "multiple students",
+          "text": "we re done"
+        },
+        {
+          "turn": 401,
+          "speaker": "teacher",
+          "text": "oh wait"
+        },
+        {
+          "turn": 402,
+          "speaker": "multiple students",
+          "text": "crosstalk"
+        },
+        {
+          "turn": 403,
+          "speaker": "teacher",
+          "text": "now you re acting like kindergarteners instead of fifth graders not acceptable okay so tell me about your box"
+        },
+        {
+          "turn": 404,
+          "speaker": "student",
+          "text": "okay so inaudible"
+        },
+        {
+          "turn": 405,
+          "speaker": "teacher",
+          "text": "okay so did you"
+        },
+        {
+          "turn": 406,
+          "speaker": "student",
+          "text": "inaudible"
+        }
+      ],
+      "categories": [
+        "D",
+        "F"
+      ],
+      "rationale": "Frames students' behavior through a demeaning comparison to younger children rather than describing the specific off-task behavior, characterizing them by falling short of a grade-level standard.",
+      "confidence": "medium",
+      "source_document_id": "2592",
+      "obsid": "2592",
+      "legacy_source": "348_original.csv",
+      "source_run": "run_2026-07-12_170210"
+    },
+    {
+      "turn_range": "613-618",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "616",
+        "verbatim_quote": "i don t understand why i have some students who really can follow directions and others are not able to follow directions"
+      },
+      "context_excerpt": [
+        {
+          "turn": 613,
+          "speaker": "student",
+          "text": "oh i know"
+        },
+        {
+          "turn": 614,
+          "speaker": "teacher",
+          "text": "oh student j said oh i know i have another person who said oh i know and you young man you re not learning right now because you re listening to someone else talking while we are having a mathematical discussion"
+        },
+        {
+          "turn": 615,
+          "speaker": "student",
+          "text": "i have a name"
+        },
+        {
+          "turn": 616,
+          "speaker": "teacher",
+          "text": "all right so some thought student m you re not paying attention student e turn around student m turn your body around whatever you re playing with give that to me you know i don t understand why i have some students who really can follow directions and others are not able to follow directions so what s your thought what s your thought"
+        },
+        {
+          "turn": 617,
+          "speaker": "student",
+          "text": "because all the"
+        },
+        {
+          "turn": 618,
+          "speaker": "teacher",
+          "text": "but just think about these"
+        }
+      ],
+      "categories": [
+        "B",
+        "F"
+      ],
+      "rationale": "Sorts students into a group defined by a lack ('not able to follow directions') and frames them comparatively against those who can, rather than addressing the task or instructions.",
+      "confidence": "medium",
+      "source_document_id": "2592",
+      "obsid": "2592",
+      "legacy_source": "348_original.csv",
+      "source_run": "run_2026-07-12_170210"
+    }
+  ]
+}

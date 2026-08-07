@@ -1,0 +1,27 @@
+{
+  "obsid": "131",
+  "coder_id": "llm",
+  "created_at": "2026-08-06T14:53:42",
+  "updated_at": "2026-08-06T14:53:42",
+  "source_run": "run_2026-07-19_153121",
+  "progress": {
+    "last_turn_viewed": 0,
+    "completed": true
+  },
+  "scenes": [
+    {
+      "scene_id": "t33",
+      "turn": 33,
+      "speaker": "teacher",
+      "verbatim_quote": "we re not putting on a show today to show how bad we can be this is not how we behave during math",
+      "quote_verified": true,
+      "categories": [
+        "D"
+      ],
+      "other_label": "",
+      "note": "The teacher characterizes the students' behavior negatively ('how bad we can be') rather than describing the specific behavior neutrally; however, this is framed as situational/out-of-character (Turn 35: 'i don t know what has come over you this morning'), making it a borderline behavior-management comment rather than a fixed deficit attribution.",
+      "confidence": "low",
+      "flagged_at": null
+    }
+  ]
+}

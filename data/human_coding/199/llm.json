@@ -1,0 +1,27 @@
+{
+  "obsid": "199",
+  "coder_id": "llm",
+  "created_at": "2026-08-06T14:53:42",
+  "updated_at": "2026-08-06T14:53:42",
+  "source_run": "run_2026-07-19_153121",
+  "progress": {
+    "last_turn_viewed": 0,
+    "completed": true
+  },
+  "scenes": [
+    {
+      "scene_id": "t316",
+      "turn": 316,
+      "speaker": "teacher",
+      "verbatim_quote": "sometimes they just really get stuck",
+      "quote_verified": true,
+      "categories": [
+        "D"
+      ],
+      "other_label": "",
+      "note": "The aside generalizes some students as simply 'getting stuck,' a mild deficit framing of student struggle rather than describing a specific task difficulty; however it is close to neutral, hence low confidence.",
+      "confidence": "low",
+      "flagged_at": null
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "generated_at": "2026-08-06T12:14:13",
+  "generated_by": "scripts/build_obsid_crosswalk.py",
+  "method": "sha256 of legacy file matched against observation_index.csv sha256 column",
+  "inputs": {
+    "observation_index": {
+      "path": "data/observation_index.csv",
+      "sha256": "cf368040175351d2cffcbd1f0a641134b35ec1a3c4b2201ebe595c93b5dad5ae"
+    },
+    "legacy_glob": "data/transcripts/*_original.csv",
+    "legacy_file_count": 52
+  },
+  "counts": {
+    "unique": 50,
+    "ambiguous": 0,
+    "unmatched": 2
+  },
+  "unmatched": [
+    "543",
+    "706"
+  ],
+  "ambiguous": {},
+  "colliding_ids": [
+    "302",
+    "303",
+    "305",
+    "306",
+    "308",
+    "309",
+    "310",
+    "313",
+    "315",
+    "319",
+    "321",
+    "324",
+    "326",
+    "327",
+    "330",
+    "331",
+    "332",
+    "333",
+    "334",
+    "335",
+    "336",
+    "337",
+    "338",
+    "339"
+  ]
+}

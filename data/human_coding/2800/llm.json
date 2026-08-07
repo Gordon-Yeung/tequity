@@ -1,0 +1,27 @@
+{
+  "obsid": "2800",
+  "coder_id": "llm",
+  "created_at": "2026-08-06T14:53:42",
+  "updated_at": "2026-08-06T14:53:42",
+  "source_run": "run_2026-07-19_153121",
+  "progress": {
+    "last_turn_viewed": 0,
+    "completed": true
+  },
+  "scenes": [
+    {
+      "scene_id": "t2",
+      "turn": 2,
+      "speaker": "teacher",
+      "verbatim_quote": "maybe that s why you re losing papers has to be put away those need to go in the pocket or you re gonna lose them that s why you re losing them",
+      "quote_verified": true,
+      "categories": [
+        "D"
+      ],
+      "other_label": "",
+      "note": "The teacher frames an ongoing problem ('losing papers') as a result of the student's own disorganization/habits rather than describing a neutral fix, edging toward deficit attribution for behavior. It is mild and specific, so confidence is low.",
+      "confidence": "low",
+      "flagged_at": null
+    }
+  ]
+}

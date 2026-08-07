@@ -1,6 +1,6 @@
 /* Compare + Adjudicate screen. Relies on helpers from app.js (window.CoderApp). */
 (function () {
-  const { CATS, el, esc, api } = window.CoderApp;
+  const { CATS, el, esc, api, transcriptRow } = window.CoderApp;
 
   const pct = (x) => (x == null ? "—" : (x * 100).toFixed(0) + "%");
   const num2 = (x) => (x == null ? "—" : x.toFixed(2));
@@ -12,16 +12,38 @@
   async function populateCoders() {
     const vid = el("#cmp-transcript").value;
     if (!vid) return;
-    let coders = [];
-    try { coders = await api(`/api/coders/${vid}`); } catch (e) {}
+
+    const fetchCoders = async () => {
+      try { return await api(`/api/coders/${vid}`); } catch (e) { return []; }
+    };
+
+    let coders = await fetchCoders();
+    // Auto-import, but only where there is something to import: the picker
+    // payload already carries the scene count, so this never fires a POST that
+    // would 404, and never writes a file for an observation with no findings.
+    const row = transcriptRow(vid);
+    if (row && row.llm_scenes && !coders.includes("llm")) {
+      if (await ensureLlmImported(vid, true)) coders = await fetchCoders();
+    }
     availableCoders = coders;
-    // "llm" and "adjudicated" are derived/system codings, not human coders — keep
-    // them out of the A/B selectors (LLM is included via the checkbox instead).
-    const human = coders.filter((c) => c !== "adjudicated" && c !== "llm");
-    const opts = human.map((c) => `<option value="${esc(c)}">${esc(c)}</option>`).join("");
+    // "llm" is selectable as a rater: an observation the model has coded but no
+    // human has should still be readable here, and LLM-vs-one-human is a real
+    // comparison. "adjudicated" stays out -- it is an output of this screen, so
+    // rating against it would be circular.
+    const raters = coders.filter((c) => c !== "adjudicated");
+    const opts = raters.map((c) =>
+      `<option value="${esc(c)}">${esc(c)}${c === "llm" ? " (model)" : ""}</option>`).join("");
     el("#cmp-a").innerHTML = opts;
     el("#cmp-b").innerHTML = opts;
-    if (human.length > 1) el("#cmp-b").selectedIndex = 1;
+    // Prefer a human-vs-human default when two humans exist; otherwise fall back
+    // to whatever is available rather than leaving the selectors empty.
+    const humans = raters.filter((c) => c !== "llm");
+    if (humans.length > 1) {
+      el("#cmp-a").value = humans[0];
+      el("#cmp-b").value = humans[1];
+    } else if (raters.length > 1) {
+      el("#cmp-b").selectedIndex = 1;
+    }
     el("#cmp-llm").checked = coders.includes("llm");
   }
 
@@ -65,7 +87,21 @@
       </div></div>`;
   }
 
-  function renderStats(stats) {
+  function renderStats(stats, resp) {
+    // One rater on both sides: reading mode, not agreement. The server omits the
+    // statistics rather than sending 1.0s that would be mistaken for a result.
+    if (resp && resp.single_rater) {
+      const who = esc(resp.a_id);
+      el("#cmp-stats").innerHTML = `<div class="hh-panel">
+        <h3>Single-rater view — ${who}${resp.a_id === "llm" ? " (model)" : ""}</h3>
+        <div class="caveat">
+          Showing every turn <b>${who}</b> flagged, in transcript context, across
+          ${stats.universe_teacher_turns} teacher turns. No agreement statistics:
+          with one rater there is nothing to agree with, and &kappa; against itself
+          is 1.0 by construction. Pick two different raters to get IRR.
+        </div></div>`;
+      return;
+    }
     const b = stats.binary, c = stats.category;
     const cards = statCards(b, c);
 
@@ -96,18 +132,36 @@
     </div>`;
   }
 
-  function prefillAdj(row) {
+  function prefillAdj(row, resp) {
     const a = row.a, b = row.b;
+    // Whether a *human* flagged this turn. The LLM can now occupy the A or B
+    // slot, so "row.a exists" no longer implies a person put it there — check
+    // which rater each slot actually is.
+    const aHuman = a && resp && resp.a_id !== "llm";
+    const bHuman = b && resp && resp.b_id !== "llm";
+    const humanFlagged = Boolean(aHuman || bHuman);
+    // Fall back to the third-column LLM only when neither slot flagged the turn
+    // — i.e. the row exists solely because the LLM did. Where a rater flagged
+    // it, that rater's codes are the prefill and the LLM stays advisory.
+    const llm = (!a && !b) ? row.llm : null;
     let categories = [];
     if (a && b) categories = [...new Set([...(a.categories || []), ...(b.categories || [])])];
     else if (a) categories = [...(a.categories || [])];
     else if (b) categories = [...(b.categories || [])];
-    const note = (a && a.note) || (b && b.note) || "";
-    const confidence = (a && a.confidence) || (b && b.confidence) || "medium";
+    else if (llm) categories = [...(llm.categories || [])];
+    const note = (a && a.note) || (b && b.note) || (llm && llm.note) || "";
+    const confidence = (a && a.confidence) || (b && b.confidence) || (llm && llm.confidence) || "medium";
     adj[row.turn] = {
       turn: row.turn, speaker: row.speaker, categories, other_label: "",
-      note, confidence, verbatim_quote: (a && a.verbatim_quote) || (b && b.verbatim_quote) || row.text,
-      include: true, resolution: row.status, source: [row.a && "a", row.b && "b"].filter(Boolean),
+      note, confidence,
+      verbatim_quote: (a && a.verbatim_quote) || (b && b.verbatim_quote) ||
+                      (llm && llm.verbatim_quote) || row.text,
+      // Machine-only turns start unchecked: an unreviewed model flag must never
+      // reach adjudicated.json without a human affirmatively including it. This
+      // covers both the third-column LLM and the LLM selected as a rater.
+      include: humanFlagged,
+      resolution: row.status,
+      source: [a && "a", b && "b", llm && "llm"].filter(Boolean),
       scene_id: `t${row.turn}`,
     };
   }
@@ -127,13 +181,21 @@
 
   function renderRows(resp) {
     const html = resp.rows.map((row) => {
-      prefillAdj(row);
-      const statusLabel = { agree: "agree", category_mismatch: "category mismatch", a_only: "only A", b_only: "only B" }[row.status];
-      const cols = codeCol("Coder A", row.a) + codeCol("Coder B", row.b) +
-        (resp.has_llm ? codeCol("LLM", row.llm) : `<div class="col empty"><h4>LLM</h4>not loaded</div>`);
+      prefillAdj(row, resp);
+      // One rater selected on both sides is a reading view, not a comparison.
+      // Rendering it as "Coder A agrees with Coder B" would be one coding shown
+      // twice and read as corroboration, so collapse to a single column.
+      const single = resp.single_rater;
+      const statusLabel = single ? "flagged" : { agree: "agree",
+                            category_mismatch: "category mismatch",
+                            a_only: "only A", b_only: "only B", llm_only: "only LLM" }[row.status];
+      const cols = single
+        ? codeCol(resp.a_id === "llm" ? "LLM (model)" : `Coder ${resp.a_id}`, row.a)
+        : codeCol("Coder A", row.a) + codeCol("Coder B", row.b) +
+          (resp.has_llm ? codeCol("LLM", row.llm) : `<div class="col empty"><h4>LLM</h4>not loaded</div>`);
       const ctx = row.context.map((c) =>
         `<div class="t ${c.turn === row.turn ? "center" : ""}"><b>${c.turn} ${esc(c.speaker)}:</b> ${esc(c.text)}</div>`).join("");
-      return `<div class="cmp-row ${row.status}" data-turn="${row.turn}">
+      return `<div class="cmp-row ${single ? "single" : row.status}" data-turn="${row.turn}">
         <div class="head">
           <span class="status">${statusLabel}</span>
           <span class="muted">turn ${row.turn} · ${esc(row.speaker)}</span>
@@ -178,8 +240,10 @@
   async function runCompare() {
     const vid = el("#cmp-transcript").value;
     const a = el("#cmp-a").value, b = el("#cmp-b").value;
-    if (!a || !b) { alert("Need two coders. Code a transcript first (or import LLM)."); return; }
-    if (a === b) { alert("Pick two different coders."); return; }
+    if (!a || !b) { alert("No coding found for this transcript yet."); return; }
+    // Same rater on both sides is allowed: it is the single-rater reading view,
+    // and the only way to read an observation the model has coded but no human has.
+    // The server omits agreement statistics for that case.
     const wantLlm = el("#cmp-llm").checked;
     // "include LLM" is self-sufficient: if the LLM coding hasn't been imported yet,
     // pull it from the latest deficit run now instead of silently showing "not loaded".
@@ -192,29 +256,32 @@
       const resp = await api(`/api/compare/${vid}?a=${encodeURIComponent(a)}&b=${encodeURIComponent(b)}&llm=${llm}`);
       current = resp;
       Object.keys(adj).forEach((k) => delete adj[k]);
-      renderStats(resp.stats);
+      renderStats(resp.stats, resp);
       renderRows(resp);
     } catch (e) { alert(e.message); }
   }
 
   // Import LLM scenes for `vid` from the latest deficit run. Returns true on success.
   // `silent` suppresses the confirmation alert (used by the auto-import path).
+  // Single-purpose on purpose: it must NOT refresh the coder list itself, because
+  // populateCoders() now calls this on transcript change and the two would recurse.
+  // Callers refresh.
   async function ensureLlmImported(vid, silent) {
     try {
       const r = await api(`/api/import-llm/${vid}`, { method: "POST" });
       if (!silent) alert(`Imported ${r.scenes} LLM scenes from ${r.source_run}.`);
-      await populateCoders();
-      el("#cmp-llm").checked = true;
       return true;
     } catch (e) {
-      alert("Could not import LLM scenes: " + e.message +
-            "\n\nRun scripts/deficit_analysis.py for this transcript first.");
+      if (!silent) {
+        alert("Could not import LLM scenes: " + e.message +
+              "\n\nRun scripts/deficit_analysis.py for this transcript first.");
+      }
       return false;
     }
   }
 
   async function importLlm() {
-    await ensureLlmImported(el("#cmp-transcript").value, false);
+    if (await ensureLlmImported(el("#cmp-transcript").value, false)) await populateCoders();
   }
 
   async function saveAdjudicated() {

@@ -1,0 +1,50 @@
+{
+  "source_document_id": "2789",
+  "obsid": "2789",
+  "scenes": [
+    {
+      "turn_range": "3-7",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "5",
+        "verbatim_quote": "now i know some of you guys don t speak english that much but just stay with me all right"
+      },
+      "context_excerpt": [
+        {
+          "turn": 3,
+          "speaker": "teacher",
+          "text": "okay very good all right you need to turn around so we can start our math lesson today okay our math lesson today listen carefully okay to what we re going to doing we re going to be working on the number line these this is a number line so just pay attention here nothing else this is the number line that we re going to be working on okay this we re going to be using fractions here the other day we used decimals okay so today we re going to be using we re going to be using fractions am i correct does everybody understand"
+        },
+        {
+          "turn": 4,
+          "speaker": "student",
+          "text": "yes"
+        },
+        {
+          "turn": 5,
+          "speaker": "teacher",
+          "text": "now i know some of you guys don t speak english that much but just stay with me all right very good okay the first thing if we re going to be working with fractions the first thing that you need to understand you need to have an idea of what are fractions okay okay good so i m going to put okay you two are going to talk to each other you are going to talk to each other okay i m going to put a fraction two fractions on the board and then you are going to tell me what can you tell me about those fractions okay"
+        },
+        {
+          "turn": 6,
+          "speaker": "teacher",
+          "text": "okay i want you to talk with each other talk with each other what can inaudible put a and b a and b talk with what can talk with each other about the fraction loud inaudible"
+        },
+        {
+          "turn": 7,
+          "speaker": "student",
+          "text": "that the a is inaudible because this is the basically because you only need one more to make one"
+        }
+      ],
+      "categories": [
+        "C"
+      ],
+      "rationale": "The teacher characterizes some students by a language lack ('don't speak english that much') as a framing for the lesson, locating a limitation in the students' background rather than in the task or instruction. Borderline, as it acknowledges ELL status factually.",
+      "confidence": "low",
+      "source_document_id": "2789",
+      "obsid": "2789",
+      "legacy_source": "341_original.csv",
+      "source_run": "run_2026-07-19_153121"
+    }
+  ]
+}

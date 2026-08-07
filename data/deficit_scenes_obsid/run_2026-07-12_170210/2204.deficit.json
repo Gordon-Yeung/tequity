@@ -1,0 +1,56 @@
+{
+  "source_document_id": "2204",
+  "obsid": "2204",
+  "scenes": [
+    {
+      "turn_range": "225-229",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "227",
+        "verbatim_quote": "those people that are not paying attention are the ones that won t be able to do it we know that if you cannot see i could tell ones that will be able to do it"
+      },
+      "context_excerpt": [
+        {
+          "turn": 224,
+          "speaker": "student",
+          "text": "yeah eight"
+        },
+        {
+          "turn": 225,
+          "speaker": "teacher",
+          "text": "is the thing into eight vans"
+        },
+        {
+          "turn": 226,
+          "speaker": "student",
+          "text": "eight vans that would be"
+        },
+        {
+          "turn": 227,
+          "speaker": "teacher",
+          "text": "now hold on another way 44 people some people are not see 44 into that s another word into another way of writing into into 8 yeah 44 people into see this into she s not paying attention to me into two ways of writing it for 44 people into a group you could yeah 44 people into a group into a group into a group sometime you find it written that way but most of the time it s this way that means into now we learn yesterday after they write it this way you ll write it that way yourself those people that are not paying attention are the ones that won t be able to do it we know that if you cannot see i could tell ones that will be able to do it yep like student m and c doesn t go like this she goes like yeah remember we said that seating is really this way all right so we said hey"
+        },
+        {
+          "turn": 228,
+          "speaker": "student",
+          "text": "inaudible"
+        },
+        {
+          "turn": 229,
+          "speaker": "teacher",
+          "text": "you can t see all right go this way we could say we already know if i have 44 and i see my 40 and i know my time table and i know i m gonna time hm to get hm yeah did i do it that way now how many eight into"
+        }
+      ],
+      "categories": [
+        "D",
+        "E"
+      ],
+      "rationale": "The teacher predicts that certain students 'won't be able to do it' and claims to already know who can and cannot succeed, attributing inability to behavior and lowering expectations before the work is attempted.",
+      "confidence": "high",
+      "source_document_id": "2204",
+      "obsid": "2204",
+      "legacy_source": "309_original.csv",
+      "source_run": "run_2026-07-12_170210"
+    }
+  ]
+}

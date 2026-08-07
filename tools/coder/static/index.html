@@ -13,6 +13,7 @@
       <a href="#code" data-tab="code">Code</a>
       <a href="#codebook" data-tab="codebook">Codebook</a>
       <a href="#progress" data-tab="progress">Progress</a>
+      <a href="#findings" data-tab="findings">LLM Findings</a>
       <a href="#compare" data-tab="compare">Compare &amp; Adjudicate</a>
     </nav>
   </header>
@@ -23,9 +24,18 @@
       <label>Coder
         <input id="coder-id" type="text" placeholder="your name/id" autocomplete="off" />
       </label>
+      <label>Show
+        <select id="picker-filter"></select>
+      </label>
       <label>Transcript
         <select id="transcript-select"></select>
       </label>
+      <span class="muted picker-legend" title="Status reflects the coder id entered at left.">
+        <span class="g">○</span> untouched ·
+        <span class="g">●</span> in progress ·
+        <span class="g">✓</span> complete <span class="muted">(this coder)</span> ·
+        <span class="g">✦</span> LLM findings
+      </span>
       <button id="load-btn">Load / Resume</button>
       <button id="save-now-btn" class="secondary" title="Autosaves anyway; this forces an immediate write">Save now</button>
       <span id="progress-info" class="muted"></span>
@@ -97,9 +107,36 @@
     <div id="status-table"></div>
   </section>
 
+  <!-- ============================ LLM FINDINGS ============================ -->
+  <section id="view-findings" class="view hidden">
+    <div class="controls">
+      <label>Run
+        <select id="fnd-run"></select>
+      </label>
+      <label>Confidence
+        <select id="fnd-conf">
+          <option value="">all</option>
+          <option value="high">high</option>
+          <option value="medium">medium</option>
+          <option value="low">low</option>
+        </select>
+      </label>
+      <label>Category
+        <select id="fnd-cat"><option value="">all</option></select>
+      </label>
+      <label class="check"><input id="fnd-assigned" type="checkbox" /> only my 319 assigned</label>
+      <span id="fnd-count" class="muted"></span>
+    </div>
+    <p class="muted" id="fnd-provenance"></p>
+    <div id="fnd-rows" class="fnd-rows"></div>
+  </section>
+
   <!-- ============================ COMPARE ============================ -->
   <section id="view-compare" class="view hidden">
     <div class="controls">
+      <label>Show
+        <select id="cmp-filter"></select>
+      </label>
       <label>Transcript
         <select id="cmp-transcript"></select>
       </label>
@@ -134,6 +171,7 @@
   </template>
 
   <script src="/static/app.js"></script>
+  <script src="/static/findings.js"></script>
   <script src="/static/compare.js"></script>
 </body>
 </html>

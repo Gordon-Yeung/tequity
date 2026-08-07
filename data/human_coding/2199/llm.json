@@ -1,0 +1,27 @@
+{
+  "obsid": "2199",
+  "coder_id": "llm",
+  "created_at": "2026-08-06T14:53:42",
+  "updated_at": "2026-08-06T14:53:42",
+  "source_run": "run_2026-07-19_153121",
+  "progress": {
+    "last_turn_viewed": 0,
+    "completed": true
+  },
+  "scenes": [
+    {
+      "scene_id": "t168",
+      "turn": 168,
+      "speaker": "teacher",
+      "verbatim_quote": "boys and girls if splitting up the fraction you re finding might be a little too difficult you don t have to do it if you re finding that it s too difficult you need to let me know so i can come over and explain it to you",
+      "quote_verified": true,
+      "categories": [
+        "E"
+      ],
+      "other_label": "",
+      "note": "The teacher offers students the option to skip the more cognitively demanding task (splitting fractions) on the basis of perceived difficulty, which can lower cognitive demand rather than maintaining it with support. Borderline because it is also framed as student-perceived and paired with an offer to help.",
+      "confidence": "low",
+      "flagged_at": null
+    }
+  ]
+}

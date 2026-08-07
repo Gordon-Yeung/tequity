@@ -1,0 +1,27 @@
+{
+  "obsid": "2595",
+  "coder_id": "llm",
+  "created_at": "2026-08-06T14:53:42",
+  "updated_at": "2026-08-06T14:53:42",
+  "source_run": "run_2026-07-19_153121",
+  "progress": {
+    "last_turn_viewed": 0,
+    "completed": true
+  },
+  "scenes": [
+    {
+      "scene_id": "t675",
+      "turn": 675,
+      "speaker": "teacher",
+      "verbatim_quote": "oh okay i guess i m going to have to skip student t because he s not sure how to interact with people",
+      "quote_verified": true,
+      "categories": [
+        "D"
+      ],
+      "other_label": "",
+      "note": "The teacher characterizes a specific student as generally lacking the ability to interact with people, attributing the behavior to a stable personal deficit rather than describing the specific in-the-moment action.",
+      "confidence": "medium",
+      "flagged_at": null
+    }
+  ]
+}

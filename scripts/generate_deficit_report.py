@@ -83,7 +83,26 @@ def source_label(scene: dict) -> str:
     return raw.replace("_original.csv", "")
 
 
-def build_markdown(run_dir: Path, scenes: list[dict], summary: list[dict], skipped: list[str]) -> str:
+DEFAULT_SOURCE_NOTE = "`data/transcripts/*_original.csv` (canonical transcripts; `by_obsid/` excluded)"
+
+
+def doc_sort_key(doc: str):
+    """Numeric where possible. Document ids are OBSIDs in the relabelled report,
+    and '1085' sorting before '128' makes a 27-section report unscannable."""
+    return (0, int(doc), "") if doc.isdigit() else (1, 0, doc)
+
+
+def build_markdown(run_dir: Path, scenes: list[dict], summary: list[dict], skipped: list[str],
+                   source_note: str = DEFAULT_SOURCE_NOTE, preamble: list[str] | None = None,
+                   doc_label=None, extra_sections: list[str] | None = None) -> str:
+    """Render a run as Markdown.
+
+    `source_note`, `preamble`, `doc_label` and `extra_sections` exist so the
+    OBSID-relabelled view of a run (scripts/relabel_deficit_run.py) reuses this
+    one formatter instead of forking it -- the two reports must not drift in
+    layout or wording. `doc_label(doc_id)` returns a short descriptor appended
+    to each section heading; `extra_sections` are appended at the end.
+    """
     total_docs = len(summary) if summary else len({s.get("source_document_id") for s in scenes})
     docs_with = len({s.get("source_document_id") for s in scenes})
 
@@ -101,11 +120,14 @@ def build_markdown(run_dir: Path, scenes: list[dict], summary: list[dict], skipp
     L.append("")
     L.append(f"**Run:** `{run_dir.name}`  ")
     L.append(f"**Generated:** {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}  ")
-    L.append(f"**Source:** `data/transcripts/*_original.csv` (canonical transcripts; `by_obsid/` excluded)")
+    L.append(f"**Source:** {source_note}")
     L.append("")
     L.append("Every quote below was verified verbatim against its source transcript. "
              "Scenes whose quotes did not match exactly were dropped, not corrected.")
     L.append("")
+    if preamble:
+        L.extend(preamble)
+        L.append("")
 
     L.append("## Overview")
     L.append("")
@@ -136,9 +158,11 @@ def build_markdown(run_dir: Path, scenes: list[dict], summary: list[dict], skipp
 
     L.append("## Scenes by Transcript")
     L.append("")
-    for doc in sorted(by_doc, key=lambda d: (-len(by_doc[d]), d)):
+    for doc in sorted(by_doc, key=lambda d: (-len(by_doc[d]), doc_sort_key(d))):
         doc_scenes = by_doc[doc]
-        L.append(f"### {doc} ({len(doc_scenes)} scene{'s' if len(doc_scenes) != 1 else ''})")
+        head = f"### {doc} ({len(doc_scenes)} scene{'s' if len(doc_scenes) != 1 else ''})"
+        note = doc_label(doc) if doc_label else ""
+        L.append(head + (f" &middot; {note}" if note else ""))
         L.append("")
         doc_scenes.sort(key=lambda s: CONFIDENCE_ORDER.index(s.get("confidence", "medium"))
                         if s.get("confidence", "medium") in CONFIDENCE_ORDER else 99)
@@ -167,12 +191,17 @@ def build_markdown(run_dir: Path, scenes: list[dict], summary: list[dict], skipp
         L.append("")
 
     zero_docs = sorted({r["source_document_id"].replace("_original.csv", "")
-                        for r in summary if r.get("scenes_found") == "0"})
+                        for r in summary if str(r.get("scenes_found")) == "0"}, key=doc_sort_key)
     if zero_docs:
         L.append("## Transcripts With No Scenes")
         L.append("")
+        L.append("Scanned and found clean. These are findings, not gaps.")
+        L.append("")
         L.append(", ".join(f"`{d}`" for d in zero_docs))
         L.append("")
+
+    if extra_sections:
+        L.extend(extra_sections)
 
     return "\n".join(L)
 

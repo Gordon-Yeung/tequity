@@ -1,0 +1,27 @@
+{
+  "obsid": "4678",
+  "coder_id": "llm",
+  "created_at": "2026-08-06T14:53:42",
+  "updated_at": "2026-08-06T14:53:42",
+  "source_run": "run_2026-07-19_153121",
+  "progress": {
+    "last_turn_viewed": 0,
+    "completed": true
+  },
+  "scenes": [
+    {
+      "scene_id": "t46",
+      "turn": 46,
+      "speaker": "teacher",
+      "verbatim_quote": "i don t want to have fresh children in my class but apparently i still do",
+      "quote_verified": true,
+      "categories": [
+        "D"
+      ],
+      "other_label": "",
+      "note": "The teacher characterizes students as 'fresh children,' a global negative labeling of student character/behavior rather than describing a specific action or redirecting a task, which frames the problem as residing in the students themselves.",
+      "confidence": "medium",
+      "flagged_at": null
+    }
+  ]
+}

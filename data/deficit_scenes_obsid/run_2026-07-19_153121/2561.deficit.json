@@ -1,0 +1,94 @@
+{
+  "source_document_id": "2561",
+  "obsid": "2561",
+  "scenes": [
+    {
+      "turn_range": "161-165",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "163",
+        "verbatim_quote": "take your spot and move next to student a so you can move off your weak side"
+      },
+      "context_excerpt": [
+        {
+          "turn": 161,
+          "speaker": "teacher",
+          "text": "write this number in it s a 4 in the ones place this is she s just there for a minute hon 7"
+        },
+        {
+          "turn": 162,
+          "speaker": "student",
+          "text": "thousand"
+        },
+        {
+          "turn": 163,
+          "speaker": "teacher",
+          "text": "good 7 000 you can head back to your spot for now give me one head back to your table 1 2 great job stopping your conversation with student i at 1 3 student i take that off your head 4 ready to listen student a take it off your head student d sit on your bottom and make up this work later on today student a i need you to concentrate and focus take your spot and move next to student a so you can move off your weak side that s going to stop and i m going to solve it after student a i asked you to stop talking about it i asked you to move so you can be off your weak side all right can we take a look at just one of these right now before we move on to some rounding number four"
+        },
+        {
+          "turn": 164,
+          "speaker": "student",
+          "text": "i didn t do number four"
+        },
+        {
+          "turn": 165,
+          "speaker": "teacher",
+          "text": "that s okay i picked that one because some people would be done and some wouldn t be in number four what place what is that number i should see everybody s hand come up student s s table your hand should be up ready to read that number you re still in the weak side and i don t want to put anybody else there what is that number everybody 1 2 3 go"
+        }
+      ],
+      "categories": [
+        "B"
+      ],
+      "rationale": "The teacher labels a location/student as a 'weak side,' framing students by a perceived deficit rather than by task or instructional need; it recurs and characterizes learners by their lacks.",
+      "confidence": "low",
+      "source_document_id": "2561",
+      "obsid": "2561",
+      "legacy_source": "337_original.csv",
+      "source_run": "run_2026-07-19_153121"
+    },
+    {
+      "turn_range": "163-167",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "165",
+        "verbatim_quote": "you re still in the weak side and i don t want to put anybody else there"
+      },
+      "context_excerpt": [
+        {
+          "turn": 163,
+          "speaker": "teacher",
+          "text": "good 7 000 you can head back to your spot for now give me one head back to your table 1 2 great job stopping your conversation with student i at 1 3 student i take that off your head 4 ready to listen student a take it off your head student d sit on your bottom and make up this work later on today student a i need you to concentrate and focus take your spot and move next to student a so you can move off your weak side that s going to stop and i m going to solve it after student a i asked you to stop talking about it i asked you to move so you can be off your weak side all right can we take a look at just one of these right now before we move on to some rounding number four"
+        },
+        {
+          "turn": 164,
+          "speaker": "student",
+          "text": "i didn t do number four"
+        },
+        {
+          "turn": 165,
+          "speaker": "teacher",
+          "text": "that s okay i picked that one because some people would be done and some wouldn t be in number four what place what is that number i should see everybody s hand come up student s s table your hand should be up ready to read that number you re still in the weak side and i don t want to put anybody else there what is that number everybody 1 2 3 go"
+        },
+        {
+          "turn": 166,
+          "speaker": "multiple students",
+          "text": "inaudible"
+        },
+        {
+          "turn": 167,
+          "speaker": "teacher",
+          "text": "stop let s slow it down 305 501 so what is the value student i turn this way what is the value of this 1 i m actually going to go backwards right now to help some of you that were struggling what is the value of the zero"
+        }
+      ],
+      "categories": [
+        "B"
+      ],
+      "rationale": "Repeated use of 'weak side' to designate students, framing them by perceived deficiency; treats a group/seat as a deficit category to be avoided.",
+      "confidence": "low",
+      "source_document_id": "2561",
+      "obsid": "2561",
+      "legacy_source": "337_original.csv",
+      "source_run": "run_2026-07-19_153121"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "obsid": "82",
+  "coder_id": "llm",
+  "created_at": "2026-08-06T14:53:42",
+  "updated_at": "2026-08-06T14:53:42",
+  "source_run": "run_2026-07-19_153121",
+  "progress": {
+    "last_turn_viewed": 0,
+    "completed": true
+  },
+  "scenes": [
+    {
+      "scene_id": "t350",
+      "turn": 350,
+      "speaker": "teacher",
+      "verbatim_quote": "student d you don t even have it in front of you it s on the floor in front of you and you re not paying attention so for you to throw out that number five means you re just throwing out numbers buddy",
+      "quote_verified": true,
+      "categories": [
+        "D"
+      ],
+      "other_label": "",
+      "note": "The teacher attributes the student's answer to inattention and dismisses it as 'just throwing out numbers,' framing the response as a motivational/behavioral deficit rather than describing the error neutrally.",
+      "confidence": "medium",
+      "flagged_at": null
+    }
+  ]
+}

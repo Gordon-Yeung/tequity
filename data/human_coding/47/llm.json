@@ -1,0 +1,28 @@
+{
+  "obsid": "47",
+  "coder_id": "llm",
+  "created_at": "2026-08-06T16:13:00",
+  "updated_at": "2026-08-06T16:13:00",
+  "source_run": "run_2026-07-19_153121",
+  "progress": {
+    "last_turn_viewed": 0,
+    "completed": true
+  },
+  "scenes": [
+    {
+      "scene_id": "t61",
+      "turn": 61,
+      "speaker": "teacher",
+      "verbatim_quote": "let s see if as a class we can control ourselves enough so that we can actually do this let s see if as a class we can control ourselves i can actually go through all of this and do this without you having a breakdown cause that s what happens sometimes",
+      "quote_verified": true,
+      "categories": [
+        "D",
+        "G"
+      ],
+      "other_label": "",
+      "note": "The teacher frames the whole class by an anticipated inability to self-regulate and predicts a 'breakdown' as a recurring characteristic ('that's what happens sometimes'), attributing a behavioral deficit to the group rather than to task design.",
+      "confidence": "medium",
+      "flagged_at": null
+    }
+  ]
+}

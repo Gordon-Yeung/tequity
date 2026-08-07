@@ -1,0 +1,55 @@
+{
+  "source_document_id": "82",
+  "obsid": "82",
+  "scenes": [
+    {
+      "turn_range": "347-352",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "350",
+        "verbatim_quote": "student d you don t even have it in front of you it s on the floor in front of you and you re not paying attention so for you to throw out that number five means you re just throwing out numbers buddy"
+      },
+      "context_excerpt": [
+        {
+          "turn": 347,
+          "speaker": "multiple students",
+          "text": "inaudible"
+        },
+        {
+          "turn": 348,
+          "speaker": "teacher",
+          "text": "no"
+        },
+        {
+          "turn": 349,
+          "speaker": "multiple students",
+          "text": "eight cubic centimeters"
+        },
+        {
+          "turn": 350,
+          "speaker": "teacher",
+          "text": "i m not talking about that i m strictly asking how many edges these have student d you don t even have it in front of you it s on the floor in front of you and you re not paying attention so for you to throw out that number five means you re just throwing out numbers buddy"
+        },
+        {
+          "turn": 351,
+          "speaker": "student",
+          "text": "12"
+        },
+        {
+          "turn": 352,
+          "speaker": "teacher",
+          "text": "who says 12 well let s count em out okay we ll say that that s your rectangular prism i m gonna go over the edges with this pink piece of chalk and count them off as i go okay and this is what happens when i ask this question most kids do say eight and the eight that they were talking about is they looked at one two three and four and that would be here one two three and four and then they say i got these ones on the bottom so they would say five six seven and eight and they say eight but they forget something has to connect the top and the bottom right one two three four so there are four more so an eight nine ten 11 12 this question is also fair game on your assessment guys so they ve thrown this question out there i don t suspect that they ll ask you how many faces there are you all know that from your surface area or rectangular prisms but that s a fair fair game question to ask how many edges there are in assessment so we need to be good with that everybody set"
+        }
+      ],
+      "categories": [
+        "D"
+      ],
+      "rationale": "The teacher attributes the student's incorrect answer to inattention and characterizes him as 'just throwing out numbers,' framing the error as a motivational/behavioral deficit rather than describing the specific error.",
+      "confidence": "medium",
+      "source_document_id": "82",
+      "obsid": "82",
+      "legacy_source": "306_original.csv",
+      "source_run": "run_2026-07-12_170210"
+    }
+  ]
+}

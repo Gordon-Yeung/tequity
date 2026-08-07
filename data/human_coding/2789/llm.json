@@ -1,0 +1,27 @@
+{
+  "obsid": "2789",
+  "coder_id": "llm",
+  "created_at": "2026-08-06T14:53:42",
+  "updated_at": "2026-08-06T14:53:42",
+  "source_run": "run_2026-07-19_153121",
+  "progress": {
+    "last_turn_viewed": 0,
+    "completed": true
+  },
+  "scenes": [
+    {
+      "scene_id": "t5",
+      "turn": 5,
+      "speaker": "teacher",
+      "verbatim_quote": "now i know some of you guys don t speak english that much but just stay with me all right",
+      "quote_verified": true,
+      "categories": [
+        "C"
+      ],
+      "other_label": "",
+      "note": "The teacher characterizes some students by a language lack ('don't speak english that much') as a framing for the lesson, locating a limitation in the students' background rather than in the task or instruction. Borderline, as it acknowledges ELL status factually.",
+      "confidence": "low",
+      "flagged_at": null
+    }
+  ]
+}

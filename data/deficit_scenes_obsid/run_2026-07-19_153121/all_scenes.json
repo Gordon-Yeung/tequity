@@ -1,0 +1,1806 @@
+[
+  {
+    "turn_range": "121-123",
+    "deficit_span": {
+      "speaker": "teacher",
+      "turns": "122",
+      "verbatim_quote": "just because you guys aren t on camera doesn t mean that you still need to do the math work okay just because you re not on camera doesn t mean that you can just sit here"
+    },
+    "context_excerpt": [
+      {
+        "turn": 119,
+        "speaker": "multiple students",
+        "text": "6"
+      },
+      {
+        "turn": 120,
+        "speaker": "teacher",
+        "text": "1 plus 8 is"
+      },
+      {
+        "turn": 121,
+        "speaker": "multiple students",
+        "text": "9"
+      },
+      {
+        "turn": 122,
+        "speaker": "teacher",
+        "text": "96 student c all right go sit at the back table so just because you guys aren t on camera doesn t mean that you still need to do the math work okay just because you re not on camera doesn t mean that you can just sit here"
+      },
+      {
+        "turn": 123,
+        "speaker": "teacher",
+        "text": "all right one factor stayed the same one factor doubled answer doubled or you could look at it this way one factor stayed the same one factor was cut in half we cut it in half we got 3 so our answer s going to get cut in half right can t you look at it the other way too"
+      },
+      {
+        "turn": 124,
+        "speaker": "multiple students",
+        "text": "yeah"
+      },
+      {
+        "turn": 125,
+        "speaker": "teacher",
+        "text": "sure so one thing that real quick before we break out and do some problems one thing that i wanted us to look at was an array did anyone when you were talking to your friend say i would represent it as an array so who can come up and draw a 16 by 3 array student j ever the whole year you ve never gone up on the board come on"
+      }
+    ],
+    "categories": [
+      "D"
+    ],
+    "rationale": "The teacher preemptively assumes students will disengage and 'just sit here' rather than do the work, attributing anticipated non-participation to student motivation rather than to instruction or task.",
+    "confidence": "low",
+    "source_document_id": "24",
+    "obsid": "24",
+    "legacy_source": "340_original.csv",
+    "source_run": "run_2026-07-19_153121"
+  },
+  {
+    "turn_range": "341-344",
+    "deficit_span": {
+      "speaker": "teacher",
+      "turns": "344",
+      "verbatim_quote": "that s what you re stuck with you need to be studying your multiplication tables to be able to figure that out"
+    },
+    "context_excerpt": [
+      {
+        "turn": 341,
+        "speaker": "student",
+        "text": "7 times 10 is 70 plus"
+      },
+      {
+        "turn": 342,
+        "speaker": "teacher",
+        "text": "good jot the plus sign down what s 7 times 4"
+      },
+      {
+        "turn": 343,
+        "speaker": "student",
+        "text": "inaudible"
+      },
+      {
+        "turn": 344,
+        "speaker": "teacher",
+        "text": "that s what you re stuck with you need to be studying your multiplication tables to be able to figure that out so what did you do there you broke 24 into 10 10 and 4 right so you did 7 times 10 one time then you need to do 7 times 10 again where s your second 7 times 10 so whenever you break a number apart you were having problems with this earlier so let s break it into a group of 20 and a group of 4 so now you need to multiply two of your numbers by this number that stays the same so you need to have two multiplications for the one you needed to have three multiplications 7 times 10 7 times this 10 and 7 times 4 and then add up all the answers so what are you two multiplication problems for this one going to be"
+      },
+      {
+        "turn": 345,
+        "speaker": "student",
+        "text": "7"
+      },
+      {
+        "turn": 346,
+        "speaker": "teacher",
+        "text": "20 times 7 20 times 7 plus"
+      },
+      {
+        "turn": 347,
+        "speaker": "student",
+        "text": "4 times 7"
+      }
+    ],
+    "categories": [
+      "D"
+    ],
+    "rationale": "The student's difficulty is attributed to a presumed failure to study rather than framed as an instructional or practice need, positioning the deficit in the student's effort.",
+    "confidence": "medium",
+    "source_document_id": "24",
+    "obsid": "24",
+    "legacy_source": "340_original.csv",
+    "source_run": "run_2026-07-19_153121"
+  },
+  {
+    "turn_range": "349-352",
+    "deficit_span": {
+      "speaker": "teacher",
+      "turns": "352",
+      "verbatim_quote": "no you re going to be studying your multiplication facts student c"
+    },
+    "context_excerpt": [
+      {
+        "turn": 349,
+        "speaker": "student",
+        "text": "12"
+      },
+      {
+        "turn": 350,
+        "speaker": "teacher",
+        "text": "no 7 times 2 is"
+      },
+      {
+        "turn": 351,
+        "speaker": "student",
+        "text": "16"
+      },
+      {
+        "turn": 352,
+        "speaker": "teacher",
+        "text": "no you re going to be studying your multiplication facts student c 7 times 2 is"
+      },
+      {
+        "turn": 353,
+        "speaker": "student",
+        "text": "14"
+      },
+      {
+        "turn": 354,
+        "speaker": "teacher",
+        "text": "14 good remember i covered this 0 with my finger so now i need to add it back plus 4 times 7 so you need to figure out what 4 times 7 is and then add it to 140 and you ll get your answer okay"
+      },
+      {
+        "turn": 355,
+        "speaker": "student",
+        "text": "mr inaudible"
+      }
+    ],
+    "categories": [
+      "D"
+    ],
+    "rationale": "Following a wrong answer, the teacher frames the error as a consequence of the student not studying, an attribution to student effort rather than a neutral correction.",
+    "confidence": "low",
+    "source_document_id": "24",
+    "obsid": "24",
+    "legacy_source": "340_original.csv",
+    "source_run": "run_2026-07-19_153121"
+  },
+  {
+    "turn_range": "232-236",
+    "deficit_span": {
+      "speaker": "teacher",
+      "turns": "235",
+      "verbatim_quote": "thank you evidently some of you don t want that help"
+    },
+    "context_excerpt": [
+      {
+        "turn": 232,
+        "speaker": "student",
+        "text": "at the board"
+      },
+      {
+        "turn": 233,
+        "speaker": "teacher",
+        "text": "mm hmm and why do you think your attention should be focused here"
+      },
+      {
+        "turn": 234,
+        "speaker": "student",
+        "text": "because you re trying to help us"
+      },
+      {
+        "turn": 235,
+        "speaker": "teacher",
+        "text": "thank you evidently some of you don t want that help as i was saying i noticed that something was similar here the denominators i notice that something is similar here the numerators in c do i have anything that s similar"
+      },
+      {
+        "turn": 236,
+        "speaker": "multiple students",
+        "text": "no"
+      }
+    ],
+    "categories": [
+      "D"
+    ],
+    "rationale": "The teacher attributes off-task behavior to students not wanting help, framing motivation as a deficit in the students rather than addressing the task or classroom conditions.",
+    "confidence": "medium",
+    "source_document_id": "39",
+    "obsid": "39",
+    "legacy_source": "321_original.csv",
+    "source_run": "run_2026-07-19_153121"
+  },
+  {
+    "turn_range": "268-272",
+    "deficit_span": {
+      "speaker": "teacher",
+      "turns": "270",
+      "verbatim_quote": "you guys act like you re so tired like you re old yeah you re acting like you re older than i am i m the oldest person in the world and i have more energy than you guys what s going on what d you guys do take sleeping pills at lunch or something"
+    },
+    "context_excerpt": [
+      {
+        "turn": 268,
+        "speaker": "teacher",
+        "text": "you can t tell him to shush when you were just making noise it doesn t work like that don t disappoint me so ladies and gentlemen i m drawing my number line here you know what i think i m going to make you guys do i don t know what is going on are we falling asleep are we in food coma mode"
+      },
+      {
+        "turn": 269,
+        "speaker": "multiple students",
+        "text": "no"
+      },
+      {
+        "turn": 270,
+        "speaker": "teacher",
+        "text": "you guys act like you re so tired like you re old yeah you re acting like you re older than i am i m the oldest person in the world and i have more energy than you guys what s going on what d you guys do take sleeping pills at lunch or something i got up at four today i m up at four every morning i m here by six every morning and then i m here late in the afternoon here so how many hours is that that i m here at work at your disposal from six o clock in the morning until at least six o clock at night how many hours is that"
+      },
+      {
+        "turn": 271,
+        "speaker": "student",
+        "text": "12 hours"
+      },
+      {
+        "turn": 272,
+        "speaker": "teacher",
+        "text": "12 hours that s half the day yes so i m going to ask you guys please please i don t know what s going on shake it up we need to wake up our brains and we need to figure out c because ladies and gentlemen we only have 15 more minutes and i would like to wrap this lesson up in the last 5 minutes we ve got 10 minutes to look at this 5 minutes to have a discussion abut what we ve learned so here ladies and gentlemen is my number line for c here s my number line for c halfway point is about what here"
+      }
+    ],
+    "categories": [
+      "D"
+    ],
+    "rationale": "The teacher attributes the class's low engagement to laziness/tiredness ('food coma mode,' 'sleeping pills'), locating the problem in the students' disposition rather than the task or instruction; delivered somewhat playfully, hence lower confidence.",
+    "confidence": "low",
+    "source_document_id": "39",
+    "obsid": "39",
+    "legacy_source": "321_original.csv",
+    "source_run": "run_2026-07-19_153121"
+  },
+  {
+    "turn_range": "59-62",
+    "deficit_span": {
+      "speaker": "teacher",
+      "turns": "61",
+      "verbatim_quote": "let s see if as a class we can control ourselves enough so that we can actually do this let s see if as a class we can control ourselves i can actually go through all of this and do this without you having a breakdown cause that s what happens sometimes"
+    },
+    "context_excerpt": [
+      {
+        "turn": 59,
+        "speaker": "teacher",
+        "text": "before we start before we start i want to go back to our goal our goals of today are not just to play a game our goals of today are to begin to understand what the attributes or properties of of these different shapes so obviously if we think about what student l just described the cylinder the cylinder has different properties it is rounded it is not flat that s a different property than the rectangular prism so your brain is starting to classify these in different ways some of you may remember that on the test yesterday that you took the predictive test there was a question on there that said what is true about a cube and it said it had like six faces or sides"
+      },
+      {
+        "turn": 60,
+        "speaker": "student",
+        "text": "oh yeah yeah yeah"
+      },
+      {
+        "turn": 61,
+        "speaker": "teacher",
+        "text": "those are the things that you need to start putting up here in your head all right so i m gonna tell you what group you re in most of you are gonna be staying in your seats and then one group may be going back to the table okay now i will say your name the first name i say in the group is gonna be the one who starts with the shapes the second name i say in the group is gonna be the person who is the notetaker and the third and fourth name are gonna be the guessers and then it will rotate so let s see if as a class we can control ourselves enough so that we can actually do this let s see if as a class we can control ourselves i can actually go through all of this and do this without you having a breakdown cause that s what happens sometimes"
+      },
+      {
+        "turn": 62,
+        "speaker": "teacher",
+        "text": "calling students names in groups sorry all right in the middle table calling students names in groups so you only have one guesser to start at the other table calling students names in groups you can move yourself over a little more you re moving right staying right here"
+      }
+    ],
+    "categories": [
+      "D",
+      "G"
+    ],
+    "rationale": "The teacher frames the whole class by an anticipated inability to self-regulate and predicts a 'breakdown' as a recurring characteristic ('that's what happens sometimes'), attributing a behavioral deficit to the group rather than to task design.",
+    "confidence": "medium",
+    "source_document_id": "47",
+    "obsid": "47",
+    "legacy_source": "322_original.csv",
+    "source_run": "run_2026-07-19_153121"
+  },
+  {
+    "turn_range": "88-94",
+    "deficit_span": {
+      "speaker": "teacher",
+      "turns": "91",
+      "verbatim_quote": "mr s i need you to take student b away from me he is embarrassing and interrupting my video and i need him out of this room"
+    },
+    "context_excerpt": [
+      {
+        "turn": 88,
+        "speaker": "student",
+        "text": "a whole"
+      },
+      {
+        "turn": 89,
+        "speaker": "teacher",
+        "text": "equals one whole very good okay then stand up stand up and inaudible"
+      },
+      {
+        "turn": 90,
+        "speaker": "multiple students",
+        "text": "inaudible"
+      },
+      {
+        "turn": 91,
+        "speaker": "teacher",
+        "text": "mr s i need you to take student b away from me he is embarrassing and interrupting my video and i need him out of this room"
+      },
+      {
+        "turn": 92,
+        "speaker": "teacher",
+        "text": "thanks student b right here sitting right there"
+      },
+      {
+        "turn": 93,
+        "speaker": "multiple students",
+        "text": "inaudible"
+      },
+      {
+        "turn": 94,
+        "speaker": "teacher",
+        "text": "oh yes he needs to go"
+      }
+    ],
+    "categories": [
+      "D"
+    ],
+    "rationale": "The teacher characterizes the student himself as 'embarrassing' and demands his removal, shifting from describing a specific behavior to a negative evaluative labeling of the child. Borderline because it is tied to in-the-moment conduct rather than a claim about motivation.",
+    "confidence": "low",
+    "source_document_id": "76",
+    "obsid": "76",
+    "legacy_source": "346_original.csv",
+    "source_run": "run_2026-07-19_153121"
+  },
+  {
+    "turn_range": "532-536",
+    "deficit_span": {
+      "speaker": "teacher",
+      "turns": "534",
+      "verbatim_quote": "ladies you re not gonna know what to do"
+    },
+    "context_excerpt": [
+      {
+        "turn": 531,
+        "speaker": "student",
+        "text": "oh i get it now"
+      },
+      {
+        "turn": 532,
+        "speaker": "teacher",
+        "text": "what will help me reach one whole student l"
+      },
+      {
+        "turn": 533,
+        "speaker": "student",
+        "text": "one half"
+      },
+      {
+        "turn": 534,
+        "speaker": "teacher",
+        "text": "move to one half because this is already on ladies you re not gonna know what to do student s can i have your eyes up here thank you you re not gonna move on any track that doesn t get you a whole if you have one that will give you a whole because that s the point of the game so student l is right i m gonna move my one half that gets me to one whole which means i keep this little pink square cause i get a point now inaudible picks a card i then can pick another one and put it on the zero in this number line"
+      },
+      {
+        "turn": 535,
+        "speaker": "student",
+        "text": "a whole"
+      },
+      {
+        "turn": 536,
+        "speaker": "teacher",
+        "text": "she got one whole so she doesn t win unless she can move a whole she can move any combination that adds up to a whole there you go easy as one"
+      }
+    ],
+    "categories": [
+      "E"
+    ],
+    "rationale": "The teacher predicts inability ('you're not gonna know what to do') addressed to a group of students, which frames a lowered expectation of their capacity. Ambiguous because it may function as a warning tied to inattention rather than a stable judgment.",
+    "confidence": "low",
+    "source_document_id": "76",
+    "obsid": "76",
+    "legacy_source": "346_original.csv",
+    "source_run": "run_2026-07-19_153121"
+  },
+  {
+    "turn_range": "347-352",
+    "deficit_span": {
+      "speaker": "teacher",
+      "turns": "350",
+      "verbatim_quote": "student d you don t even have it in front of you it s on the floor in front of you and you re not paying attention so for you to throw out that number five means you re just throwing out numbers buddy"
+    },
+    "context_excerpt": [
+      {
+        "turn": 347,
+        "speaker": "multiple students",
+        "text": "inaudible"
+      },
+      {
+        "turn": 348,
+        "speaker": "teacher",
+        "text": "no"
+      },
+      {
+        "turn": 349,
+        "speaker": "multiple students",
+        "text": "eight cubic centimeters"
+      },
+      {
+        "turn": 350,
+        "speaker": "teacher",
+        "text": "i m not talking about that i m strictly asking how many edges these have student d you don t even have it in front of you it s on the floor in front of you and you re not paying attention so for you to throw out that number five means you re just throwing out numbers buddy"
+      },
+      {
+        "turn": 351,
+        "speaker": "student",
+        "text": "12"
+      },
+      {
+        "turn": 352,
+        "speaker": "teacher",
+        "text": "who says 12 well let s count em out okay we ll say that that s your rectangular prism i m gonna go over the edges with this pink piece of chalk and count them off as i go okay and this is what happens when i ask this question most kids do say eight and the eight that they were talking about is they looked at one two three and four and that would be here one two three and four and then they say i got these ones on the bottom so they would say five six seven and eight and they say eight but they forget something has to connect the top and the bottom right one two three four so there are four more so an eight nine ten 11 12 this question is also fair game on your assessment guys so they ve thrown this question out there i don t suspect that they ll ask you how many faces there are you all know that from your surface area or rectangular prisms but that s a fair fair game question to ask how many edges there are in assessment so we need to be good with that everybody set"
+      }
+    ],
+    "categories": [
+      "D"
+    ],
+    "rationale": "The teacher attributes the student's answer to inattention and dismisses it as 'just throwing out numbers,' framing the response as a motivational/behavioral deficit rather than describing the error neutrally.",
+    "confidence": "medium",
+    "source_document_id": "82",
+    "obsid": "82",
+    "legacy_source": "306_original.csv",
+    "source_run": "run_2026-07-19_153121"
+  },
+  {
+    "turn_range": "51-56",
+    "deficit_span": {
+      "speaker": "teacher",
+      "turns": "54",
+      "verbatim_quote": "student m no you need to control i don t want to hear oohs and ahs you re not a monkey here"
+    },
+    "context_excerpt": [
+      {
+        "turn": 51,
+        "speaker": "student",
+        "text": "it s the part"
+      },
+      {
+        "turn": 52,
+        "speaker": "teacher",
+        "text": "what region"
+      },
+      {
+        "turn": 53,
+        "speaker": "student",
+        "text": "it s in the"
+      },
+      {
+        "turn": 54,
+        "speaker": "teacher",
+        "text": "student m no you need to control i don t want to hear oohs and ahs you re not a monkey here"
+      },
+      {
+        "turn": 55,
+        "speaker": "student",
+        "text": "it s a place where there s inaudible"
+      },
+      {
+        "turn": 56,
+        "speaker": "teacher",
+        "text": "so what part what region in the united states is this we studied regions those of you who did pennsylvania new jersey what region is it student m"
+      }
+    ],
+    "categories": [
+      "D"
+    ],
+    "rationale": "The teacher characterizes the student's behavior with a dehumanizing comparison ('you're not a monkey here'), a demeaning put-down rather than a neutral redirection of behavior.",
+    "confidence": "medium",
+    "source_document_id": "128",
+    "obsid": "128",
+    "legacy_source": "324_original.csv",
+    "source_run": "run_2026-07-19_153121"
+  },
+  {
+    "turn_range": "31-35",
+    "deficit_span": {
+      "speaker": "teacher",
+      "turns": "33",
+      "verbatim_quote": "we re not putting on a show today to show how bad we can be this is not how we behave during math"
+    },
+    "context_excerpt": [
+      {
+        "turn": 31,
+        "speaker": "teacher",
+        "text": "9 feet times 8 feet times 5 feet i m going to give you a minute figure it out here s my first question what are the first two numbers you should multiply that would make it easier to then multiply the third number student s"
+      },
+      {
+        "turn": 32,
+        "speaker": "student",
+        "text": "8 x 5"
+      },
+      {
+        "turn": 33,
+        "speaker": "teacher",
+        "text": "all right i m going to stop for a minute because this is getting ridiculous student p this is not a class for you to be talking every two minutes raise your hand if you want to participate i shouldn t be hearing your voice every second student r same with you we re not putting on a show today to show how bad we can be this is not how we behave during math student t did you hear me"
+      },
+      {
+        "turn": 34,
+        "speaker": "student",
+        "text": "what was i doing"
+      },
+      {
+        "turn": 35,
+        "speaker": "teacher",
+        "text": "i called on student s and you answered the question we all know how to behave in this class i ve seen it day after day i don t know what has come over you this morning but please get it together so my question was we have 3 different numbers a 9 an 8 and a 5 that we have to multiply together what are the first two numbers that would make an easy sum or an easy product sorry that you can then multiply the third number did you have something student s or not"
+      }
+    ],
+    "categories": [
+      "D"
+    ],
+    "rationale": "The teacher characterizes the students' behavior negatively ('how bad we can be') rather than describing the specific behavior neutrally; however, this is framed as situational/out-of-character (Turn 35: 'i don t know what has come over you this morning'), making it a borderline behavior-management comment rather than a fixed deficit attribution.",
+    "confidence": "low",
+    "source_document_id": "131",
+    "obsid": "131",
+    "legacy_source": "336_original.csv",
+    "source_run": "run_2026-07-19_153121"
+  },
+  {
+    "turn_range": "313-320",
+    "deficit_span": {
+      "speaker": "teacher",
+      "turns": "316",
+      "verbatim_quote": "sometimes they just really get stuck"
+    },
+    "context_excerpt": [
+      {
+        "turn": 313,
+        "speaker": "student",
+        "text": "inaudible"
+      },
+      {
+        "turn": 314,
+        "speaker": "teacher",
+        "text": "okay so let me see the yellow"
+      },
+      {
+        "turn": 315,
+        "speaker": "student",
+        "text": "inaudible"
+      },
+      {
+        "turn": 316,
+        "speaker": "teacher",
+        "text": "sometimes they just really get stuck no no let me see the yellow student s here s your outline for three by four so you need to put three and three this one i had all set what happened"
+      },
+      {
+        "turn": 317,
+        "speaker": "student",
+        "text": "inaudible"
+      },
+      {
+        "turn": 318,
+        "speaker": "teacher",
+        "text": "you did"
+      },
+      {
+        "turn": 319,
+        "speaker": "student",
+        "text": "inaudible"
+      },
+      {
+        "turn": 320,
+        "speaker": "teacher",
+        "text": "inaudible you should be building a three by four"
+      }
+    ],
+    "categories": [
+      "D"
+    ],
+    "rationale": "The aside generalizes some students as simply 'getting stuck,' a mild deficit framing of student struggle rather than describing a specific task difficulty; however it is close to neutral, hence low confidence.",
+    "confidence": "low",
+    "source_document_id": "199",
+    "obsid": "199",
+    "legacy_source": "323_original.csv",
+    "source_run": "run_2026-07-19_153121"
+  },
+  {
+    "turn_range": "94-100",
+    "deficit_span": {
+      "speaker": "teacher",
+      "turns": "97",
+      "verbatim_quote": "thank you everybody else was sleeping on that answer"
+    },
+    "context_excerpt": [
+      {
+        "turn": 94,
+        "speaker": "student",
+        "text": "students"
+      },
+      {
+        "turn": 95,
+        "speaker": "teacher",
+        "text": "exactly i m going to label that actually that s 28 students and i m dividing them into two what"
+      },
+      {
+        "turn": 96,
+        "speaker": "student",
+        "text": "groups"
+      },
+      {
+        "turn": 97,
+        "speaker": "teacher",
+        "text": "thank you everybody else was sleeping on that answer i m taking 28 students and breaking them into two equal groups 28 divided by 2 what would be the answer to 28 divided by 2 cutting it in half student g"
+      },
+      {
+        "turn": 98,
+        "speaker": "student",
+        "text": "14"
+      },
+      {
+        "turn": 99,
+        "speaker": "teacher",
+        "text": "very good student g 14 student g how did you get that 14"
+      },
+      {
+        "turn": 100,
+        "speaker": "student",
+        "text": "inaudible"
+      }
+    ],
+    "categories": [
+      "D"
+    ],
+    "rationale": "The teacher attributes the class's lack of response to disengagement ('sleeping on that answer'), framing behavior/motivation as a deficit rather than describing the situation neutrally.",
+    "confidence": "medium",
+    "source_document_id": "225",
+    "obsid": "225",
+    "legacy_source": "347_original.csv",
+    "source_run": "run_2026-07-19_153121"
+  },
+  {
+    "turn_range": "260-266",
+    "deficit_span": {
+      "speaker": "teacher",
+      "turns": "263",
+      "verbatim_quote": "maybe i m asking the question too difficult for you"
+    },
+    "context_excerpt": [
+      {
+        "turn": 260,
+        "speaker": "student",
+        "text": "well sometimes inaudible"
+      },
+      {
+        "turn": 261,
+        "speaker": "teacher",
+        "text": "i want to make sure you guys understand remember these are parallel lines cut by a transversal we re saying the corresponding angles will be equal are you copying this okay student j"
+      },
+      {
+        "turn": 262,
+        "speaker": "student",
+        "text": "well sometimes when they re non parallel"
+      },
+      {
+        "turn": 263,
+        "speaker": "teacher",
+        "text": "okay we re not looking at non parallel i want to know with parallel lines which angles here are equal maybe i m asking the question too difficult for you which angles are equal can you give me two angles that are equal"
+      },
+      {
+        "turn": 264,
+        "speaker": "student",
+        "text": "a and c"
+      },
+      {
+        "turn": 265,
+        "speaker": "teacher",
+        "text": "a and c are equal we know that because they re opposite but i m saying which angles here equal angles down here okay student j"
+      },
+      {
+        "turn": 266,
+        "speaker": "student",
+        "text": "a and e"
+      }
+    ],
+    "categories": [
+      "E"
+    ],
+    "rationale": "The teacher frames the student's difficulty answering as the question being too hard 'for you,' implying a perceived limit in the student's ability rather than reframing the task or prompting; this suggests lowered expectation.",
+    "confidence": "low",
+    "source_document_id": "538",
+    "obsid": "538",
+    "legacy_source": "310_original.csv",
+    "source_run": "run_2026-07-19_153121"
+  },
+  {
+    "turn_range": "178-184",
+    "deficit_span": {
+      "speaker": "teacher",
+      "turns": "181",
+      "verbatim_quote": "you guys are quitting on me you guys are quitting on me"
+    },
+    "context_excerpt": [
+      {
+        "turn": 178,
+        "speaker": "student",
+        "text": "inaudible"
+      },
+      {
+        "turn": 179,
+        "speaker": "teacher",
+        "text": "thank you"
+      },
+      {
+        "turn": 180,
+        "speaker": "student",
+        "text": "you re welcome"
+      },
+      {
+        "turn": 181,
+        "speaker": "teacher",
+        "text": "thank you you guys are quitting on me you guys are quitting on me"
+      },
+      {
+        "turn": 182,
+        "speaker": "student",
+        "text": "inaudible"
+      },
+      {
+        "turn": 183,
+        "speaker": "teacher",
+        "text": "oh yeah you re good student r you don t have to fill out the chart i told you to focus on the last column total plus seven"
+      },
+      {
+        "turn": 184,
+        "speaker": "student",
+        "text": "yeah the previous plus seven"
+      }
+    ],
+    "categories": [
+      "D"
+    ],
+    "rationale": "The teacher attributes the students' struggle to a lack of effort/motivation ('quitting') rather than to the difficulty of the task or instruction, framing the behavior as a deficit in perseverance.",
+    "confidence": "medium",
+    "source_document_id": "1085",
+    "obsid": "1085",
+    "legacy_source": "320_original.csv",
+    "source_run": "run_2026-07-19_153121"
+  },
+  {
+    "turn_range": "165-171",
+    "deficit_span": {
+      "speaker": "teacher",
+      "turns": "168",
+      "verbatim_quote": "boys and girls if splitting up the fraction you re finding might be a little too difficult you don t have to do it if you re finding that it s too difficult you need to let me know so i can come over and explain it to you"
+    },
+    "context_excerpt": [
+      {
+        "turn": 165,
+        "speaker": "student",
+        "text": "it s 7 10 i can use 6 10 to get inaudible and then i can use 1 10 to get inaudible"
+      },
+      {
+        "turn": 166,
+        "speaker": "teacher",
+        "text": "i see what you did so you used 6 10 which is equal to what"
+      },
+      {
+        "turn": 167,
+        "speaker": "student",
+        "text": "to 3 5"
+      },
+      {
+        "turn": 168,
+        "speaker": "teacher",
+        "text": "3 5 so you were 3 5 away from a whole and then you used that 1 10 excellent student m and student c how are we doing over there boys and girls if splitting up the fraction you re finding might be a little too difficult you don t have to do it if you re finding that it s too difficult you need to let me know so i can come over and explain it to you i love the way you re thinking over there i like the way you were splitting up the tenths and thinking about the fifths and then tomorrow we re going to expand our game board and play close to two so the chip that lands on two wholes and we ll be using our other fraction cards look at the sixths student r student m i don t want you to tell him okay student r one third is equal to two sixths how far are you from one whole on the sixths track what do you mean"
+      },
+      {
+        "turn": 169,
+        "speaker": "student",
+        "text": "5 6 4 6 so then i m going to hear and then i m going to have 3 6 left over"
+      },
+      {
+        "turn": 170,
+        "speaker": "teacher",
+        "text": "no although i wonder if we can just make that up as our own rule that would make the game a lot easier to win wouldn t it"
+      },
+      {
+        "turn": 171,
+        "speaker": "student",
+        "text": "all the cards are old"
+      }
+    ],
+    "categories": [
+      "E"
+    ],
+    "rationale": "The teacher offers students the option to skip the more cognitively demanding task (splitting fractions) on the basis of perceived difficulty, which can lower cognitive demand rather than maintaining it with support. Borderline because it is also framed as student-perceived and paired with an offer to help.",
+    "confidence": "low",
+    "source_document_id": "2199",
+    "obsid": "2199",
+    "legacy_source": "325_original.csv",
+    "source_run": "run_2026-07-19_153121"
+  },
+  {
+    "turn_range": "225-229",
+    "deficit_span": {
+      "speaker": "teacher",
+      "turns": "227",
+      "verbatim_quote": "those people that are not paying attention are the ones that won t be able to do it we know that if you cannot see i could tell ones that will be able to do it"
+    },
+    "context_excerpt": [
+      {
+        "turn": 224,
+        "speaker": "student",
+        "text": "yeah eight"
+      },
+      {
+        "turn": 225,
+        "speaker": "teacher",
+        "text": "is the thing into eight vans"
+      },
+      {
+        "turn": 226,
+        "speaker": "student",
+        "text": "eight vans that would be"
+      },
+      {
+        "turn": 227,
+        "speaker": "teacher",
+        "text": "now hold on another way 44 people some people are not see 44 into that s another word into another way of writing into into 8 yeah 44 people into see this into she s not paying attention to me into two ways of writing it for 44 people into a group you could yeah 44 people into a group into a group into a group sometime you find it written that way but most of the time it s this way that means into now we learn yesterday after they write it this way you ll write it that way yourself those people that are not paying attention are the ones that won t be able to do it we know that if you cannot see i could tell ones that will be able to do it yep like student m and c doesn t go like this she goes like yeah remember we said that seating is really this way all right so we said hey"
+      },
+      {
+        "turn": 228,
+        "speaker": "student",
+        "text": "inaudible"
+      },
+      {
+        "turn": 229,
+        "speaker": "teacher",
+        "text": "you can t see all right go this way we could say we already know if i have 44 and i see my 40 and i know my time table and i know i m gonna time hm to get hm yeah did i do it that way now how many eight into"
+      },
+      {
+        "turn": 230,
+        "speaker": "student",
+        "text": "forty four"
+      }
+    ],
+    "categories": [
+      "D",
+      "E"
+    ],
+    "rationale": "The teacher attributes anticipated failure to students based on behavior and predicts who 'will' and 'won't be able to do it,' sorting students by perceived inability rather than describing the task or effort.",
+    "confidence": "high",
+    "source_document_id": "2204",
+    "obsid": "2204",
+    "legacy_source": "309_original.csv",
+    "source_run": "run_2026-07-19_153121"
+  },
+  {
+    "turn_range": "154-158",
+    "deficit_span": {
+      "speaker": "teacher",
+      "turns": "156",
+      "verbatim_quote": "see i don t see student c thinking i know she s not"
+    },
+    "context_excerpt": [
+      {
+        "turn": 154,
+        "speaker": "teacher",
+        "text": "oh you could ve asked a mom to come with their car and kind of take one person or drive a few or drive three because if it s a passenger car it might be able to take three people in the back that could be true we are thinking when it s remainder we need to think of a situation now let s think of a different situation now we re thinking of situation strategies in our head let me see student c is thinking my favorite student f student f is thinking now listen i m giving you a different situation it is sharing thing it s sharing we have apple we have candy we have cupcakes like people said but we have 35 to share in total"
+      },
+      {
+        "turn": 155,
+        "speaker": "student",
+        "text": "donuts"
+      },
+      {
+        "turn": 156,
+        "speaker": "teacher",
+        "text": "donuts anything that could share now we got no we re thinking of anything that we could share maybe it s candy maybe it s donuts maybe it s cake maybe it s cupcakes i just need your thinking now if it s a sharing thing what could we do with the three cupcakes that are left what can we do it s a sharing thing what can we do with the three cupcakes good job some people are thinking see i don t see student c thinking i know she s not and my let s see student w"
+      },
+      {
+        "turn": 157,
+        "speaker": "student",
+        "text": "yep"
+      },
+      {
+        "turn": 158,
+        "speaker": "teacher",
+        "text": "i don t see you thinking it s a different situation it s food it s candy it s cupcakes all right what can we do with the three extra we know we know yeah student m"
+      },
+      {
+        "turn": 159,
+        "speaker": "student",
+        "text": "you can give them"
+      },
+      {
+        "turn": 160,
+        "speaker": "teacher",
+        "text": "you know we don t do that"
+      }
+    ],
+    "categories": [
+      "D"
+    ],
+    "rationale": "The teacher characterizes a named student as simply 'not thinking' rather than describing a specific behavior or offering support, attributing a lack of engagement to the student.",
+    "confidence": "medium",
+    "source_document_id": "2204",
+    "obsid": "2204",
+    "legacy_source": "309_original.csv",
+    "source_run": "run_2026-07-19_153121"
+  },
+  {
+    "turn_range": "52-56",
+    "deficit_span": {
+      "speaker": "teacher",
+      "turns": "54",
+      "verbatim_quote": "you need help all morning you don t know your timetable"
+    },
+    "context_excerpt": [
+      {
+        "turn": 52,
+        "speaker": "teacher",
+        "text": "how many groups that s the question and you need to be careful you need to watch that now listen i m giving you a situation these are the things now this is your own thinking that s what i want you to pay attention they give me uh unh uh hm now you what what is my situation what is my situation here i need help i need your help what is my situation now i see people counting people are counting and they say now people are raising their hand that s nice see nice nice now yes i see people talking to each other that s fine too people are telling this array must be hm and i m going to put it in the middle"
+      },
+      {
+        "turn": 53,
+        "speaker": "student",
+        "text": "inaudible"
+      },
+      {
+        "turn": 54,
+        "speaker": "teacher",
+        "text": "yes student m student m good job now it s time i like the way you talk to each other ah you don t need this one don t we you need help all morning you don t know your timetable that s when you do"
+      },
+      {
+        "turn": 55,
+        "speaker": "student",
+        "text": "no i do"
+      },
+      {
+        "turn": 56,
+        "speaker": "teacher",
+        "text": "right now student m is the person"
+      },
+      {
+        "turn": 57,
+        "speaker": "student",
+        "text": "inaudible"
+      }
+    ],
+    "categories": [
+      "B"
+    ],
+    "rationale": "The teacher frames a named student by a lack ('you don't know your timetable' / needing help 'all morning'), though phrasing is somewhat ambiguous and jocular.",
+    "confidence": "low",
+    "source_document_id": "2204",
+    "obsid": "2204",
+    "legacy_source": "309_original.csv",
+    "source_run": "run_2026-07-19_153121"
+  },
+  {
+    "turn_range": "153-155",
+    "deficit_span": {
+      "speaker": "teacher",
+      "turns": "155",
+      "verbatim_quote": "you re just getting lazy and not pushing yourself"
+    },
+    "context_excerpt": [
+      {
+        "turn": 152,
+        "speaker": "teacher",
+        "text": "how many are here okay how many are here not at all how many are here just a little shaky on it oh good that s important for us to know so when we move on how we can help you best"
+      },
+      {
+        "turn": 153,
+        "speaker": "teacher",
+        "text": "some of you need to make better use of the time working at your seats it s not as good as it should be it s not cause you don t know what you re doing its cause you re wasting some time and hanging out and whatever"
+      },
+      {
+        "turn": 154,
+        "speaker": "teacher",
+        "text": "talk too much"
+      },
+      {
+        "turn": 155,
+        "speaker": "teacher",
+        "text": "you re just getting lazy and not pushing yourself i gave you four pages to do and you re not even half way through the first one on one and half so when you have time to work you gotta use that time to work it s not socialize time you gotta use it smart you gotta practice then maybe when you get smarter you can do this stuff on your own yes will we help you yes but you re more independent then you can do larger numbers all by yourself"
+      },
+      {
+        "turn": 156,
+        "speaker": "teacher",
+        "text": "now go back to your seats please please take your math books where you know where they are tomorrow put away your math books and clean your desks quietly you ll be asked to line up"
+      },
+      {
+        "turn": 157,
+        "speaker": "teacher",
+        "text": "clean up boys let s go student t why are you over there your seat is over here now you re running around"
+      }
+    ],
+    "categories": [
+      "D"
+    ],
+    "rationale": "The teacher attributes students' incomplete work to a character/motivation flaw ('lazy') rather than to task or instructional factors, which is deficit attribution for motivation.",
+    "confidence": "high",
+    "source_document_id": "2253",
+    "obsid": "2253",
+    "legacy_source": "303_original.csv",
+    "source_run": "run_2026-07-19_153121"
+  },
+  {
+    "turn_range": "99-103",
+    "deficit_span": {
+      "speaker": "teacher",
+      "turns": "101",
+      "verbatim_quote": "we re not playing right now we re actually doing math you guys don t even have your books open none of you"
+    },
+    "context_excerpt": [
+      {
+        "turn": 99,
+        "speaker": "teacher",
+        "text": "so we said this one could be either depends on how you wanna solve it and we have an equation to prove both ways does it work out"
+      },
+      {
+        "turn": 100,
+        "speaker": "student",
+        "text": "yeah"
+      },
+      {
+        "turn": 101,
+        "speaker": "teacher",
+        "text": "let s look at another one same thing we re gonna be doing deciding if it s addition or subtraction let s talk about this problem on the bottom mr f s family drove to his sister s house last week on the first day they drove 539 miles the whole trip took two days and was 1 087 miles long how many miles did they drive on the second day so i want to talk with your group decide is this addition and subtraction come up with an equation that would help you solve the problem but we are not solving the problem and if you want to use a number line to show the picture of what the story looks like that would be great too so what are you guys thinking where s your book we re not playing right now we re actually doing math you guys don t even have your books open none of you"
+      },
+      {
+        "turn": 102,
+        "speaker": "student",
+        "text": "i think it s addition since you need inaudible to get to 1 087"
+      },
+      {
+        "turn": 103,
+        "speaker": "teacher",
+        "text": "so are there any clue words how many anything else helps to look at the story"
+      }
+    ],
+    "categories": [
+      "D"
+    ],
+    "rationale": "The framing 'we're not playing... we're actually doing math' attributes off-task behavior to the students as a group rather than to the task or instruction; borderline as it partly reports a factual observation about books being closed.",
+    "confidence": "low",
+    "source_document_id": "2397",
+    "obsid": "2397",
+    "legacy_source": "345_original.csv",
+    "source_run": "run_2026-07-19_153121"
+  },
+  {
+    "turn_range": "138-144",
+    "deficit_span": {
+      "speaker": "teacher",
+      "turns": "141",
+      "verbatim_quote": "since student d decided to do it this way part of his math he likes to play but he had to draw six twelfths"
+    },
+    "context_excerpt": [
+      {
+        "turn": 138,
+        "speaker": "student",
+        "text": "no"
+      },
+      {
+        "turn": 139,
+        "speaker": "teacher",
+        "text": "so the way student d may do it and student j is doing it may be differently but as long as they re shading in that fractional part that i asked there s more than one way to shade it in question i asked the other group the same thing and it came up yesterday can you just shade in 20 boxes anywhere on that rectangular area"
+      },
+      {
+        "turn": 140,
+        "speaker": "multiple students",
+        "text": "no"
+      },
+      {
+        "turn": 141,
+        "speaker": "teacher",
+        "text": "because then it wouldn t be four twelfths it would be one sixtieths if they were all over the place i m going to go to this group how are you guys doing over here i have a question since student d decided to do it this way part of his math he likes to play but he had to draw six twelfths what s one twelfth of this 5 by 12 rectangle what s the whole area the whole area is 60 so what s one twelfth of 60"
+      },
+      {
+        "turn": 142,
+        "speaker": "multiple students",
+        "text": "12"
+      },
+      {
+        "turn": 143,
+        "speaker": "teacher",
+        "text": "what s one twelfth of 60"
+      },
+      {
+        "turn": 144,
+        "speaker": "multiple students",
+        "text": "5"
+      }
+    ],
+    "categories": [
+      "D"
+    ],
+    "rationale": "The teacher characterizes the student's engagement as 'he likes to play,' attributing off-task behavior to the student's disposition rather than the task; however this is brief and mild, so confidence is low.",
+    "confidence": "low",
+    "source_document_id": "2458",
+    "obsid": "2458",
+    "legacy_source": "314_original.csv",
+    "source_run": "run_2026-07-19_153121"
+  },
+  {
+    "turn_range": "161-165",
+    "deficit_span": {
+      "speaker": "teacher",
+      "turns": "163",
+      "verbatim_quote": "take your spot and move next to student a so you can move off your weak side"
+    },
+    "context_excerpt": [
+      {
+        "turn": 161,
+        "speaker": "teacher",
+        "text": "write this number in it s a 4 in the ones place this is she s just there for a minute hon 7"
+      },
+      {
+        "turn": 162,
+        "speaker": "student",
+        "text": "thousand"
+      },
+      {
+        "turn": 163,
+        "speaker": "teacher",
+        "text": "good 7 000 you can head back to your spot for now give me one head back to your table 1 2 great job stopping your conversation with student i at 1 3 student i take that off your head 4 ready to listen student a take it off your head student d sit on your bottom and make up this work later on today student a i need you to concentrate and focus take your spot and move next to student a so you can move off your weak side that s going to stop and i m going to solve it after student a i asked you to stop talking about it i asked you to move so you can be off your weak side all right can we take a look at just one of these right now before we move on to some rounding number four"
+      },
+      {
+        "turn": 164,
+        "speaker": "student",
+        "text": "i didn t do number four"
+      },
+      {
+        "turn": 165,
+        "speaker": "teacher",
+        "text": "that s okay i picked that one because some people would be done and some wouldn t be in number four what place what is that number i should see everybody s hand come up student s s table your hand should be up ready to read that number you re still in the weak side and i don t want to put anybody else there what is that number everybody 1 2 3 go"
+      }
+    ],
+    "categories": [
+      "B"
+    ],
+    "rationale": "The teacher labels a location/student as a 'weak side,' framing students by a perceived deficit rather than by task or instructional need; it recurs and characterizes learners by their lacks.",
+    "confidence": "low",
+    "source_document_id": "2561",
+    "obsid": "2561",
+    "legacy_source": "337_original.csv",
+    "source_run": "run_2026-07-19_153121"
+  },
+  {
+    "turn_range": "163-167",
+    "deficit_span": {
+      "speaker": "teacher",
+      "turns": "165",
+      "verbatim_quote": "you re still in the weak side and i don t want to put anybody else there"
+    },
+    "context_excerpt": [
+      {
+        "turn": 163,
+        "speaker": "teacher",
+        "text": "good 7 000 you can head back to your spot for now give me one head back to your table 1 2 great job stopping your conversation with student i at 1 3 student i take that off your head 4 ready to listen student a take it off your head student d sit on your bottom and make up this work later on today student a i need you to concentrate and focus take your spot and move next to student a so you can move off your weak side that s going to stop and i m going to solve it after student a i asked you to stop talking about it i asked you to move so you can be off your weak side all right can we take a look at just one of these right now before we move on to some rounding number four"
+      },
+      {
+        "turn": 164,
+        "speaker": "student",
+        "text": "i didn t do number four"
+      },
+      {
+        "turn": 165,
+        "speaker": "teacher",
+        "text": "that s okay i picked that one because some people would be done and some wouldn t be in number four what place what is that number i should see everybody s hand come up student s s table your hand should be up ready to read that number you re still in the weak side and i don t want to put anybody else there what is that number everybody 1 2 3 go"
+      },
+      {
+        "turn": 166,
+        "speaker": "multiple students",
+        "text": "inaudible"
+      },
+      {
+        "turn": 167,
+        "speaker": "teacher",
+        "text": "stop let s slow it down 305 501 so what is the value student i turn this way what is the value of this 1 i m actually going to go backwards right now to help some of you that were struggling what is the value of the zero"
+      }
+    ],
+    "categories": [
+      "B"
+    ],
+    "rationale": "Repeated use of 'weak side' to designate students, framing them by perceived deficiency; treats a group/seat as a deficit category to be avoided.",
+    "confidence": "low",
+    "source_document_id": "2561",
+    "obsid": "2561",
+    "legacy_source": "337_original.csv",
+    "source_run": "run_2026-07-19_153121"
+  },
+  {
+    "turn_range": "121-124",
+    "deficit_span": {
+      "speaker": "teacher",
+      "turns": "124",
+      "verbatim_quote": "there s 19 other kids aren t having a problem they re ready to learn math the rest of you over there are you ready"
+    },
+    "context_excerpt": [
+      {
+        "turn": 121,
+        "speaker": "student",
+        "text": "what if you just take say the thing costs like 200 00 or 100 00 and you only take 50 00 you ll have to drive all the way back home and back and get the rest of the money"
+      },
+      {
+        "turn": 122,
+        "speaker": "teacher",
+        "text": "so some of that is also not just estimating but common sense about how much money you need right okay we re going to get started so i m going to need your help with this excuse me if you cannot handle it if you cannot handle just letting the fly be we ll find another seat so student a go back to your desk where you belong because there s a fly over here and you can t handle it go back to your desk where you belong so that we re all ready to move on you can sit your desk the back desk or that desk you have several choices that are far away from the fly you either sit quietly or you move"
+      },
+      {
+        "turn": 123,
+        "speaker": "student",
+        "text": "inaudible"
+      },
+      {
+        "turn": 124,
+        "speaker": "teacher",
+        "text": "there s 19 other kids aren t having a problem they re ready to learn math the rest of you over there are you ready"
+      },
+      {
+        "turn": 125,
+        "speaker": "student",
+        "text": "yeah"
+      },
+      {
+        "turn": 126,
+        "speaker": "teacher",
+        "text": "okay when you go through the problems today when we do sews when we sketch do an equation do the work write a sentence when you make your sketch i want you to be able to tell me how the numbers that we re working with relate to the sketch what part of the story problem does each number we re using represent so we re going to keep going back to the story and make sure we know what those numbers have to do with the story problem okay so if we look at this problem student r can you try and read that word problem for me"
+      }
+    ],
+    "categories": [
+      "F",
+      "D"
+    ],
+    "rationale": "Teacher defines a subset of students by contrast to the compliant majority, framing them as not 'ready to learn math,' attributing a learning-readiness deficit based on in-the-moment behavior.",
+    "confidence": "medium",
+    "source_document_id": "2571",
+    "obsid": "2571",
+    "legacy_source": "344_original.csv",
+    "source_run": "run_2026-07-19_153121"
+  },
+  {
+    "turn_range": "120-123",
+    "deficit_span": {
+      "speaker": "teacher",
+      "turns": "122",
+      "verbatim_quote": "go back to your desk where you belong because there s a fly over here and you can t handle it go back to your desk where you belong"
+    },
+    "context_excerpt": [
+      {
+        "turn": 119,
+        "speaker": "student",
+        "text": "what if you don t know how much money you need right"
+      },
+      {
+        "turn": 120,
+        "speaker": "teacher",
+        "text": "that s why you think ahead sometimes you really don t know and you try to overestimate and imagine"
+      },
+      {
+        "turn": 121,
+        "speaker": "student",
+        "text": "what if you just take say the thing costs like 200 00 or 100 00 and you only take 50 00 you ll have to drive all the way back home and back and get the rest of the money"
+      },
+      {
+        "turn": 122,
+        "speaker": "teacher",
+        "text": "so some of that is also not just estimating but common sense about how much money you need right okay we re going to get started so i m going to need your help with this excuse me if you cannot handle it if you cannot handle just letting the fly be we ll find another seat so student a go back to your desk where you belong because there s a fly over here and you can t handle it go back to your desk where you belong so that we re all ready to move on you can sit your desk the back desk or that desk you have several choices that are far away from the fly you either sit quietly or you move"
+      },
+      {
+        "turn": 123,
+        "speaker": "student",
+        "text": "inaudible"
+      },
+      {
+        "turn": 124,
+        "speaker": "teacher",
+        "text": "there s 19 other kids aren t having a problem they re ready to learn math the rest of you over there are you ready"
+      }
+    ],
+    "categories": [
+      "D"
+    ],
+    "rationale": "Repeated 'you can't handle it' and 'where you belong' attribute a fixed behavioral inadequacy to the student rather than describing the situation neutrally; borderline as it is situational management.",
+    "confidence": "low",
+    "source_document_id": "2571",
+    "obsid": "2571",
+    "legacy_source": "344_original.csv",
+    "source_run": "run_2026-07-19_153121"
+  },
+  {
+    "turn_range": "400-405",
+    "deficit_span": {
+      "speaker": "teacher",
+      "turns": "403",
+      "verbatim_quote": "now you re acting like kindergarteners instead of fifth graders not acceptable"
+    },
+    "context_excerpt": [
+      {
+        "turn": 400,
+        "speaker": "multiple students",
+        "text": "we re done"
+      },
+      {
+        "turn": 401,
+        "speaker": "teacher",
+        "text": "oh wait"
+      },
+      {
+        "turn": 402,
+        "speaker": "multiple students",
+        "text": "crosstalk"
+      },
+      {
+        "turn": 403,
+        "speaker": "teacher",
+        "text": "now you re acting like kindergarteners instead of fifth graders not acceptable okay so tell me about your box"
+      },
+      {
+        "turn": 404,
+        "speaker": "student",
+        "text": "okay so inaudible"
+      },
+      {
+        "turn": 405,
+        "speaker": "teacher",
+        "text": "okay so did you"
+      }
+    ],
+    "categories": [
+      "D",
+      "F"
+    ],
+    "rationale": "Frames students' behavior as a deficit by demeaning comparison to younger children, attributing immaturity rather than addressing the task or providing constructive redirection.",
+    "confidence": "medium",
+    "source_document_id": "2592",
+    "obsid": "2592",
+    "legacy_source": "348_original.csv",
+    "source_run": "run_2026-07-19_153121"
+  },
+  {
+    "turn_range": "613-617",
+    "deficit_span": {
+      "speaker": "teacher",
+      "turns": "616",
+      "verbatim_quote": "i don t understand why i have some students who really can follow directions and others are not able to follow directions"
+    },
+    "context_excerpt": [
+      {
+        "turn": 613,
+        "speaker": "student",
+        "text": "oh i know"
+      },
+      {
+        "turn": 614,
+        "speaker": "teacher",
+        "text": "oh student j said oh i know i have another person who said oh i know and you young man you re not learning right now because you re listening to someone else talking while we are having a mathematical discussion"
+      },
+      {
+        "turn": 615,
+        "speaker": "student",
+        "text": "i have a name"
+      },
+      {
+        "turn": 616,
+        "speaker": "teacher",
+        "text": "all right so some thought student m you re not paying attention student e turn around student m turn your body around whatever you re playing with give that to me you know i don t understand why i have some students who really can follow directions and others are not able to follow directions so what s your thought what s your thought"
+      },
+      {
+        "turn": 617,
+        "speaker": "student",
+        "text": "because all the"
+      }
+    ],
+    "categories": [
+      "B",
+      "F"
+    ],
+    "rationale": "Groups and defines students by a perceived lack ('others are not able to follow directions'), setting up a comparative deficit framing between capable and incapable students rather than addressing specific behaviors or instruction.",
+    "confidence": "medium",
+    "source_document_id": "2592",
+    "obsid": "2592",
+    "legacy_source": "348_original.csv",
+    "source_run": "run_2026-07-19_153121"
+  },
+  {
+    "turn_range": "672-676",
+    "deficit_span": {
+      "speaker": "teacher",
+      "turns": "675",
+      "verbatim_quote": "oh okay i guess i m going to have to skip student t because he s not sure how to interact with people"
+    },
+    "context_excerpt": [
+      {
+        "turn": 672,
+        "speaker": "student",
+        "text": "kind of"
+      },
+      {
+        "turn": 673,
+        "speaker": "teacher",
+        "text": "i m sorry it is student m s turn people are being very rude i hope people are keeping in mind how they would like to be treated when it s their turn"
+      },
+      {
+        "turn": 674,
+        "speaker": "student",
+        "text": "i know that right right guys"
+      },
+      {
+        "turn": 675,
+        "speaker": "teacher",
+        "text": "oh okay i guess i m going to have to skip student t because he s not sure how to interact with people yes"
+      },
+      {
+        "turn": 676,
+        "speaker": "student",
+        "text": "today i learned that if you inaudible"
+      }
+    ],
+    "categories": [
+      "D"
+    ],
+    "rationale": "The teacher characterizes a specific student as generally lacking the ability to interact with people, attributing the behavior to a stable personal deficit rather than describing the specific in-the-moment action.",
+    "confidence": "medium",
+    "source_document_id": "2595",
+    "obsid": "2595",
+    "legacy_source": "332_original.csv",
+    "source_run": "run_2026-07-19_153121"
+  },
+  {
+    "turn_range": "108-112",
+    "deficit_span": {
+      "speaker": "teacher",
+      "turns": "110",
+      "verbatim_quote": "i m getting really bothered that i m saying the same thing over and over again and it s fascinating to me that my english speakers are not understanding me"
+    },
+    "context_excerpt": [
+      {
+        "turn": 107,
+        "speaker": "student",
+        "text": "inaudible"
+      },
+      {
+        "turn": 108,
+        "speaker": "teacher",
+        "text": "can you show it over here can you draw it on yours and i ll copy up here student s the only reason i can t have you up here is your grandma didn t give me permission to have you on the video camera sorry they ll just have to imagine how adorable you are"
+      },
+      {
+        "turn": 109,
+        "speaker": "student",
+        "text": "it s messed up"
+      },
+      {
+        "turn": 110,
+        "speaker": "teacher",
+        "text": "that s why there s a ton honey that s what learning is all about we love making mistakes in here because it means we re trying to learn so do it correctly over there student j has a question what s up speaking spanish i love that you re getting her to think good job use a ruler and then check that out i want you to prove that go one second do it again good now let s count we know that s not one full one is it it s chopped off let s color in i m going to do this one this is not full though so let s count how many full ones what if we moved is it half okay interesting what about this one you keep on going with that i ll be back go to your seat and raise your hand interesting that s one way to do it color in the other pieces other colors student a they need to be touching not just the corners and i asked you to do that not really impressed with your listening right now student c you may go to the bathroom yes let s see student b what s up can you color the rest in in four different colors nice job i thought you had a way to show me can you color the one i have on the board right now four different colors you re going to have to go over orange in a different color because i asked for four different colors color the way i have it on the board that s not it erase this please use four different colors interesting then we ll be you re saying that these are bigger than that is what you think interesting okay do you agree with this let s try this is that side the same as this side is this half right here that s the half that way interesting okay so then if we cut it this way you re saying that s now you re saying is this half the same as this half but those are not the same right there it s got to be let s talk about why let me come back to you okay i love this you should have four different colors right now and you should have it colored in the way i have it on the board and continue splitting it so there s four different pieces student a you still haven t done what i ve done on the board i don t think they re the same there s four here and there s two here that s not the same don t erase it try again there s two colored in here and four colored in there and that s not the same they need to be touching i m getting really bothered that i m saying the same thing over and over again and it s fascinating to me that my english speakers are not understanding me let s take a look up here again let s do this together please great start continue now we ve got going on up here one piece eyes up here please we know that this is one fourth because it s 1 2 3 4 5 6 anytime i m coloring in six squares that are touching that are together we know that that is the same as one fourth now what i m going to do i m going to use different colors so you can see i asked you to use four different colors to show me student j put it down that s not what i asked you to do student j we ve colored this in this is six six equals one fourth i m going to do it again i think i ll do it on this side over here 1 2 3 4 5 6 is that the same amount as this"
+      },
+      {
+        "turn": 111,
+        "speaker": "multiple students",
+        "text": "yes"
+      },
+      {
+        "turn": 112,
+        "speaker": "teacher",
+        "text": "why student p"
+      }
+    ],
+    "categories": [
+      "C",
+      "G"
+    ],
+    "rationale": "The teacher locates the breakdown in the students ('not understanding me') and frames it as surprising given they are 'english speakers,' placing the problem in the learners rather than in the task or instruction.",
+    "confidence": "medium",
+    "source_document_id": "2761",
+    "obsid": "2761",
+    "legacy_source": "349_original.csv",
+    "source_run": "run_2026-07-19_153121"
+  },
+  {
+    "turn_range": "184-188",
+    "deficit_span": {
+      "speaker": "teacher",
+      "turns": "186",
+      "verbatim_quote": "it is okay to be confused what s not okay is to be confused because you weren t paying attention"
+    },
+    "context_excerpt": [
+      {
+        "turn": 184,
+        "speaker": "teacher",
+        "text": "perfect one half is the same as saying three sixths three sixths is the same as saying how many sixths it s the same it s not changing is it three sixths plus three sixths one sixth two sixths three sixths equals what everyone"
+      },
+      {
+        "turn": 185,
+        "speaker": "multiple students",
+        "text": "one whole"
+      },
+      {
+        "turn": 186,
+        "speaker": "teacher",
+        "text": "wonderful all right i feel like this went all right for our first lesson there are a lot of points of confusion there are still a lot of things we have to discuss i know adding fractions is really a new idea especially since we switched from adding fractions taking fractions of a whole group and now we re kind of back to drawing fractions all right it is a difficult switch and it does get confusing it is okay to be confused what s not okay is to be confused because you weren t paying attention fractions are hard enough without making a little more challenging yes student a"
+      },
+      {
+        "turn": 187,
+        "speaker": "student",
+        "text": "why can we not just do it the normal way"
+      },
+      {
+        "turn": 188,
+        "speaker": "teacher",
+        "text": "that s a good question so the way you were shown is really easy right part of the reason we do it the difficult way first and by difficult it s not really all that difficult it s so you guys can visualize it you get to play with the pieces you get to realize what doesn t work that s how your math curriculum works they want you to have a better understanding of how it works not just make it work so drawing the pictures is helping us get a visual image of it once we get the visual image we re going to do exactly what you re thinking i can multiply this by 3 and this by 3 to convert it right that s what you re doing i can multiply this by 3 and if i want this to be a 6 i can multiply it by 3 if i was trying to get it to go to fourths right how many people are confused by what i just said right many of us aren t there yet part of it was too fast but we really want you to get the visual picture of what is a fraction how do i cut something into different sized pieces if you want to give your food away you want to share your pizza with someone and you re deciding who gets pieces based on behavior like let s say a class should everyone get the same fraction if their behaviors are different"
+      }
+    ],
+    "categories": [
+      "D"
+    ],
+    "rationale": "While the teacher normalizes confusion, this framing attributes potential lack of understanding to a behavioral/motivational failing (not paying attention), a deficit attribution for behavior.",
+    "confidence": "medium",
+    "source_document_id": "2765",
+    "obsid": "2765",
+    "legacy_source": "351_original.csv",
+    "source_run": "run_2026-07-19_153121"
+  },
+  {
+    "turn_range": "85-89",
+    "deficit_span": {
+      "speaker": "teacher",
+      "turns": "88",
+      "verbatim_quote": "you re listening to bad ideas you need to think for yourself"
+    },
+    "context_excerpt": [
+      {
+        "turn": 85,
+        "speaker": "teacher",
+        "text": "8 times 9 is 60"
+      },
+      {
+        "turn": 86,
+        "speaker": "multiple students",
+        "text": "no"
+      },
+      {
+        "turn": 87,
+        "speaker": "student",
+        "text": "it s 72"
+      },
+      {
+        "turn": 88,
+        "speaker": "teacher",
+        "text": "this is more challenging because 8 does not go evenly into 60 so how can we figure this out this is one of those challenges that we struggle with every now and again i m going to do an in between step and you guys are going to use that if that s half that means that each of these is a fourth correct if you cut a half in half you ve got fourths how can we figure out an eighth you re listening to bad ideas you need to think for yourself"
+      },
+      {
+        "turn": 89,
+        "speaker": "student",
+        "text": "cut a fourth into fourths"
+      }
+    ],
+    "categories": [
+      "D"
+    ],
+    "rationale": "Characterizing peers' contributed answers as 'bad ideas' dismisses student thinking rather than treating incorrect answers as productive attempts; borderline and directed at ideas in the moment.",
+    "confidence": "low",
+    "source_document_id": "2765",
+    "obsid": "2765",
+    "legacy_source": "351_original.csv",
+    "source_run": "run_2026-07-19_153121"
+  },
+  {
+    "turn_range": "87-91",
+    "deficit_span": {
+      "speaker": "teacher",
+      "turns": "89",
+      "verbatim_quote": "too much work you re not ready for middle school yet interesting"
+    },
+    "context_excerpt": [
+      {
+        "turn": 86,
+        "speaker": "teacher",
+        "text": "right i can give you more white paper cause it looks like you re doing your work on here which is fine you did it for each one so why did i give you this paper to continue the game"
+      },
+      {
+        "turn": 87,
+        "speaker": "student",
+        "text": "do we have to do 5"
+      },
+      {
+        "turn": 88,
+        "speaker": "teacher",
+        "text": "i wanted you what directions did i give i said next to each one put an explanation of how you know which one s larger so it looks like you don t have any room i gave another direction what were you supposed to do can everybody freeze and put their hands on their head pencils down what direction did i give on top of the directions that were already there"
+      },
+      {
+        "turn": 89,
+        "speaker": "teacher",
+        "text": "too much work you re not ready for middle school yet interesting let s look at 3 how do we say this decimal"
+      },
+      {
+        "turn": 90,
+        "speaker": "student",
+        "text": "inaudible"
+      },
+      {
+        "turn": 91,
+        "speaker": "teacher",
+        "text": "75 1000 how do we say this one"
+      }
+    ],
+    "categories": [
+      "D"
+    ],
+    "rationale": "In response to the student's reluctance ('do we have to do 5'), the teacher characterizes the student as 'not ready for middle school,' framing the student's motivation/effort as a personal deficiency rather than addressing the task or instruction.",
+    "confidence": "medium",
+    "source_document_id": "2783",
+    "obsid": "2783",
+    "legacy_source": "334_original.csv",
+    "source_run": "run_2026-07-19_153121"
+  },
+  {
+    "turn_range": "3-7",
+    "deficit_span": {
+      "speaker": "teacher",
+      "turns": "5",
+      "verbatim_quote": "now i know some of you guys don t speak english that much but just stay with me all right"
+    },
+    "context_excerpt": [
+      {
+        "turn": 3,
+        "speaker": "teacher",
+        "text": "okay very good all right you need to turn around so we can start our math lesson today okay our math lesson today listen carefully okay to what we re going to doing we re going to be working on the number line these this is a number line so just pay attention here nothing else this is the number line that we re going to be working on okay this we re going to be using fractions here the other day we used decimals okay so today we re going to be using we re going to be using fractions am i correct does everybody understand"
+      },
+      {
+        "turn": 4,
+        "speaker": "student",
+        "text": "yes"
+      },
+      {
+        "turn": 5,
+        "speaker": "teacher",
+        "text": "now i know some of you guys don t speak english that much but just stay with me all right very good okay the first thing if we re going to be working with fractions the first thing that you need to understand you need to have an idea of what are fractions okay okay good so i m going to put okay you two are going to talk to each other you are going to talk to each other okay i m going to put a fraction two fractions on the board and then you are going to tell me what can you tell me about those fractions okay"
+      },
+      {
+        "turn": 6,
+        "speaker": "teacher",
+        "text": "okay i want you to talk with each other talk with each other what can inaudible put a and b a and b talk with what can talk with each other about the fraction loud inaudible"
+      },
+      {
+        "turn": 7,
+        "speaker": "student",
+        "text": "that the a is inaudible because this is the basically because you only need one more to make one"
+      }
+    ],
+    "categories": [
+      "C"
+    ],
+    "rationale": "The teacher characterizes some students by a language lack ('don't speak english that much') as a framing for the lesson, locating a limitation in the students' background rather than in the task or instruction. Borderline, as it acknowledges ELL status factually.",
+    "confidence": "low",
+    "source_document_id": "2789",
+    "obsid": "2789",
+    "legacy_source": "341_original.csv",
+    "source_run": "run_2026-07-19_153121"
+  },
+  {
+    "turn_range": "2-4",
+    "deficit_span": {
+      "speaker": "teacher",
+      "turns": "2",
+      "verbatim_quote": "maybe that s why you re losing papers has to be put away those need to go in the pocket or you re gonna lose them that s why you re losing them"
+    },
+    "context_excerpt": [
+      {
+        "turn": 2,
+        "speaker": "teacher",
+        "text": "and we came up with some strategies yesterday to decide we came up with some conjectures some ideas on how to decide what a fraction is worth i am going to give you i put them in sheet protectors it s what room 208 noticed about fractions we ll quickly review this before beginning our lesson today when we re done reviewing it you can put this in your vocabulary section okay i m gonna have you sit right here student p student p right here so not right now you can wait till we re done so you re just gonna look at them or review them sit up put this away i don t know why that s out i don t know why that s out and why it looks like that maybe that s why you re losing papers has to be put away those need to go in the pocket or you re gonna lose them that s why you re losing them that needs to be put away student t we ve moved on"
+      },
+      {
+        "turn": 3,
+        "speaker": "student",
+        "text": "inaudible"
+      },
+      {
+        "turn": 4,
+        "speaker": "teacher",
+        "text": "yeah we re in math now that needs to be put away so let s take a look at these and then we ll put them in our vocabulary section it says what room 208 noticed about fractions when the numerator was zero what was the fraction raise your hand the fraction was it s on your paper"
+      }
+    ],
+    "categories": [
+      "D"
+    ],
+    "rationale": "The teacher frames an ongoing problem ('losing papers') as a result of the student's own disorganization/habits rather than describing a neutral fix, edging toward deficit attribution for behavior. It is mild and specific, so confidence is low.",
+    "confidence": "low",
+    "source_document_id": "2800",
+    "obsid": "2800",
+    "legacy_source": "318_original.csv",
+    "source_run": "run_2026-07-19_153121"
+  },
+  {
+    "turn_range": "254-260",
+    "deficit_span": {
+      "speaker": "teacher",
+      "turns": "257",
+      "verbatim_quote": "i think you re gonna have some problem doing this because you re not listening"
+    },
+    "context_excerpt": [
+      {
+        "turn": 254,
+        "speaker": "student",
+        "text": "inaudible"
+      },
+      {
+        "turn": 255,
+        "speaker": "teacher",
+        "text": "13 to 14 boys and girls look up here please so from here to here we have one and there fourths is that clear so from here to here we have another three fourths right"
+      },
+      {
+        "turn": 256,
+        "speaker": "student",
+        "text": "no"
+      },
+      {
+        "turn": 257,
+        "speaker": "teacher",
+        "text": "no one two three then we have this part then we have this part are you following now how do we make another three fourths student a i think you re gonna have some problem doing this because you re not listening put down your pencil student f put down the pencil please eyes up here so if you were to continue this number line would that be another three fourths student i yes but do we have that much we don t have that much right so how much do we have out of that"
+      },
+      {
+        "turn": 258,
+        "speaker": "student",
+        "text": "we have two out of"
+      },
+      {
+        "turn": 259,
+        "speaker": "teacher",
+        "text": "don t we have two parts out of"
+      },
+      {
+        "turn": 260,
+        "speaker": "multiple students",
+        "text": "three pieces"
+      }
+    ],
+    "categories": [
+      "D"
+    ],
+    "rationale": "The teacher attributes an anticipated difficulty/failure to the student's behavior ('because you're not listening'), framing the problem as located in the student's conduct rather than the task or instruction.",
+    "confidence": "low",
+    "source_document_id": "2916",
+    "obsid": "2916",
+    "legacy_source": "312_original.csv",
+    "source_run": "run_2026-07-19_153121"
+  },
+  {
+    "turn_range": "44-48",
+    "deficit_span": {
+      "speaker": "teacher",
+      "turns": "46",
+      "verbatim_quote": "i don t want to have fresh children in my class but apparently i still do"
+    },
+    "context_excerpt": [
+      {
+        "turn": 44,
+        "speaker": "teacher",
+        "text": "but what am i asking you to do hold on"
+      },
+      {
+        "turn": 45,
+        "speaker": "student",
+        "text": "how much have they walked during the week"
+      },
+      {
+        "turn": 46,
+        "speaker": "teacher",
+        "text": "i want you to show me how much they have walked during the week you have seven minutes to show me how much so don t dilly dally with your partners go back to your seats that means goof off your partner sitting right next to you student b come sit with student x student b i didn t ask you what you wanted to do i don t want to have fresh children in my class but apparently i still do everybody sitting next to their partner good student j you re wasting time where is my timer try to work it out student s you have two people right there how far have they walked so far they walked on monday they walked on tuesday that s what that means how far have they walked so far you re supposed to be working with student l you re supposed to be talking good boy student l you need to look at me you need to work with student d it s not negotiable you play around with your buddies you need to work with student d that s one warning this is not martha stewart do your work please i don t want you cleaning sit you re wasting time good job now what is this honey"
+      },
+      {
+        "turn": 47,
+        "speaker": "student",
+        "text": "5"
+      },
+      {
+        "turn": 48,
+        "speaker": "teacher",
+        "text": "5 what is that five tenths okay you have to color in 50 what happened please some of you are trying the grid and others of you are trying the number line see if you can prove the same thing in the number line all right student s talk with student t student t look at what student s has done tell him why you did it this way you don t know what day is this monday maybe you should put all right what do you think is happening in the story if i want to know how much they walked am i adding or subtracting okay you know what you can do for me can you pull out their spiral books they re going to take forever to go get them you know what the spiral books look like right yeah think about what that means 1 1 or 1 01 write it down that might help you see which answer it really is keep going student s when i do my mini lesson raise your hand and ask a question don t just sit there that s not being self determined am i helping too much oh i m not done what day is it on the problem what representation is this where did you get the monday from what decimal is that write it down let me see what you said okay so that s how do we say this 0 5 or how do we say it as a decimal we worked on that yesterday 5 what what place value is it in that s five tenths okay so which one is six tenths that one okay so my question to you is what day is this one and what day is that one can you see the board from here nobody walked on friday excellent can you show that using the grid representation too you don t know that where is that book i need that book in a minute i can t remember the page student s sit down all right my timer has gone off student t speaking spanish okay so i have up here i need everybody s attention i have up here essentially what you have on your paper and i m going to invite some of you to come up to the board and share with the class some of your representations when you get to the board i m going to move this up this is our infinite corner boys and girls you can move it if you decided to move that as a representation if you decided to use the number line this is also you can use these as well to help keep track of things on your number line and venetta she also duplicates so if you need to move venetta a couple of times she s already there for you okay so there s some people that would like to share some of their representations about venetta and her mother just let me do one more thing i m going to move it down here so we can see it better student j want to come share go ahead we need to move when we share boys and girls two minutes at the board nice and loud"
+      }
+    ],
+    "categories": [
+      "D"
+    ],
+    "rationale": "The teacher characterizes students as 'fresh children,' a global negative labeling of student character/behavior rather than describing a specific action or redirecting a task, which frames the problem as residing in the students themselves.",
+    "confidence": "medium",
+    "source_document_id": "4678",
+    "obsid": "4678",
+    "legacy_source": "352_original.csv",
+    "source_run": "run_2026-07-19_153121"
+  }
+]

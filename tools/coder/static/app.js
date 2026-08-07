@@ -28,28 +28,110 @@ async function api(path, opts) {
 // Observations are keyed on OBSID; teacher and year come from observation_index.csv
 // and are shown for orientation only -- never used as a key. (The NCTE source's
 // "video_id" column identifies a teacher observed across years, not a video.)
-function obsLabel(t) {
-  const bits = [`Obs ${t.obsid}`];
-  if (t.teacher_id) bits.push(`teacher ${t.teacher_id}`);
-  if (t.year) bits.push(`yr ${t.year}`);
-  bits.push(`${t.teacher_turns} teacher / ${t.turn_count} turns`);
-  return bits.join(" · ") + (t.error ? "  [MISSING FILE]" : "");
+// Two fixed-width glyph columns, then padded fields. The <select> is monospaced
+// in CSS so this actually lines up; without that the padding is decorative.
+// Option text is the only channel available -- it cannot be styled.
+//   col 1  this coder's status: circle / filled / tick
+//   col 2  diamond when the LLM has findings for the observation, dot when not
+// The flagged count is deliberately absent: a variable-width prefix threw every
+// following column out of alignment, and the filled glyph already says "started".
+function coderMark(t, coderId) {
+  const mine = coderId ? (t.coders || {})[coderId] : null;
+  if (!mine) return "○";
+  return mine.completed ? "✓" : "●";
+}
+
+const padS = (v, n) => String(v ?? "").padStart(n);
+const padE = (v, n) => String(v ?? "").padEnd(n);
+
+function obsLabel(t, coderId) {
+  const cols =
+    `${coderMark(t, coderId)} ${t.llm_scenes ? "✦" : "·"}  ` +
+    `${padS(t.obsid, 5)}  ` +
+    `teacher ${padE(t.teacher_id || "—", 8)}` +
+    `yr ${padE(t.year || "—", 4)}` +
+    `${padS(t.teacher_turns, 4)}/${padE(t.turn_count, 4)}`;
+  // Variable-length notes go last, where they cannot disturb the columns above.
+  const tail = [];
+  if (t.assigned === false) tail.push("not in sample");
+  if (t.error) tail.push("[MISSING FILE]");
+  return cols + (tail.length ? " · " + tail.join(" · ") : "");
+}
+
+let transcriptList = [];   // last /api/transcripts payload; relabelled locally
+
+/* ---- picker filters -------------------------------------------------------
+   "Which of my assigned observations am I part-way through?" is the question
+   that has to keep working as the corpus grows -- a shortcut naming one
+   observation stops being useful the moment more than a handful are in flight.
+   These predicates scale to any N, and the counts are rendered into the option
+   labels so the distribution is visible before you filter. */
+const PICKER_FILTERS = [
+  ["all", "All", () => true],
+  ["mine_wip", "My in progress", (t, c) => Boolean(c && (t.coders || {})[c] && !t.coders[c].completed)],
+  ["mine_done", "My completed", (t, c) => Boolean(c && (t.coders || {})[c] && t.coders[c].completed)],
+  ["mine_none", "Not started by me", (t, c) => !(c && (t.coders || {})[c])],
+  ["any_coded", "Coded by anyone", (t) => Object.keys(t.coders || {})
+    .some((k) => k !== "llm" && k !== "adjudicated")],
+  ["has_llm", "Has LLM findings", (t) => Boolean(t.llm_scenes)],
+];
+
+function currentFilter(sel) {
+  const node = el(sel);
+  const key = node ? node.value : "all";
+  return PICKER_FILTERS.find((f) => f[0] === key) || PICKER_FILTERS[0];
+}
+
+function renderFilterOptions() {
+  const coderId = (el("#coder-id").value || "").trim();
+  const opts = PICKER_FILTERS.map(([key, label, pred]) => {
+    const n = transcriptList.filter((t) => pred(t, coderId)).length;
+    return `<option value="${key}">${esc(label)} (${n})</option>`;
+  }).join("");
+  for (const sel of ["#picker-filter", "#cmp-filter"]) {
+    const node = el(sel);
+    if (!node) continue;
+    const keep = node.value;
+    node.innerHTML = opts;
+    if (keep) node.value = keep;
+  }
 }
 
 async function loadTranscriptList() {
-  const list = await api("/api/transcripts");
-  const opts = list.map((t) =>
-    `<option value="${esc(t.obsid)}"${t.error ? " disabled" : ""}>${esc(obsLabel(t))}</option>`
-  ).join("");
-  ["#transcript-select", "#cmp-transcript"].forEach((sel) => {
-    const node = el(sel);
-    if (node) node.innerHTML = opts;
-  });
-  return list;
+  transcriptList = await api("/api/transcripts");
+  renderTranscriptOptions();
+  return transcriptList;
 }
 
-// expose for compare.js
-window.CoderApp = { CATS, el, esc, api };
+// Re-label from the cached payload. Switching coder id changes only the glyphs,
+// so it must never cost a round trip.
+function renderTranscriptOptions() {
+  const coderId = (el("#coder-id").value || "").trim();
+  renderFilterOptions();
+  [["#transcript-select", "#picker-filter"], ["#cmp-transcript", "#cmp-filter"]].forEach(
+    ([sel, filterSel]) => {
+      const node = el(sel);
+      if (!node) return;
+      const keep = node.value;
+      const pred = currentFilter(filterSel)[2];
+      // Always keep the current selection in the list even when it fails the
+      // filter -- silently dropping the loaded observation out of the picker is
+      // how a coder loses their place mid-transcript.
+      const shown = transcriptList.filter((t) => pred(t, coderId) || t.obsid === keep);
+      node.innerHTML = shown.map((t) =>
+        `<option value="${esc(t.obsid)}"${t.error ? " disabled" : ""}>${esc(obsLabel(t, coderId))}</option>`
+      ).join("") || `<option value="">(none match this filter)</option>`;
+      if (keep && shown.some((t) => t.obsid === keep)) node.value = keep;
+    });
+}
+
+// expose for compare.js / findings.js
+window.CoderApp = {
+  CATS, el, esc, api,
+  // Lets the Compare screen ask "does this observation have LLM findings?"
+  // without a round trip -- /api/transcripts already carries the count.
+  transcriptRow: (obsid) => transcriptList.find((t) => t.obsid === obsid) || null,
+};
 
 /* ------------------------------ router ------------------------------ */
 function route() {
@@ -60,6 +142,7 @@ function route() {
   document.querySelectorAll(".tabs a").forEach((a) =>
     a.classList.toggle("active", a.dataset.tab === tab));
   if (tab === "progress") renderProgress();
+  if (tab === "findings" && window.Findings) window.Findings.onEnter();
   if (tab === "compare" && window.Compare) window.Compare.onEnter();
 }
 window.addEventListener("hashchange", route);
@@ -280,6 +363,19 @@ const Code = {
         body: JSON.stringify(this.payload()),
       });
       this.setStatus("saved", `Saved ${new Date().toLocaleTimeString()}`);
+      // Keep the picker's tracker honest without another round trip. Guarded on
+      // the count actually moving so the 1.2s autosave doesn't rebuild 320
+      // options on every keystroke.
+      const row = transcriptList.find((t) => t.obsid === this.obsid);
+      if (row) {
+        const n = Object.values(this.scenes).filter((s) => s.categories.length).length;
+        row.coders = row.coders || {};
+        const prev = row.coders[this.coderId];
+        if (!prev || prev.flagged !== n) {
+          row.coders[this.coderId] = { scenes: n, flagged: n, completed: false, updated_at: res.updated_at };
+          renderTranscriptOptions();
+        }
+      }
       const warn = el("#unverified-warn");
       if (res.unverified && res.unverified.length) {
         warn.classList.remove("hidden");
@@ -297,9 +393,38 @@ const Code = {
     s.className = "save-status " + cls;
     s.textContent = txt;
   },
+
+  // Jump straight to one turn of one observation. Used by the LLM Findings
+  // screen so a model finding can be inspected in its own transcript in one
+  // click instead of being hunted for in the picker.
+  async openAt(obsid, turn) {
+    const sel = el("#transcript-select");
+    const known = [...sel.options].some((o) => o.value === obsid);
+    if (!known) {
+      alert(`Observation ${obsid} is not in the picker (not assigned and not yet coded), `
+            + `so it cannot be opened here.`);
+      return;
+    }
+    sel.value = obsid;
+    location.hash = "#code";
+    await this.load();
+    const node = el(`#turn-${turn}`);
+    if (node) {
+      node.scrollIntoView({ block: "center" });
+      // Brief highlight: after a tab switch the target turn is otherwise just
+      // one row among hundreds.
+      node.classList.add("jump-target");
+      setTimeout(() => node.classList.remove("jump-target"), 2500);
+    }
+  },
 };
+window.CoderApp.Code = Code;
 
 el("#load-btn").addEventListener("click", () => Code.load().catch((e) => alert(e.message)));
+["#picker-filter", "#cmp-filter"].forEach((sel) => {
+  const node = el(sel);
+  if (node) node.addEventListener("change", renderTranscriptOptions);
+});
 el("#save-now-btn").addEventListener("click", () => {
   if (!Code.obsid || !Code.coderId) { alert("Load a transcript first."); return; }
   clearTimeout(Code.saveTimer);
@@ -340,7 +465,12 @@ async function renderProgress() {
 (async function boot() {
   const saved = localStorage.getItem("coderId");
   if (saved) el("#coder-id").value = saved;
-  el("#coder-id").addEventListener("change", (e) => localStorage.setItem("coderId", e.target.value.trim()));
+  // "change" not "input": the glyphs are per-coder, but rebuilding 320 options
+  // on every keystroke of a name is not worth the liveness.
+  el("#coder-id").addEventListener("change", (e) => {
+    localStorage.setItem("coderId", e.target.value.trim());
+    renderTranscriptOptions();
+  });
   await loadTranscriptList();
   route();
 })();

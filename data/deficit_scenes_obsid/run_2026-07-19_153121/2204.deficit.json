@@ -1,0 +1,164 @@
+{
+  "source_document_id": "2204",
+  "obsid": "2204",
+  "scenes": [
+    {
+      "turn_range": "225-229",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "227",
+        "verbatim_quote": "those people that are not paying attention are the ones that won t be able to do it we know that if you cannot see i could tell ones that will be able to do it"
+      },
+      "context_excerpt": [
+        {
+          "turn": 224,
+          "speaker": "student",
+          "text": "yeah eight"
+        },
+        {
+          "turn": 225,
+          "speaker": "teacher",
+          "text": "is the thing into eight vans"
+        },
+        {
+          "turn": 226,
+          "speaker": "student",
+          "text": "eight vans that would be"
+        },
+        {
+          "turn": 227,
+          "speaker": "teacher",
+          "text": "now hold on another way 44 people some people are not see 44 into that s another word into another way of writing into into 8 yeah 44 people into see this into she s not paying attention to me into two ways of writing it for 44 people into a group you could yeah 44 people into a group into a group into a group sometime you find it written that way but most of the time it s this way that means into now we learn yesterday after they write it this way you ll write it that way yourself those people that are not paying attention are the ones that won t be able to do it we know that if you cannot see i could tell ones that will be able to do it yep like student m and c doesn t go like this she goes like yeah remember we said that seating is really this way all right so we said hey"
+        },
+        {
+          "turn": 228,
+          "speaker": "student",
+          "text": "inaudible"
+        },
+        {
+          "turn": 229,
+          "speaker": "teacher",
+          "text": "you can t see all right go this way we could say we already know if i have 44 and i see my 40 and i know my time table and i know i m gonna time hm to get hm yeah did i do it that way now how many eight into"
+        },
+        {
+          "turn": 230,
+          "speaker": "student",
+          "text": "forty four"
+        }
+      ],
+      "categories": [
+        "D",
+        "E"
+      ],
+      "rationale": "The teacher attributes anticipated failure to students based on behavior and predicts who 'will' and 'won't be able to do it,' sorting students by perceived inability rather than describing the task or effort.",
+      "confidence": "high",
+      "source_document_id": "2204",
+      "obsid": "2204",
+      "legacy_source": "309_original.csv",
+      "source_run": "run_2026-07-19_153121"
+    },
+    {
+      "turn_range": "154-158",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "156",
+        "verbatim_quote": "see i don t see student c thinking i know she s not"
+      },
+      "context_excerpt": [
+        {
+          "turn": 154,
+          "speaker": "teacher",
+          "text": "oh you could ve asked a mom to come with their car and kind of take one person or drive a few or drive three because if it s a passenger car it might be able to take three people in the back that could be true we are thinking when it s remainder we need to think of a situation now let s think of a different situation now we re thinking of situation strategies in our head let me see student c is thinking my favorite student f student f is thinking now listen i m giving you a different situation it is sharing thing it s sharing we have apple we have candy we have cupcakes like people said but we have 35 to share in total"
+        },
+        {
+          "turn": 155,
+          "speaker": "student",
+          "text": "donuts"
+        },
+        {
+          "turn": 156,
+          "speaker": "teacher",
+          "text": "donuts anything that could share now we got no we re thinking of anything that we could share maybe it s candy maybe it s donuts maybe it s cake maybe it s cupcakes i just need your thinking now if it s a sharing thing what could we do with the three cupcakes that are left what can we do it s a sharing thing what can we do with the three cupcakes good job some people are thinking see i don t see student c thinking i know she s not and my let s see student w"
+        },
+        {
+          "turn": 157,
+          "speaker": "student",
+          "text": "yep"
+        },
+        {
+          "turn": 158,
+          "speaker": "teacher",
+          "text": "i don t see you thinking it s a different situation it s food it s candy it s cupcakes all right what can we do with the three extra we know we know yeah student m"
+        },
+        {
+          "turn": 159,
+          "speaker": "student",
+          "text": "you can give them"
+        },
+        {
+          "turn": 160,
+          "speaker": "teacher",
+          "text": "you know we don t do that"
+        }
+      ],
+      "categories": [
+        "D"
+      ],
+      "rationale": "The teacher characterizes a named student as simply 'not thinking' rather than describing a specific behavior or offering support, attributing a lack of engagement to the student.",
+      "confidence": "medium",
+      "source_document_id": "2204",
+      "obsid": "2204",
+      "legacy_source": "309_original.csv",
+      "source_run": "run_2026-07-19_153121"
+    },
+    {
+      "turn_range": "52-56",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "54",
+        "verbatim_quote": "you need help all morning you don t know your timetable"
+      },
+      "context_excerpt": [
+        {
+          "turn": 52,
+          "speaker": "teacher",
+          "text": "how many groups that s the question and you need to be careful you need to watch that now listen i m giving you a situation these are the things now this is your own thinking that s what i want you to pay attention they give me uh unh uh hm now you what what is my situation what is my situation here i need help i need your help what is my situation now i see people counting people are counting and they say now people are raising their hand that s nice see nice nice now yes i see people talking to each other that s fine too people are telling this array must be hm and i m going to put it in the middle"
+        },
+        {
+          "turn": 53,
+          "speaker": "student",
+          "text": "inaudible"
+        },
+        {
+          "turn": 54,
+          "speaker": "teacher",
+          "text": "yes student m student m good job now it s time i like the way you talk to each other ah you don t need this one don t we you need help all morning you don t know your timetable that s when you do"
+        },
+        {
+          "turn": 55,
+          "speaker": "student",
+          "text": "no i do"
+        },
+        {
+          "turn": 56,
+          "speaker": "teacher",
+          "text": "right now student m is the person"
+        },
+        {
+          "turn": 57,
+          "speaker": "student",
+          "text": "inaudible"
+        }
+      ],
+      "categories": [
+        "B"
+      ],
+      "rationale": "The teacher frames a named student by a lack ('you don't know your timetable' / needing help 'all morning'), though phrasing is somewhat ambiguous and jocular.",
+      "confidence": "low",
+      "source_document_id": "2204",
+      "obsid": "2204",
+      "legacy_source": "309_original.csv",
+      "source_run": "run_2026-07-19_153121"
+    }
+  ]
+}

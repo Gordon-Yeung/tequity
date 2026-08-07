@@ -1,0 +1,22 @@
+{
+  "generated_at": "2026-08-06T14:33:04",
+  "generated_by": "scripts/redraw_sample_prefer_scanned.py",
+  "rule": "For each teacher with an observation already scanned by the deficit pipeline, select that observation instead of the seeded draw. All other rows keep their seeded draw. One observation per teacher is preserved.",
+  "randomness_caveat": "The 'preferred_scanned' rows are NOT random. They were selected because those classes were extracted into data/transcripts/*_original.csv before the archive existed. Declare this in any analysis that treats the sample as random.",
+  "base_seed": [
+    "20260724"
+  ],
+  "inputs": {
+    "sample_before_sha256": "595ebe0d9939b02b65dd7f3060ce01f86900ec3c08d81d8ae2137b7174208f3e",
+    "observation_index_sha256": "cf368040175351d2cffcbd1f0a641134b35ec1a3c4b2201ebe595c93b5dad5ae",
+    "obsid_crosswalk_sha256": "a882a4d5f08faf7ba47efe884f21549059178abb3b0b63708139ab8909415ec8"
+  },
+  "counts": {
+    "rows": 319,
+    "swapped": 40,
+    "seeded_draw": 279,
+    "preferred_scanned": 40,
+    "with_llm_coverage": 50
+  },
+  "teachers_with_multiple_scanned": []
+}

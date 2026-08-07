@@ -1,0 +1,55 @@
+{
+  "source_document_id": "225",
+  "obsid": "225",
+  "scenes": [
+    {
+      "turn_range": "95-97",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "97",
+        "verbatim_quote": "thank you everybody else was sleeping on that answer"
+      },
+      "context_excerpt": [
+        {
+          "turn": 95,
+          "speaker": "teacher",
+          "text": "exactly i m going to label that actually that s 28 students and i m dividing them into two what"
+        },
+        {
+          "turn": 96,
+          "speaker": "student",
+          "text": "groups"
+        },
+        {
+          "turn": 97,
+          "speaker": "teacher",
+          "text": "thank you everybody else was sleeping on that answer i m taking 28 students and breaking them into two equal groups 28 divided by 2 what would be the answer to 28 divided by 2 cutting it in half student g"
+        },
+        {
+          "turn": 98,
+          "speaker": "student",
+          "text": "14"
+        },
+        {
+          "turn": 99,
+          "speaker": "teacher",
+          "text": "very good student g 14 student g how did you get that 14"
+        },
+        {
+          "turn": 100,
+          "speaker": "student",
+          "text": "inaudible"
+        }
+      ],
+      "categories": [
+        "D"
+      ],
+      "rationale": "Characterizes the rest of the class as disengaged ('sleeping on that answer'), a mild deficit attribution for the group's participation/motivation.",
+      "confidence": "low",
+      "source_document_id": "225",
+      "obsid": "225",
+      "legacy_source": "347_original.csv",
+      "source_run": "run_2026-07-12_170210"
+    }
+  ]
+}

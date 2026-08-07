@@ -1,0 +1,50 @@
+{
+  "source_document_id": "2397",
+  "obsid": "2397",
+  "scenes": [
+    {
+      "turn_range": "99-103",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "101",
+        "verbatim_quote": "we re not playing right now we re actually doing math you guys don t even have your books open none of you"
+      },
+      "context_excerpt": [
+        {
+          "turn": 99,
+          "speaker": "teacher",
+          "text": "so we said this one could be either depends on how you wanna solve it and we have an equation to prove both ways does it work out"
+        },
+        {
+          "turn": 100,
+          "speaker": "student",
+          "text": "yeah"
+        },
+        {
+          "turn": 101,
+          "speaker": "teacher",
+          "text": "let s look at another one same thing we re gonna be doing deciding if it s addition or subtraction let s talk about this problem on the bottom mr f s family drove to his sister s house last week on the first day they drove 539 miles the whole trip took two days and was 1 087 miles long how many miles did they drive on the second day so i want to talk with your group decide is this addition and subtraction come up with an equation that would help you solve the problem but we are not solving the problem and if you want to use a number line to show the picture of what the story looks like that would be great too so what are you guys thinking where s your book we re not playing right now we re actually doing math you guys don t even have your books open none of you"
+        },
+        {
+          "turn": 102,
+          "speaker": "student",
+          "text": "i think it s addition since you need inaudible to get to 1 087"
+        },
+        {
+          "turn": 103,
+          "speaker": "teacher",
+          "text": "so are there any clue words how many anything else helps to look at the story"
+        }
+      ],
+      "categories": [
+        "D"
+      ],
+      "rationale": "The framing 'we're not playing... we're actually doing math' attributes off-task behavior to the students as a group rather than to the task or instruction; borderline as it partly reports a factual observation about books being closed.",
+      "confidence": "low",
+      "source_document_id": "2397",
+      "obsid": "2397",
+      "legacy_source": "345_original.csv",
+      "source_run": "run_2026-07-19_153121"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "source_document_id": "2571",
+  "obsid": "2571",
+  "scenes": [
+    {
+      "turn_range": "121-124",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "124",
+        "verbatim_quote": "there s 19 other kids aren t having a problem they re ready to learn math the rest of you over there are you ready"
+      },
+      "context_excerpt": [
+        {
+          "turn": 121,
+          "speaker": "student",
+          "text": "what if you just take say the thing costs like 200 00 or 100 00 and you only take 50 00 you ll have to drive all the way back home and back and get the rest of the money"
+        },
+        {
+          "turn": 122,
+          "speaker": "teacher",
+          "text": "so some of that is also not just estimating but common sense about how much money you need right okay we re going to get started so i m going to need your help with this excuse me if you cannot handle it if you cannot handle just letting the fly be we ll find another seat so student a go back to your desk where you belong because there s a fly over here and you can t handle it go back to your desk where you belong so that we re all ready to move on you can sit your desk the back desk or that desk you have several choices that are far away from the fly you either sit quietly or you move"
+        },
+        {
+          "turn": 123,
+          "speaker": "student",
+          "text": "inaudible"
+        },
+        {
+          "turn": 124,
+          "speaker": "teacher",
+          "text": "there s 19 other kids aren t having a problem they re ready to learn math the rest of you over there are you ready"
+        },
+        {
+          "turn": 125,
+          "speaker": "student",
+          "text": "yeah"
+        },
+        {
+          "turn": 126,
+          "speaker": "teacher",
+          "text": "okay when you go through the problems today when we do sews when we sketch do an equation do the work write a sentence when you make your sketch i want you to be able to tell me how the numbers that we re working with relate to the sketch what part of the story problem does each number we re using represent so we re going to keep going back to the story and make sure we know what those numbers have to do with the story problem okay so if we look at this problem student r can you try and read that word problem for me"
+        }
+      ],
+      "categories": [
+        "F",
+        "D"
+      ],
+      "rationale": "Teacher defines a subset of students by contrast to the compliant majority, framing them as not 'ready to learn math,' attributing a learning-readiness deficit based on in-the-moment behavior.",
+      "confidence": "medium",
+      "source_document_id": "2571",
+      "obsid": "2571",
+      "legacy_source": "344_original.csv",
+      "source_run": "run_2026-07-19_153121"
+    },
+    {
+      "turn_range": "120-123",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "122",
+        "verbatim_quote": "go back to your desk where you belong because there s a fly over here and you can t handle it go back to your desk where you belong"
+      },
+      "context_excerpt": [
+        {
+          "turn": 119,
+          "speaker": "student",
+          "text": "what if you don t know how much money you need right"
+        },
+        {
+          "turn": 120,
+          "speaker": "teacher",
+          "text": "that s why you think ahead sometimes you really don t know and you try to overestimate and imagine"
+        },
+        {
+          "turn": 121,
+          "speaker": "student",
+          "text": "what if you just take say the thing costs like 200 00 or 100 00 and you only take 50 00 you ll have to drive all the way back home and back and get the rest of the money"
+        },
+        {
+          "turn": 122,
+          "speaker": "teacher",
+          "text": "so some of that is also not just estimating but common sense about how much money you need right okay we re going to get started so i m going to need your help with this excuse me if you cannot handle it if you cannot handle just letting the fly be we ll find another seat so student a go back to your desk where you belong because there s a fly over here and you can t handle it go back to your desk where you belong so that we re all ready to move on you can sit your desk the back desk or that desk you have several choices that are far away from the fly you either sit quietly or you move"
+        },
+        {
+          "turn": 123,
+          "speaker": "student",
+          "text": "inaudible"
+        },
+        {
+          "turn": 124,
+          "speaker": "teacher",
+          "text": "there s 19 other kids aren t having a problem they re ready to learn math the rest of you over there are you ready"
+        }
+      ],
+      "categories": [
+        "D"
+      ],
+      "rationale": "Repeated 'you can't handle it' and 'where you belong' attribute a fixed behavioral inadequacy to the student rather than describing the situation neutrally; borderline as it is situational management.",
+      "confidence": "low",
+      "source_document_id": "2571",
+      "obsid": "2571",
+      "legacy_source": "344_original.csv",
+      "source_run": "run_2026-07-19_153121"
+    }
+  ]
+}

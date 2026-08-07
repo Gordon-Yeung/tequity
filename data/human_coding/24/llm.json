@@ -1,0 +1,55 @@
+{
+  "obsid": "24",
+  "coder_id": "llm",
+  "created_at": "2026-08-06T16:34:45",
+  "updated_at": "2026-08-06T16:34:45",
+  "source_run": "run_2026-07-19_153121",
+  "progress": {
+    "last_turn_viewed": 0,
+    "completed": true
+  },
+  "scenes": [
+    {
+      "scene_id": "t122",
+      "turn": 122,
+      "speaker": "teacher",
+      "verbatim_quote": "just because you guys aren t on camera doesn t mean that you still need to do the math work okay just because you re not on camera doesn t mean that you can just sit here",
+      "quote_verified": true,
+      "categories": [
+        "D"
+      ],
+      "other_label": "",
+      "note": "The teacher preemptively assumes students will disengage and 'just sit here' rather than do the work, attributing anticipated non-participation to student motivation rather than to instruction or task.",
+      "confidence": "low",
+      "flagged_at": null
+    },
+    {
+      "scene_id": "t344",
+      "turn": 344,
+      "speaker": "teacher",
+      "verbatim_quote": "that s what you re stuck with you need to be studying your multiplication tables to be able to figure that out",
+      "quote_verified": true,
+      "categories": [
+        "D"
+      ],
+      "other_label": "",
+      "note": "The student's difficulty is attributed to a presumed failure to study rather than framed as an instructional or practice need, positioning the deficit in the student's effort.",
+      "confidence": "medium",
+      "flagged_at": null
+    },
+    {
+      "scene_id": "t352",
+      "turn": 352,
+      "speaker": "teacher",
+      "verbatim_quote": "no you re going to be studying your multiplication facts student c",
+      "quote_verified": true,
+      "categories": [
+        "D"
+      ],
+      "other_label": "",
+      "note": "Following a wrong answer, the teacher frames the error as a consequence of the student not studying, an attribution to student effort rather than a neutral correction.",
+      "confidence": "low",
+      "flagged_at": null
+    }
+  ]
+}

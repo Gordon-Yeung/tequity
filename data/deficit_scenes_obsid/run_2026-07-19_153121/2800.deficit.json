@@ -1,0 +1,40 @@
+{
+  "source_document_id": "2800",
+  "obsid": "2800",
+  "scenes": [
+    {
+      "turn_range": "2-4",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "2",
+        "verbatim_quote": "maybe that s why you re losing papers has to be put away those need to go in the pocket or you re gonna lose them that s why you re losing them"
+      },
+      "context_excerpt": [
+        {
+          "turn": 2,
+          "speaker": "teacher",
+          "text": "and we came up with some strategies yesterday to decide we came up with some conjectures some ideas on how to decide what a fraction is worth i am going to give you i put them in sheet protectors it s what room 208 noticed about fractions we ll quickly review this before beginning our lesson today when we re done reviewing it you can put this in your vocabulary section okay i m gonna have you sit right here student p student p right here so not right now you can wait till we re done so you re just gonna look at them or review them sit up put this away i don t know why that s out i don t know why that s out and why it looks like that maybe that s why you re losing papers has to be put away those need to go in the pocket or you re gonna lose them that s why you re losing them that needs to be put away student t we ve moved on"
+        },
+        {
+          "turn": 3,
+          "speaker": "student",
+          "text": "inaudible"
+        },
+        {
+          "turn": 4,
+          "speaker": "teacher",
+          "text": "yeah we re in math now that needs to be put away so let s take a look at these and then we ll put them in our vocabulary section it says what room 208 noticed about fractions when the numerator was zero what was the fraction raise your hand the fraction was it s on your paper"
+        }
+      ],
+      "categories": [
+        "D"
+      ],
+      "rationale": "The teacher frames an ongoing problem ('losing papers') as a result of the student's own disorganization/habits rather than describing a neutral fix, edging toward deficit attribution for behavior. It is mild and specific, so confidence is low.",
+      "confidence": "low",
+      "source_document_id": "2800",
+      "obsid": "2800",
+      "legacy_source": "318_original.csv",
+      "source_run": "run_2026-07-19_153121"
+    }
+  ]
+}

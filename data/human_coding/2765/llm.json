@@ -1,0 +1,41 @@
+{
+  "obsid": "2765",
+  "coder_id": "llm",
+  "created_at": "2026-08-06T14:53:42",
+  "updated_at": "2026-08-06T14:53:42",
+  "source_run": "run_2026-07-19_153121",
+  "progress": {
+    "last_turn_viewed": 0,
+    "completed": true
+  },
+  "scenes": [
+    {
+      "scene_id": "t186",
+      "turn": 186,
+      "speaker": "teacher",
+      "verbatim_quote": "it is okay to be confused what s not okay is to be confused because you weren t paying attention",
+      "quote_verified": true,
+      "categories": [
+        "D"
+      ],
+      "other_label": "",
+      "note": "While the teacher normalizes confusion, this framing attributes potential lack of understanding to a behavioral/motivational failing (not paying attention), a deficit attribution for behavior.",
+      "confidence": "medium",
+      "flagged_at": null
+    },
+    {
+      "scene_id": "t88",
+      "turn": 88,
+      "speaker": "teacher",
+      "verbatim_quote": "you re listening to bad ideas you need to think for yourself",
+      "quote_verified": true,
+      "categories": [
+        "D"
+      ],
+      "other_label": "",
+      "note": "Characterizing peers' contributed answers as 'bad ideas' dismisses student thinking rather than treating incorrect answers as productive attempts; borderline and directed at ideas in the moment.",
+      "confidence": "low",
+      "flagged_at": null
+    }
+  ]
+}

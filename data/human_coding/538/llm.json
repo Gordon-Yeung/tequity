@@ -1,0 +1,27 @@
+{
+  "obsid": "538",
+  "coder_id": "llm",
+  "created_at": "2026-08-06T14:53:42",
+  "updated_at": "2026-08-06T14:53:42",
+  "source_run": "run_2026-07-19_153121",
+  "progress": {
+    "last_turn_viewed": 0,
+    "completed": true
+  },
+  "scenes": [
+    {
+      "scene_id": "t263",
+      "turn": 263,
+      "speaker": "teacher",
+      "verbatim_quote": "maybe i m asking the question too difficult for you",
+      "quote_verified": true,
+      "categories": [
+        "E"
+      ],
+      "other_label": "",
+      "note": "The teacher frames the student's difficulty answering as the question being too hard 'for you,' implying a perceived limit in the student's ability rather than reframing the task or prompting; this suggests lowered expectation.",
+      "confidence": "low",
+      "flagged_at": null
+    }
+  ]
+}

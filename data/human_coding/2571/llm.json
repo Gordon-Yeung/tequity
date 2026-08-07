@@ -1,0 +1,42 @@
+{
+  "obsid": "2571",
+  "coder_id": "llm",
+  "created_at": "2026-08-06T14:53:42",
+  "updated_at": "2026-08-06T14:53:42",
+  "source_run": "run_2026-07-19_153121",
+  "progress": {
+    "last_turn_viewed": 0,
+    "completed": true
+  },
+  "scenes": [
+    {
+      "scene_id": "t124",
+      "turn": 124,
+      "speaker": "teacher",
+      "verbatim_quote": "there s 19 other kids aren t having a problem they re ready to learn math the rest of you over there are you ready",
+      "quote_verified": true,
+      "categories": [
+        "F",
+        "D"
+      ],
+      "other_label": "",
+      "note": "Teacher defines a subset of students by contrast to the compliant majority, framing them as not 'ready to learn math,' attributing a learning-readiness deficit based on in-the-moment behavior.",
+      "confidence": "medium",
+      "flagged_at": null
+    },
+    {
+      "scene_id": "t122",
+      "turn": 122,
+      "speaker": "teacher",
+      "verbatim_quote": "go back to your desk where you belong because there s a fly over here and you can t handle it go back to your desk where you belong",
+      "quote_verified": true,
+      "categories": [
+        "D"
+      ],
+      "other_label": "",
+      "note": "Repeated 'you can't handle it' and 'where you belong' attribute a fixed behavioral inadequacy to the student rather than describing the situation neutrally; borderline as it is situational management.",
+      "confidence": "low",
+      "flagged_at": null
+    }
+  ]
+}

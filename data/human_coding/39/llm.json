@@ -1,0 +1,41 @@
+{
+  "obsid": "39",
+  "coder_id": "llm",
+  "created_at": "2026-08-06T14:53:42",
+  "updated_at": "2026-08-06T14:53:42",
+  "source_run": "run_2026-07-19_153121",
+  "progress": {
+    "last_turn_viewed": 0,
+    "completed": true
+  },
+  "scenes": [
+    {
+      "scene_id": "t235",
+      "turn": 235,
+      "speaker": "teacher",
+      "verbatim_quote": "thank you evidently some of you don t want that help",
+      "quote_verified": true,
+      "categories": [
+        "D"
+      ],
+      "other_label": "",
+      "note": "The teacher attributes off-task behavior to students not wanting help, framing motivation as a deficit in the students rather than addressing the task or classroom conditions.",
+      "confidence": "medium",
+      "flagged_at": null
+    },
+    {
+      "scene_id": "t270",
+      "turn": 270,
+      "speaker": "teacher",
+      "verbatim_quote": "you guys act like you re so tired like you re old yeah you re acting like you re older than i am i m the oldest person in the world and i have more energy than you guys what s going on what d you guys do take sleeping pills at lunch or something",
+      "quote_verified": true,
+      "categories": [
+        "D"
+      ],
+      "other_label": "",
+      "note": "The teacher attributes the class's low engagement to laziness/tiredness ('food coma mode,' 'sleeping pills'), locating the problem in the students' disposition rather than the task or instruction; delivered somewhat playfully, hence lower confidence.",
+      "confidence": "low",
+      "flagged_at": null
+    }
+  ]
+}

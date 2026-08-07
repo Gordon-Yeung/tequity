@@ -38,6 +38,10 @@ TRANSCRIPT_DIR = REPO_ROOT / "data" / "transcripts"
 ARCHIVE_DIR = TRANSCRIPT_DIR / "by_obsid"
 CODING_DIR = REPO_ROOT / "data" / "human_coding"
 DEFICIT_DIR = REPO_ROOT / "data" / "deficit_scenes"
+# OBSID-keyed view of the runs, produced by scripts/relabel_deficit_run.py. The
+# raw runs are named by the old video_id, so this is the only place LLM findings
+# can be looked up by observation.
+DEFICIT_OBSID_DIR = REPO_ROOT / "data" / "deficit_scenes_obsid"
 INDEX_PATH = REPO_ROOT / "data" / "observation_index.csv"
 SAMPLE_PATH = REPO_ROOT / "data" / "samples" / "one_per_teacher.csv"
 
@@ -153,17 +157,36 @@ def coding_targets():
     ]
 
 
-def transcript_path(obs_id: str):
-    """Resolve an id to a transcript file.
+def is_obsid(value: str) -> bool:
+    """True when this id names a real observation.
 
-    Legacy `<id>_original.csv` wins so the hand-prepared Study 1 files (706, 543)
-    and their own column schemas keep working; everything else resolves to the
-    OBSID archive.
+    Archive presence is the ground truth -- that file is what we would serve --
+    with the index as a backstop for an observation not yet archived. Transcript
+    and deficit lookup both go through this one predicate so they can never
+    disagree about what an id means.
     """
-    legacy = TRANSCRIPT_DIR / f"{safe_id(obs_id)}_original.csv"
-    if legacy.exists():
-        return legacy
-    return ARCHIVE_DIR / f"{safe_id(obs_id)}.csv"
+    sid = safe_id(value)
+    return (ARCHIVE_DIR / f"{sid}.csv").exists() or sid in observation_index()
+
+
+def transcript_path(obs_id: str):
+    """Resolve an id to a transcript file. The OBSID archive always wins.
+
+    Legacy `<id>_original.csv` is keyed on the OLD video_id, not the OBSID, and
+    24 of those ids collide with real OBSIDs -- preferring legacy served a
+    different class than the key named (`309_original.csv` is observation 2204,
+    and four colliding ids are in the coding sample). Legacy is a fallback only,
+    which still covers the 28 non-colliding ids including Study 1's
+    hand-prepared 706/543 and their `cleaned_text` schema.
+    """
+    sid = safe_id(obs_id)
+    if not is_obsid(obs_id):
+        legacy = TRANSCRIPT_DIR / f"{sid}_original.csv"
+        if legacy.exists():
+            return legacy
+    # Falls through to the archive path even when it is absent, so a "not found"
+    # message names the canonical file rather than a legacy one.
+    return ARCHIVE_DIR / f"{sid}.csv"
 
 
 def observation_meta(obs_id: str):
@@ -233,16 +256,21 @@ def index():
 # --- transcripts -------------------------------------------------------------
 @app.route("/api/transcripts")
 def api_transcripts():
-    """The observations assigned for coding, with teacher/year joined from the index.
+    """The observations in scope for coding, sorted by OBSID, each carrying every
+    coder's state so the picker doubles as a progress tracker.
 
-    Driven by the sample manifest so coders see their assignment, not all 1,660
-    archived observations. Turn counts come from the index rather than parsing
-    every transcript -- at 319 observations that parse was ~8.5MB per page load.
-    Falls back to the legacy glob when no manifest exists yet.
+    Scope is the sample manifest plus anything already coded on disk (see
+    coding_scope) so prior work stays reachable rather than vanishing from the
+    picker. Turn counts come from the index rather than parsing every transcript
+    -- at 319 observations that parse was ~8.5MB per page load. Coder state is
+    one directory walk, not one per row.
     """
     index = observation_index()
+    snap = coding_snapshot()
+    llm_counts = llm_scene_counts()
+    targets, assigned = coding_scope(snap)
     out = []
-    for obsid in coding_targets():
+    for obsid in targets:
         path = transcript_path(obsid)
         meta = index.get(obsid)
         if meta is None:
@@ -261,6 +289,18 @@ def api_transcripts():
         out.append({
             **observation_meta(obsid),
             **counts,
+            # Every coder, not just the current one: the coder id lives in a
+            # client-side text box and is unknown when this is called at boot.
+            # Relabelling client-side beats a refetch that would rebuild the
+            # <select> and silently drop the coder's current selection.
+            "coders": snap.get(obsid, {}),
+            # Scenes waiting in the newest relabelled run -- present whether or
+            # not they have been imported, so the picker can show that model
+            # output exists before anyone pulls it in.
+            "llm_scenes": llm_counts.get(obsid, 0),
+            # False = reachable because it is already coded, not because it was
+            # assigned. The picker says so rather than implying new work.
+            "assigned": obsid in assigned,
             # Surfaced at list time so a missing file is visible before a coder
             # picks it, not after they hit Load.
             "error": err or (None if path.exists() else f"transcript not found: {path.name}"),
@@ -362,31 +402,101 @@ def list_coder_files(obsid):
     return sorted(p.stem for p in d.glob("*.json"))
 
 
+_coding_cache = {}  # path -> (mtime, summary); per-file, so one save re-reads one JSON
+
+
+def _coding_summary(path: Path):
+    mtime = path.stat().st_mtime
+    hit = _coding_cache.get(path)
+    if hit and hit[0] == mtime:
+        return hit[1]
+    data = read_json(path) or {}
+    scenes = data.get("scenes", [])
+    summary = {
+        "scenes": len(scenes),
+        # The picker reports this one, matching the Code screen's own "N flagged"
+        # counter: a scene carrying only a note is an unfinished draft, not a flag.
+        "flagged": sum(1 for s in scenes if s.get("categories")),
+        "completed": bool(data.get("progress", {}).get("completed")),
+        "updated_at": data.get("updated_at"),
+    }
+    _coding_cache[path] = (mtime, summary)
+    return summary
+
+
+def coding_snapshot():
+    """obsid -> {coder_id: summary} for every coding on disk, in one tree walk.
+
+    The picker needs a status for all 300+ rows; globbing per obsid inside that
+    loop is a directory scan per row per page load.
+    """
+    snap = {}
+    for p in sorted(CODING_DIR.glob("*/*.json")):
+        snap.setdefault(p.parent.name, {})[p.stem] = _coding_summary(p)
+    return snap
+
+
+_llm_counts_cache = {"key": None, "counts": {}}
+
+
+def llm_scene_counts():
+    """obsid -> scene count in the newest relabelled run. {} if none.
+
+    Read from that run's run_summary.csv rather than all_scenes.json: the picker
+    only needs a count per observation, and the summary is a few KB against a
+    scene file that carries every quote and rationale.
+    """
+    if not DEFICIT_OBSID_DIR.exists():
+        return {}
+    runs = sorted((d for d in DEFICIT_OBSID_DIR.glob("run_*") if d.is_dir()), reverse=True)
+    summary = next((r / "run_summary.csv" for r in runs if (r / "run_summary.csv").exists()), None)
+    if summary is None:
+        return {}
+    key = (str(summary), summary.stat().st_mtime)
+    if _llm_counts_cache["key"] != key:
+        counts = {}
+        with open(summary, "r", encoding="utf-8-sig", newline="") as f:
+            for r in csv.DictReader(f):
+                n = int(r.get("scenes_found") or 0)
+                if n:
+                    counts[r["obsid"]] = n
+        _llm_counts_cache.update(key=key, counts=counts)
+    return _llm_counts_cache["counts"]
+
+
+def obsid_key(obsid: str):
+    """Numeric sort. Ids travel as strings but coders read them as numbers."""
+    return (0, int(obsid), "") if obsid.isdigit() else (1, 0, obsid)
+
+
+def coding_scope(snapshot=None):
+    """Return (sorted_obsids, assigned_set): the assignment plus anything already
+    coded on disk.
+
+    The progress dashboard has always done this union; the Code screen's picker
+    never did, which is why observation 2204 -- coded by two people but outside
+    the sample -- rendered no <option> at all. One definition, both screens.
+    """
+    snap = coding_snapshot() if snapshot is None else snapshot
+    assigned = set(coding_targets())
+    return sorted(assigned | set(snap), key=obsid_key), assigned
+
+
 @app.route("/api/status")
 def api_status():
     """Matrix for the progress dashboard.
 
-    Rows are the in-scope observations, plus any observation that already has
-    coding on disk -- so work done before a sample was drawn stays visible
-    instead of silently vanishing from the dashboard.
+    Same scope and ordering as /api/transcripts -- one list, two views -- so the
+    dashboard and the picker can never disagree about what is in scope.
     """
-    targets = list(coding_targets())
-    coded = sorted(d.name for d in CODING_DIR.glob("*") if d.is_dir() and any(d.glob("*.json")))
-    for obsid in coded:
-        if obsid not in targets:
-            targets.append(obsid)
-
+    snap = coding_snapshot()
+    targets, _ = coding_scope(snap)
     out = []
     for obsid in targets:
-        coders = []
-        for cid in list_coder_files(obsid):
-            data = read_json(coder_path(obsid, cid)) or {}
-            coders.append({
-                "coder_id": cid,
-                "scenes": len(data.get("scenes", [])),
-                "updated_at": data.get("updated_at"),
-                "completed": data.get("progress", {}).get("completed", False),
-            })
+        coders = [
+            {"coder_id": cid, **summary}
+            for cid, summary in sorted(snap.get(obsid, {}).items())
+        ]
         out.append({**observation_meta(obsid), "coders": coders})
     return jsonify(out)
 
@@ -400,26 +510,39 @@ def api_coders(obsid):
 def latest_deficit_file(obsid):
     """Newest run containing this observation.
 
-    Accepts both naming schemes: OBSID-keyed runs over the archive, and the
-    legacy `<video_id>_original.deficit.json` from runs that predate the switch.
+    The legacy `<video_id>_original.deficit.json` naming is accepted only when
+    the id is not a real OBSID. Those runs were keyed on the old video_id, so
+    for a colliding id the legacy file describes a different class -- importing
+    it would file one observation's LLM scenes under another's key.
     """
-    if not DEFICIT_DIR.exists():
-        return None
-    names = (f"{safe_id(obsid)}.deficit.json", f"{safe_id(obsid)}_original.deficit.json")
-    runs = sorted((d for d in DEFICIT_DIR.glob("run_*") if d.is_dir()), reverse=True)
-    for run in runs:
-        for name in names:
-            f = run / name
-            if f.exists():
-                return f
+    sid = safe_id(obsid)
+    # OBSID-keyed relabelled runs first: they are the only files whose name is a
+    # genuine observation id, and their quotes were re-verified against the
+    # archive. Raw runs are the fallback for ids the crosswalk could not resolve.
+    for base, names in (
+        (DEFICIT_OBSID_DIR, [f"{sid}.deficit.json"]),
+        (DEFICIT_DIR, [f"{sid}.deficit.json"] + ([] if is_obsid(obsid) else [f"{sid}_original.deficit.json"])),
+    ):
+        if not base.exists():
+            continue
+        for run in sorted((d for d in base.glob("run_*") if d.is_dir()), reverse=True):
+            for name in names:
+                f = run / name
+                if f.exists():
+                    return f
     return None
 
 
-@app.route("/api/import-llm/<obsid>", methods=["POST"])
-def api_import_llm(obsid):
+def build_llm_coding(obsid):
+    """(coding dict, source path) for one observation, or (None, None).
+
+    Extracted from the endpoint so a bulk importer can reuse the exact same
+    conversion -- two implementations of "what the LLM coder looks like" would
+    drift, and the Compare screen would then disagree with itself.
+    """
     src = latest_deficit_file(obsid)
     if src is None:
-        return jsonify({"error": "no deficit_scenes run found for this transcript"}), 404
+        return None, None
     raw = read_json(src)
     scenes = []
     for s in raw.get("scenes", []):
@@ -450,8 +573,88 @@ def api_import_llm(obsid):
         "progress": {"last_turn_viewed": 0, "completed": True},
         "scenes": scenes,
     }
+    return data, src
+
+
+@app.route("/api/import-llm/<obsid>", methods=["POST"])
+def api_import_llm(obsid):
+    data, src = build_llm_coding(obsid)
+    if data is None:
+        return jsonify({"error": "no deficit_scenes run found for this transcript"}), 404
     write_json(coder_path(obsid, "llm"), data)
-    return jsonify({"ok": True, "scenes": len(scenes), "source_run": src.parent.name})
+    return jsonify({"ok": True, "scenes": len(data["scenes"]), "source_run": src.parent.name})
+
+
+# --- LLM findings browser ----------------------------------------------------
+@app.route("/api/llm-runs")
+def api_llm_runs():
+    """Relabelled runs available to browse, newest first, with their manifests.
+
+    Only the OBSID-keyed tree is offered. The raw run_* folders are named by the
+    old video_id and cannot be attributed to an observation without the
+    crosswalk, so browsing them by name would reintroduce the mislabel.
+    """
+    out = []
+    if DEFICIT_OBSID_DIR.exists():
+        for run in sorted((d for d in DEFICIT_OBSID_DIR.glob("run_*") if d.is_dir()), reverse=True):
+            manifest = read_json(run / "MANIFEST.json") or {}
+            v = manifest.get("verification", {})
+            out.append({
+                "run": run.name,
+                "generated_at": manifest.get("generated_at"),
+                "observations_with_scenes": manifest.get("observations_with_scenes", 0),
+                "scenes": v.get("scenes_out", 0),
+                "dropped_unverified": v.get("dropped_unverified", 0),
+                "dropped_unresolved_legacy": v.get("dropped_unresolved_legacy", 0),
+            })
+    return jsonify(out)
+
+
+@app.route("/api/llm-findings")
+def api_llm_findings():
+    """Every LLM scene in one run, flattened for browsing, newest run by default.
+
+    Scope is all scanned observations, not just the sample: only 4 of the 52
+    scanned are assigned, so filtering to the assignment would hide almost every
+    finding. `assigned` is returned per row so the client can mark them.
+    """
+    runs = sorted((d for d in DEFICIT_OBSID_DIR.glob("run_*") if d.is_dir()), reverse=True) \
+        if DEFICIT_OBSID_DIR.exists() else []
+    if not runs:
+        return jsonify({"run": None, "rows": [],
+                        "error": "no relabelled runs; run scripts/relabel_deficit_run.py --all"})
+
+    wanted = request.args.get("run")
+    run = next((r for r in runs if r.name == wanted), runs[0])
+
+    scenes = read_json(run / "all_scenes.json") or []
+    assigned = set(coding_targets())
+    snap = coding_snapshot()
+    index = observation_index()
+
+    rows = []
+    for s in scenes:
+        obsid = str(s.get("obsid") or s.get("source_document_id") or "")
+        span = s.get("deficit_span", {}) or {}
+        meta = index.get(obsid, {})
+        rows.append({
+            "obsid": obsid,
+            "teacher_id": meta.get("teacher_id", ""),
+            "year": meta.get("year", ""),
+            "turns": span.get("turns"),
+            "speaker": span.get("speaker", "teacher"),
+            "verbatim_quote": span.get("verbatim_quote", ""),
+            "categories": s.get("categories", []),
+            "confidence": s.get("confidence", "medium"),
+            "rationale": s.get("rationale", ""),
+            "assigned": obsid in assigned,
+            # So a coder can see at a glance whether this observation is already
+            # being worked, without leaving the findings screen.
+            "coders": sorted(snap.get(obsid, {})),
+            "legacy_source": s.get("legacy_source", ""),
+        })
+    rows.sort(key=lambda r: (obsid_key(r["obsid"]), str(r["turns"])))
+    return jsonify({"run": run.name, "rows": rows})
 
 
 # --- compare -----------------------------------------------------------------
@@ -487,15 +690,22 @@ def api_compare(obsid):
     a_turns = set(scenes_by_turn(a))
     b_turns = set(scenes_by_turn(b))
 
-    stats = {
-        "universe_teacher_turns": universe_n,
-        "binary": irr.binary_agreement(a_turns, b_turns, universe_n),
-        "category": irr.category_agreement(cats_map(a), cats_map(b)),
-    }
+    # Selecting the same rater on both sides is a legitimate way to read one
+    # coding in transcript context -- the only way to view an observation the
+    # model has coded but no human has. Agreement statistics are omitted rather
+    # than computed: kappa against yourself is 1.0 by construction and would be
+    # read as a real result.
+    single_rater = a_id == b_id
+    stats = {"universe_teacher_turns": universe_n}
+    if not single_rater:
+        stats["binary"] = irr.binary_agreement(a_turns, b_turns, universe_n)
+        stats["category"] = irr.category_agreement(cats_map(a), cats_map(b))
 
     # LLM-vs-human agreement: same pairwise IRR functions, LLM as the first rater
     # so "a_only" reads as LLM-only. The human-human numbers above are untouched.
-    if llm:
+    # Skipped when the LLM is itself one of the selected raters -- the panel would
+    # be comparing it against itself.
+    if llm and not single_rater and "llm" not in (a_id, b_id):
         llm_turns = set(scenes_by_turn(llm))
         stats["llm"] = {
             "vs_a": {
@@ -523,8 +733,13 @@ def api_compare(obsid):
             status = "agree" if set(a_sc[t]["categories"]) == set(b_sc[t]["categories"]) else "category_mismatch"
         elif in_a:
             status = "a_only"
-        else:
+        elif in_b:
             status = "b_only"
+        else:
+            # Only reachable with ?llm=1: the LLM flagged a turn neither human did.
+            # The row stays in the union so it's reviewable, but it is not a
+            # human disagreement and must not be labelled as one.
+            status = "llm_only"
         rows.append({
             "turn": t,
             "speaker": speaker_by_turn.get(t, "?"),
@@ -540,6 +755,10 @@ def api_compare(obsid):
         "obsid": obsid,
         "a_id": a_id, "b_id": b_id,
         "has_llm": bool(llm),
+        "single_rater": single_rater,
+        # Whether a human rated this at all. The adjudication prefill keys off it:
+        # nothing machine-only should default to "include" in adjudicated.json.
+        "human_raters": [r for r in dict.fromkeys((a_id, b_id)) if r != "llm"],
         "stats": stats,
         "rows": rows,
     })

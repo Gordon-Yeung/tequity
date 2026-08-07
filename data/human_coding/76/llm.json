@@ -1,0 +1,41 @@
+{
+  "obsid": "76",
+  "coder_id": "llm",
+  "created_at": "2026-08-06T14:53:42",
+  "updated_at": "2026-08-06T14:53:42",
+  "source_run": "run_2026-07-19_153121",
+  "progress": {
+    "last_turn_viewed": 0,
+    "completed": true
+  },
+  "scenes": [
+    {
+      "scene_id": "t91",
+      "turn": 91,
+      "speaker": "teacher",
+      "verbatim_quote": "mr s i need you to take student b away from me he is embarrassing and interrupting my video and i need him out of this room",
+      "quote_verified": true,
+      "categories": [
+        "D"
+      ],
+      "other_label": "",
+      "note": "The teacher characterizes the student himself as 'embarrassing' and demands his removal, shifting from describing a specific behavior to a negative evaluative labeling of the child. Borderline because it is tied to in-the-moment conduct rather than a claim about motivation.",
+      "confidence": "low",
+      "flagged_at": null
+    },
+    {
+      "scene_id": "t534",
+      "turn": 534,
+      "speaker": "teacher",
+      "verbatim_quote": "ladies you re not gonna know what to do",
+      "quote_verified": true,
+      "categories": [
+        "E"
+      ],
+      "other_label": "",
+      "note": "The teacher predicts inability ('you're not gonna know what to do') addressed to a group of students, which frames a lowered expectation of their capacity. Ambiguous because it may function as a warning tied to inattention rather than a stable judgment.",
+      "confidence": "low",
+      "flagged_at": null
+    }
+  ]
+}

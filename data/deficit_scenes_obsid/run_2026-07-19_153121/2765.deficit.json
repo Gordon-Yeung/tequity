@@ -1,0 +1,94 @@
+{
+  "source_document_id": "2765",
+  "obsid": "2765",
+  "scenes": [
+    {
+      "turn_range": "184-188",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "186",
+        "verbatim_quote": "it is okay to be confused what s not okay is to be confused because you weren t paying attention"
+      },
+      "context_excerpt": [
+        {
+          "turn": 184,
+          "speaker": "teacher",
+          "text": "perfect one half is the same as saying three sixths three sixths is the same as saying how many sixths it s the same it s not changing is it three sixths plus three sixths one sixth two sixths three sixths equals what everyone"
+        },
+        {
+          "turn": 185,
+          "speaker": "multiple students",
+          "text": "one whole"
+        },
+        {
+          "turn": 186,
+          "speaker": "teacher",
+          "text": "wonderful all right i feel like this went all right for our first lesson there are a lot of points of confusion there are still a lot of things we have to discuss i know adding fractions is really a new idea especially since we switched from adding fractions taking fractions of a whole group and now we re kind of back to drawing fractions all right it is a difficult switch and it does get confusing it is okay to be confused what s not okay is to be confused because you weren t paying attention fractions are hard enough without making a little more challenging yes student a"
+        },
+        {
+          "turn": 187,
+          "speaker": "student",
+          "text": "why can we not just do it the normal way"
+        },
+        {
+          "turn": 188,
+          "speaker": "teacher",
+          "text": "that s a good question so the way you were shown is really easy right part of the reason we do it the difficult way first and by difficult it s not really all that difficult it s so you guys can visualize it you get to play with the pieces you get to realize what doesn t work that s how your math curriculum works they want you to have a better understanding of how it works not just make it work so drawing the pictures is helping us get a visual image of it once we get the visual image we re going to do exactly what you re thinking i can multiply this by 3 and this by 3 to convert it right that s what you re doing i can multiply this by 3 and if i want this to be a 6 i can multiply it by 3 if i was trying to get it to go to fourths right how many people are confused by what i just said right many of us aren t there yet part of it was too fast but we really want you to get the visual picture of what is a fraction how do i cut something into different sized pieces if you want to give your food away you want to share your pizza with someone and you re deciding who gets pieces based on behavior like let s say a class should everyone get the same fraction if their behaviors are different"
+        }
+      ],
+      "categories": [
+        "D"
+      ],
+      "rationale": "While the teacher normalizes confusion, this framing attributes potential lack of understanding to a behavioral/motivational failing (not paying attention), a deficit attribution for behavior.",
+      "confidence": "medium",
+      "source_document_id": "2765",
+      "obsid": "2765",
+      "legacy_source": "351_original.csv",
+      "source_run": "run_2026-07-19_153121"
+    },
+    {
+      "turn_range": "85-89",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "88",
+        "verbatim_quote": "you re listening to bad ideas you need to think for yourself"
+      },
+      "context_excerpt": [
+        {
+          "turn": 85,
+          "speaker": "teacher",
+          "text": "8 times 9 is 60"
+        },
+        {
+          "turn": 86,
+          "speaker": "multiple students",
+          "text": "no"
+        },
+        {
+          "turn": 87,
+          "speaker": "student",
+          "text": "it s 72"
+        },
+        {
+          "turn": 88,
+          "speaker": "teacher",
+          "text": "this is more challenging because 8 does not go evenly into 60 so how can we figure this out this is one of those challenges that we struggle with every now and again i m going to do an in between step and you guys are going to use that if that s half that means that each of these is a fourth correct if you cut a half in half you ve got fourths how can we figure out an eighth you re listening to bad ideas you need to think for yourself"
+        },
+        {
+          "turn": 89,
+          "speaker": "student",
+          "text": "cut a fourth into fourths"
+        }
+      ],
+      "categories": [
+        "D"
+      ],
+      "rationale": "Characterizing peers' contributed answers as 'bad ideas' dismisses student thinking rather than treating incorrect answers as productive attempts; borderline and directed at ideas in the moment.",
+      "confidence": "low",
+      "source_document_id": "2765",
+      "obsid": "2765",
+      "legacy_source": "351_original.csv",
+      "source_run": "run_2026-07-19_153121"
+    }
+  ]
+}

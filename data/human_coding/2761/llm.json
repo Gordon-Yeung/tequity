@@ -1,0 +1,28 @@
+{
+  "obsid": "2761",
+  "coder_id": "llm",
+  "created_at": "2026-08-06T14:53:42",
+  "updated_at": "2026-08-06T14:53:42",
+  "source_run": "run_2026-07-19_153121",
+  "progress": {
+    "last_turn_viewed": 0,
+    "completed": true
+  },
+  "scenes": [
+    {
+      "scene_id": "t110",
+      "turn": 110,
+      "speaker": "teacher",
+      "verbatim_quote": "i m getting really bothered that i m saying the same thing over and over again and it s fascinating to me that my english speakers are not understanding me",
+      "quote_verified": true,
+      "categories": [
+        "C",
+        "G"
+      ],
+      "other_label": "",
+      "note": "The teacher locates the breakdown in the students ('not understanding me') and frames it as surprising given they are 'english speakers,' placing the problem in the learners rather than in the task or instruction.",
+      "confidence": "medium",
+      "flagged_at": null
+    }
+  ]
+}

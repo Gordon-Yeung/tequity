@@ -1,0 +1,43 @@
+{
+  "obsid": "2592",
+  "coder_id": "llm",
+  "created_at": "2026-08-06T14:53:42",
+  "updated_at": "2026-08-06T14:53:42",
+  "source_run": "run_2026-07-19_153121",
+  "progress": {
+    "last_turn_viewed": 0,
+    "completed": true
+  },
+  "scenes": [
+    {
+      "scene_id": "t403",
+      "turn": 403,
+      "speaker": "teacher",
+      "verbatim_quote": "now you re acting like kindergarteners instead of fifth graders not acceptable",
+      "quote_verified": true,
+      "categories": [
+        "D",
+        "F"
+      ],
+      "other_label": "",
+      "note": "Frames students' behavior as a deficit by demeaning comparison to younger children, attributing immaturity rather than addressing the task or providing constructive redirection.",
+      "confidence": "medium",
+      "flagged_at": null
+    },
+    {
+      "scene_id": "t616",
+      "turn": 616,
+      "speaker": "teacher",
+      "verbatim_quote": "i don t understand why i have some students who really can follow directions and others are not able to follow directions",
+      "quote_verified": true,
+      "categories": [
+        "B",
+        "F"
+      ],
+      "other_label": "",
+      "note": "Groups and defines students by a perceived lack ('others are not able to follow directions'), setting up a comparative deficit framing between capable and incapable students rather than addressing specific behaviors or instruction.",
+      "confidence": "medium",
+      "flagged_at": null
+    }
+  ]
+}

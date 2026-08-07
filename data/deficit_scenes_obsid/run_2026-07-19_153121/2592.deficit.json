@@ -1,0 +1,101 @@
+{
+  "source_document_id": "2592",
+  "obsid": "2592",
+  "scenes": [
+    {
+      "turn_range": "400-405",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "403",
+        "verbatim_quote": "now you re acting like kindergarteners instead of fifth graders not acceptable"
+      },
+      "context_excerpt": [
+        {
+          "turn": 400,
+          "speaker": "multiple students",
+          "text": "we re done"
+        },
+        {
+          "turn": 401,
+          "speaker": "teacher",
+          "text": "oh wait"
+        },
+        {
+          "turn": 402,
+          "speaker": "multiple students",
+          "text": "crosstalk"
+        },
+        {
+          "turn": 403,
+          "speaker": "teacher",
+          "text": "now you re acting like kindergarteners instead of fifth graders not acceptable okay so tell me about your box"
+        },
+        {
+          "turn": 404,
+          "speaker": "student",
+          "text": "okay so inaudible"
+        },
+        {
+          "turn": 405,
+          "speaker": "teacher",
+          "text": "okay so did you"
+        }
+      ],
+      "categories": [
+        "D",
+        "F"
+      ],
+      "rationale": "Frames students' behavior as a deficit by demeaning comparison to younger children, attributing immaturity rather than addressing the task or providing constructive redirection.",
+      "confidence": "medium",
+      "source_document_id": "2592",
+      "obsid": "2592",
+      "legacy_source": "348_original.csv",
+      "source_run": "run_2026-07-19_153121"
+    },
+    {
+      "turn_range": "613-617",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "616",
+        "verbatim_quote": "i don t understand why i have some students who really can follow directions and others are not able to follow directions"
+      },
+      "context_excerpt": [
+        {
+          "turn": 613,
+          "speaker": "student",
+          "text": "oh i know"
+        },
+        {
+          "turn": 614,
+          "speaker": "teacher",
+          "text": "oh student j said oh i know i have another person who said oh i know and you young man you re not learning right now because you re listening to someone else talking while we are having a mathematical discussion"
+        },
+        {
+          "turn": 615,
+          "speaker": "student",
+          "text": "i have a name"
+        },
+        {
+          "turn": 616,
+          "speaker": "teacher",
+          "text": "all right so some thought student m you re not paying attention student e turn around student m turn your body around whatever you re playing with give that to me you know i don t understand why i have some students who really can follow directions and others are not able to follow directions so what s your thought what s your thought"
+        },
+        {
+          "turn": 617,
+          "speaker": "student",
+          "text": "because all the"
+        }
+      ],
+      "categories": [
+        "B",
+        "F"
+      ],
+      "rationale": "Groups and defines students by a perceived lack ('others are not able to follow directions'), setting up a comparative deficit framing between capable and incapable students rather than addressing specific behaviors or instruction.",
+      "confidence": "medium",
+      "source_document_id": "2592",
+      "obsid": "2592",
+      "legacy_source": "348_original.csv",
+      "source_run": "run_2026-07-19_153121"
+    }
+  ]
+}

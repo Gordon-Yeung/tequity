@@ -1,0 +1,168 @@
+{
+  "source_document_id": "24",
+  "obsid": "24",
+  "scenes": [
+    {
+      "turn_range": "121-123",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "122",
+        "verbatim_quote": "just because you guys aren t on camera doesn t mean that you still need to do the math work okay just because you re not on camera doesn t mean that you can just sit here"
+      },
+      "context_excerpt": [
+        {
+          "turn": 119,
+          "speaker": "multiple students",
+          "text": "6"
+        },
+        {
+          "turn": 120,
+          "speaker": "teacher",
+          "text": "1 plus 8 is"
+        },
+        {
+          "turn": 121,
+          "speaker": "multiple students",
+          "text": "9"
+        },
+        {
+          "turn": 122,
+          "speaker": "teacher",
+          "text": "96 student c all right go sit at the back table so just because you guys aren t on camera doesn t mean that you still need to do the math work okay just because you re not on camera doesn t mean that you can just sit here"
+        },
+        {
+          "turn": 123,
+          "speaker": "teacher",
+          "text": "all right one factor stayed the same one factor doubled answer doubled or you could look at it this way one factor stayed the same one factor was cut in half we cut it in half we got 3 so our answer s going to get cut in half right can t you look at it the other way too"
+        },
+        {
+          "turn": 124,
+          "speaker": "multiple students",
+          "text": "yeah"
+        },
+        {
+          "turn": 125,
+          "speaker": "teacher",
+          "text": "sure so one thing that real quick before we break out and do some problems one thing that i wanted us to look at was an array did anyone when you were talking to your friend say i would represent it as an array so who can come up and draw a 16 by 3 array student j ever the whole year you ve never gone up on the board come on"
+        }
+      ],
+      "categories": [
+        "D"
+      ],
+      "rationale": "The teacher preemptively assumes students will disengage and 'just sit here' rather than do the work, attributing anticipated non-participation to student motivation rather than to instruction or task.",
+      "confidence": "low",
+      "source_document_id": "24",
+      "obsid": "24",
+      "legacy_source": "340_original.csv",
+      "source_run": "run_2026-07-19_153121"
+    },
+    {
+      "turn_range": "341-344",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "344",
+        "verbatim_quote": "that s what you re stuck with you need to be studying your multiplication tables to be able to figure that out"
+      },
+      "context_excerpt": [
+        {
+          "turn": 341,
+          "speaker": "student",
+          "text": "7 times 10 is 70 plus"
+        },
+        {
+          "turn": 342,
+          "speaker": "teacher",
+          "text": "good jot the plus sign down what s 7 times 4"
+        },
+        {
+          "turn": 343,
+          "speaker": "student",
+          "text": "inaudible"
+        },
+        {
+          "turn": 344,
+          "speaker": "teacher",
+          "text": "that s what you re stuck with you need to be studying your multiplication tables to be able to figure that out so what did you do there you broke 24 into 10 10 and 4 right so you did 7 times 10 one time then you need to do 7 times 10 again where s your second 7 times 10 so whenever you break a number apart you were having problems with this earlier so let s break it into a group of 20 and a group of 4 so now you need to multiply two of your numbers by this number that stays the same so you need to have two multiplications for the one you needed to have three multiplications 7 times 10 7 times this 10 and 7 times 4 and then add up all the answers so what are you two multiplication problems for this one going to be"
+        },
+        {
+          "turn": 345,
+          "speaker": "student",
+          "text": "7"
+        },
+        {
+          "turn": 346,
+          "speaker": "teacher",
+          "text": "20 times 7 20 times 7 plus"
+        },
+        {
+          "turn": 347,
+          "speaker": "student",
+          "text": "4 times 7"
+        }
+      ],
+      "categories": [
+        "D"
+      ],
+      "rationale": "The student's difficulty is attributed to a presumed failure to study rather than framed as an instructional or practice need, positioning the deficit in the student's effort.",
+      "confidence": "medium",
+      "source_document_id": "24",
+      "obsid": "24",
+      "legacy_source": "340_original.csv",
+      "source_run": "run_2026-07-19_153121"
+    },
+    {
+      "turn_range": "349-352",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "352",
+        "verbatim_quote": "no you re going to be studying your multiplication facts student c"
+      },
+      "context_excerpt": [
+        {
+          "turn": 349,
+          "speaker": "student",
+          "text": "12"
+        },
+        {
+          "turn": 350,
+          "speaker": "teacher",
+          "text": "no 7 times 2 is"
+        },
+        {
+          "turn": 351,
+          "speaker": "student",
+          "text": "16"
+        },
+        {
+          "turn": 352,
+          "speaker": "teacher",
+          "text": "no you re going to be studying your multiplication facts student c 7 times 2 is"
+        },
+        {
+          "turn": 353,
+          "speaker": "student",
+          "text": "14"
+        },
+        {
+          "turn": 354,
+          "speaker": "teacher",
+          "text": "14 good remember i covered this 0 with my finger so now i need to add it back plus 4 times 7 so you need to figure out what 4 times 7 is and then add it to 140 and you ll get your answer okay"
+        },
+        {
+          "turn": 355,
+          "speaker": "student",
+          "text": "mr inaudible"
+        }
+      ],
+      "categories": [
+        "D"
+      ],
+      "rationale": "Following a wrong answer, the teacher frames the error as a consequence of the student not studying, an attribution to student effort rather than a neutral correction.",
+      "confidence": "low",
+      "source_document_id": "24",
+      "obsid": "24",
+      "legacy_source": "340_original.csv",
+      "source_run": "run_2026-07-19_153121"
+    }
+  ]
+}

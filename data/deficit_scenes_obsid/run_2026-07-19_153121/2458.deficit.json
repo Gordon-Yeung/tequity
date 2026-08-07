@@ -1,0 +1,60 @@
+{
+  "source_document_id": "2458",
+  "obsid": "2458",
+  "scenes": [
+    {
+      "turn_range": "138-144",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "141",
+        "verbatim_quote": "since student d decided to do it this way part of his math he likes to play but he had to draw six twelfths"
+      },
+      "context_excerpt": [
+        {
+          "turn": 138,
+          "speaker": "student",
+          "text": "no"
+        },
+        {
+          "turn": 139,
+          "speaker": "teacher",
+          "text": "so the way student d may do it and student j is doing it may be differently but as long as they re shading in that fractional part that i asked there s more than one way to shade it in question i asked the other group the same thing and it came up yesterday can you just shade in 20 boxes anywhere on that rectangular area"
+        },
+        {
+          "turn": 140,
+          "speaker": "multiple students",
+          "text": "no"
+        },
+        {
+          "turn": 141,
+          "speaker": "teacher",
+          "text": "because then it wouldn t be four twelfths it would be one sixtieths if they were all over the place i m going to go to this group how are you guys doing over here i have a question since student d decided to do it this way part of his math he likes to play but he had to draw six twelfths what s one twelfth of this 5 by 12 rectangle what s the whole area the whole area is 60 so what s one twelfth of 60"
+        },
+        {
+          "turn": 142,
+          "speaker": "multiple students",
+          "text": "12"
+        },
+        {
+          "turn": 143,
+          "speaker": "teacher",
+          "text": "what s one twelfth of 60"
+        },
+        {
+          "turn": 144,
+          "speaker": "multiple students",
+          "text": "5"
+        }
+      ],
+      "categories": [
+        "D"
+      ],
+      "rationale": "The teacher characterizes the student's engagement as 'he likes to play,' attributing off-task behavior to the student's disposition rather than the task; however this is brief and mild, so confidence is low.",
+      "confidence": "low",
+      "source_document_id": "2458",
+      "obsid": "2458",
+      "legacy_source": "314_original.csv",
+      "source_run": "run_2026-07-19_153121"
+    }
+  ]
+}

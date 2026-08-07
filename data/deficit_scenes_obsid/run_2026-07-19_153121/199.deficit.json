@@ -1,0 +1,65 @@
+{
+  "source_document_id": "199",
+  "obsid": "199",
+  "scenes": [
+    {
+      "turn_range": "313-320",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "316",
+        "verbatim_quote": "sometimes they just really get stuck"
+      },
+      "context_excerpt": [
+        {
+          "turn": 313,
+          "speaker": "student",
+          "text": "inaudible"
+        },
+        {
+          "turn": 314,
+          "speaker": "teacher",
+          "text": "okay so let me see the yellow"
+        },
+        {
+          "turn": 315,
+          "speaker": "student",
+          "text": "inaudible"
+        },
+        {
+          "turn": 316,
+          "speaker": "teacher",
+          "text": "sometimes they just really get stuck no no let me see the yellow student s here s your outline for three by four so you need to put three and three this one i had all set what happened"
+        },
+        {
+          "turn": 317,
+          "speaker": "student",
+          "text": "inaudible"
+        },
+        {
+          "turn": 318,
+          "speaker": "teacher",
+          "text": "you did"
+        },
+        {
+          "turn": 319,
+          "speaker": "student",
+          "text": "inaudible"
+        },
+        {
+          "turn": 320,
+          "speaker": "teacher",
+          "text": "inaudible you should be building a three by four"
+        }
+      ],
+      "categories": [
+        "D"
+      ],
+      "rationale": "The aside generalizes some students as simply 'getting stuck,' a mild deficit framing of student struggle rather than describing a specific task difficulty; however it is close to neutral, hence low confidence.",
+      "confidence": "low",
+      "source_document_id": "199",
+      "obsid": "199",
+      "legacy_source": "323_original.csv",
+      "source_run": "run_2026-07-19_153121"
+    }
+  ]
+}

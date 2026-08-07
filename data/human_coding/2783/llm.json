@@ -1,0 +1,27 @@
+{
+  "obsid": "2783",
+  "coder_id": "llm",
+  "created_at": "2026-08-06T14:53:42",
+  "updated_at": "2026-08-06T14:53:42",
+  "source_run": "run_2026-07-19_153121",
+  "progress": {
+    "last_turn_viewed": 0,
+    "completed": true
+  },
+  "scenes": [
+    {
+      "scene_id": "t89",
+      "turn": 89,
+      "speaker": "teacher",
+      "verbatim_quote": "too much work you re not ready for middle school yet interesting",
+      "quote_verified": true,
+      "categories": [
+        "D"
+      ],
+      "other_label": "",
+      "note": "In response to the student's reluctance ('do we have to do 5'), the teacher characterizes the student as 'not ready for middle school,' framing the student's motivation/effort as a personal deficiency rather than addressing the task or instruction.",
+      "confidence": "medium",
+      "flagged_at": null
+    }
+  ]
+}

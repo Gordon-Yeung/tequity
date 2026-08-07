@@ -1,0 +1,50 @@
+{
+  "source_document_id": "1085",
+  "obsid": "1085",
+  "scenes": [
+    {
+      "turn_range": "179-183",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "181",
+        "verbatim_quote": "you guys are quitting on me you guys are quitting on me"
+      },
+      "context_excerpt": [
+        {
+          "turn": 179,
+          "speaker": "teacher",
+          "text": "thank you"
+        },
+        {
+          "turn": 180,
+          "speaker": "student",
+          "text": "you re welcome"
+        },
+        {
+          "turn": 181,
+          "speaker": "teacher",
+          "text": "thank you you guys are quitting on me you guys are quitting on me"
+        },
+        {
+          "turn": 182,
+          "speaker": "student",
+          "text": "inaudible"
+        },
+        {
+          "turn": 183,
+          "speaker": "teacher",
+          "text": "oh yeah you re good student r you don t have to fill out the chart i told you to focus on the last column total plus seven"
+        }
+      ],
+      "categories": [
+        "D"
+      ],
+      "rationale": "Frames students' engagement as 'quitting,' a deficit attribution for motivation/effort rather than describing task difficulty.",
+      "confidence": "low",
+      "source_document_id": "1085",
+      "obsid": "1085",
+      "legacy_source": "320_original.csv",
+      "source_run": "run_2026-07-12_170210"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "obsid": "225",
+  "coder_id": "llm",
+  "created_at": "2026-08-06T14:53:42",
+  "updated_at": "2026-08-06T14:53:42",
+  "source_run": "run_2026-07-19_153121",
+  "progress": {
+    "last_turn_viewed": 0,
+    "completed": true
+  },
+  "scenes": [
+    {
+      "scene_id": "t97",
+      "turn": 97,
+      "speaker": "teacher",
+      "verbatim_quote": "thank you everybody else was sleeping on that answer",
+      "quote_verified": true,
+      "categories": [
+        "D"
+      ],
+      "other_label": "",
+      "note": "The teacher attributes the class's lack of response to disengagement ('sleeping on that answer'), framing behavior/motivation as a deficit rather than describing the situation neutrally.",
+      "confidence": "medium",
+      "flagged_at": null
+    }
+  ]
+}

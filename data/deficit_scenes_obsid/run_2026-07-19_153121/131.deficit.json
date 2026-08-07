@@ -1,0 +1,50 @@
+{
+  "source_document_id": "131",
+  "obsid": "131",
+  "scenes": [
+    {
+      "turn_range": "31-35",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "33",
+        "verbatim_quote": "we re not putting on a show today to show how bad we can be this is not how we behave during math"
+      },
+      "context_excerpt": [
+        {
+          "turn": 31,
+          "speaker": "teacher",
+          "text": "9 feet times 8 feet times 5 feet i m going to give you a minute figure it out here s my first question what are the first two numbers you should multiply that would make it easier to then multiply the third number student s"
+        },
+        {
+          "turn": 32,
+          "speaker": "student",
+          "text": "8 x 5"
+        },
+        {
+          "turn": 33,
+          "speaker": "teacher",
+          "text": "all right i m going to stop for a minute because this is getting ridiculous student p this is not a class for you to be talking every two minutes raise your hand if you want to participate i shouldn t be hearing your voice every second student r same with you we re not putting on a show today to show how bad we can be this is not how we behave during math student t did you hear me"
+        },
+        {
+          "turn": 34,
+          "speaker": "student",
+          "text": "what was i doing"
+        },
+        {
+          "turn": 35,
+          "speaker": "teacher",
+          "text": "i called on student s and you answered the question we all know how to behave in this class i ve seen it day after day i don t know what has come over you this morning but please get it together so my question was we have 3 different numbers a 9 an 8 and a 5 that we have to multiply together what are the first two numbers that would make an easy sum or an easy product sorry that you can then multiply the third number did you have something student s or not"
+        }
+      ],
+      "categories": [
+        "D"
+      ],
+      "rationale": "The teacher characterizes the students' behavior negatively ('how bad we can be') rather than describing the specific behavior neutrally; however, this is framed as situational/out-of-character (Turn 35: 'i don t know what has come over you this morning'), making it a borderline behavior-management comment rather than a fixed deficit attribution.",
+      "confidence": "low",
+      "source_document_id": "131",
+      "obsid": "131",
+      "legacy_source": "336_original.csv",
+      "source_run": "run_2026-07-19_153121"
+    }
+  ]
+}

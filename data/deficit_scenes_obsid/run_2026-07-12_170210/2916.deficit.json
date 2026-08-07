@@ -1,0 +1,60 @@
+{
+  "source_document_id": "2916",
+  "obsid": "2916",
+  "scenes": [
+    {
+      "turn_range": "254-257",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "257",
+        "verbatim_quote": "student a i think you re gonna have some problem doing this because you re not listening"
+      },
+      "context_excerpt": [
+        {
+          "turn": 254,
+          "speaker": "student",
+          "text": "inaudible"
+        },
+        {
+          "turn": 255,
+          "speaker": "teacher",
+          "text": "13 to 14 boys and girls look up here please so from here to here we have one and there fourths is that clear so from here to here we have another three fourths right"
+        },
+        {
+          "turn": 256,
+          "speaker": "student",
+          "text": "no"
+        },
+        {
+          "turn": 257,
+          "speaker": "teacher",
+          "text": "no one two three then we have this part then we have this part are you following now how do we make another three fourths student a i think you re gonna have some problem doing this because you re not listening put down your pencil student f put down the pencil please eyes up here so if you were to continue this number line would that be another three fourths student i yes but do we have that much we don t have that much right so how much do we have out of that"
+        },
+        {
+          "turn": 258,
+          "speaker": "student",
+          "text": "we have two out of"
+        },
+        {
+          "turn": 259,
+          "speaker": "teacher",
+          "text": "don t we have two parts out of"
+        },
+        {
+          "turn": 260,
+          "speaker": "multiple students",
+          "text": "three pieces"
+        }
+      ],
+      "categories": [
+        "D"
+      ],
+      "rationale": "The teacher attributes the student's anticipated difficulty to a behavior/motivation deficit ('not listening') rather than to task or instruction; borderline with classroom management.",
+      "confidence": "low",
+      "source_document_id": "2916",
+      "obsid": "2916",
+      "legacy_source": "312_original.csv",
+      "source_run": "run_2026-07-12_170210"
+    }
+  ]
+}

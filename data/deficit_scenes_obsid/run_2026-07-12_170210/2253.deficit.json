@@ -1,0 +1,51 @@
+{
+  "source_document_id": "2253",
+  "obsid": "2253",
+  "scenes": [
+    {
+      "turn_range": "152-155",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "155",
+        "verbatim_quote": "you re just getting lazy and not pushing yourself i gave you four pages to do and you re not even half way through the first one on one and half so when you have time to work you gotta use that time to work it s not socialize time you gotta use it smart you gotta practice then maybe when you get smarter you can do this stuff on your own"
+      },
+      "context_excerpt": [
+        {
+          "turn": 152,
+          "speaker": "teacher",
+          "text": "how many are here okay how many are here not at all how many are here just a little shaky on it oh good that s important for us to know so when we move on how we can help you best"
+        },
+        {
+          "turn": 153,
+          "speaker": "teacher",
+          "text": "some of you need to make better use of the time working at your seats it s not as good as it should be it s not cause you don t know what you re doing its cause you re wasting some time and hanging out and whatever"
+        },
+        {
+          "turn": 154,
+          "speaker": "teacher",
+          "text": "talk too much"
+        },
+        {
+          "turn": 155,
+          "speaker": "teacher",
+          "text": "you re just getting lazy and not pushing yourself i gave you four pages to do and you re not even half way through the first one on one and half so when you have time to work you gotta use that time to work it s not socialize time you gotta use it smart you gotta practice then maybe when you get smarter you can do this stuff on your own yes will we help you yes but you re more independent then you can do larger numbers all by yourself"
+        },
+        {
+          "turn": 156,
+          "speaker": "teacher",
+          "text": "now go back to your seats please please take your math books where you know where they are tomorrow put away your math books and clean your desks quietly you ll be asked to line up"
+        }
+      ],
+      "categories": [
+        "D",
+        "A"
+      ],
+      "rationale": "Attributes students' incomplete work to laziness ('getting lazy') rather than instruction/task, and 'when you get smarter' frames intelligence as something they currently lack, blending motivation deficit with fixed-ability framing.",
+      "confidence": "high",
+      "source_document_id": "2253",
+      "obsid": "2253",
+      "legacy_source": "303_original.csv",
+      "source_run": "run_2026-07-12_170210"
+    }
+  ]
+}

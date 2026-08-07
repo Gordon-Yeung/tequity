@@ -1,0 +1,41 @@
+{
+  "obsid": "2561",
+  "coder_id": "llm",
+  "created_at": "2026-08-06T14:53:42",
+  "updated_at": "2026-08-06T14:53:42",
+  "source_run": "run_2026-07-19_153121",
+  "progress": {
+    "last_turn_viewed": 0,
+    "completed": true
+  },
+  "scenes": [
+    {
+      "scene_id": "t163",
+      "turn": 163,
+      "speaker": "teacher",
+      "verbatim_quote": "take your spot and move next to student a so you can move off your weak side",
+      "quote_verified": true,
+      "categories": [
+        "B"
+      ],
+      "other_label": "",
+      "note": "The teacher labels a location/student as a 'weak side,' framing students by a perceived deficit rather than by task or instructional need; it recurs and characterizes learners by their lacks.",
+      "confidence": "low",
+      "flagged_at": null
+    },
+    {
+      "scene_id": "t165",
+      "turn": 165,
+      "speaker": "teacher",
+      "verbatim_quote": "you re still in the weak side and i don t want to put anybody else there",
+      "quote_verified": true,
+      "categories": [
+        "B"
+      ],
+      "other_label": "",
+      "note": "Repeated use of 'weak side' to designate students, framing them by perceived deficiency; treats a group/seat as a deficit category to be avoided.",
+      "confidence": "low",
+      "flagged_at": null
+    }
+  ]
+}

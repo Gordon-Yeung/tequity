@@ -1,0 +1,27 @@
+{
+  "obsid": "2397",
+  "coder_id": "llm",
+  "created_at": "2026-08-06T14:53:42",
+  "updated_at": "2026-08-06T14:53:42",
+  "source_run": "run_2026-07-19_153121",
+  "progress": {
+    "last_turn_viewed": 0,
+    "completed": true
+  },
+  "scenes": [
+    {
+      "scene_id": "t101",
+      "turn": 101,
+      "speaker": "teacher",
+      "verbatim_quote": "we re not playing right now we re actually doing math you guys don t even have your books open none of you",
+      "quote_verified": true,
+      "categories": [
+        "D"
+      ],
+      "other_label": "",
+      "note": "The framing 'we're not playing... we're actually doing math' attributes off-task behavior to the students as a group rather than to the task or instruction; borderline as it partly reports a factual observation about books being closed.",
+      "confidence": "low",
+      "flagged_at": null
+    }
+  ]
+}

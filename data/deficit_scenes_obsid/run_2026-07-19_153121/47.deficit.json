@@ -1,0 +1,46 @@
+{
+  "source_document_id": "47",
+  "obsid": "47",
+  "scenes": [
+    {
+      "turn_range": "59-62",
+      "deficit_span": {
+        "speaker": "teacher",
+        "turns": "61",
+        "verbatim_quote": "let s see if as a class we can control ourselves enough so that we can actually do this let s see if as a class we can control ourselves i can actually go through all of this and do this without you having a breakdown cause that s what happens sometimes"
+      },
+      "context_excerpt": [
+        {
+          "turn": 59,
+          "speaker": "teacher",
+          "text": "before we start before we start i want to go back to our goal our goals of today are not just to play a game our goals of today are to begin to understand what the attributes or properties of of these different shapes so obviously if we think about what student l just described the cylinder the cylinder has different properties it is rounded it is not flat that s a different property than the rectangular prism so your brain is starting to classify these in different ways some of you may remember that on the test yesterday that you took the predictive test there was a question on there that said what is true about a cube and it said it had like six faces or sides"
+        },
+        {
+          "turn": 60,
+          "speaker": "student",
+          "text": "oh yeah yeah yeah"
+        },
+        {
+          "turn": 61,
+          "speaker": "teacher",
+          "text": "those are the things that you need to start putting up here in your head all right so i m gonna tell you what group you re in most of you are gonna be staying in your seats and then one group may be going back to the table okay now i will say your name the first name i say in the group is gonna be the one who starts with the shapes the second name i say in the group is gonna be the person who is the notetaker and the third and fourth name are gonna be the guessers and then it will rotate so let s see if as a class we can control ourselves enough so that we can actually do this let s see if as a class we can control ourselves i can actually go through all of this and do this without you having a breakdown cause that s what happens sometimes"
+        },
+        {
+          "turn": 62,
+          "speaker": "teacher",
+          "text": "calling students names in groups sorry all right in the middle table calling students names in groups so you only have one guesser to start at the other table calling students names in groups you can move yourself over a little more you re moving right staying right here"
+        }
+      ],
+      "categories": [
+        "D",
+        "G"
+      ],
+      "rationale": "The teacher frames the whole class by an anticipated inability to self-regulate and predicts a 'breakdown' as a recurring characteristic ('that's what happens sometimes'), attributing a behavioral deficit to the group rather than to task design.",
+      "confidence": "medium",
+      "source_document_id": "47",
+      "obsid": "47",
+      "legacy_source": "322_original.csv",
+      "source_run": "run_2026-07-19_153121"
+    }
+  ]
+}

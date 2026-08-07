@@ -1,0 +1,410 @@
+DEFICIT-LANGUAGE ANALYSIS REPORT
+
+Run: run_2026-07-19_153121
+Generated: 2026-08-06 14:37:59
+Source: data/transcripts/by_obsid/<obsid>.csv (OBSID archive), relabelled from run_2026-07-19_153121 via data/obsid_crosswalk.csv
+
+Every quote below was verified verbatim against its source transcript. Scenes whose quotes did not match exactly were dropped, not corrected.
+
+    "Relabelled view of run_2026-07-19_153121. Headings are OBSIDs. The original run labelled findings by the legacy NCTE video_id, which for 24 of 52 transcripts names a different observation. Scene content is unchanged; every quote here was re-verified against data/transcripts/by_obsid/<obsid>.csv. See the Observation Crosswalk below, crosswalk_used.csv, and MANIFEST.json."
+
+OVERVIEW
+
+| Metric | Value |
+|---|---|
+| Transcripts processed | 50 |
+| Transcripts with >=1 scene | 27 |
+| Transcripts with no scenes | 23 |
+| Verified scenes | 37 |
+| High confidence | 2 |
+| Medium confidence | 16 |
+| Low confidence | 19 |
+| Quotes dropped in verification | 0 |
+
+CATEGORY DISTRIBUTION
+
+A scene may fall into more than one category, so these sum to more than the scene total.
+
+| Code | Category | Scenes |
+|---|---|---|
+| A | Fixed-ability framing | 0 |
+| B | Deficit labeling / grouping | 4 |
+| C | Problem located in student/home/background | 2 |
+| D | Deficit attribution for behavior/motivation | 28 |
+| E | Lowered expectations | 4 |
+| F | Comparative deficit | 3 |
+| G | Totalizing negation | 2 |
+
+SCENES BY TRANSCRIPT
+
+24 (3 scenes) - teacher 340, yr 1 - was 340_original.csv - in coding sample
+
+Turn 344 - confidence: medium - categories: D
+
+    "that s what you re stuck with you need to be studying your multiplication tables to be able to figure that out"
+
+The student's difficulty is attributed to a presumed failure to study rather than framed as an instructional or practice need, positioning the deficit in the student's effort.
+
+Turn 122 - confidence: low - categories: D
+
+    "just because you guys aren t on camera doesn t mean that you still need to do the math work okay just because you re not on camera doesn t mean that you can just sit here"
+
+The teacher preemptively assumes students will disengage and 'just sit here' rather than do the work, attributing anticipated non-participation to student motivation rather than to instruction or task.
+
+Turn 352 - confidence: low - categories: D
+
+    "no you re going to be studying your multiplication facts student c"
+
+Following a wrong answer, the teacher frames the error as a consequence of the student not studying, an attribution to student effort rather than a neutral correction.
+
+
+2204 (3 scenes) - teacher 309, yr 2 - was 309_original.csv - that filename is also real OBSID 309 - in coding sample
+
+Turn 227 - confidence: high - categories: D, E
+
+    "those people that are not paying attention are the ones that won t be able to do it we know that if you cannot see i could tell ones that will be able to do it"
+
+The teacher attributes anticipated failure to students based on behavior and predicts who 'will' and 'won't be able to do it,' sorting students by perceived inability rather than describing the task or effort.
+
+Turn 156 - confidence: medium - categories: D
+
+    "see i don t see student c thinking i know she s not"
+
+The teacher characterizes a named student as simply 'not thinking' rather than describing a specific behavior or offering support, attributing a lack of engagement to the student.
+
+Turn 54 - confidence: low - categories: B
+
+    "you need help all morning you don t know your timetable"
+
+The teacher frames a named student by a lack ('you don't know your timetable' / needing help 'all morning'), though phrasing is somewhat ambiguous and jocular.
+
+
+39 (2 scenes) - teacher 321, yr 1 - was 321_original.csv - that filename is also real OBSID 321 - in coding sample
+
+Turn 235 - confidence: medium - categories: D
+
+    "thank you evidently some of you don t want that help"
+
+The teacher attributes off-task behavior to students not wanting help, framing motivation as a deficit in the students rather than addressing the task or classroom conditions.
+
+Turn 270 - confidence: low - categories: D
+
+    "you guys act like you re so tired like you re old yeah you re acting like you re older than i am i m the oldest person in the world and i have more energy than you guys what s going on what d you guys do take sleeping pills at lunch or something"
+
+The teacher attributes the class's low engagement to laziness/tiredness ('food coma mode,' 'sleeping pills'), locating the problem in the students' disposition rather than the task or instruction; delivered somewhat playfully, hence lower confidence.
+
+
+76 (2 scenes) - teacher 346, yr 1 - was 346_original.csv - in coding sample
+
+Turn 91 - confidence: low - categories: D
+
+    "mr s i need you to take student b away from me he is embarrassing and interrupting my video and i need him out of this room"
+
+The teacher characterizes the student himself as 'embarrassing' and demands his removal, shifting from describing a specific behavior to a negative evaluative labeling of the child. Borderline because it is tied to in-the-moment conduct rather than a claim about motivation.
+
+Turn 534 - confidence: low - categories: E
+
+    "ladies you re not gonna know what to do"
+
+The teacher predicts inability ('you're not gonna know what to do') addressed to a group of students, which frames a lowered expectation of their capacity. Ambiguous because it may function as a warning tied to inattention rather than a stable judgment.
+
+
+2561 (2 scenes) - teacher 337, yr 2 - was 337_original.csv - that filename is also real OBSID 337 - in coding sample
+
+Turn 163 - confidence: low - categories: B
+
+    "take your spot and move next to student a so you can move off your weak side"
+
+The teacher labels a location/student as a 'weak side,' framing students by a perceived deficit rather than by task or instructional need; it recurs and characterizes learners by their lacks.
+
+Turn 165 - confidence: low - categories: B
+
+    "you re still in the weak side and i don t want to put anybody else there"
+
+Repeated use of 'weak side' to designate students, framing them by perceived deficiency; treats a group/seat as a deficit category to be avoided.
+
+
+2571 (2 scenes) - teacher 344, yr 2 - was 344_original.csv - in coding sample
+
+Turn 124 - confidence: medium - categories: F, D
+
+    "there s 19 other kids aren t having a problem they re ready to learn math the rest of you over there are you ready"
+
+Teacher defines a subset of students by contrast to the compliant majority, framing them as not 'ready to learn math,' attributing a learning-readiness deficit based on in-the-moment behavior.
+
+Turn 122 - confidence: low - categories: D
+
+    "go back to your desk where you belong because there s a fly over here and you can t handle it go back to your desk where you belong"
+
+Repeated 'you can't handle it' and 'where you belong' attribute a fixed behavioral inadequacy to the student rather than describing the situation neutrally; borderline as it is situational management.
+
+
+2592 (2 scenes) - teacher 348, yr 2 - was 348_original.csv - in coding sample
+
+Turn 403 - confidence: medium - categories: D, F
+
+    "now you re acting like kindergarteners instead of fifth graders not acceptable"
+
+Frames students' behavior as a deficit by demeaning comparison to younger children, attributing immaturity rather than addressing the task or providing constructive redirection.
+
+Turn 616 - confidence: medium - categories: B, F
+
+    "i don t understand why i have some students who really can follow directions and others are not able to follow directions"
+
+Groups and defines students by a perceived lack ('others are not able to follow directions'), setting up a comparative deficit framing between capable and incapable students rather than addressing specific behaviors or instruction.
+
+
+2765 (2 scenes) - teacher 351, yr 2 - was 351_original.csv - in coding sample
+
+Turn 186 - confidence: medium - categories: D
+
+    "it is okay to be confused what s not okay is to be confused because you weren t paying attention"
+
+While the teacher normalizes confusion, this framing attributes potential lack of understanding to a behavioral/motivational failing (not paying attention), a deficit attribution for behavior.
+
+Turn 88 - confidence: low - categories: D
+
+    "you re listening to bad ideas you need to think for yourself"
+
+Characterizing peers' contributed answers as 'bad ideas' dismisses student thinking rather than treating incorrect answers as productive attempts; borderline and directed at ideas in the moment.
+
+
+47 (1 scene) - teacher 322, yr 1 - was 322_original.csv - in coding sample
+
+Turn 61 - confidence: medium - categories: D, G
+
+    "let s see if as a class we can control ourselves enough so that we can actually do this let s see if as a class we can control ourselves i can actually go through all of this and do this without you having a breakdown cause that s what happens sometimes"
+
+The teacher frames the whole class by an anticipated inability to self-regulate and predicts a 'breakdown' as a recurring characteristic ('that's what happens sometimes'), attributing a behavioral deficit to the group rather than to task design.
+
+
+82 (1 scene) - teacher 306, yr 1 - was 306_original.csv - that filename is also real OBSID 306 - in coding sample
+
+Turn 350 - confidence: medium - categories: D
+
+    "student d you don t even have it in front of you it s on the floor in front of you and you re not paying attention so for you to throw out that number five means you re just throwing out numbers buddy"
+
+The teacher attributes the student's answer to inattention and dismisses it as 'just throwing out numbers,' framing the response as a motivational/behavioral deficit rather than describing the error neutrally.
+
+
+128 (1 scene) - teacher 324, yr 1 - was 324_original.csv - that filename is also real OBSID 324 - in coding sample
+
+Turn 54 - confidence: medium - categories: D
+
+    "student m no you need to control i don t want to hear oohs and ahs you re not a monkey here"
+
+The teacher characterizes the student's behavior with a dehumanizing comparison ('you're not a monkey here'), a demeaning put-down rather than a neutral redirection of behavior.
+
+
+131 (1 scene) - teacher 336, yr 1 - was 336_original.csv - that filename is also real OBSID 336 - in coding sample
+
+Turn 33 - confidence: low - categories: D
+
+    "we re not putting on a show today to show how bad we can be this is not how we behave during math"
+
+The teacher characterizes the students' behavior negatively ('how bad we can be') rather than describing the specific behavior neutrally; however, this is framed as situational/out-of-character (Turn 35: 'i don t know what has come over you this morning'), making it a borderline behavior-management comment rather than a fixed deficit attribution.
+
+
+199 (1 scene) - teacher 323, yr 1 - was 323_original.csv - in coding sample
+
+Turn 316 - confidence: low - categories: D
+
+    "sometimes they just really get stuck"
+
+The aside generalizes some students as simply 'getting stuck,' a mild deficit framing of student struggle rather than describing a specific task difficulty; however it is close to neutral, hence low confidence.
+
+
+225 (1 scene) - teacher 347, yr 1 - was 347_original.csv - in coding sample
+
+Turn 97 - confidence: medium - categories: D
+
+    "thank you everybody else was sleeping on that answer"
+
+The teacher attributes the class's lack of response to disengagement ('sleeping on that answer'), framing behavior/motivation as a deficit rather than describing the situation neutrally.
+
+
+538 (1 scene) - teacher 310, yr 1 - was 310_original.csv - that filename is also real OBSID 310 - in coding sample
+
+Turn 263 - confidence: low - categories: E
+
+    "maybe i m asking the question too difficult for you"
+
+The teacher frames the student's difficulty answering as the question being too hard 'for you,' implying a perceived limit in the student's ability rather than reframing the task or prompting; this suggests lowered expectation.
+
+
+1085 (1 scene) - teacher 320, yr 1 - was 320_original.csv - in coding sample
+
+Turn 181 - confidence: medium - categories: D
+
+    "you guys are quitting on me you guys are quitting on me"
+
+The teacher attributes the students' struggle to a lack of effort/motivation ('quitting') rather than to the difficulty of the task or instruction, framing the behavior as a deficit in perseverance.
+
+
+2199 (1 scene) - teacher 325, yr 2 - was 325_original.csv - in coding sample
+
+Turn 168 - confidence: low - categories: E
+
+    "boys and girls if splitting up the fraction you re finding might be a little too difficult you don t have to do it if you re finding that it s too difficult you need to let me know so i can come over and explain it to you"
+
+The teacher offers students the option to skip the more cognitively demanding task (splitting fractions) on the basis of perceived difficulty, which can lower cognitive demand rather than maintaining it with support. Borderline because it is also framed as student-perceived and paired with an offer to help.
+
+
+2253 (1 scene) - teacher 303, yr 2 - was 303_original.csv - that filename is also real OBSID 303 - in coding sample
+
+Turn 155 - confidence: high - categories: D
+
+    "you re just getting lazy and not pushing yourself"
+
+The teacher attributes students' incomplete work to a character/motivation flaw ('lazy') rather than to task or instructional factors, which is deficit attribution for motivation.
+
+
+2397 (1 scene) - teacher 345, yr 2 - was 345_original.csv - in coding sample
+
+Turn 101 - confidence: low - categories: D
+
+    "we re not playing right now we re actually doing math you guys don t even have your books open none of you"
+
+The framing 'we're not playing... we're actually doing math' attributes off-task behavior to the students as a group rather than to the task or instruction; borderline as it partly reports a factual observation about books being closed.
+
+
+2458 (1 scene) - teacher 314, yr 2 - was 314_original.csv - in coding sample
+
+Turn 141 - confidence: low - categories: D
+
+    "since student d decided to do it this way part of his math he likes to play but he had to draw six twelfths"
+
+The teacher characterizes the student's engagement as 'he likes to play,' attributing off-task behavior to the student's disposition rather than the task; however this is brief and mild, so confidence is low.
+
+
+2595 (1 scene) - teacher 332, yr 2 - was 332_original.csv - that filename is also real OBSID 332 - in coding sample
+
+Turn 675 - confidence: medium - categories: D
+
+    "oh okay i guess i m going to have to skip student t because he s not sure how to interact with people"
+
+The teacher characterizes a specific student as generally lacking the ability to interact with people, attributing the behavior to a stable personal deficit rather than describing the specific in-the-moment action.
+
+
+2761 (1 scene) - teacher 349, yr 2 - was 349_original.csv - in coding sample
+
+Turn 110 - confidence: medium - categories: C, G
+
+    "i m getting really bothered that i m saying the same thing over and over again and it s fascinating to me that my english speakers are not understanding me"
+
+The teacher locates the breakdown in the students ('not understanding me') and frames it as surprising given they are 'english speakers,' placing the problem in the learners rather than in the task or instruction.
+
+
+2783 (1 scene) - teacher 334, yr 2 - was 334_original.csv - that filename is also real OBSID 334 - in coding sample
+
+Turn 89 - confidence: medium - categories: D
+
+    "too much work you re not ready for middle school yet interesting"
+
+In response to the student's reluctance ('do we have to do 5'), the teacher characterizes the student as 'not ready for middle school,' framing the student's motivation/effort as a personal deficiency rather than addressing the task or instruction.
+
+
+2789 (1 scene) - teacher 341, yr 2 - was 341_original.csv - in coding sample
+
+Turn 5 - confidence: low - categories: C
+
+    "now i know some of you guys don t speak english that much but just stay with me all right"
+
+The teacher characterizes some students by a language lack ('don't speak english that much') as a framing for the lesson, locating a limitation in the students' background rather than in the task or instruction. Borderline, as it acknowledges ELL status factually.
+
+
+2800 (1 scene) - teacher 318, yr 2 - was 318_original.csv - in coding sample
+
+Turn 2 - confidence: low - categories: D
+
+    "maybe that s why you re losing papers has to be put away those need to go in the pocket or you re gonna lose them that s why you re losing them"
+
+The teacher frames an ongoing problem ('losing papers') as a result of the student's own disorganization/habits rather than describing a neutral fix, edging toward deficit attribution for behavior. It is mild and specific, so confidence is low.
+
+
+2916 (1 scene) - teacher 312, yr 2 - was 312_original.csv - in coding sample
+
+Turn 257 - confidence: low - categories: D
+
+    "i think you re gonna have some problem doing this because you re not listening"
+
+The teacher attributes an anticipated difficulty/failure to the student's behavior ('because you're not listening'), framing the problem as located in the student's conduct rather than the task or instruction.
+
+
+4678 (1 scene) - teacher 352, yr 3 - was 352_original.csv - in coding sample
+
+Turn 46 - confidence: medium - categories: D
+
+    "i don t want to have fresh children in my class but apparently i still do"
+
+The teacher characterizes students as 'fresh children,' a global negative labeling of student character/behavior rather than describing a specific action or redirecting a task, which frames the problem as residing in the students themselves.
+
+
+TRANSCRIPTS WITH NO SCENES
+
+Scanned and found clean. These are findings, not gaps.
+
+56, 87, 206, 434, 447, 465, 535, 1146, 1147, 2197, 2205, 2358, 2389, 2405, 2530, 2531, 2634, 2757, 2776, 2928, 2987, 4430, 4598
+
+OBSERVATION CROSSWALK
+
+What each heading above was called in the original run, and why the rename matters. A row marked shadowed means the old filename is *also* a valid OBSID belonging to a different class, so reading the original report at face value attributes these findings to the wrong observation.
+
+Resolved by sha256 against data/observation_index.csv, not by name. 24 of 50 headings were shadowed.
+
+| OBSID | was | teacher / yr | scenes | shadowed | in sample |
+|---|---|---|---|---|---|
+| 24 | 340_original.csv | 340 / 1 | 3 | no | yes |
+| 39 | 321_original.csv | 321 / 1 | 2 | yes | yes |
+| 47 | 322_original.csv | 322 / 1 | 1 | no | yes |
+| 56 | 330_original.csv | 330 / 1 | 0 | yes | yes |
+| 76 | 346_original.csv | 346 / 1 | 2 | no | yes |
+| 82 | 306_original.csv | 306 / 1 | 1 | yes | yes |
+| 87 | 308_original.csv | 308 / 1 | 0 | yes | yes |
+| 128 | 324_original.csv | 324 / 1 | 1 | yes | yes |
+| 131 | 336_original.csv | 336 / 1 | 1 | yes | yes |
+| 199 | 323_original.csv | 323 / 1 | 1 | no | yes |
+| 206 | 342_original.csv | 342 / 1 | 0 | no | yes |
+| 225 | 347_original.csv | 347 / 1 | 1 | no | yes |
+| 434 | 335_original.csv | 335 / 1 | 0 | yes | yes |
+| 447 | 333_original.csv | 333 / 1 | 0 | yes | yes |
+| 465 | 339_original.csv | 339 / 1 | 0 | yes | yes |
+| 535 | 319_original.csv | 319 / 1 | 0 | yes | yes |
+| 538 | 310_original.csv | 310 / 1 | 1 | yes | yes |
+| 1085 | 320_original.csv | 320 / 1 | 1 | no | yes |
+| 1146 | 331_original.csv | 331 / 1 | 0 | yes | yes |
+| 1147 | 343_original.csv | 343 / 1 | 0 | no | yes |
+| 2197 | 315_original.csv | 315 / 2 | 0 | yes | yes |
+| 2199 | 325_original.csv | 325 / 2 | 1 | no | yes |
+| 2204 | 309_original.csv | 309 / 2 | 3 | yes | yes |
+| 2205 | 307_original.csv | 307 / 2 | 0 | no | yes |
+| 2253 | 303_original.csv | 303 / 2 | 1 | yes | yes |
+| 2358 | 304_original.csv | 304 / 2 | 0 | no | yes |
+| 2389 | 338_original.csv | 338 / 2 | 0 | yes | yes |
+| 2397 | 345_original.csv | 345 / 2 | 1 | no | yes |
+| 2405 | 302_original.csv | 302 / 2 | 0 | yes | yes |
+| 2458 | 314_original.csv | 314 / 2 | 1 | no | yes |
+| 2530 | 316_original.csv | 316 / 2 | 0 | no | yes |
+| 2531 | 329_original.csv | 329 / 2 | 0 | no | yes |
+| 2561 | 337_original.csv | 337 / 2 | 2 | yes | yes |
+| 2571 | 344_original.csv | 344 / 2 | 2 | no | yes |
+| 2592 | 348_original.csv | 348 / 2 | 2 | no | yes |
+| 2595 | 332_original.csv | 332 / 2 | 1 | yes | yes |
+| 2634 | 305_original.csv | 305 / 2 | 0 | yes | yes |
+| 2757 | 313_original.csv | 313 / 2 | 0 | yes | yes |
+| 2761 | 349_original.csv | 349 / 2 | 1 | no | yes |
+| 2765 | 351_original.csv | 351 / 2 | 2 | no | yes |
+| 2776 | 326_original.csv | 326 / 2 | 0 | yes | yes |
+| 2783 | 334_original.csv | 334 / 2 | 1 | yes | yes |
+| 2789 | 341_original.csv | 341 / 2 | 1 | no | yes |
+| 2800 | 318_original.csv | 318 / 2 | 1 | no | yes |
+| 2916 | 312_original.csv | 312 / 2 | 1 | no | yes |
+| 2928 | 328_original.csv | 328 / 2 | 0 | no | yes |
+| 2987 | 327_original.csv | 327 / 2 | 0 | yes | yes |
+| 4430 | 1411_original.csv | 1411 / 3 | 0 | no | yes |
+| 4598 | 350_original.csv | 350 / 3 | 0 | no | yes |
+| 4678 | 352_original.csv | 352 / 3 | 1 | no | yes |
+
+FILES WITH NO OBSID
+
+Legacy transcripts whose content matched no row in observation_index.csv, so their findings cannot be attributed to an archived observation and are excluded: 543_original.csv (2 scenes). These are Study 1's hand-prepared files, which are not archive observations.
