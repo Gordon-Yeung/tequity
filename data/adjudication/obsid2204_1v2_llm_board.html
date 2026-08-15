@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Adjudication board</title>
+<style>
+  :root {
+    --bg:#f6f7f9; --panel:#fff; --ink:#1c2024; --muted:#6b7280; --line:#e3e6ea;
+    --accent:#2563eb; --agree:#0e9f6e; --only:#d97706; --catdiff:#7c3aed;
+    --mark:#fff3bf; --markink:#5c4813; --chip:#eef1f5; --ok:#0e9f6e;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg:#14171a; --panel:#1c2024; --ink:#e6e9ec; --muted:#9aa3ad; --line:#2b3138;
+      --accent:#6ea8fe; --agree:#3ddc97; --only:#f0b463; --catdiff:#c4a7f7;
+      --mark:#4a3f12; --markink:#ffe9a8; --chip:#262b31; --ok:#3ddc97;
+    }
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; }
+  header { position:sticky; top:0; z-index:5; background:var(--panel);
+    border-bottom:1px solid var(--line); padding:14px 20px; }
+  h1 { font-size:18px; margin:0 0 2px; }
+  .sub { color:var(--muted); font-size:13px; }
+  .stats { display:flex; flex-wrap:wrap; gap:14px; margin-top:10px; font-size:13px; }
+  .stat { background:var(--chip); border-radius:8px; padding:6px 10px; }
+  .stat b { font-size:15px; }
+  .banner { background:color-mix(in srgb, var(--only) 16%, transparent);
+    border:1px solid color-mix(in srgb, var(--only) 45%, transparent);
+    color:var(--ink); border-radius:8px; padding:10px 12px; margin-top:10px; font-size:13px; }
+  .toolbar { display:flex; flex-wrap:wrap; align-items:center; gap:10px; margin-top:12px; }
+  .toolbar select, .toolbar button { font:inherit; padding:6px 10px; border-radius:8px;
+    border:1px solid var(--line); background:var(--panel); color:var(--ink); cursor:pointer; }
+  .toolbar button:hover { border-color:var(--accent); }
+  .toolbar .grow { flex:1; }
+  .progress { font-size:13px; color:var(--muted); }
+  .progress b { color:var(--ink); }
+  main { max-width:1080px; margin:0 auto; padding:20px; }
+  .card { background:var(--panel); border:1px solid var(--line); border-radius:12px;
+    padding:16px 18px; margin-bottom:16px; scroll-margin-top:180px; }
+  .card.resolved { border-color:color-mix(in srgb, var(--ok) 55%, var(--line)); }
+  .card-head { display:flex; align-items:center; gap:10px; margin-bottom:10px; }
+  .turn-no { font-size:16px; font-weight:700; }
+  .badge { font-size:11px; font-weight:700; letter-spacing:.03em; text-transform:uppercase;
+    padding:3px 8px; border-radius:999px; color:#fff; }
+  .badge.AGREE { background:var(--agree); }
+  .badge.CATEGORY-DIFF { background:var(--catdiff); }
+  .badge.ONLY { background:var(--only); }
+  .resolved-tag { margin-left:auto; font-size:12px; color:var(--ok); font-weight:600; display:none; }
+  .card.resolved .resolved-tag { display:inline; }
+  .context { border-left:3px solid var(--line); padding:2px 0 2px 12px; margin:0 0 12px;
+    font-size:13.5px; color:var(--muted); }
+  .context .row { margin:3px 0; }
+  .context .row.target { color:var(--ink); }
+  .context .spk { font-weight:600; text-transform:capitalize; }
+  .context .target .spk { color:var(--accent); }
+  mark { background:var(--mark); color:var(--markink); padding:0 2px; border-radius:3px; }
+  .coders { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:10px;
+    margin-bottom:14px; }
+  .coder { border:1px solid var(--line); border-radius:10px; padding:10px 12px; font-size:13px; }
+  .coder h4 { margin:0 0 6px; font-size:13px; display:flex; align-items:center; gap:6px; }
+  .dot { width:9px; height:9px; border-radius:50%; display:inline-block; }
+  .dot.on { background:var(--only); } .dot.off { background:var(--line); }
+  .coder.flagged { border-color:color-mix(in srgb, var(--only) 45%, var(--line)); }
+  .cats { display:flex; flex-wrap:wrap; gap:4px; margin:4px 0; }
+  .cat { font-size:11px; font-weight:700; background:var(--chip); border-radius:6px; padding:2px 6px; }
+  .conf { color:var(--muted); font-size:12px; }
+  .note { margin-top:5px; font-style:italic; color:var(--muted); }
+  .span { margin-top:5px; } .span q { background:var(--mark); color:var(--markink);
+    padding:1px 4px; border-radius:3px; font-style:normal; }
+  .decision { border-top:1px dashed var(--line); padding-top:12px; }
+  .decision .lbl { font-size:12px; text-transform:uppercase; letter-spacing:.04em;
+    color:var(--muted); margin:0 0 6px; }
+  .catpick { display:flex; flex-wrap:wrap; gap:6px; margin-bottom:10px; }
+  .catpick label { display:inline-flex; align-items:center; gap:5px; font-size:13px;
+    border:1px solid var(--line); border-radius:8px; padding:4px 9px; cursor:pointer; }
+  .catpick label:hover { border-color:var(--accent); }
+  .catpick input { accent-color:var(--accent); }
+  .incl { display:flex; gap:14px; margin-bottom:10px; font-size:13px; }
+  .incl label { display:inline-flex; gap:5px; align-items:center; cursor:pointer; }
+  .decision textarea, .decision input.rule { width:100%; font:inherit; padding:7px 9px;
+    border:1px solid var(--line); border-radius:8px; background:var(--bg); color:var(--ink);
+    resize:vertical; margin-bottom:10px; }
+  .decision textarea { min-height:44px; }
+  .foot { color:var(--muted); font-size:12px; text-align:center; padding:20px; }
+  .hidden { display:none !important; }
+</style>
+</head>
+<body>
+<header>
+  <h1 id="title"></h1>
+  <div class="sub" id="subtitle"></div>
+  <div class="stats" id="stats"></div>
+  <div class="banner hidden" id="banner"></div>
+  <div class="toolbar">
+    <label class="progress">Type
+      <select id="f-type"><option value="">all</option></select>
+    </label>
+    <label class="progress">Confidence
+      <select id="f-conf">
+        <option value="">any</option><option>high</option><option>medium</option><option>low</option>
+      </select>
+    </label>
+    <label class="progress"><input type="checkbox" id="f-unresolved"> unresolved only</label>
+    <span class="grow"></span>
+    <span class="progress"><b id="p-done">0</b> of <b id="p-total">0</b> resolved</span>
+    <button id="btn-csv">Export CSV</button>
+    <button id="btn-json">Export JSON</button>
+    <button id="btn-clear" title="Clears decisions saved in this browser">Clear</button>
+  </div>
+</header>
+<main id="cards"></main>
+<div class="foot" id="foot"></div>
+
+<script>
+const DATA = {"obsid": "2204", "stem": "obsid2204_1v2_llm", "coders": ["1", "2", "llm"], "categories": ["A", "B", "C", "D", "E", "F", "G", "Other"], "category_labels": {"A": "Fixed-Ability Framing", "B": "Deficit Labeling / Grouping", "C": "Problem in Student / Home / Background", "D": "Deficit Attribution (Behavior/Motivation)", "E": "Lowered Expectations", "F": "Comparative Deficit", "G": "Totalizing Negation", "Other": "Other (specify)"}, "subtitle": "Teacher 309 · year 2 · 353 turns (172 teacher) · coders 1 vs 2 vs llm · scope: cocovered", "stat_chips": [{"label": "positive agreement", "value": "0.57"}, {"label": "Cohen's κ", "value": "0.55"}, {"label": "PABAK", "value": "0.89"}, {"label": "Jaccard", "value": "0.72"}, {"label": "both flagged", "value": 4}, {"label": "only 1", "value": 0}, {"label": "only 2", "value": 6}], "banner": "62 teacher turns (36%) sit past turn 227, uncoded by both humans — treated as uncoded, not agreed-empty. Only turns 1–227 appear below.", "rows": [{"turn": 9, "status": "ONLY-2", "max_conf": "low", "context": [{"turn": 7, "speaker": "teacher", "text": "thinking now that s one of the word strategy is thinking all right and you know math when you have to do it you have to think go on your turn"}, {"turn": 8, "speaker": "student", "text": "and using prior knowledge"}, {"turn": 9, "speaker": "teacher", "text": "and using prior knowledge i like that strategy is using your prior knowledge and kind of put it together yes what about you come on don t get mad tell me using prior knowledge all right what else okay that s fine anybody else context closed so these are the things we re going to focus on prior knowledge thinking i m thinking i use my prior knowledge and i use the context now let me show you something quick very quick what strategy do i use we are going to work on several kind of problem today and we re gonna use these our blocks to help us i m gonna use them first but i m gonna let you use them but another thing we re going to use we re going to use let me show you these are all to help you and i m going to show you how to use them to get a strategy going that s been our thinking i m going to use this one and i m gonna let you use one when it s time when it s time so i m gonna use this one to figure out what how many how many see he s not willing how many"}, {"turn": 10, "speaker": "teacher", "text": "how many now"}, {"turn": 11, "speaker": "multiple students", "text": "strategies"}], "coders": {"1": {"flagged": false}, "2": {"flagged": true, "categories": ["D"], "confidence": "low", "note": "“see he s not willing how many”. This is incomplete; maybe the teacher thinks the student doesn't want to try to explore or answer (flag to discuss)", "span": ""}, "llm": {"flagged": false}}}, {"turn": 54, "status": "ONLY-2+llm", "max_conf": "low", "context": [{"turn": 52, "speaker": "teacher", "text": "how many groups that s the question and you need to be careful you need to watch that now listen i m giving you a situation these are the things now this is your own thinking that s what i want you to pay attention they give me uh unh uh hm now you what what is my situation what is my situation here i need help i need your help what is my situation now i see people counting people are counting and they say now people are raising their hand that s nice see nice nice now yes i see people talking to each other that s fine too people are telling this array must be hm and i m going to put it in the middle"}, {"turn": 53, "speaker": "student", "text": "inaudible"}, {"turn": 54, "speaker": "teacher", "text": "yes student m student m good job now it s time i like the way you talk to each other ah you don t need this one don t we you need help all morning you don t know your timetable that s when you do"}, {"turn": 55, "speaker": "student", "text": "no i do"}, {"turn": 56, "speaker": "teacher", "text": "right now student m is the person"}], "coders": {"1": {"flagged": false}, "2": {"flagged": true, "categories": ["A"], "confidence": "low", "note": "", "span": ""}, "llm": {"flagged": true, "categories": ["B"], "confidence": "low", "note": "The teacher frames a named student by a lack ('you don't know your timetable' / needing help 'all morning'), though phrasing is somewhat ambiguous and jocular.", "span": "you need help all morning you don t know your timetable"}}}, {"turn": 62, "status": "ONLY-2", "max_conf": "medium", "context": [{"turn": 60, "speaker": "student", "text": "eight nine four"}, {"turn": 61, "speaker": "student", "text": "yes"}, {"turn": 62, "speaker": "teacher", "text": "now excuse me he s not paying attention yep eight times four right because i have one two three four and i put my four here and sometime they give me this one and they say hey name the hm and the see eight times four so all right student f all right now eight times four and what"}, {"turn": 63, "speaker": "student", "text": "thirty two"}, {"turn": 64, "speaker": "multiple students", "text": "thirty two"}], "coders": {"1": {"flagged": false}, "2": {"flagged": true, "categories": ["D"], "confidence": "medium", "note": "", "span": ""}, "llm": {"flagged": false}}}, {"turn": 67, "status": "ONLY-1+2", "max_conf": "high", "context": [{"turn": 65, "speaker": "teacher", "text": "eight times all right you said it see we re not arguing over that now are we arguing we could just count"}, {"turn": 66, "speaker": "student", "text": "teacher the funny thing is it says 32 right there on top it says 32 right there"}, {"turn": 67, "speaker": "teacher", "text": "does it i really will pay attention to that now my good learners that are thinking see student f is thinking but he s turning back now student f i need your attention up here so listen sometime they just give me this and they give me this i want you to think use your strategy of thinking see some people are turning back looking at other people i need your attention to the front now sometime they just give me this and that hmm and now this way this way this way look at that some people are thinking but they re not thinking they re playing with i know you re a good thinker student f i know you re a good thinker but"}, {"turn": 68, "speaker": "student", "text": "inaudible"}, {"turn": 69, "speaker": "teacher", "text": "surprise they give me this and that and i have to hm what is hm see she is still talking see they give me this and that i know when it s time to talk i ll let you talk but now they give me this and that and they want me to figure out this some people already know what does that mean what am i supposed to do what am i supposed to be thinking because remember this is the thing now i want you to talk to your friend and make problem write an hm problem write a hm problem now student d you need to talk to the person next to you only yes the problem i want you to think of the division problem one minute one minute student r with the person next you think over the problem we only have a minute see i see these people talking those are talking good job yep"}], "coders": {"1": {"flagged": true, "categories": ["D", "F"], "confidence": "medium", "note": "\"now my good learners that are thinking see student f is thinking but he s turning back now student f i need your attention up here\"", "span": ""}, "2": {"flagged": true, "categories": ["F"], "confidence": "high", "note": "", "span": ""}, "llm": {"flagged": false}}}, {"turn": 144, "status": "ONLY-2", "max_conf": "medium", "context": [{"turn": 142, "speaker": "teacher", "text": "three left i like the word three left and in division we call the three left"}, {"turn": 143, "speaker": "student", "text": "remainder"}, {"turn": 144, "speaker": "teacher", "text": "remainder that s the word i was getting to see student o did you get a look at that that s the thing after we divided equally there is three more with if i have the situation there a lot of time they give you division like that on purpose and they would say what can i do now the situation is we re going on a field trip what do i do with the three remainder people three left over what can i do with these three people now i want you to think of a situation student a i m going on a field trip i have 35 people and we only have four cars yes i see people thinking now you re all thinking you don t need to talk to anyone see we re going on a field trip and i know some people they are smart like student d he is thinking of a situation now student f let s see people that are thinking we re going on a field trip we will have four cars or four buses for the 32 or 35 people it s not 32 anymore it s 35 the situation see you need to think of if it s a situation when it s 35 it s not apples that we have to share now we will think of it s apple 35 apple but let s think of the time this time student m it s 35 people going on the field trip 35 students or 35 of us any could be teachers could be people could be anybody and we re going on a field trip see i see he s figuring it out then what do we do with this 3 people out of 35 all right so lot of people already think so student s what do you think we could do with these three people"}, {"turn": 145, "speaker": "student", "text": "the people that are here take one in each one"}, {"turn": 146, "speaker": "teacher", "text": "one in each bus she said i could take one of these and add to this one but how about if the bus can t take anymore see we re thinking it s only thinking so that would be three buses that have an extra person maybe that s the case maybe you could explain it that way and sometime they ask you hey explain what did you think we could do it s only your own thinking now another person said what could you do"}], "coders": {"1": {"flagged": false}, "2": {"flagged": true, "categories": ["A", "F"], "confidence": "medium", "note": "\"i know some people they are smart like student d\". It implies that others do not fall into this category.", "span": ""}, "llm": {"flagged": false}}}, {"turn": 148, "status": "ONLY-2", "max_conf": "low", "context": [{"turn": 146, "speaker": "teacher", "text": "one in each bus she said i could take one of these and add to this one but how about if the bus can t take anymore see we re thinking it s only thinking so that would be three buses that have an extra person maybe that s the case maybe you could explain it that way and sometime they ask you hey explain what did you think we could do it s only your own thinking now another person said what could you do"}, {"turn": 147, "speaker": "student", "text": "you could like take some kids and bring them back and just come back and get the rest"}, {"turn": 148, "speaker": "teacher", "text": "come back and get the rest wouldn t it just be one of the bus say oh i ll have to make a trip back and get the three of them by themselves probably now no you talk already let me think of student o think oh good job student o let me see somebody else who was thinking i know the smart one always thinking yes you could"}, {"turn": 149, "speaker": "student", "text": "you could like the children that s extra"}, {"turn": 150, "speaker": "teacher", "text": "the three extra what could you do with them"}], "coders": {"1": {"flagged": false}, "2": {"flagged": true, "categories": ["A", "F"], "confidence": "low", "note": "\"i know the smart one always thinking\", labeling some students with a fixed ability tag of smart", "span": ""}, "llm": {"flagged": false}}}, {"turn": 156, "status": "AGREE", "max_conf": "medium", "context": [{"turn": 154, "speaker": "teacher", "text": "oh you could ve asked a mom to come with their car and kind of take one person or drive a few or drive three because if it s a passenger car it might be able to take three people in the back that could be true we are thinking when it s remainder we need to think of a situation now let s think of a different situation now we re thinking of situation strategies in our head let me see student c is thinking my favorite student f student f is thinking now listen i m giving you a different situation it is sharing thing it s sharing we have apple we have candy we have cupcakes like people said but we have 35 to share in total"}, {"turn": 155, "speaker": "student", "text": "donuts"}, {"turn": 156, "speaker": "teacher", "text": "donuts anything that could share now we got no we re thinking of anything that we could share maybe it s candy maybe it s donuts maybe it s cake maybe it s cupcakes i just need your thinking now if it s a sharing thing what could we do with the three cupcakes that are left what can we do it s a sharing thing what can we do with the three cupcakes good job some people are thinking see i don t see student c thinking i know she s not and my let s see student w"}, {"turn": 157, "speaker": "student", "text": "yep"}, {"turn": 158, "speaker": "teacher", "text": "i don t see you thinking it s a different situation it s food it s candy it s cupcakes all right what can we do with the three extra we know we know yeah student m"}], "coders": {"1": {"flagged": true, "categories": ["D"], "confidence": "low", "note": "\"she isn't trying / thinking\"", "span": ""}, "2": {"flagged": true, "categories": ["D"], "confidence": "medium", "note": "\"i don t see student c thinking i know she s not\"", "span": ""}, "llm": {"flagged": true, "categories": ["D"], "confidence": "medium", "note": "The teacher characterizes a named student as simply 'not thinking' rather than describing a specific behavior or offering support, attributing a lack of engagement to the student.", "span": "see i don t see student c thinking i know she s not"}}}, {"turn": 158, "status": "ONLY-1+2", "max_conf": "medium", "context": [{"turn": 156, "speaker": "teacher", "text": "donuts anything that could share now we got no we re thinking of anything that we could share maybe it s candy maybe it s donuts maybe it s cake maybe it s cupcakes i just need your thinking now if it s a sharing thing what could we do with the three cupcakes that are left what can we do it s a sharing thing what can we do with the three cupcakes good job some people are thinking see i don t see student c thinking i know she s not and my let s see student w"}, {"turn": 157, "speaker": "student", "text": "yep"}, {"turn": 158, "speaker": "teacher", "text": "i don t see you thinking it s a different situation it s food it s candy it s cupcakes all right what can we do with the three extra we know we know yeah student m"}, {"turn": 159, "speaker": "student", "text": "you can give them"}, {"turn": 160, "speaker": "teacher", "text": "you know we don t do that"}], "coders": {"1": {"flagged": true, "categories": ["D"], "confidence": "medium", "note": "\"i don t see you thinking it s a different situation\"", "span": ""}, "2": {"flagged": true, "categories": ["D"], "confidence": "medium", "note": "\"i don t see you thinking.\" Terrible statement to be heard by a student from a math teacher", "span": ""}, "llm": {"flagged": false}}}, {"turn": 164, "status": "ONLY-2", "max_conf": "medium", "context": [{"turn": 162, "speaker": "teacher", "text": "wait a minute we know it will be divided into four groups in this situation we have three more three extra three leftover cupcakes if it s cupcakes then what can we do with the three cupcakes that remain and we call them remainder all right in division like that we always have situation where we have some leftover and we call them remainder and the problem you ll have to do will have a difference it s a situation where we will use the remainder right good job see those people are very very polite they raise their hand student c what can you do with the three remainder"}, {"turn": 163, "speaker": "student", "text": "inaudible"}, {"turn": 164, "speaker": "teacher", "text": "you save it you save it for them to share because we remember we have a it goes into four groups that s 35 and we have this four groups each of them has eight think about it the problem is i have 35 cupcakes student c i have 35 cupcakes and i have to divided them into four people each of them will get eight but there will be three student r there will be three left over you know i hate to see student w is working on it but she s not telling me what s she s thinking student w"}, {"turn": 165, "speaker": "student", "text": "inaudible"}, {"turn": 166, "speaker": "teacher", "text": "the three left over could"}], "coders": {"1": {"flagged": false}, "2": {"flagged": true, "categories": ["D", "G"], "confidence": "medium", "note": "\"you know i hate to see student w is working on it but she s not telling me what s she s thinking student w\"", "span": ""}, "llm": {"flagged": false}}}, {"turn": 227, "status": "CATEGORY-DIFF", "max_conf": "high", "context": [{"turn": 225, "speaker": "teacher", "text": "is the thing into eight vans"}, {"turn": 226, "speaker": "student", "text": "eight vans that would be"}, {"turn": 227, "speaker": "teacher", "text": "now hold on another way 44 people some people are not see 44 into that s another word into another way of writing into into 8 yeah 44 people into see this into she s not paying attention to me into two ways of writing it for 44 people into a group you could yeah 44 people into a group into a group into a group sometime you find it written that way but most of the time it s this way that means into now we learn yesterday after they write it this way you ll write it that way yourself those people that are not paying attention are the ones that won t be able to do it we know that if you cannot see i could tell ones that will be able to do it yep like student m and c doesn t go like this she goes like yeah remember we said that seating is really this way all right so we said hey"}, {"turn": 228, "speaker": "student", "text": "inaudible"}, {"turn": 229, "speaker": "teacher", "text": "you can t see all right go this way we could say we already know if i have 44 and i see my 40 and i know my time table and i know i m gonna time hm to get hm yeah did i do it that way now how many eight into"}], "coders": {"1": {"flagged": true, "categories": ["B", "D", "E", "F"], "confidence": "medium", "note": "those people that are not paying attention are the ones that won t be able to do it we know that if you cannot see i could tell ones that will be able to do it - dividing the class into will-succeed / won't succeed", "span": ""}, "2": {"flagged": true, "categories": ["A", "E", "F"], "confidence": "high", "note": "\"those people that are not paying attention are the ones that won t be able to do it we know that if you cannot see i could tell ones that will be able to do it yep like student m and c doesn t go like this \"", "span": ""}, "llm": {"flagged": true, "categories": ["D", "E"], "confidence": "high", "note": "The teacher attributes anticipated failure to students based on behavior and predicts who 'will' and 'won't be able to do it,' sorting students by perceived inability rather than describing the task or effort.", "span": "those people that are not paying attention are the ones that won t be able to do it we know that if you cannot see i could tell ones that will be able to do it"}}}], "generated_at": "2026-08-10 17:28"};
+const CATS = DATA.categories;
+const LABELS = DATA.category_labels;
+const KEY = "adj:" + DATA.obsid + ":" + DATA.stem;
+
+let store = {};
+try { store = JSON.parse(localStorage.getItem(KEY)) || {}; } catch (e) { store = {}; }
+const save = () => localStorage.setItem(KEY, JSON.stringify(store));
+const dec = (t) => (store[t] = store[t] || { categories: [], include: "", note: "", rule: "" });
+const isResolved = (t) => !!(store[t] && store[t].include);
+
+const esc = (s) => (s == null ? "" : String(s)).replace(/[&<>"']/g,
+  c => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;" }[c]));
+
+// Highlight the first coder span found inside a turn's text (whitespace-loose).
+function highlight(text, spans) {
+  let out = esc(text);
+  for (const raw of spans) {
+    const span = (raw || "").trim();
+    if (!span) continue;
+    const needle = esc(span);
+    const idx = out.toLowerCase().indexOf(needle.toLowerCase());
+    if (idx >= 0) {
+      out = out.slice(0, idx) + "<mark>" + out.slice(idx, idx + needle.length) +
+            "</mark>" + out.slice(idx + needle.length);
+      break; // one mark per turn keeps the excerpt readable
+    }
+  }
+  return out;
+}
+
+function coderCol(c, s) {
+  if (!s || !s.flagged) {
+    return `<div class="coder"><h4><span class="dot off"></span>Coder ${esc(c)}</h4>
+      <span class="conf">did not flag</span></div>`;
+  }
+  const cats = (s.categories || []).map(x =>
+    `<span class="cat" title="${esc(LABELS[x] || x)}">${esc(x)}</span>`).join("") || "—";
+  const note = s.note ? `<div class="note">${esc(s.note)}</div>` : "";
+  const span = s.span ? `<div class="span"><q>${esc(s.span)}</q></div>` : "";
+  return `<div class="coder flagged"><h4><span class="dot on"></span>Coder ${esc(c)}</h4>
+    <div class="cats">${cats}</div>
+    <span class="conf">${esc(s.confidence || "no confidence")}</span>
+    ${note}${span}</div>`;
+}
+
+function card(r) {
+  const badgeClass = r.status.startsWith("ONLY") ? "ONLY" : r.status;
+  const spans = DATA.coders.map(c => (r.coders[c] && r.coders[c].span) || "").filter(Boolean);
+  const ctx = r.context.map(x => {
+    const t = x.turn === r.turn;
+    const body = t ? highlight(x.text, spans) : esc(x.text);
+    return `<div class="row ${t ? "target" : ""}">${t ? "→ " : ""}<span class="spk">${esc(x.speaker)}</span>: ${body}</div>`;
+  }).join("");
+  const cols = DATA.coders.map(c => coderCol(c, r.coders[c])).join("");
+  const d = dec(r.turn);
+  const catpick = CATS.map(x =>
+    `<label title="${esc(LABELS[x] || x)}"><input type="checkbox" data-cat="${esc(x)}"
+      ${d.categories.includes(x) ? "checked" : ""}>${esc(x)}</label>`).join("");
+  return `<section class="card ${isResolved(r.turn) ? "resolved" : ""}" data-turn="${r.turn}"
+      data-status="${esc(r.status)}" data-conf="${esc(r.max_conf)}" id="turn-${r.turn}">
+    <div class="card-head">
+      <span class="turn-no">Turn ${r.turn}</span>
+      <span class="badge ${badgeClass}">${esc(r.status)}</span>
+      <span class="resolved-tag">✓ resolved</span>
+    </div>
+    <div class="context">${ctx}</div>
+    <div class="coders">${cols}</div>
+    <div class="decision">
+      <p class="lbl">Decision — categories for the gold standard</p>
+      <div class="catpick">${catpick}</div>
+      <div class="incl">
+        <label><input type="radio" name="incl-${r.turn}" value="Y" ${d.include==="Y"?"checked":""}> include (Y)</label>
+        <label><input type="radio" name="incl-${r.turn}" value="N" ${d.include==="N"?"checked":""}> exclude (N)</label>
+        <label><input type="radio" name="incl-${r.turn}" value="defer" ${d.include==="defer"?"checked":""}> defer</label>
+      </div>
+      <textarea data-field="note" placeholder="Decision note — why we landed here">${esc(d.note)}</textarea>
+      <input class="rule" data-field="rule" placeholder="Rule this establishes (for the codebook)" value="${esc(d.rule)}">
+    </div>
+  </section>`;
+}
+
+function refreshProgress() {
+  const done = DATA.rows.filter(r => isResolved(r.turn)).length;
+  document.getElementById("p-done").textContent = done;
+  document.getElementById("p-total").textContent = DATA.rows.length;
+}
+
+function applyFilters() {
+  const type = document.getElementById("f-type").value;
+  const conf = document.getElementById("f-conf").value;
+  const unres = document.getElementById("f-unresolved").checked;
+  for (const el of document.querySelectorAll(".card")) {
+    const t = +el.dataset.turn;
+    const okType = !type || el.dataset.status === type;
+    const okConf = !conf || el.dataset.conf === conf;
+    const okUnres = !unres || !isResolved(t);
+    el.classList.toggle("hidden", !(okType && okConf && okUnres));
+  }
+}
+
+function render() {
+  document.getElementById("title").textContent = "Adjudication — obsid " + DATA.obsid;
+  document.getElementById("subtitle").textContent = DATA.subtitle;
+  document.getElementById("stats").innerHTML = DATA.stat_chips
+    .map(s => `<span class="stat">${esc(s.label)} <b>${esc(s.value)}</b></span>`).join("");
+  if (DATA.banner) {
+    const b = document.getElementById("banner");
+    b.textContent = DATA.banner; b.classList.remove("hidden");
+  }
+  const typeSel = document.getElementById("f-type");
+  [...new Set(DATA.rows.map(r => r.status))].sort().forEach(s => {
+    const o = document.createElement("option"); o.value = o.textContent = s; typeSel.appendChild(o);
+  });
+  document.getElementById("cards").innerHTML = DATA.rows.map(card).join("");
+  document.getElementById("foot").textContent =
+    "Generated " + DATA.generated_at + " · decisions save automatically in this browser (" +
+    KEY + ") · Export to share.";
+  refreshProgress();
+
+  document.getElementById("cards").addEventListener("change", (e) => {
+    const el = e.target;
+    const cardEl = el.closest(".card"); if (!cardEl) return;
+    const t = +cardEl.dataset.turn; const d = dec(t);
+    if (el.dataset.cat) {
+      const set = new Set(d.categories);
+      el.checked ? set.add(el.dataset.cat) : set.delete(el.dataset.cat);
+      d.categories = CATS.filter(c => set.has(c));
+    } else if (el.name === "incl-" + t) {
+      d.include = el.value;
+    } else if (el.dataset.field) {
+      d[el.dataset.field] = el.value;
+    }
+    save();
+    cardEl.classList.toggle("resolved", isResolved(t));
+    refreshProgress(); applyFilters();
+  });
+  document.getElementById("cards").addEventListener("input", (e) => {
+    const el = e.target; if (!el.dataset.field) return;
+    const cardEl = el.closest(".card"); const t = +cardEl.dataset.turn;
+    dec(t)[el.dataset.field] = el.value; save();
+  });
+
+  ["f-type","f-conf","f-unresolved"].forEach(id =>
+    document.getElementById(id).addEventListener("change", applyFilters));
+  document.getElementById("btn-csv").addEventListener("click", exportCSV);
+  document.getElementById("btn-json").addEventListener("click", exportJSON);
+  document.getElementById("btn-clear").addEventListener("click", () => {
+    if (confirm("Clear all decisions saved in this browser for obsid " + DATA.obsid + "?")) {
+      store = {}; save(); document.getElementById("cards").innerHTML = DATA.rows.map(card).join("");
+      refreshProgress(); applyFilters();
+    }
+  });
+}
+
+function download(name, text, mime) {
+  const blob = new Blob([text], { type: mime });
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob); a.download = name; a.click();
+  setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+}
+function csvCell(v) {
+  v = v == null ? "" : String(v);
+  return /[",\n]/.test(v) ? '"' + v.replace(/"/g, '""') + '"' : v;
+}
+function exportCSV() {
+  const head = ["obsid","turn","status","decision_categories","decision_include","decision_note","rule_established"];
+  const lines = [head.join(",")];
+  for (const r of DATA.rows) {
+    const d = store[r.turn] || {};
+    lines.push([DATA.obsid, r.turn, r.status, (d.categories||[]).join(" "),
+      d.include||"", d.note||"", d.rule||""].map(csvCell).join(","));
+  }
+  download(DATA.stem + "_decisions.csv", lines.join("\r\n"), "text/csv");
+}
+function exportJSON() {
+  download(DATA.stem + "_decisions.json", JSON.stringify({
+    obsid: DATA.obsid, coders: DATA.coders, generated_from: DATA.stem,
+    exported_at: new Date().toISOString(), decisions: store
+  }, null, 2), "application/json");
+}
+
+render();
+</script>
+</body>
+</html>
