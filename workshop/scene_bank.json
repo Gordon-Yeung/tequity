@@ -1,0 +1,638 @@
+[
+  {
+    "scene_id": "S01",
+    "obsid": "2253",
+    "turn": 155,
+    "teacher_video_id": "303",
+    "year": "2",
+    "packet_slot": "D+A",
+    "workshop_role": "round1-anchor",
+    "why_this_scene": "The one near-certain flag in the set, and the only verified utterance in the corpus that reaches fixed-ability framing: 'when you get smarter' treats intelligence as something the child does not yet have. Calibrates the room's scale before anything subtle.",
+    "llm_categories": [
+      "D"
+    ],
+    "llm_confidence": "high",
+    "llm_rationale": "The teacher attributes students' incomplete work to a character/motivation flaw ('lazy') rather than to task or instructional factors, which is deficit attribution for motivation.",
+    "deficit_quote": "you re just getting lazy and not pushing yourself",
+    "full_turn_text": "you re just getting lazy and not pushing yourself i gave you four pages to do and you re not even half way through the first one on one and half so when you have time to work you gotta use that time to work it s not socialize time you gotta use it smart you gotta practice then maybe when you get smarter you can do this stuff on your own yes will we help you yes but you re more independent then you can do larger numbers all by yourself",
+    "context_excerpt": [
+      {
+        "turn": 152,
+        "speaker": "teacher",
+        "text": "how many are here okay how many are here not at all how many are here just a little shaky on it oh good that s important for us to know so when we move on how we can help you best"
+      },
+      {
+        "turn": 153,
+        "speaker": "teacher",
+        "text": "some of you need to make better use of the time working at your seats it s not as good as it should be it s not cause you don t know what you re doing its cause you re wasting some time and hanging out and whatever"
+      },
+      {
+        "turn": 154,
+        "speaker": "teacher",
+        "text": "talk too much"
+      },
+      {
+        "turn": 155,
+        "speaker": "teacher",
+        "text": "you re just getting lazy and not pushing yourself i gave you four pages to do and you re not even half way through the first one on one and half so when you have time to work you gotta use that time to work it s not socialize time you gotta use it smart you gotta practice then maybe when you get smarter you can do this stuff on your own yes will we help you yes but you re more independent then you can do larger numbers all by yourself"
+      },
+      {
+        "turn": 156,
+        "speaker": "teacher",
+        "text": "now go back to your seats please please take your math books where you know where they are tomorrow put away your math books and clean your desks quietly you ll be asked to line up"
+      },
+      {
+        "turn": 157,
+        "speaker": "teacher",
+        "text": "clean up boys let s go student t why are you over there your seat is over here now you re running around"
+      }
+    ],
+    "quote_verified_against": "data/transcripts/by_obsid/2253.csv"
+  },
+  {
+    "scene_id": "S02",
+    "obsid": "2199",
+    "turn": 168,
+    "teacher_video_id": "325",
+    "year": "2",
+    "packet_slot": "E",
+    "workshop_role": "round1-split",
+    "why_this_scene": "Warm, well-meant, and it removes the mathematics. Expect the room to split, and expect a substantial minority not to flag it at all. That disagreement is the most valuable single measurement of the day.",
+    "llm_categories": [
+      "E"
+    ],
+    "llm_confidence": "low",
+    "llm_rationale": "The teacher offers students the option to skip the more cognitively demanding task (splitting fractions) on the basis of perceived difficulty, which can lower cognitive demand rather than maintaining it with support. Borderline because it is also framed as student-perceived and paired with an offer to help.",
+    "deficit_quote": "boys and girls if splitting up the fraction you re finding might be a little too difficult you don t have to do it if you re finding that it s too difficult you need to let me know so i can come over and explain it to you",
+    "full_turn_text": "3 5 so you were 3 5 away from a whole and then you used that 1 10 excellent student m and student c how are we doing over there boys and girls if splitting up the fraction you re finding might be a little too difficult you don t have to do it if you re finding that it s too difficult you need to let me know so i can come over and explain it to you i love the way you re thinking over there i like the way you were splitting up the tenths and thinking about the fifths and then tomorrow we re going to expand our game board and play close to two so the chip that lands on two wholes and we ll be using our other fraction cards look at the sixths student r student m i don t want you to tell him okay student r one third is equal to two sixths how far are you from one whole on the sixths track what do you mean",
+    "context_excerpt": [
+      {
+        "turn": 165,
+        "speaker": "student",
+        "text": "it s 7 10 i can use 6 10 to get inaudible and then i can use 1 10 to get inaudible"
+      },
+      {
+        "turn": 166,
+        "speaker": "teacher",
+        "text": "i see what you did so you used 6 10 which is equal to what"
+      },
+      {
+        "turn": 167,
+        "speaker": "student",
+        "text": "to 3 5"
+      },
+      {
+        "turn": 168,
+        "speaker": "teacher",
+        "text": "3 5 so you were 3 5 away from a whole and then you used that 1 10 excellent student m and student c how are we doing over there boys and girls if splitting up the fraction you re finding might be a little too difficult you don t have to do it if you re finding that it s too difficult you need to let me know so i can come over and explain it to you i love the way you re thinking over there i like the way you were splitting up the tenths and thinking about the fifths and then tomorrow we re going to expand our game board and play close to two so the chip that lands on two wholes and we ll be using our other fraction cards look at the sixths student r student m i don t want you to tell him okay student r one third is equal to two sixths how far are you from one whole on the sixths track what do you mean"
+      },
+      {
+        "turn": 169,
+        "speaker": "student",
+        "text": "5 6 4 6 so then i m going to hear and then i m going to have 3 6 left over"
+      },
+      {
+        "turn": 170,
+        "speaker": "teacher",
+        "text": "no although i wonder if we can just make that up as our own rule that would make the game a lot easier to win wouldn t it"
+      },
+      {
+        "turn": 171,
+        "speaker": "student",
+        "text": "all the cards are old"
+      }
+    ],
+    "quote_verified_against": "data/transcripts/by_obsid/2199.csv"
+  },
+  {
+    "scene_id": "S03",
+    "obsid": "2204",
+    "turn": 227,
+    "teacher_video_id": "309",
+    "year": "2",
+    "packet_slot": "D+E",
+    "workshop_role": "round1-benchmark",
+    "why_this_scene": "The only scene already coded by two trained researchers AND the LLM (data/adjudication/obsid2204_1v2_llm_worksheet.csv), so workshop teachers can be placed on the same scale as the existing coders. All three parties flagged it and all three disagreed on category: coder1 B,D,E,F / coder2 A,E,F / llm D,E.",
+    "llm_categories": [
+      "D",
+      "E"
+    ],
+    "llm_confidence": "high",
+    "llm_rationale": "The teacher attributes anticipated failure to students based on behavior and predicts who 'will' and 'won't be able to do it,' sorting students by perceived inability rather than describing the task or effort.",
+    "deficit_quote": "those people that are not paying attention are the ones that won t be able to do it we know that if you cannot see i could tell ones that will be able to do it",
+    "full_turn_text": "now hold on another way 44 people some people are not see 44 into that s another word into another way of writing into into 8 yeah 44 people into see this into she s not paying attention to me into two ways of writing it for 44 people into a group you could yeah 44 people into a group into a group into a group sometime you find it written that way but most of the time it s this way that means into now we learn yesterday after they write it this way you ll write it that way yourself those people that are not paying attention are the ones that won t be able to do it we know that if you cannot see i could tell ones that will be able to do it yep like student m and c doesn t go like this she goes like yeah remember we said that seating is really this way all right so we said hey",
+    "context_excerpt": [
+      {
+        "turn": 224,
+        "speaker": "student",
+        "text": "yeah eight"
+      },
+      {
+        "turn": 225,
+        "speaker": "teacher",
+        "text": "is the thing into eight vans"
+      },
+      {
+        "turn": 226,
+        "speaker": "student",
+        "text": "eight vans that would be"
+      },
+      {
+        "turn": 227,
+        "speaker": "teacher",
+        "text": "now hold on another way 44 people some people are not see 44 into that s another word into another way of writing into into 8 yeah 44 people into see this into she s not paying attention to me into two ways of writing it for 44 people into a group you could yeah 44 people into a group into a group into a group sometime you find it written that way but most of the time it s this way that means into now we learn yesterday after they write it this way you ll write it that way yourself those people that are not paying attention are the ones that won t be able to do it we know that if you cannot see i could tell ones that will be able to do it yep like student m and c doesn t go like this she goes like yeah remember we said that seating is really this way all right so we said hey"
+      },
+      {
+        "turn": 228,
+        "speaker": "student",
+        "text": "inaudible"
+      },
+      {
+        "turn": 229,
+        "speaker": "teacher",
+        "text": "you can t see all right go this way we could say we already know if i have 44 and i see my 40 and i know my time table and i know i m gonna time hm to get hm yeah did i do it that way now how many eight into"
+      },
+      {
+        "turn": 230,
+        "speaker": "student",
+        "text": "forty four"
+      }
+    ],
+    "quote_verified_against": "data/transcripts/by_obsid/2204.csv"
+  },
+  {
+    "scene_id": "S04",
+    "obsid": "2765",
+    "turn": 186,
+    "teacher_video_id": "351",
+    "year": "2",
+    "packet_slot": "D",
+    "workshop_role": "reframe-lab",
+    "why_this_scene": "A growth-mindset move the teacher undercuts inside the same sentence. The surrounding turns are strong teaching (t188 is genuinely good), which is the point: this is what deficit language looks like in a classroom nobody would call deficit-oriented. Highest-yield reframe in the bank because only one clause has to change.",
+    "llm_categories": [
+      "D"
+    ],
+    "llm_confidence": "medium",
+    "llm_rationale": "While the teacher normalizes confusion, this framing attributes potential lack of understanding to a behavioral/motivational failing (not paying attention), a deficit attribution for behavior.",
+    "deficit_quote": "it is okay to be confused what s not okay is to be confused because you weren t paying attention",
+    "full_turn_text": "wonderful all right i feel like this went all right for our first lesson there are a lot of points of confusion there are still a lot of things we have to discuss i know adding fractions is really a new idea especially since we switched from adding fractions taking fractions of a whole group and now we re kind of back to drawing fractions all right it is a difficult switch and it does get confusing it is okay to be confused what s not okay is to be confused because you weren t paying attention fractions are hard enough without making a little more challenging yes student a",
+    "context_excerpt": [
+      {
+        "turn": 184,
+        "speaker": "teacher",
+        "text": "perfect one half is the same as saying three sixths three sixths is the same as saying how many sixths it s the same it s not changing is it three sixths plus three sixths one sixth two sixths three sixths equals what everyone"
+      },
+      {
+        "turn": 185,
+        "speaker": "multiple students",
+        "text": "one whole"
+      },
+      {
+        "turn": 186,
+        "speaker": "teacher",
+        "text": "wonderful all right i feel like this went all right for our first lesson there are a lot of points of confusion there are still a lot of things we have to discuss i know adding fractions is really a new idea especially since we switched from adding fractions taking fractions of a whole group and now we re kind of back to drawing fractions all right it is a difficult switch and it does get confusing it is okay to be confused what s not okay is to be confused because you weren t paying attention fractions are hard enough without making a little more challenging yes student a"
+      },
+      {
+        "turn": 187,
+        "speaker": "student",
+        "text": "why can we not just do it the normal way"
+      },
+      {
+        "turn": 188,
+        "speaker": "teacher",
+        "text": "that s a good question so the way you were shown is really easy right part of the reason we do it the difficult way first and by difficult it s not really all that difficult it s so you guys can visualize it you get to play with the pieces you get to realize what doesn t work that s how your math curriculum works they want you to have a better understanding of how it works not just make it work so drawing the pictures is helping us get a visual image of it once we get the visual image we re going to do exactly what you re thinking i can multiply this by 3 and this by 3 to convert it right that s what you re doing i can multiply this by 3 and if i want this to be a 6 i can multiply it by 3 if i was trying to get it to go to fourths right how many people are confused by what i just said right many of us aren t there yet part of it was too fast but we really want you to get the visual picture of what is a fraction how do i cut something into different sized pieces if you want to give your food away you want to share your pizza with someone and you re deciding who gets pieces based on behavior like let s say a class should everyone get the same fraction if their behaviors are different"
+      }
+    ],
+    "quote_verified_against": "data/transcripts/by_obsid/2765.csv"
+  },
+  {
+    "scene_id": "S05",
+    "obsid": "2571",
+    "turn": 124,
+    "teacher_video_id": "344",
+    "year": "2",
+    "packet_slot": "F+D",
+    "workshop_role": "reframe-lab",
+    "why_this_scene": "Public comparison used as a management tool - the compliant majority is made into the measure of the rest. Reframes cleanly into a private redirect, so tables produce a usable alternative fast.",
+    "llm_categories": [
+      "F",
+      "D"
+    ],
+    "llm_confidence": "medium",
+    "llm_rationale": "Teacher defines a subset of students by contrast to the compliant majority, framing them as not 'ready to learn math,' attributing a learning-readiness deficit based on in-the-moment behavior.",
+    "deficit_quote": "there s 19 other kids aren t having a problem they re ready to learn math the rest of you over there are you ready",
+    "full_turn_text": "there s 19 other kids aren t having a problem they re ready to learn math the rest of you over there are you ready",
+    "context_excerpt": [
+      {
+        "turn": 121,
+        "speaker": "student",
+        "text": "what if you just take say the thing costs like 200 00 or 100 00 and you only take 50 00 you ll have to drive all the way back home and back and get the rest of the money"
+      },
+      {
+        "turn": 122,
+        "speaker": "teacher",
+        "text": "so some of that is also not just estimating but common sense about how much money you need right okay we re going to get started so i m going to need your help with this excuse me if you cannot handle it if you cannot handle just letting the fly be we ll find another seat so student a go back to your desk where you belong because there s a fly over here and you can t handle it go back to your desk where you belong so that we re all ready to move on you can sit your desk the back desk or that desk you have several choices that are far away from the fly you either sit quietly or you move"
+      },
+      {
+        "turn": 123,
+        "speaker": "student",
+        "text": "inaudible"
+      },
+      {
+        "turn": 124,
+        "speaker": "teacher",
+        "text": "there s 19 other kids aren t having a problem they re ready to learn math the rest of you over there are you ready"
+      },
+      {
+        "turn": 125,
+        "speaker": "student",
+        "text": "yeah"
+      },
+      {
+        "turn": 126,
+        "speaker": "teacher",
+        "text": "okay when you go through the problems today when we do sews when we sketch do an equation do the work write a sentence when you make your sketch i want you to be able to tell me how the numbers that we re working with relate to the sketch what part of the story problem does each number we re using represent so we re going to keep going back to the story and make sure we know what those numbers have to do with the story problem okay so if we look at this problem student r can you try and read that word problem for me"
+      }
+    ],
+    "quote_verified_against": "data/transcripts/by_obsid/2571.csv"
+  },
+  {
+    "scene_id": "S06",
+    "obsid": "2761",
+    "turn": 110,
+    "teacher_video_id": "349",
+    "year": "2",
+    "packet_slot": "C+G",
+    "workshop_role": "reframe-lab-hard",
+    "why_this_scene": "The hardest scene in the bank and the only one where the teacher names a student population ('my english speakers') while locating the failure in them. Sits inside a turn that also contains real warmth and real press. Use it to test whether the reframe protocol survives a genuinely mixed moment.",
+    "llm_categories": [
+      "C",
+      "G"
+    ],
+    "llm_confidence": "medium",
+    "llm_rationale": "The teacher locates the breakdown in the students ('not understanding me') and frames it as surprising given they are 'english speakers,' placing the problem in the learners rather than in the task or instruction.",
+    "deficit_quote": "i m getting really bothered that i m saying the same thing over and over again and it s fascinating to me that my english speakers are not understanding me",
+    "full_turn_text": "that s why there s a ton honey that s what learning is all about we love making mistakes in here because it means we re trying to learn so do it correctly over there student j has a question what s up speaking spanish i love that you re getting her to think good job use a ruler and then check that out i want you to prove that go one second do it again good now let s count we know that s not one full one is it it s chopped off let s color in i m going to do this one this is not full though so let s count how many full ones what if we moved is it half okay interesting what about this one you keep on going with that i ll be back go to your seat and raise your hand interesting that s one way to do it color in the other pieces other colors student a they need to be touching not just the corners and i asked you to do that not really impressed with your listening right now student c you may go to the bathroom yes let s see student b what s up can you color the rest in in four different colors nice job i thought you had a way to show me can you color the one i have on the board right now four different colors you re going to have to go over orange in a different color because i asked for four different colors color the way i have it on the board that s not it erase this please use four different colors interesting then we ll be you re saying that these are bigger than that is what you think interesting okay do you agree with this let s try this is that side the same as this side is this half right here that s the half that way interesting okay so then if we cut it this way you re saying that s now you re saying is this half the same as this half but those are not the same right there it s got to be let s talk about why let me come back to you okay i love this you should have four different colors right now and you should have it colored in the way i have it on the board and continue splitting it so there s four different pieces student a you still haven t done what i ve done on the board i don t think they re the same there s four here and there s two here that s not the same don t erase it try again there s two colored in here and four colored in there and that s not the same they need to be touching i m getting really bothered that i m saying the same thing over and over again and it s fascinating to me that my english speakers are not understanding me let s take a look up here again let s do this together please great start continue now we ve got going on up here one piece eyes up here please we know that this is one fourth because it s 1 2 3 4 5 6 anytime i m coloring in six squares that are touching that are together we know that that is the same as one fourth now what i m going to do i m going to use different colors so you can see i asked you to use four different colors to show me student j put it down that s not what i asked you to do student j we ve colored this in this is six six equals one fourth i m going to do it again i think i ll do it on this side over here 1 2 3 4 5 6 is that the same amount as this",
+    "context_excerpt": [
+      {
+        "turn": 107,
+        "speaker": "student",
+        "text": "inaudible"
+      },
+      {
+        "turn": 108,
+        "speaker": "teacher",
+        "text": "can you show it over here can you draw it on yours and i ll copy up here student s the only reason i can t have you up here is your grandma didn t give me permission to have you on the video camera sorry they ll just have to imagine how adorable you are"
+      },
+      {
+        "turn": 109,
+        "speaker": "student",
+        "text": "it s messed up"
+      },
+      {
+        "turn": 110,
+        "speaker": "teacher",
+        "text": "that s why there s a ton honey that s what learning is all about we love making mistakes in here because it means we re trying to learn so do it correctly over there student j has a question what s up speaking spanish i love that you re getting her to think good job use a ruler and then check that out i want you to prove that go one second do it again good now let s count we know that s not one full one is it it s chopped off let s color in i m going to do this one this is not full though so let s count how many full ones what if we moved is it half okay interesting what about this one you keep on going with that i ll be back go to your seat and raise your hand interesting that s one way to do it color in the other pieces other colors student a they need to be touching not just the corners and i asked you to do that not really impressed with your listening right now student c you may go to the bathroom yes let s see student b what s up can you color the rest in in four different colors nice job i thought you had a way to show me can you color the one i have on the board right now four different colors you re going to have to go over orange in a different color because i asked for four different colors color the way i have it on the board that s not it erase this please use four different colors interesting then we ll be you re saying that these are bigger than that is what you think interesting okay do you agree with this let s try this is that side the same as this side is this half right here that s the half that way interesting okay so then if we cut it this way you re saying that s now you re saying is this half the same as this half but those are not the same right there it s got to be let s talk about why let me come back to you okay i love this you should have four different colors right now and you should have it colored in the way i have it on the board and continue splitting it so there s four different pieces student a you still haven t done what i ve done on the board i don t think they re the same there s four here and there s two here that s not the same don t erase it try again there s two colored in here and four colored in there and that s not the same they need to be touching i m getting really bothered that i m saying the same thing over and over again and it s fascinating to me that my english speakers are not understanding me let s take a look up here again let s do this together please great start continue now we ve got going on up here one piece eyes up here please we know that this is one fourth because it s 1 2 3 4 5 6 anytime i m coloring in six squares that are touching that are together we know that that is the same as one fourth now what i m going to do i m going to use different colors so you can see i asked you to use four different colors to show me student j put it down that s not what i asked you to do student j we ve colored this in this is six six equals one fourth i m going to do it again i think i ll do it on this side over here 1 2 3 4 5 6 is that the same amount as this"
+      },
+      {
+        "turn": 111,
+        "speaker": "multiple students",
+        "text": "yes"
+      },
+      {
+        "turn": 112,
+        "speaker": "teacher",
+        "text": "why student p"
+      }
+    ],
+    "quote_verified_against": "data/transcripts/by_obsid/2761.csv"
+  },
+  {
+    "scene_id": "S07",
+    "obsid": "2789",
+    "turn": 5,
+    "teacher_video_id": "341",
+    "year": "2",
+    "packet_slot": "C",
+    "workshop_role": "reframe-lab-pair",
+    "why_this_scene": "Deliberate pair with 2761: same category, opposite tone. Kind, protective, and still opens the lesson by naming what some children lack. Forces the question of whether warmth rescues a deficit frame.",
+    "llm_categories": [
+      "C"
+    ],
+    "llm_confidence": "low",
+    "llm_rationale": "The teacher characterizes some students by a language lack ('don't speak english that much') as a framing for the lesson, locating a limitation in the students' background rather than in the task or instruction. Borderline, as it acknowledges ELL status factually.",
+    "deficit_quote": "now i know some of you guys don t speak english that much but just stay with me all right",
+    "full_turn_text": "now i know some of you guys don t speak english that much but just stay with me all right very good okay the first thing if we re going to be working with fractions the first thing that you need to understand you need to have an idea of what are fractions okay okay good so i m going to put okay you two are going to talk to each other you are going to talk to each other okay i m going to put a fraction two fractions on the board and then you are going to tell me what can you tell me about those fractions okay",
+    "context_excerpt": [
+      {
+        "turn": 3,
+        "speaker": "teacher",
+        "text": "okay very good all right you need to turn around so we can start our math lesson today okay our math lesson today listen carefully okay to what we re going to doing we re going to be working on the number line these this is a number line so just pay attention here nothing else this is the number line that we re going to be working on okay this we re going to be using fractions here the other day we used decimals okay so today we re going to be using we re going to be using fractions am i correct does everybody understand"
+      },
+      {
+        "turn": 4,
+        "speaker": "student",
+        "text": "yes"
+      },
+      {
+        "turn": 5,
+        "speaker": "teacher",
+        "text": "now i know some of you guys don t speak english that much but just stay with me all right very good okay the first thing if we re going to be working with fractions the first thing that you need to understand you need to have an idea of what are fractions okay okay good so i m going to put okay you two are going to talk to each other you are going to talk to each other okay i m going to put a fraction two fractions on the board and then you are going to tell me what can you tell me about those fractions okay"
+      },
+      {
+        "turn": 6,
+        "speaker": "teacher",
+        "text": "okay i want you to talk with each other talk with each other what can inaudible put a and b a and b talk with what can talk with each other about the fraction loud inaudible"
+      },
+      {
+        "turn": 7,
+        "speaker": "student",
+        "text": "that the a is inaudible because this is the basically because you only need one more to make one"
+      }
+    ],
+    "quote_verified_against": "data/transcripts/by_obsid/2789.csv"
+  },
+  {
+    "scene_id": "S08",
+    "obsid": "2561",
+    "turn": 163,
+    "teacher_video_id": "337",
+    "year": "2",
+    "packet_slot": "B",
+    "workshop_role": "reframe-lab",
+    "why_this_scene": "A label, not an insult - a seat becomes a deficit category ('your weak side'). Tests whether teachers notice classification as distinct from criticism.",
+    "llm_categories": [
+      "B"
+    ],
+    "llm_confidence": "low",
+    "llm_rationale": "The teacher labels a location/student as a 'weak side,' framing students by a perceived deficit rather than by task or instructional need; it recurs and characterizes learners by their lacks.",
+    "deficit_quote": "take your spot and move next to student a so you can move off your weak side",
+    "full_turn_text": "good 7 000 you can head back to your spot for now give me one head back to your table 1 2 great job stopping your conversation with student i at 1 3 student i take that off your head 4 ready to listen student a take it off your head student d sit on your bottom and make up this work later on today student a i need you to concentrate and focus take your spot and move next to student a so you can move off your weak side that s going to stop and i m going to solve it after student a i asked you to stop talking about it i asked you to move so you can be off your weak side all right can we take a look at just one of these right now before we move on to some rounding number four",
+    "context_excerpt": [
+      {
+        "turn": 161,
+        "speaker": "teacher",
+        "text": "write this number in it s a 4 in the ones place this is she s just there for a minute hon 7"
+      },
+      {
+        "turn": 162,
+        "speaker": "student",
+        "text": "thousand"
+      },
+      {
+        "turn": 163,
+        "speaker": "teacher",
+        "text": "good 7 000 you can head back to your spot for now give me one head back to your table 1 2 great job stopping your conversation with student i at 1 3 student i take that off your head 4 ready to listen student a take it off your head student d sit on your bottom and make up this work later on today student a i need you to concentrate and focus take your spot and move next to student a so you can move off your weak side that s going to stop and i m going to solve it after student a i asked you to stop talking about it i asked you to move so you can be off your weak side all right can we take a look at just one of these right now before we move on to some rounding number four"
+      },
+      {
+        "turn": 164,
+        "speaker": "student",
+        "text": "i didn t do number four"
+      },
+      {
+        "turn": 165,
+        "speaker": "teacher",
+        "text": "that s okay i picked that one because some people would be done and some wouldn t be in number four what place what is that number i should see everybody s hand come up student s s table your hand should be up ready to read that number you re still in the weak side and i don t want to put anybody else there what is that number everybody 1 2 3 go"
+      }
+    ],
+    "quote_verified_against": "data/transcripts/by_obsid/2561.csv"
+  },
+  {
+    "scene_id": "S09",
+    "obsid": "2561",
+    "turn": 165,
+    "teacher_video_id": "337",
+    "year": "2",
+    "packet_slot": "B",
+    "workshop_role": "reframe-lab-pair",
+    "why_this_scene": "The second use, two turns later, is what makes it a label rather than a slip. Show both turns or the scene does not work.",
+    "llm_categories": [
+      "B"
+    ],
+    "llm_confidence": "low",
+    "llm_rationale": "Repeated use of 'weak side' to designate students, framing them by perceived deficiency; treats a group/seat as a deficit category to be avoided.",
+    "deficit_quote": "you re still in the weak side and i don t want to put anybody else there",
+    "full_turn_text": "that s okay i picked that one because some people would be done and some wouldn t be in number four what place what is that number i should see everybody s hand come up student s s table your hand should be up ready to read that number you re still in the weak side and i don t want to put anybody else there what is that number everybody 1 2 3 go",
+    "context_excerpt": [
+      {
+        "turn": 163,
+        "speaker": "teacher",
+        "text": "good 7 000 you can head back to your spot for now give me one head back to your table 1 2 great job stopping your conversation with student i at 1 3 student i take that off your head 4 ready to listen student a take it off your head student d sit on your bottom and make up this work later on today student a i need you to concentrate and focus take your spot and move next to student a so you can move off your weak side that s going to stop and i m going to solve it after student a i asked you to stop talking about it i asked you to move so you can be off your weak side all right can we take a look at just one of these right now before we move on to some rounding number four"
+      },
+      {
+        "turn": 164,
+        "speaker": "student",
+        "text": "i didn t do number four"
+      },
+      {
+        "turn": 165,
+        "speaker": "teacher",
+        "text": "that s okay i picked that one because some people would be done and some wouldn t be in number four what place what is that number i should see everybody s hand come up student s s table your hand should be up ready to read that number you re still in the weak side and i don t want to put anybody else there what is that number everybody 1 2 3 go"
+      },
+      {
+        "turn": 166,
+        "speaker": "multiple students",
+        "text": "inaudible"
+      },
+      {
+        "turn": 167,
+        "speaker": "teacher",
+        "text": "stop let s slow it down 305 501 so what is the value student i turn this way what is the value of this 1 i m actually going to go backwards right now to help some of you that were struggling what is the value of the zero"
+      }
+    ],
+    "quote_verified_against": "data/transcripts/by_obsid/2561.csv"
+  },
+  {
+    "scene_id": "S10",
+    "obsid": "2592",
+    "turn": 616,
+    "teacher_video_id": "348",
+    "year": "2",
+    "packet_slot": "B+F",
+    "workshop_role": "reserve",
+    "why_this_scene": "Grouping by a capability the teacher treats as fixed ('others are not able to follow directions'), voiced as genuine puzzlement. Good reserve scene for a fast table.",
+    "llm_categories": [
+      "B",
+      "F"
+    ],
+    "llm_confidence": "medium",
+    "llm_rationale": "Groups and defines students by a perceived lack ('others are not able to follow directions'), setting up a comparative deficit framing between capable and incapable students rather than addressing specific behaviors or instruction.",
+    "deficit_quote": "i don t understand why i have some students who really can follow directions and others are not able to follow directions",
+    "full_turn_text": "all right so some thought student m you re not paying attention student e turn around student m turn your body around whatever you re playing with give that to me you know i don t understand why i have some students who really can follow directions and others are not able to follow directions so what s your thought what s your thought",
+    "context_excerpt": [
+      {
+        "turn": 613,
+        "speaker": "student",
+        "text": "oh i know"
+      },
+      {
+        "turn": 614,
+        "speaker": "teacher",
+        "text": "oh student j said oh i know i have another person who said oh i know and you young man you re not learning right now because you re listening to someone else talking while we are having a mathematical discussion"
+      },
+      {
+        "turn": 615,
+        "speaker": "student",
+        "text": "i have a name"
+      },
+      {
+        "turn": 616,
+        "speaker": "teacher",
+        "text": "all right so some thought student m you re not paying attention student e turn around student m turn your body around whatever you re playing with give that to me you know i don t understand why i have some students who really can follow directions and others are not able to follow directions so what s your thought what s your thought"
+      },
+      {
+        "turn": 617,
+        "speaker": "student",
+        "text": "because all the"
+      }
+    ],
+    "quote_verified_against": "data/transcripts/by_obsid/2592.csv"
+  },
+  {
+    "scene_id": "S11",
+    "obsid": "2592",
+    "turn": 403,
+    "teacher_video_id": "348",
+    "year": "2",
+    "packet_slot": "D+F",
+    "workshop_role": "reserve",
+    "why_this_scene": "Demeaning age comparison, very short, very recognisable. Useful as a quick warm-up if a group needs an easy win before the hard scenes.",
+    "llm_categories": [
+      "D",
+      "F"
+    ],
+    "llm_confidence": "medium",
+    "llm_rationale": "Frames students' behavior as a deficit by demeaning comparison to younger children, attributing immaturity rather than addressing the task or providing constructive redirection.",
+    "deficit_quote": "now you re acting like kindergarteners instead of fifth graders not acceptable",
+    "full_turn_text": "now you re acting like kindergarteners instead of fifth graders not acceptable okay so tell me about your box",
+    "context_excerpt": [
+      {
+        "turn": 400,
+        "speaker": "multiple students",
+        "text": "we re done"
+      },
+      {
+        "turn": 401,
+        "speaker": "teacher",
+        "text": "oh wait"
+      },
+      {
+        "turn": 402,
+        "speaker": "multiple students",
+        "text": "crosstalk"
+      },
+      {
+        "turn": 403,
+        "speaker": "teacher",
+        "text": "now you re acting like kindergarteners instead of fifth graders not acceptable okay so tell me about your box"
+      },
+      {
+        "turn": 404,
+        "speaker": "student",
+        "text": "okay so inaudible"
+      },
+      {
+        "turn": 405,
+        "speaker": "teacher",
+        "text": "okay so did you"
+      }
+    ],
+    "quote_verified_against": "data/transcripts/by_obsid/2592.csv"
+  },
+  {
+    "scene_id": "S12",
+    "obsid": "1085",
+    "turn": 181,
+    "teacher_video_id": "320",
+    "year": "1",
+    "packet_slot": "D",
+    "workshop_role": "reserve",
+    "why_this_scene": "'You guys are quitting on me' - effort attribution in six words, with the teacher's own disappointment audible. Good for discussing frustration as the source of deficit talk.",
+    "llm_categories": [
+      "D"
+    ],
+    "llm_confidence": "medium",
+    "llm_rationale": "The teacher attributes the students' struggle to a lack of effort/motivation ('quitting') rather than to the difficulty of the task or instruction, framing the behavior as a deficit in perseverance.",
+    "deficit_quote": "you guys are quitting on me you guys are quitting on me",
+    "full_turn_text": "thank you you guys are quitting on me you guys are quitting on me",
+    "context_excerpt": [
+      {
+        "turn": 178,
+        "speaker": "student",
+        "text": "inaudible"
+      },
+      {
+        "turn": 179,
+        "speaker": "teacher",
+        "text": "thank you"
+      },
+      {
+        "turn": 180,
+        "speaker": "student",
+        "text": "you re welcome"
+      },
+      {
+        "turn": 181,
+        "speaker": "teacher",
+        "text": "thank you you guys are quitting on me you guys are quitting on me"
+      },
+      {
+        "turn": 182,
+        "speaker": "student",
+        "text": "inaudible"
+      },
+      {
+        "turn": 183,
+        "speaker": "teacher",
+        "text": "oh yeah you re good student r you don t have to fill out the chart i told you to focus on the last column total plus seven"
+      },
+      {
+        "turn": 184,
+        "speaker": "student",
+        "text": "yeah the previous plus seven"
+      }
+    ],
+    "quote_verified_against": "data/transcripts/by_obsid/1085.csv"
+  },
+  {
+    "scene_id": "S13",
+    "obsid": "47",
+    "turn": 61,
+    "teacher_video_id": "322",
+    "year": "1",
+    "packet_slot": "D+G",
+    "workshop_role": "take-home",
+    "why_this_scene": "Whole-class anticipated failure stated as a recurring trait ('that's what happens sometimes'), spoken while setting up a good task. Take-home scene for teachers to code at their own pace.",
+    "llm_categories": [
+      "D",
+      "G"
+    ],
+    "llm_confidence": "medium",
+    "llm_rationale": "The teacher frames the whole class by an anticipated inability to self-regulate and predicts a 'breakdown' as a recurring characteristic ('that's what happens sometimes'), attributing a behavioral deficit to the group rather than to task design.",
+    "deficit_quote": "let s see if as a class we can control ourselves enough so that we can actually do this let s see if as a class we can control ourselves i can actually go through all of this and do this without you having a breakdown cause that s what happens sometimes",
+    "full_turn_text": "those are the things that you need to start putting up here in your head all right so i m gonna tell you what group you re in most of you are gonna be staying in your seats and then one group may be going back to the table okay now i will say your name the first name i say in the group is gonna be the one who starts with the shapes the second name i say in the group is gonna be the person who is the notetaker and the third and fourth name are gonna be the guessers and then it will rotate so let s see if as a class we can control ourselves enough so that we can actually do this let s see if as a class we can control ourselves i can actually go through all of this and do this without you having a breakdown cause that s what happens sometimes",
+    "context_excerpt": [
+      {
+        "turn": 59,
+        "speaker": "teacher",
+        "text": "before we start before we start i want to go back to our goal our goals of today are not just to play a game our goals of today are to begin to understand what the attributes or properties of of these different shapes so obviously if we think about what student l just described the cylinder the cylinder has different properties it is rounded it is not flat that s a different property than the rectangular prism so your brain is starting to classify these in different ways some of you may remember that on the test yesterday that you took the predictive test there was a question on there that said what is true about a cube and it said it had like six faces or sides"
+      },
+      {
+        "turn": 60,
+        "speaker": "student",
+        "text": "oh yeah yeah yeah"
+      },
+      {
+        "turn": 61,
+        "speaker": "teacher",
+        "text": "those are the things that you need to start putting up here in your head all right so i m gonna tell you what group you re in most of you are gonna be staying in your seats and then one group may be going back to the table okay now i will say your name the first name i say in the group is gonna be the one who starts with the shapes the second name i say in the group is gonna be the person who is the notetaker and the third and fourth name are gonna be the guessers and then it will rotate so let s see if as a class we can control ourselves enough so that we can actually do this let s see if as a class we can control ourselves i can actually go through all of this and do this without you having a breakdown cause that s what happens sometimes"
+      },
+      {
+        "turn": 62,
+        "speaker": "teacher",
+        "text": "calling students names in groups sorry all right in the middle table calling students names in groups so you only have one guesser to start at the other table calling students names in groups you can move yourself over a little more you re moving right staying right here"
+      }
+    ],
+    "quote_verified_against": "data/transcripts/by_obsid/47.csv"
+  }
+]
