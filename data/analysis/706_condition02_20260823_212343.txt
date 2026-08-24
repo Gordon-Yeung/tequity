@@ -1,0 +1,100 @@
+# Developing the Themes: How Orientations Shift Across the Lesson
+
+The nine episodes are not a static portrait but a *trajectory*. Read in sequence, the coding reveals a lesson that structurally pivots — roughly at Episodes 5–6 — from **solving teacher-given problems** to **authoring their own**, and each orientation dimension undergoes a corresponding transformation across that pivot. Below are the major themes, each developed as a movement over time rather than a fixed characteristic.
+
+---
+
+## Theme 1: The mathematical arc — from *verification* to *authorship*
+
+The single clearest temporal shift is in what mathematics is *for*.
+
+- **Opening (Ep 1–2):** Mathematics is framed as **checking and showing** — "the best way to check it is going to be to draw the picture and do the math part." Representation serves verification of an already-given answer.
+- **Middle (Ep 3–4):** A **procedural core** surfaces (keyword-decoding for operations, the LCM algorithm), but so does its counter-current — conceptual justification ("How do you know?" → the prime-number reasoning) and *extension* beyond the answer ("let's extend it," converting fractions to minutes and gallons).
+- **Pivot (Ep 5–6):** Mathematics is **re-narrated** as "mini stories" and then as **observation-driven** — fractions "emerge from students' own categorisation of the world."
+- **Closing arc (Ep 7–9):** Mathematics becomes **student-authored, internally-consistent, and communicative** — governed by coherence ("as long as it all adds to the total") and audience ("the last sentence... needs to be what you're actually trying to do").
+
+The through-line is a widening of what counts as mathematical work: from *reproducing and checking* → *justifying* → *extending* → *generating*. Crucially, the procedural orientation never disappears (precision and correct algorithms remain valued in Ep 7–9), but it is progressively *subordinated* to sense-making and authorship rather than being the endpoint.
+
+---
+
+## Theme 2: The gradual release of interactional authority
+
+The interaction dimension shows the most disciplined progression, tracking a classic **release-of-responsibility** curve.
+
+- **Ep 1:** Teacher announcement → student choral confirmation ("Yes"). Authority fully with the teacher.
+- **Ep 2:** One-to-one, teacher-initiated scaffolding — but the first crack of student consequence appears ("That works").
+- **Ep 3:** The **IRE pattern peaks** in the keyword sequence (nominate → evaluate → redirect), then the teacher deliberately opens it with a repeated "How do you know?"
+- **Ep 4–5:** Interaction begins *responding to students* — validating the "gallon monster," taking "how am I gonna use this?" seriously.
+- **Ep 6:** The explicit hinge: teacher moves "from directing to demonstrating to releasing," closing with **"Do you agree?"** — soliciting co-validation rather than compliance.
+- **Ep 7–8:** The most **varied and dialogic** structure — circulating co-construction ("let's talk about it together"), building on partial reasoning ("I see where you're going").
+- **Ep 9:** Corrections are **elicited, not delivered**, and the lesson closes on collective affirmation.
+
+The important nuance is that this release is *not* linear. Episode 3's IRE and Episode 4's incentive-bargaining ("I'll move you all to blue") are **regressions** toward control that sit inside the broader opening-up. The trajectory is a general drift toward dialogue punctuated by returns to teacher-centred moves — most often when the mathematics turns procedural.
+
+---
+
+## Theme 3: The intensifying asset-orientation toward students
+
+Student positioning strengthens from *recipient* to *author*, and the asset-based moments visibly accumulate and escalate in significance over time:
+
+- **Ep 2:** Small validation of a self-initiated representation ("That works").
+- **Ep 4:** A student's outside-classroom tool (the "gallon monster") is treated as *equivalent* to the teacher's own — knowledge from *other* contexts admitted as legitimate.
+- **Ep 5:** Students' *skepticism* ("how am I gonna use this?") is reframed as a legitimate intellectual stance, not a discipline problem.
+- **Ep 7:** A **popular-culture reference** (Bob the Builder) is absorbed as "a productive narrative resource" rather than off-task noise.
+- **Ep 8:** Contributions are explicitly *named and prized* — "Wow, you were really developing a story," "I like your bringing more numbers into it."
+
+The escalation matters: early asset-moves validate *mathematical products*; later ones validate *the student's imagination, culture, and identity* as mathematical resources. The positioning deepens from "your answer is acceptable" to "*you* are a maker of mathematics."
+
+---
+
+## Theme 4: The persistence of counter-currents (why the arc isn't clean)
+
+A faithful reading must resist a purely triumphalist "recipient → author" narrative. Certain **controlling or deficit currents persist right through the progressive arc**:
+
+- **External incentives** appear precisely at the moment of greatest cognitive ambition — the extension task is motored by "I'll move you all to blue" (Ep 4), locating engagement outside the mathematics.
+- **Deficit framing** surfaces even amid the most agentive episode: "incomplete versus complete" (Ep 7) marks student work against an unstated standard.
+- **The keyword–concept tension** (Ep 3) is never explicitly resolved; the teacher simply *shifts registers* between decoding and justification depending on the moment.
+- **Correction of language** in Ep 9, though elicited rather than imposed, still positions the teacher as the arbiter of precise mathematical phrasing.
+
+These recur most often when **procedural accuracy is at stake** — suggesting the teacher's orientations are not fixed traits but are *activated by the mathematical demand of the moment*. Procedural content pulls toward control and evaluation; generative content pulls toward dialogue and asset-recognition.
+
+---
+
+## Theme 5: Continuity and the building of a mathematical community over time
+
+A quieter but pervasive theme is the **construction of shared history**, which both frames and is transformed by the lesson.
+
+- The lesson *opens* with "Friends... yesterday we started off... together" (Ep 1) — invoking collective memory as its foundation.
+- Scaffolding repeatedly reactivates **shared prior experience** — the cheese, the cups (Ep 2), the burrito, the puzzle, the paint-mixing (Ep 5, 7).
+- Critically, the *source* of the shared references shifts: early on they are the **teacher's demonstrations**; by Episodes 7–9 the exemplars are **students' own prior problems** ("remember the one Student J... Student L..."), now recirculated as public models for peers.
+- The lesson *closes* by re-collectivising: "we did really well today" (Ep 9), bookending the "Friends" of Episode 1.
+
+So the community is not just a backdrop — over the lesson, the *ownership of the shared knowledge base migrates from teacher to students*. This mirrors Themes 1–3: the same handover of authorship visible in the mathematics and the interaction is enacted at the level of whose examples constitute the class's collective memory.
+
+---
+
+## Theme 6: The real-world/narrative framing as an intensifying organising principle
+
+Rather than being constant, the "real-world" orientation **crescendos** and eventually becomes the lesson's structural engine.
+
+- **Early (Ep 2–4):** Real-world context is a *setting* for given problems (gas, walking distances, puzzles) and a *justification* aid (gallon man).
+- **Pivot (Ep 5):** It is made explicit and *argued for* — word problems "are real world, aren't they?" — directly answering students' relevance question.
+- **Later (Ep 6–8):** It becomes **productive** rather than decorative: real photographs generate data, "word problems are mini stories" with "character and setting," and the mathematics is *derived from* observing the world rather than illustrated by it.
+
+The shift is from real-world-as-wrapper to **real-world-as-source**. This is the same move as Theme 1 (verification → authorship) seen from the angle of context: the everyday stops being a costume on pre-set problems and becomes the raw material students mine.
+
+---
+
+## Synthesis: three coordinated movements around one pivot
+
+The themes converge on a single interpretation. The lesson's **structural pivot** (solving → authoring, Ep 5–6) coordinates **three simultaneous handovers**:
+
+| Dimension | Before pivot | After pivot |
+|---|---|---|
+| **Mathematics** | checking, procedure, given problems | generating, sense-making, authored problems |
+| **Interaction** | announcement / IRE, teacher-initiated | co-construction, eliciting, releasing |
+| **Students** | recipients of method | creative authors and owners |
+
+And the **counter-currents** (Theme 4) show these handovers are *conditional*: whenever the mathematics narrows to procedure or precision, the teacher reflexively re-tightens interactional control and re-introduces evaluative or extrinsic framing. The most productive reading, then, is not "the teacher progressively became more student-centred" but rather **"the teacher's orientations are responsive to the mathematical activity type"** — expansive and dialogic during generative work, controlling and evaluative during procedural work — with the overall lesson design engineering a shift *toward* the generative, and Episode 3 standing as the transcript's clearest exhibit of both tendencies coexisting in tension.
+
+Would you like me to map these themes onto specific pedagogical frameworks (e.g., gradual release, ambitious teaching / funds of knowledge, or Cobb's sociomathematical norms), or to focus in on Episode 3 as the analytic crux?

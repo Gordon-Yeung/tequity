@@ -1,0 +1,75 @@
+# Potential Themes in the Teacher's Orientations
+
+Drawing across all nine episodes, here are themes I can identify along each of the three dimensions, plus some cross-cutting tensions.
+
+## Orientations about Mathematics
+
+**1. Mathematics as multi-representational**
+A consistent thread is the demand that mathematics be shown in multiple modes — pictures, symbolic calculation, and labelled diagrams (Episodes 2, 3, 4). "Drawing the picture and doing the math part" is treated as constitutive of mathematical understanding, not decoration.
+
+**2. Mathematics as embedded in the real world / narrative**
+This intensifies across the transcript. Early on, real-world context is a backdrop; by Episodes 5–8 it becomes the *engine* of the mathematics — word problems as "mini stories," fractions "emerging" from categorizing photographs. Math is framed as inherently applicable and humanized.
+
+**3. A tension between procedural and conceptual mathematics**
+This is arguably the richest theme. The teacher moves between:
+- **Procedural/rule-based math** — the LCM algorithm narrated step-by-step (Ep. 3), keyword-decoding ("what key words tell you it's addition?"), memorized conversion facts (Ep. 4).
+- **Conceptual/sense-making math** — pressing "How do you know?" on prime numbers (Ep. 3), extending answers into real-world meaning (Ep. 4), part-whole reasoning made visible through counting (Ep. 8), and diagnosing a *conceptual* error in a multi-step problem (Ep. 8).
+
+**4. Mathematics as precise yet creative**
+A subtle theme: math authorship is "open" ("it's your problem, make it how you want it") but bounded by **internal consistency** ("as long as it all adds to the total") and **exactness** ("your answer has to be exact"). Creativity is licensed within logical constraints.
+
+---
+
+## Orientations about Students
+
+**1. Students as a relational community with shared history**
+The recurring address "Friends," collective memory ("remember yesterday"), and closing affirmation ("we did really well today") frame students as a bonded group, not isolated learners.
+
+**2. Students as holders of reactivatable prior knowledge (asset-based)**
+Repeatedly the teacher treats students as already possessing resources — the cheese/cups demo, the "gallon monster," popular culture (Bob the Builder), storytelling knowledge, and named students' own prior problems used as exemplars.
+
+**3. Students as authors and owners of mathematical work**
+A clear developmental arc: students shift from *recipients* of "the best way to check" (Ep. 2) and *procedural followers* (Ep. 3) to *autonomous authors* with genuine choice ("you decide," "it's your problem") by Episodes 6–8.
+
+**4. A tension between capable-reasoner and deficit framings**
+Most positioning is generous (justifiers, reasoners, creative thinkers whose "wrong" answers aren't publicly attributed). But there are moments of subtle deficit framing — "you're still working on it," "incomplete versus complete," redirecting a student's reasoning without engaging its logic during the keyword sequence.
+
+**5. Students as motivated learners — intrinsically and extrinsically**
+An interesting inconsistency: engagement is sometimes framed through **behavioral incentives** ("I'll move you all to blue," Ep. 4) and sometimes through **genuine intellectual/real-world relevance** (Ep. 5–8).
+
+---
+
+## Orientations about Interaction
+
+**1. A movement from teacher-directed toward dialogic/co-constructed**
+Perhaps the strongest structural theme. The transcript arcs from announcement-confirmation (Ep. 1) and IRE (the keyword sequence, Ep. 3) toward genuine co-construction ("let's talk about it together," the photographer story in Ep. 8) and validation-seeking ("Do you agree?").
+
+**2. Building on vs. extracting from student contributions**
+Two contrasting interactional stances co-exist:
+- **Extractive** — nominating students to supply a *target* word, evaluating responses as insufficient (keyword IRE).
+- **Generative** — "That works," "I see where you're going," "I like your bringing more numbers into it," where student input genuinely redirects the task.
+
+**3. Prior interaction as a pedagogical resource**
+The teacher repeatedly makes past exchanges consequential to present learning ("remember when I showed you...," referencing named students' earlier problems), constructing continuity across time.
+
+**4. Releasing agency progressively**
+Interaction structure loosens as the lesson proceeds — from tightly controlled turns to circulating, brief small-group coaching, to inviting student self-editing at closure.
+
+---
+
+## Cross-Cutting / Integrative Themes
+
+These may be the most analytically productive:
+
+**A. Alignment of the three dimensions**
+The orientations *move together*. Where math is framed procedurally (keyword decoding), students are positioned as followers and interaction is IRE. Where math is framed as sense-making/authorship, students become reasoners/authors and interaction becomes dialogic. **The mathematical, student, and interactional orientations are coupled** — this is a strong candidate for a central claim.
+
+**B. A developmental arc across the lesson**
+The whole transcript can be read as a gradual **release of authority** — from teacher-as-verifier to student-as-author — suggesting the teacher's orientations are not fixed but shift with the pedagogical purpose of each phase (practice → extension → authoring → synthesis).
+
+**C. Asset-based orientation as a through-line, with residual traditional habits**
+Overall the teacher leans strongly asset-based (validating prior knowledge, popular culture, student creativity), but **inherited "traditional" practices** (keyword strategies, procedural narration, behavioral incentives, deficit language) surface as counter-currents — a portrait of a teacher in transition or fluidly code-switching by task type.
+
+---
+
+Would you like me to develop any of these into a more formal thematic claim with supporting evidence, or map which episodes most strongly support each theme for a coding matrix?

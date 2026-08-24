@@ -1,0 +1,67 @@
+# Thematic Analysis: The Shifting Orientations Across a Single Lesson
+
+The most striking feature of this transcript is that it is essentially a lesson of two halves. The teacher's orientations toward mathematics, students, and interaction undergo a pronounced transformation roughly at the boundary between Episode 5 and Episode 6 — the pivot from the timed multiplication quiz to the script-writing activity. Tracing the themes temporally reveals not a single stable stance but a dynamic shift, alongside certain threads that persist throughout. Below I develop four major themes.
+
+---
+
+## Theme 1: From Mathematics-as-Answer to Mathematics-as-Explanation
+
+The clearest arc is in what "doing mathematics" is taken to mean.
+
+**Episodes 1–5 (the procedural phase):** Mathematics appears almost exclusively as a *product* — a correct numerical answer or a memorized fact. In Episode 2, the IRE cycle reduces multiplication to a stream of outputs ("11,790, yes"). In Episode 4–5, mathematics collapses entirely into speed and recall ("they're facts that you should know"). Even the board work of Episode 3, which narrates procedure, treats the algorithm as a fixed sequence to be matched against, not reasoned about. Notably, in these episodes mathematics is frequently labeled rather than engaged — it is a noun ("multiplication," "facts") and a task to be completed and returned.
+
+**Episodes 6–10 (the generative phase):** Mathematics becomes something to be *communicated, justified, and interpreted*. The turning point is visible in Episode 7, where the teacher inserts conceptual justification into a student's fractions script ("because 2 and 3 both go into 6. They are factors of 6"). By Episode 8, mathematics is explicitly about *meaning* rather than computation: the teacher tells students the issue "is not how to divide but what to do with the remainder," pushing students to interpret remainders contextually (drop vs. round up). Episode 9 makes the communicative orientation explicit — "the point of this is to be clear in our subject" — and Episode 10 embeds estimation and decimal reasoning in an authentic grocery-store context.
+
+The trajectory, then, moves from **answer → procedure → conceptual reasoning → communication**. Mathematics shifts from being a performance of correctness to being a subject one explains to an audience.
+
+---
+
+## Theme 2: From Students-as-Accountable-Performers to Students-as-Authors and Authorities
+
+The positioning of students shifts in parallel.
+
+**Early episodes:** Students are positioned first as *accountable rule-followers* (Episode 1: tracking, completing, and returning homework, with individualized consequences like the "Friday folder"), then as *answer-providers and error-makers* (Episodes 2–3). Crucially, errors are attributed to the individual — "you wrote it sloppy," "silly mistakes," "you don't know your facts well enough." Difficulty is located in the *student* (carelessness) or in the *facts* ("those are harder facts"), never framed as a legitimate site of reasoning. In Episode 4, fact knowledge is even treated as a fixed trait ("you're good at your facts, so don't worry about it").
+
+**Later episodes:** Students become *creative producers and mathematical explainers* whose ideas are solicited and built upon. The teacher asks open questions ("what are you thinking?", "where are you thinking from here?") that position students as the source of direction. Most tellingly, in Episode 9 the teacher deliberately gives a *wrong answer* ("I would use, I don't know, perimeter?") to cast students as the mathematical authorities who correct her. In Episodes 8 and 10, student ideas are explicitly affirmed and amplified ("I like that"; the teacher shares one group's script with another class as a *model*).
+
+The error-framing itself is transformed. In the procedural phase, errors are trivialized as "silly." In the generative phase, "errors" become *inconsistencies to be revised* through mathematical reasoning — as when the teacher insists a rounding script maintain logical consistency ("You need to go in the exact same order") and directs the student to reread and self-correct. The student moves from *someone who made a careless slip* to *an author responsible for the coherence of a mathematical argument*.
+
+---
+
+## Theme 3: From IRE and Directive Control to Collaborative Co-Construction
+
+The interactional structure follows the same arc.
+
+**Episodes 1–5:** Interaction is overwhelmingly teacher-initiated and evaluative — directives followed by compliance (Episode 1), tight IRE cycles (Episode 2), and micro-managed behavioral control (Episode 5: "I don't want to see your eyes leave that paper"). Peer interaction, where it exists, is confined to *checking* one another's work under strict protocols (peer grading), not to mathematical dialogue. Student questioning is actively suppressed — the most revealing moment being Episode 4's "Why can't you just do what I say and not question me?"
+
+**Episodes 6–10:** Interaction becomes genuinely dialogic and co-constructive. The teacher and students *build the mathematics together*: the balloon-man remainder scenario in Episode 8 is jointly authored, with the teacher scaffolding narrative transitions while students supply ideas ("later that evening"). Peer collaboration is now treated as central to the task rather than peripheral, and the teacher's role shifts from evaluator to coach, reader, and even fellow contestant.
+
+---
+
+## Theme 4: The Persistent Undercurrent — Compliance and Conditional Trust
+
+While the mathematical and student-positioning orientations shift dramatically, one thread runs unbroken across the entire lesson: a **compliance-oriented, behaviorally regulated relational frame**. This is important because it complicates any tidy "procedural-bad, creative-good" reading.
+
+Even in the most asset-rich episodes, the deficit-adjacent relational tone resurfaces:
+- Episode 6: back-room privileges are made *conditional* on demonstrated good behavior ("Show me that you can do a good job... then I'll feel like I can trust you").
+- Episode 7: a student is abruptly removed from group work; another is told "You don't think, you just act."
+- Episode 8: when a student doesn't understand, the confusion is attributed to the student — "then how do you not understand what I'm talking about?"
+- Episode 9: "I don't want to hear anything inappropriate."
+
+So the transformation is real but *partial*. The teacher's orientation toward **mathematics** and toward **students-as-thinkers** opens up substantially, but her orientation toward **students-as-behavioral-subjects** remains largely stable and control-oriented throughout. Trust is repeatedly framed as something students must *earn* rather than something extended.
+
+---
+
+## Synthesis: A Lesson in Two Registers
+
+Read temporally, the lesson reveals that the same teacher holds **multiple, coexisting orientations that are activated by different task structures**. The homework-and-quiz portion pulls forward a procedural, accountability-driven register in which mathematics is fact recall and students are performers. The script-writing portion activates a generative register in which mathematics is reasoning-and-communication and students are authors and authorities.
+
+This suggests three interpretive points worth developing:
+
+1. **Task structure shapes orientation.** The shift is not a change of heart mid-lesson but a change of *activity*. Timed, closed, high-accountability tasks appear to summon compliance-and-correctness framings; open, authored, audience-directed tasks appear to summon reasoning-and-agency framings. The teacher's underlying capacity for asset-based instruction is present but is *conditionally released* by the design of the work.
+
+2. **The creative task did the conceptual work the drill could not.** It is notable that the richest mathematics in the entire transcript — interpreting remainders, justifying common denominators, distinguishing area from perimeter — emerges only once students are asked to *explain mathematics to an audience*. Writing mathematics for others forced attention to the "why" that the answer-checking of Episodes 2–5 systematically bypassed.
+
+3. **Relational orientation lags behind cognitive orientation.** The teacher's view of what mathematics is, and of what students can do mathematically, evolves far more than her view of how students should behave and be trusted. This gap is the central tension of the lesson: students are simultaneously invited to be mathematical authorities and reminded that they are behavioral subordinates whose autonomy is provisional.
+
+The overall movement, then, is best characterized not as a linear "improvement" but as a **modulation between two registers**, with the generative register clearly capable of producing more ambitious mathematics and more agentive student positioning — even as a persistent control-oriented relational stance travels across both.

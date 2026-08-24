@@ -1,0 +1,62 @@
+# Potential Themes in the Teacher's Orientations
+
+Based on this transcript, several rich themes emerge—many defined by a striking **internal tension or duality** between the two halves of the lesson. Here are themes organized by orientation category, plus some cross-cutting ones.
+
+## Themes about Mathematics
+
+**1. A dual identity: math as fact-recall vs. math as sense-making**
+The most prominent theme is the coexistence of two very different visions of mathematics within the same class period:
+- In Episodes 1–5, math is **memorized facts, procedures, and correct answers** produced quickly and accurately (timed quizzes, IRE answer-checking, "facts you should know").
+- In Episodes 7–10, math becomes **conceptual reasoning that must be explained and communicated** (why 6 is the common denominator, what a remainder *means* in context, when to use area vs. perimeter).
+
+This raises the question of whether the teacher holds two compartmentalized beliefs about what math *is*, activated by different activity structures.
+
+**2. Math as something to be communicated, not just computed**
+In the script-writing episodes, a recurring emphasis is on **clarity, consistency, and audience** ("the point of this is to be clear in our subject," insisting on consistent "to the right" language in the rounding script). Math here is treated as a discourse that must be made intelligible to others.
+
+**3. Errors as carelessness vs. errors as part of learning**
+Early on, mistakes are framed as **"silly," "sloppy," "careless"**—individual failures attributed to not studying facts. Later, errors and confusion become **occasions for refinement and scaffolding**. The framing of error shifts dramatically with the activity.
+
+**4. Math as embedded in real, everyday contexts**
+The scripts consistently anchor abstract procedures in relatable scenarios (grocery shopping, party planning, balloon delivery), suggesting an orientation toward math as **applicable and contextualized**.
+
+## Themes about Students
+
+**5. Students as compliant rule-followers vs. students as creative authorities**
+A central duality in student positioning:
+- Early: students are **accountable rule-followers**, answer-providers, and error-makers whose explanations are met with skepticism ("Please don't give me the 'it's not fair' stuff"; "Why can't you just do what I say and not question me").
+- Later: students are **mathematical authors, explainers, and even authorities** who can correct the teacher (the deliberate wrong answer on perimeter) and whose scripts are shared as exemplars for other classes.
+
+**6. Conditional trust and earned privilege**
+A consistent theme in the group-work episodes is that student autonomy is **something to be earned through behavior** ("show me that you can do a good job... then I'll feel like I can trust you"). Trust is contingent, not assumed.
+
+**7. Responsibility as individualized**
+Difficulties—missing homework, wrong answers, not understanding—are frequently attributed to **individual student choices or deficits** rather than systemic or instructional factors ("how do you not understand what I'm talking about?").
+
+## Themes about Interaction
+
+**8. Interaction structure drives everything else**
+Perhaps the biggest meta-theme: the teacher's orientations toward math and students are **not fixed traits but are activated by the participation structure**. Whole-class instruction pulls out IRE/compliance/procedure; small-group script coaching pulls out collaboration/conceptual reasoning/asset-based positioning.
+
+**9. Peer interaction: valued for logistics vs. valued for learning**
+- In Episodes 1–5, peer interaction is largely about **procedure and accountability** (grading each other's papers accurately, "eyes on your own paper").
+- In Episodes 6–10, peer interaction becomes **central to knowledge production** (co-constructing scripts, catching up absent members, group reasoning).
+
+**10. Co-construction and revoicing**
+In group coaching, the teacher **builds on student ideas** ("I like that," "nice job"), revoices and refines student language while preserving their intent, and models being a learner. This collaborative, dialogic pattern contrasts sharply with the directive monologue of the whole-class segments.
+
+**11. The persistent thread of behavioral management**
+Across *all* episodes—even the most asset-based ones—**behavioral control and compliance interrupt the mathematical work** (removing a student mid-coaching, constant reminders to face front, turn chairs, be quiet). This is arguably the one truly consistent orientation throughout.
+
+---
+
+## A Synthesizing Frame
+
+The overarching story you could tell is one of a **"two-teacher" phenomenon within one teacher**: the same educator operates with a procedural/deficit-adjacent orientation during structured whole-class work and an asset-based/conceptual orientation during creative group work. 
+
+This invites some productive analytic questions:
+- Does the teacher *believe* math is fact-recall, or does she simply *default* to that framing when time pressure and whole-class control dominate?
+- Is the creative activity a genuine expression of an asset-based orientation, or is it a "reward" activity separated from "real" math?
+- How does the constant behavioral-management overlay shape—or limit—the potential of even the most conceptually rich moments?
+
+Would you like me to develop any of these themes into a more formal analytic claim with supporting evidence, or map them onto a specific framework (e.g., asset- vs. deficit-based teaching, or authority/agency in math classrooms)?
