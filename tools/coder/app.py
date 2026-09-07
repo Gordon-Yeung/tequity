@@ -233,6 +233,46 @@ def write_json(path: Path, data: dict):
         json.dump(data, f, ensure_ascii=False, indent=2)
 
 
+def history_dir(obsid: str, coder_id: str) -> Path:
+    """Where prior versions of one coding file are kept:
+    data/human_coding/<obsid>/history/<coder>/ ."""
+    return CODING_DIR / safe_id(obsid) / "history" / safe_id(coder_id)
+
+
+def snapshot_existing(path: Path, min_gap_seconds: int = 0):
+    """Copy the file currently at `path` into its history/ folder *before* the
+    caller overwrites it, so a saved version is never lost. Returns the snapshot
+    path, or None if there was nothing to snapshot.
+
+    `min_gap_seconds` debounces high-frequency writers (the per-second autosave):
+    if the newest existing snapshot is younger than that, this is a no-op. An
+    explicit Save passes 0 and always snapshots.
+
+    Snapshot name: rev<NNN>_<updated_at, digits only>.json  -- sorts oldest-first
+    and carries the version's own timestamp in the filename.
+    """
+    existing = read_json(path)
+    if existing is None:
+        return None
+    obsid = existing.get("obsid") or path.parent.name
+    coder_id = existing.get("coder_id") or path.stem
+    hdir = history_dir(obsid, coder_id)
+
+    if min_gap_seconds:
+        prior = sorted(hdir.glob("*.json"))
+        if prior:
+            age = datetime.now().timestamp() - prior[-1].stat().st_mtime
+            if age < min_gap_seconds:
+                return None
+
+    rev = int(existing.get("revision") or 0)
+    stamp = re.sub(r"[^0-9T]", "", existing.get("updated_at") or now_iso())
+    snap = hdir / f"rev{rev:03d}_{stamp}.json"
+    if not snap.exists():
+        write_json(snap, existing)
+    return snap
+
+
 def context_for(turns, center_turn, window=CONTEXT_TURNS):
     """Return the +/- `window` kept turns around center_turn (index-based, so
     gaps in turn numbering don't drop context)."""
@@ -382,11 +422,17 @@ def api_coding_save(obsid, coder_id):
     path = coder_path(obsid, coder_id)
     existing = read_json(path)
     created_at = existing.get("created_at") if existing else None
+    revision = int((existing or {}).get("revision") or 0) + 1
+    # Autosave fires ~1s after every keystroke, so snapshot at most once per 10
+    # minutes -- enough to recover from an accidental mass-delete without
+    # littering history/ with hundreds of near-identical files.
+    snapshot_existing(path, min_gap_seconds=600)
     data = {
         "obsid": obsid,
         "coder_id": safe_id(coder_id),
         "created_at": created_at or now_iso(),
         "updated_at": now_iso(),
+        "revision": revision,
         "progress": body.get("progress", {"last_turn_viewed": 0, "completed": False}),
         "scenes": scenes,
     }
@@ -685,6 +731,12 @@ def api_compare(obsid):
     a = read_json(coder_path(obsid, a_id)) or empty_coding(obsid, a_id)
     b = read_json(coder_path(obsid, b_id)) or empty_coding(obsid, b_id)
     llm = read_json(coder_path(obsid, "llm")) if include_llm else None
+    # Any adjudication already saved for this observation. Loaded so the editor
+    # can RESUME -- restore prior notes / category edits / include flags -- rather
+    # than rebuilding every row from the raw coder data on each visit. Never one
+    # of the compared raters (that would be circular), so it does not touch the
+    # IRR stats below; it only rehydrates the adjudication panel.
+    adjudicated = read_json(coder_path(obsid, "adjudicated"))
 
     universe_n = sum(1 for t in turns if is_teacher(t["speaker"]))
     a_turns = set(scenes_by_turn(a))
@@ -722,10 +774,14 @@ def api_compare(obsid):
 
     a_sc, b_sc = scenes_by_turn(a), scenes_by_turn(b)
     llm_sc = scenes_by_turn(llm) if llm else {}
+    adj_sc = scenes_by_turn(adjudicated) if adjudicated else {}
     speaker_by_turn = {t["turn_num"]: t["speaker"] for t in turns}
     text_by_turn = {t["turn_num"]: t["text"] for t in turns}
 
-    union = sorted(set(a_sc) | set(b_sc) | set(llm_sc))
+    # Saved adjudication turns join the union so a prior decision is always
+    # visible and re-editable, even on a turn neither currently-compared rater
+    # flagged (e.g. it came from the LLM or a different rater pairing last time).
+    union = sorted(set(a_sc) | set(b_sc) | set(llm_sc) | set(adj_sc))
     rows = []
     for t in union:
         in_a, in_b = t in a_sc, t in b_sc
@@ -735,11 +791,14 @@ def api_compare(obsid):
             status = "a_only"
         elif in_b:
             status = "b_only"
-        else:
-            # Only reachable with ?llm=1: the LLM flagged a turn neither human did.
+        elif t in llm_sc:
+            # Reachable with ?llm=1: the LLM flagged a turn neither human did.
             # The row stays in the union so it's reviewable, but it is not a
             # human disagreement and must not be labelled as one.
             status = "llm_only"
+        else:
+            # Only a saved adjudication put this turn on screen.
+            status = "adjudicated_only"
         rows.append({
             "turn": t,
             "speaker": speaker_by_turn.get(t, "?"),
@@ -748,6 +807,9 @@ def api_compare(obsid):
             "a": a_sc.get(t),
             "b": b_sc.get(t),
             "llm": llm_sc.get(t),
+            # The previously saved adjudication for this turn, if any. The client
+            # overlays it onto the prefill so edits survive a reload.
+            "adj": adj_sc.get(t),
             "status": status,
         })
 
@@ -755,6 +817,9 @@ def api_compare(obsid):
         "obsid": obsid,
         "a_id": a_id, "b_id": b_id,
         "has_llm": bool(llm),
+        "has_adjudicated": bool(adjudicated),
+        "adjudicated_updated_at": (adjudicated or {}).get("updated_at"),
+        "adjudicated_revision": (adjudicated or {}).get("revision"),
         "single_rater": single_rater,
         # Whether a human rated this at all. The adjudication prefill keys off it:
         # nothing machine-only should default to "include" in adjudicated.json.
@@ -774,16 +839,69 @@ def api_adjudicated_get(obsid):
 @app.route("/api/adjudicated/<obsid>", methods=["POST"])
 def api_adjudicated_save(obsid):
     body = request.get_json(force=True, silent=True) or {}
+    path = coder_path(obsid, "adjudicated")
+
+    # Every click of "Save adjudicated.json" is an explicit decision point. The
+    # version already on disk is snapshotted into history/adjudicated/ before it
+    # is replaced -- losing the intermediate states (which turns were in, which
+    # were argued down) would erase hours of adjudication reasoning.
+    snapshot_existing(path)
+    existing = read_json(path)
+    now = now_iso()
     data = {
         "obsid": obsid,
         "coder_id": "adjudicated",
-        "created_at": now_iso(),
-        "updated_at": now_iso(),
+        # Preserve the original creation time. It used to be reset on every save,
+        # which made each version look brand new.
+        "created_at": (existing or {}).get("created_at") or now,
+        "updated_at": now,
+        "revision": int((existing or {}).get("revision") or 0) + 1,
         "progress": {"completed": True},
         "scenes": body.get("scenes", []),
+        # Full working set for this pass -- included, excluded, and modified rows
+        # with their notes -- so the record shows what was discussed and rejected,
+        # not only what survived into `scenes`.
+        "deliberation": body.get("deliberation", []),
+        # Which two codings (and whether the LLM) were on screen for this pass.
+        "compared": body.get("compared", {}),
     }
-    write_json(coder_path(obsid, "adjudicated"), data)
-    return jsonify({"ok": True, "scenes": len(data["scenes"])})
+    write_json(path, data)
+    return jsonify({
+        "ok": True,
+        "scenes": len(data["scenes"]),
+        "revision": data["revision"],
+        "prior_versions": len(list(history_dir(obsid, "adjudicated").glob("*.json"))),
+    })
+
+
+@app.route("/api/adjudicated/<obsid>/history")
+def api_adjudicated_history(obsid):
+    """Every saved revision of this observation's adjudication, oldest first,
+    current file last. The raw files sit in
+    data/human_coding/<obsid>/history/adjudicated/ for hand recovery."""
+    out = []
+    hdir = history_dir(obsid, "adjudicated")
+    if hdir.exists():
+        for p in sorted(hdir.glob("*.json")):
+            j = read_json(p) or {}
+            out.append({
+                "file": f"history/adjudicated/{p.name}",
+                "revision": j.get("revision"),
+                "updated_at": j.get("updated_at"),
+                "scenes": len(j.get("scenes", [])),
+                "deliberation": len(j.get("deliberation", [])),
+            })
+    cur = read_json(coder_path(obsid, "adjudicated"))
+    if cur:
+        out.append({
+            "file": "adjudicated.json",
+            "revision": cur.get("revision"),
+            "updated_at": cur.get("updated_at"),
+            "scenes": len(cur.get("scenes", [])),
+            "deliberation": len(cur.get("deliberation", [])),
+            "current": True,
+        })
+    return jsonify(out)
 
 
 if __name__ == "__main__":

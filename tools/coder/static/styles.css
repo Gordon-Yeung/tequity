@@ -170,19 +170,24 @@ th { background: #f0f3f7; }
 .cmp-row.agree { border-left-color: var(--agree-border); }
 .cmp-row.category_mismatch { border-left-color: var(--mismatch-border); }
 .cmp-row.a_only, .cmp-row.b_only { border-left-color: var(--only-border); }
-/* Single-rater reading view: one column, and no agreement colour to read into it. */
+/* Single-rater reading view: no agreement colour to read into it. */
 .cmp-row.single { border-left-color: var(--line); }
-.cmp-row.single .cols { grid-template-columns: 1fr; }
 
 /* LLM-only is informational, not a human disagreement — muted, not alarm-red. */
 .cmp-row.llm_only { border-left-color: var(--muted); }
+/* A turn on screen only because a prior adjudication saved it. */
+.cmp-row.adjudicated_only { border-left-color: var(--accent); }
 .cmp-row .head { display: flex; gap: 10px; align-items: baseline; margin-bottom: 6px; }
 .cmp-row .status { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; }
+.restored-tag { font-size: 11px; font-weight: 700; color: var(--accent); }
 .cmp-row .quote { background: #f7f9fc; border-left: 3px solid var(--line); padding: 6px 10px; margin: 6px 0; }
-.cols { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; }
+/* auto-fit so 1–4 columns (A / B / LLM / saved adjudication) all lay out cleanly */
+.cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 10px; }
 .cols .col { border: 1px solid var(--line); border-radius: 6px; padding: 8px; font-size: 13px; }
 .cols .col h4 { margin: 0 0 4px; font-size: 12px; color: var(--muted); text-transform: uppercase; }
 .cols .col.empty { color: var(--muted); font-style: italic; }
+/* the restored "Saved adjudication" column stands out from the rater columns */
+.cols .col.saved-adj { border-color: var(--accent); background: #f7faff; }
 .adj { margin-top: 8px; border-top: 1px dashed var(--line); padding-top: 8px; }
 .adj .cats { display: flex; flex-wrap: wrap; gap: 6px; margin: 6px 0; }
 .adj .cats label { border: 1px solid var(--line); padding: 3px 7px; border-radius: 6px; cursor: pointer; font-size: 12px; }

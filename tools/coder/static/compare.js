@@ -122,10 +122,11 @@
     el("#cmp-stats").innerHTML = html;
   }
 
-  function codeCol(title, s) {
-    if (!s) return `<div class="col empty"><h4>${title}</h4>not flagged</div>`;
+  function codeCol(title, s, extraClass) {
+    const cls = extraClass ? ` ${extraClass}` : "";
+    if (!s) return `<div class="col empty${cls}"><h4>${title}</h4>not flagged</div>`;
     const cats = (s.categories || []).join(", ") + (s.other_label ? ` (${esc(s.other_label)})` : "");
-    return `<div class="col"><h4>${title}</h4>
+    return `<div class="col${cls}"><h4>${title}</h4>
       <div><b>${esc(cats) || "—"}</b> <span class="muted">[${esc(s.confidence || "")}]</span></div>
       ${s.note ? `<div class="muted">${esc(s.note)}</div>` : ""}
       ${s.verbatim_quote ? `<div class="quote">${esc(s.verbatim_quote)}</div>` : ""}
@@ -164,6 +165,24 @@
       source: [a && "a", b && "b", llm && "llm"].filter(Boolean),
       scene_id: `t${row.turn}`,
     };
+
+    // Overlay a previously saved adjudication for this turn -- this is what makes
+    // the screen RESUME rather than start over. The saved note / category edits /
+    // include flag win over the freshly computed prefill; `restored` marks the
+    // row so the UI can say so.
+    const saved = row.adj;
+    if (saved) {
+      Object.assign(adj[row.turn], {
+        categories: [...(saved.categories || [])],
+        other_label: saved.other_label || "",
+        note: saved.note != null ? saved.note : adj[row.turn].note,
+        confidence: saved.confidence || adj[row.turn].confidence,
+        verbatim_quote: saved.verbatim_quote || adj[row.turn].verbatim_quote,
+        include: saved.include != null ? saved.include : true,
+        resolution: saved.resolution || "restored",
+        restored: true,
+      });
+    }
   }
 
   function renderAdj(row) {
@@ -188,17 +207,23 @@
       const single = resp.single_rater;
       const statusLabel = single ? "flagged" : { agree: "agree",
                             category_mismatch: "category mismatch",
-                            a_only: "only A", b_only: "only B", llm_only: "only LLM" }[row.status];
+                            a_only: "only A", b_only: "only B", llm_only: "only LLM",
+                            adjudicated_only: "from saved adjudication" }[row.status];
+      const savedCol = resp.has_adjudicated
+        ? codeCol("Saved adjudication", row.adj, "saved-adj")
+        : "";
       const cols = single
-        ? codeCol(resp.a_id === "llm" ? "LLM (model)" : `Coder ${resp.a_id}`, row.a)
+        ? codeCol(resp.a_id === "llm" ? "LLM (model)" : `Coder ${resp.a_id}`, row.a) + savedCol
         : codeCol("Coder A", row.a) + codeCol("Coder B", row.b) +
-          (resp.has_llm ? codeCol("LLM", row.llm) : `<div class="col empty"><h4>LLM</h4>not loaded</div>`);
+          (resp.has_llm ? codeCol("LLM", row.llm) : `<div class="col empty"><h4>LLM</h4>not loaded</div>`) +
+          savedCol;
       const ctx = row.context.map((c) =>
         `<div class="t ${c.turn === row.turn ? "center" : ""}"><b>${c.turn} ${esc(c.speaker)}:</b> ${esc(c.text)}</div>`).join("");
       return `<div class="cmp-row ${single ? "single" : row.status}" data-turn="${row.turn}">
         <div class="head">
           <span class="status">${statusLabel}</span>
           <span class="muted">turn ${row.turn} · ${esc(row.speaker)}</span>
+          ${row.adj ? `<span class="restored-tag" title="restored from adjudicated.json">↺ saved</span>` : ""}
           <button class="context-toggle" type="button">show context ±3</button>
         </div>
         <div class="context hidden">${ctx}</div>
@@ -258,6 +283,10 @@
       Object.keys(adj).forEach((k) => delete adj[k]);
       renderStats(resp.stats, resp);
       renderRows(resp);
+      el("#adj-status").textContent = resp.has_adjudicated
+        ? `Resumed adjudicated.json — rev ${resp.adjudicated_revision ?? "?"}, saved ${resp.adjudicated_updated_at || "?"}. Rows marked “↺ saved” carry your earlier decision.`
+        : "";
+      refreshAdjHistory(vid);
     } catch (e) { alert(e.message); }
   }
 
@@ -287,14 +316,41 @@
   async function saveAdjudicated() {
     const vid = el("#cmp-transcript").value;
     const scenes = Object.values(adj).filter((s) => s.include && s.categories.length);
+    // Also send the full working set -- included, excluded and modified rows with
+    // their notes -- so the server's history keeps a record of everything argued
+    // over this pass, not just the rows that made the cut.
+    const deliberation = Object.values(adj);
+    const compared = current
+      ? { a: current.a_id, b: current.b_id, llm: Boolean(current.has_llm) }
+      : {};
     try {
       const r = await api(`/api/adjudicated/${vid}`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ scenes }),
+        body: JSON.stringify({ scenes, deliberation, compared }),
       });
-      el("#adj-status").textContent = `Saved adjudicated.json (${r.scenes} scenes) ${new Date().toLocaleTimeString()}`;
+      const kept = r.prior_versions
+        ? ` · ${r.prior_versions} prior version${r.prior_versions === 1 ? "" : "s"} kept`
+        : "";
+      el("#adj-status").textContent =
+        `Saved adjudicated.json — rev ${r.revision}, ${r.scenes} scene${r.scenes === 1 ? "" : "s"}${kept} · ${new Date().toLocaleTimeString()}`;
+      refreshAdjHistory(vid);
     } catch (e) { el("#adj-status").textContent = "Save failed: " + e.message; }
+  }
+
+  // Advisory line under the Save button: shows that prior adjudicated versions
+  // exist and where to find them. Failure is silent -- history is not load-bearing.
+  async function refreshAdjHistory(vid) {
+    const box = el("#adj-history");
+    if (!box || !vid) return;
+    try {
+      const hist = await api(`/api/adjudicated/${vid}/history`);
+      if (hist.length < 2) { box.textContent = ""; return; }
+      box.textContent =
+        "Saved versions: " +
+        hist.map((h) => `rev${h.revision ?? "?"} (${h.scenes} sc)${h.current ? " ←current" : ""}`).join("  ·  ") +
+        `  —  data/human_coding/${vid}/history/adjudicated/`;
+    } catch (e) { box.textContent = ""; }
   }
 
   window.Compare = {
