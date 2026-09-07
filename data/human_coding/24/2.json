@@ -1,0 +1,26 @@
+{
+  "obsid": "24",
+  "coder_id": "2",
+  "created_at": "2026-08-30T19:34:40",
+  "updated_at": "2026-08-30T19:34:49",
+  "progress": {
+    "last_turn_viewed": 122,
+    "completed": false
+  },
+  "scenes": [
+    {
+      "scene_id": "t122",
+      "turn": 122,
+      "speaker": "teacher",
+      "verbatim_quote": "96 student c all right go sit at the back table so just because you guys aren t on camera doesn t mean that you still need to do the math work okay just because you re not on camera doesn t mean that you can just sit here",
+      "quote_verified": true,
+      "categories": [
+        "D"
+      ],
+      "other_label": "",
+      "note": "",
+      "confidence": "low",
+      "flagged_at": "2026-08-30T19:34:49"
+    }
+  ]
+}
