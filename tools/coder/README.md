@@ -39,6 +39,10 @@ if it isn't, it falls back to identical built-in copies, so it still runs.
 4. **Adjudicate.** Each row has an editor pre-filled from the two codings. Adjust
    categories/notes, keep *include* ticked for the ones that belong in the gold
    standard, and click *Save adjudicated.json*.
+   **Resuming:** if an `adjudicated.json` already exists, re-running the compare
+   reloads it — rows that carry a prior decision are marked *↺ saved* and show a
+   *Saved adjudication* column, and the editor is rehydrated with your earlier
+   categories/notes/include flags rather than rebuilt from the raw codings.
 
 ## Reading the agreement stats (important)
 
@@ -84,8 +88,26 @@ The tool lists whatever is in the sample manifest, falling back to the legacy
 data/human_coding/<OBSID>/
   <coder_id>.json      # one per coder (autosave target; the handoff artifact)
   llm.json             # LLM scenes imported as a third "coder"
-  adjudicated.json     # reconciled gold standard
+  adjudicated.json     # reconciled gold standard (latest revision)
+  history/
+    adjudicated/       # every prior Save, rev<NNN>_<timestamp>.json, oldest-first
+    <coder_id>/        # autosave snapshots, throttled to one per 10 min
 ```
+
+### Versioning (nothing overwrites silently)
+
+Every write keeps the version it replaces. `adjudicated.json` is snapshotted to
+`history/adjudicated/` on **each** click of *Save adjudicated.json*; per-coder
+autosaves are snapshotted at most once per 10 minutes. Files carry a `revision`
+counter and a stable `created_at`. The adjudicated file also stores:
+
+- `deliberation` — the full working set for that pass, **including rows that were
+  reviewed and excluded**, with their notes. `scenes` is only what made the cut;
+  `deliberation` is the audit trail of what was argued over.
+- `compared` — which two codings (and whether the LLM) were on screen.
+
+`GET /api/adjudicated/<obsid>/history` lists all revisions. To roll one back,
+copy the chosen `history/adjudicated/rev*.json` over `adjudicated.json` by hand.
 
 ### Per-coder JSON
 
@@ -95,6 +117,7 @@ data/human_coding/<OBSID>/
   "coder_id": "gordon",
   "created_at": "2026-07-15T12:00:00",
   "updated_at": "2026-07-15T12:34:00",
+  "revision": 12,
   "progress": { "last_turn_viewed": 640, "completed": false },
   "scenes": [
     {

@@ -1,0 +1,83 @@
+{
+  "obsid": "2204",
+  "coder_id": "adjudicated",
+  "created_at": "2026-08-30T14:03:42",
+  "updated_at": "2026-08-30T14:03:42",
+  "progress": {
+    "completed": true
+  },
+  "scenes": [
+    {
+      "turn": 54,
+      "speaker": "teacher",
+      "categories": [
+        "B"
+      ],
+      "other_label": "",
+      "note": "We flagged it as low confidence B. There is evidence that the teacher framed student as lack but we can't say for sure this is how the teacher view the students. ",
+      "confidence": "low",
+      "verbatim_quote": "yes student m student m good job now it s time i like the way you talk to each other ah you don t need this one don t we you need help all morning you don t know your timetable that s when you do",
+      "include": true,
+      "resolution": "modified",
+      "source": [
+        "b"
+      ],
+      "scene_id": "t54"
+    },
+    {
+      "turn": 156,
+      "speaker": "teacher",
+      "categories": [
+        "D"
+      ],
+      "other_label": "",
+      "note": "\"she isn't trying / thinking\"",
+      "confidence": "low",
+      "verbatim_quote": "donuts anything that could share now we got no we re thinking of anything that we could share maybe it s candy maybe it s donuts maybe it s cake maybe it s cupcakes i just need your thinking now if it s a sharing thing what could we do with the three cupcakes that are left what can we do it s a sharing thing what can we do with the three cupcakes good job some people are thinking see i don t see student c thinking i know she s not and my let s see student w",
+      "include": true,
+      "resolution": "agree",
+      "source": [
+        "a",
+        "b"
+      ],
+      "scene_id": "t156"
+    },
+    {
+      "turn": 158,
+      "speaker": "teacher",
+      "categories": [
+        "D"
+      ],
+      "other_label": "",
+      "note": "\"i don t see you thinking it s a different situation\" -> direct evidence + embed thoughts ",
+      "confidence": "medium",
+      "verbatim_quote": "i don t see you thinking it s a different situation it s food it s candy it s cupcakes all right what can we do with the three extra we know we know yeah student m",
+      "include": true,
+      "resolution": "agree",
+      "source": [
+        "a",
+        "b"
+      ],
+      "scene_id": "t158"
+    },
+    {
+      "turn": 227,
+      "speaker": "teacher",
+      "categories": [
+        "D",
+        "E"
+      ],
+      "other_label": "",
+      "note": "those people that are not paying attention are the ones that won t be able to do it we know that if you cannot see i could tell ones that will be able to do it - dividing the class into will-succeed / won't succeed by the one who pays attention or not --> we have evidence + what the teacher mentioned might not be a fact.",
+      "confidence": "medium",
+      "verbatim_quote": "now hold on another way 44 people some people are not see 44 into that s another word into another way of writing into into 8 yeah 44 people into see this into she s not paying attention to me into two ways of writing it for 44 people into a group you could yeah 44 people into a group into a group into a group sometime you find it written that way but most of the time it s this way that means into now we learn yesterday after they write it this way you ll write it that way yourself those people that are not paying attention are the ones that won t be able to do it we know that if you cannot see i could tell ones that will be able to do it yep like student m and c doesn t go like this she goes like yeah remember we said that seating is really this way all right so we said hey",
+      "include": true,
+      "resolution": "modified",
+      "source": [
+        "a",
+        "b"
+      ],
+      "scene_id": "t227"
+    }
+  ]
+}
